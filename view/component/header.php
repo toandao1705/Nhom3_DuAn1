@@ -222,10 +222,10 @@
                                     </div>
                                 </div>
                                 <div class="header-action-icon-2">
-                                    <a href="page-account.html">
+                                    <a href="index.php?act=account">
                                         <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-user.svg" />
                                     </a>
-                                    <a href="page-account.html"><span class="lable ml-0">Account</span></a>
+                                    <a href="index.php?act=account"><span class="lable ml-0">Account</span></a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                         <ul>
                                             <li><a href="page-account.html"><i class="fi fi-rs-user mr-10"></i>My Account</a></li>
@@ -442,7 +442,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="blog-category-grid.html">Blog <i class="fi-rs-angle-down"></i></a>
+                                        <a href="index.php?act=blog">Blog <i class="fi-rs-angle-down"></i></a>
                                         <ul class="sub-menu">
                                             <li><a href="blog-category-grid.html">Blog Category Grid</a></li>
                                             <li><a href="blog-category-list.html">Blog Category List</a></li>
@@ -464,14 +464,14 @@
                                             <li><a href="page-about.html">About Us</a></li>
                                             <li><a href="page-contact.html">Contact</a></li>
                                             <li><a href="page-account.html">My Account</a></li>
-                                            <li><a href="page-login.html">Login</a></li>
-                                            <li><a href="page-register.html">Register</a></li>
+                                            <li><a href="index.php?act=login">Login</a></li>
+                                            <li><a href="index.php?act=register">Register</a></li>
                                             <li><a href="page-forgot-password.html">Forgot password</a></li>
-                                            <li><a href="page-reset-password.html">Reset password</a></li>
+                                            <li><a href="index.php?act=reset_password">Reset password</a></li>
                                             <li><a href="page-purchase-guide.html">Purchase Guide</a></li>
                                             <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
                                             <li><a href="page-terms.html">Terms of Service</a></li>
-                                            <li><a href="page-404.html">404 Page</a></li>
+                                            <li><a href="index.php?act=page_404">404 Page</a></li>
                                         </ul>
                                     </li>
                                     <li>
