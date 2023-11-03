@@ -40,7 +40,7 @@
                         <div class="shop-product-fillter mb-50 pr-30">
                             <div class="totall-product">
                                 <h2>
-                                    <img class="w-36px mr-10" src="view/assetss/imgs/theme/icons/category-1.svg" alt="" />
+                                    <img class="w-36px mr-10" src="view/assets/imgs/theme/icons/category-1.svg" alt="" />
                                     Recips Articles
                                 </h2>
                             </div>
@@ -89,7 +89,7 @@
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
                                         <a href="blog-post-right.html">
-                                            <img class="border-radius-15" src="view/assetss/imgs/blog/blog-1.png" alt="" />
+                                            <img class="border-radius-15" src="view/assets/imgs/blog/blog-1.png" alt="" />
                                         </a>
                                         <div class="entry-meta">
                                             <a class="entry-meta meta-2" href="blog-category-grid.html"><i class="fi-rs-heart"></i></a>

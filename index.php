@@ -53,8 +53,8 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case 'register':
             include "view/register.php";
             break;
-        case 'reset_password':
-            include "view/reset_password.php";
+        case 'forgot_password':
+            include "view/forgot_password.php";
             break;
         case 'page_404':
             include "view/page_404.php";
