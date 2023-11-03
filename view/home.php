@@ -44,7 +44,7 @@
                                     <span class="text-brand">your<br />
                                         home</span>
                                 </h2>
-                                <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                                     Everyday Fresh & <br />Clean with Our<br />
                                     Products
                                 </h4>
-                                <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                                     Make your Breakfast<br />
                                     Healthy and Easy
                                 </h4>
-                                <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                             <img src="view/assets/imgs/banner/banner-3.png" alt="" />
                             <div class="banner-text">
                                 <h4>The best Organic <br />Products Online</h4>
-                                <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-1-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-1-2.jpg" alt="" />
                                             </a>
@@ -146,7 +146,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                        <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -173,7 +173,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-2-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-2-2.jpg" alt="" />
                                             </a>
@@ -191,7 +191,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                        <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
@@ -218,7 +218,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-3-2.jpg" alt="" />
                                             </a>
@@ -236,7 +236,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                        <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 85%"></div>
@@ -263,7 +263,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-4-2.jpg" alt="" />
                                             </a>
@@ -278,7 +278,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Vegetables</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                        <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -305,7 +305,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg" alt="" />
                                             </a>
@@ -323,7 +323,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Pet Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                        <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -350,7 +350,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-6-2.jpg" alt="" />
                                             </a>
@@ -365,7 +365,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                        <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -392,7 +392,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                             </a>
@@ -407,7 +407,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Meats</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                        <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -434,7 +434,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                             </a>
@@ -452,7 +452,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                        <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -479,7 +479,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                             </a>
@@ -497,7 +497,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Coffes</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                        <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -524,7 +524,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
                                             </a>
@@ -539,7 +539,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Cream</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                        <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 50%"></div>
@@ -572,7 +572,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
                                             </a>
@@ -590,7 +590,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                        <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -617,7 +617,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-12-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-12-2.jpg" alt="" />
                                             </a>
@@ -635,7 +635,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                        <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
@@ -662,7 +662,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-13-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-13-2.jpg" alt="" />
                                             </a>
@@ -680,7 +680,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                        <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 85%"></div>
@@ -707,7 +707,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-14-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-14-2.jpg" alt="" />
                                             </a>
@@ -722,7 +722,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Vegetables</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                        <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -749,7 +749,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-15-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-15-2.jpg" alt="" />
                                             </a>
@@ -767,7 +767,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Pet Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                        <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -794,7 +794,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-16-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-16-2.jpg" alt="" />
                                             </a>
@@ -809,7 +809,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                        <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -836,7 +836,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                             </a>
@@ -851,7 +851,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Meats</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                        <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -878,7 +878,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                             </a>
@@ -896,7 +896,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                        <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -923,7 +923,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                             </a>
@@ -941,7 +941,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Coffes</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                        <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -968,7 +968,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
                                             </a>
@@ -983,7 +983,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Cream</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                        <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 50%"></div>
@@ -1016,7 +1016,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                             </a>
@@ -1034,7 +1034,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                        <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1061,7 +1061,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                             </a>
@@ -1079,7 +1079,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                        <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
@@ -1106,7 +1106,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                             </a>
@@ -1124,7 +1124,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                        <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 85%"></div>
@@ -1151,7 +1151,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-6-2.jpg" alt="" />
                                             </a>
@@ -1166,7 +1166,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Vegetables</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                        <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1193,7 +1193,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg" alt="" />
                                             </a>
@@ -1211,7 +1211,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Pet Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                        <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1238,7 +1238,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-4-2.jpg" alt="" />
                                             </a>
@@ -1253,7 +1253,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                        <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1280,7 +1280,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-3-2.jpg" alt="" />
                                             </a>
@@ -1295,7 +1295,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Meats</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                        <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1322,7 +1322,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-2-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-2-2.jpg" alt="" />
                                             </a>
@@ -1340,7 +1340,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                        <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1367,7 +1367,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                             </a>
@@ -1385,7 +1385,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Coffes</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                        <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1412,7 +1412,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-1-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-1-2.jpg" alt="" />
                                             </a>
@@ -1427,7 +1427,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Cream</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                        <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 50%"></div>
@@ -1460,7 +1460,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-6-2.jpg" alt="" />
                                             </a>
@@ -1478,7 +1478,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                        <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1505,7 +1505,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                             </a>
@@ -1523,7 +1523,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                        <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
@@ -1550,7 +1550,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                             </a>
@@ -1568,7 +1568,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                        <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 85%"></div>
@@ -1595,7 +1595,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                             </a>
@@ -1610,7 +1610,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Vegetables</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                        <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1637,7 +1637,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-4-2.jpg" alt="" />
                                             </a>
@@ -1655,7 +1655,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Pet Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                        <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1682,7 +1682,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-3-2.jpg" alt="" />
                                             </a>
@@ -1697,7 +1697,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                        <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1724,7 +1724,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-2-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-2-2.jpg" alt="" />
                                             </a>
@@ -1739,7 +1739,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Meats</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                        <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1766,7 +1766,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-1-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-1-2.jpg" alt="" />
                                             </a>
@@ -1784,7 +1784,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                        <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1811,7 +1811,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-11-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-11-2.jpg" alt="" />
                                             </a>
@@ -1829,7 +1829,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Coffes</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                        <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1856,7 +1856,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-12-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-12-2.jpg" alt="" />
                                             </a>
@@ -1871,7 +1871,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Cream</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                        <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 50%"></div>
@@ -1904,7 +1904,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-12-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-12-2.jpg" alt="" />
                                             </a>
@@ -1922,7 +1922,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                        <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -1949,7 +1949,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-13-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-13-2.jpg" alt="" />
                                             </a>
@@ -1967,7 +1967,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                        <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
@@ -1994,7 +1994,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-14-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-14-2.jpg" alt="" />
                                             </a>
@@ -2012,7 +2012,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                        <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 85%"></div>
@@ -2039,7 +2039,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-15-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-15-2.jpg" alt="" />
                                             </a>
@@ -2054,7 +2054,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Vegetables</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                        <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2081,7 +2081,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-16-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-16-2.jpg" alt="" />
                                             </a>
@@ -2099,7 +2099,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Pet Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                        <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2126,7 +2126,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg" alt="" />
                                             </a>
@@ -2141,7 +2141,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                        <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2168,7 +2168,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                             </a>
@@ -2183,7 +2183,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Meats</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                        <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2210,7 +2210,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                             </a>
@@ -2228,7 +2228,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                        <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2255,7 +2255,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                             </a>
@@ -2273,7 +2273,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Coffes</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                        <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2300,7 +2300,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
                                             </a>
@@ -2315,7 +2315,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Cream</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                        <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 50%"></div>
@@ -2348,7 +2348,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-4-2.jpg" alt="" />
                                             </a>
@@ -2366,7 +2366,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                        <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2393,7 +2393,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-6-2.jpg" alt="" />
                                             </a>
@@ -2411,7 +2411,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                        <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
@@ -2438,7 +2438,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                             </a>
@@ -2456,7 +2456,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                        <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 85%"></div>
@@ -2483,7 +2483,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                             </a>
@@ -2498,7 +2498,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Vegetables</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                        <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2525,7 +2525,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg" alt="" />
                                             </a>
@@ -2543,7 +2543,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Pet Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                        <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2570,7 +2570,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-6-2.jpg" alt="" />
                                             </a>
@@ -2585,7 +2585,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                        <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2612,7 +2612,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                             </a>
@@ -2627,7 +2627,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Meats</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                        <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2654,7 +2654,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                             </a>
@@ -2672,7 +2672,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                        <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2699,7 +2699,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                             </a>
@@ -2717,7 +2717,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Coffes</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                        <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2744,7 +2744,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
                                             </a>
@@ -2759,7 +2759,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Cream</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                        <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 50%"></div>
@@ -2792,7 +2792,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg" alt="" />
                                             </a>
@@ -2810,7 +2810,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                        <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2837,7 +2837,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-3-2.jpg" alt="" />
                                             </a>
@@ -2855,7 +2855,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                        <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
@@ -2882,7 +2882,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                             </a>
@@ -2900,7 +2900,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                        <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 85%"></div>
@@ -2927,7 +2927,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                             </a>
@@ -2942,7 +2942,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Vegetables</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                        <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -2969,7 +2969,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
                                             </a>
@@ -2987,7 +2987,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Pet Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                        <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -3014,7 +3014,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-16-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-16-2.jpg" alt="" />
                                             </a>
@@ -3029,7 +3029,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Hodo Foods</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                        <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -3056,7 +3056,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                             </a>
@@ -3071,7 +3071,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Meats</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                        <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -3098,7 +3098,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                             </a>
@@ -3116,7 +3116,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Snack</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                        <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -3143,7 +3143,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                             </a>
@@ -3161,7 +3161,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Coffes</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                        <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -3188,7 +3188,7 @@
                                 <div class="product-cart-wrap">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="shop-product-right.html">
+                                            <a href="index.php?act=product_full">
                                                 <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
                                                 <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
                                             </a>
@@ -3203,7 +3203,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Cream</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                        <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 50%"></div>
@@ -3256,7 +3256,7 @@
                         <div class="banner-img style-2">
                             <div class="banner-text">
                                 <h2 class="mb-100">Bring nature into your home</h2>
-                                <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -3269,7 +3269,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-1-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-1-2.jpg" alt="" />
                                                     </a>
@@ -3287,7 +3287,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown</a></h2>
+                                                <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3308,7 +3308,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg" alt="" />
                                                     </a>
@@ -3326,7 +3326,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                                <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3347,7 +3347,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-2-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-2-2.jpg" alt="" />
                                                     </a>
@@ -3365,7 +3365,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet and womnies</a></h2>
+                                                <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet and womnies</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3386,7 +3386,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-3-2.jpg" alt="" />
                                                     </a>
@@ -3404,7 +3404,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic </a></h2>
+                                                <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic </a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3425,7 +3425,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-4-2.jpg" alt="" />
                                                     </a>
@@ -3443,7 +3443,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted</a></h2>
+                                                <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3472,7 +3472,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
                                                     </a>
@@ -3490,7 +3490,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle</a></h2>
+                                                <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3511,7 +3511,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-15-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-15-2.jpg" alt="" />
                                                     </a>
@@ -3529,7 +3529,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan</a></h2>
+                                                <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3550,7 +3550,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-12-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-12-2.jpg" alt="" />
                                                     </a>
@@ -3568,7 +3568,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish </a></h2>
+                                                <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish </a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3589,7 +3589,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-13-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-13-2.jpg" alt="" />
                                                     </a>
@@ -3607,7 +3607,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice</a></h2>
+                                                <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3628,7 +3628,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-14-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-14-2.jpg" alt="" />
                                                     </a>
@@ -3646,7 +3646,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Italian-Style Chicken Meatball</a></h2>
+                                                <h2><a href="index.php?act=product_full">Italian-Style Chicken Meatball</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3674,7 +3674,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                                     </a>
@@ -3692,7 +3692,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Perdue Simply Smart Organics Gluten Free</a></h2>
+                                                <h2><a href="index.php?act=product_full">Perdue Simply Smart Organics Gluten Free</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3713,7 +3713,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                                     </a>
@@ -3731,7 +3731,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa</a></h2>
+                                                <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3752,7 +3752,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                                     </a>
@@ -3770,7 +3770,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Signature Wood-Fired Mushroom</a></h2>
+                                                <h2><a href="index.php?act=product_full">Signature Wood-Fired Mushroom</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3791,7 +3791,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-13-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-13-2.jpg" alt="" />
                                                     </a>
@@ -3809,7 +3809,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Simply Lemonade with Raspberry Juice</a></h2>
+                                                <h2><a href="index.php?act=product_full">Simply Lemonade with Raspberry Juice</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3830,7 +3830,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="index.php?act=product_full">
                                                         <img class="default-img" src="view/assets/imgs/shop/product-14-1.jpg" alt="" />
                                                         <img class="hover-img" src="view/assets/imgs/shop/product-14-2.jpg" alt="" />
                                                     </a>
@@ -3848,7 +3848,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Organic Quinoa, Brown, & Red Rice</a></h2>
+                                                <h2><a href="index.php?act=product_full">Organic Quinoa, Brown, & Red Rice</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -3891,7 +3891,7 @@
                         <div class="product-cart-wrap style-2">
                             <div class="product-img-action-wrap">
                                 <div class="product-img">
-                                    <a href="shop-product-right.html">
+                                    <a href="index.php?act=product_full">
                                         <img src="view/assets/imgs/banner/banner-5.png" alt="" />
                                     </a>
                                 </div>
@@ -3901,7 +3901,7 @@
                                     <div class="deals-countdown" data-countdown="2025/03/25 00:00:00"></div>
                                 </div>
                                 <div class="deals-content">
-                                    <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                    <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -3928,7 +3928,7 @@
                         <div class="product-cart-wrap style-2">
                             <div class="product-img-action-wrap">
                                 <div class="product-img">
-                                    <a href="shop-product-right.html">
+                                    <a href="index.php?act=product_full">
                                         <img src="view/assets/imgs/banner/banner-6.png" alt="" />
                                     </a>
                                 </div>
@@ -3938,7 +3938,7 @@
                                     <div class="deals-countdown" data-countdown="2026/04/25 00:00:00"></div>
                                 </div>
                                 <div class="deals-content">
-                                    <h2><a href="shop-product-right.html">Perdue Simply Smart Organics Gluten Free</a></h2>
+                                    <h2><a href="index.php?act=product_full">Perdue Simply Smart Organics Gluten Free</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -3965,7 +3965,7 @@
                         <div class="product-cart-wrap style-2">
                             <div class="product-img-action-wrap">
                                 <div class="product-img">
-                                    <a href="shop-product-right.html">
+                                    <a href="index.php?act=product_full">
                                         <img src="view/assets/imgs/banner/banner-7.png" alt="" />
                                     </a>
                                 </div>
@@ -3975,7 +3975,7 @@
                                     <div class="deals-countdown" data-countdown="2027/03/25 00:00:00"></div>
                                 </div>
                                 <div class="deals-content">
-                                    <h2><a href="shop-product-right.html">Signature Wood-Fired Mushroom and Caramelized</a></h2>
+                                    <h2><a href="index.php?act=product_full">Signature Wood-Fired Mushroom and Caramelized</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -4002,7 +4002,7 @@
                         <div class="product-cart-wrap style-2">
                             <div class="product-img-action-wrap">
                                 <div class="product-img">
-                                    <a href="shop-product-right.html">
+                                    <a href="index.php?act=product_full">
                                         <img src="view/assets/imgs/banner/banner-8.png" alt="" />
                                     </a>
                                 </div>
@@ -4012,7 +4012,7 @@
                                     <div class="deals-countdown" data-countdown="2025/02/25 00:00:00"></div>
                                 </div>
                                 <div class="deals-content">
-                                    <h2><a href="shop-product-right.html">Simply Lemonade with Raspberry Juice</a></h2>
+                                    <h2><a href="index.php?act=product_full">Simply Lemonade with Raspberry Juice</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -4047,11 +4047,11 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="view/assets/imgs/shop/thumbnail-1.jpg" alt="" /></a>
+                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-1.jpg" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Nestle Original Coffee-Mate Coffee Creamer</a>
+                                        <a href="index.php?act=product_full">Nestle Original Coffee-Mate Coffee Creamer</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -4067,11 +4067,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="view/assets/imgs/shop/thumbnail-2.jpg" alt="" /></a>
+                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-2.jpg" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Nestle Original Coffee-Mate Coffee Creamer</a>
+                                        <a href="index.php?act=product_full">Nestle Original Coffee-Mate Coffee Creamer</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -4087,11 +4087,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="view/assets/imgs/shop/thumbnail-3.jpg" alt="" /></a>
+                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-3.jpg" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Nestle Original Coffee-Mate Coffee Creamer</a>
+                                        <a href="index.php?act=product_full">Nestle Original Coffee-Mate Coffee Creamer</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -4112,11 +4112,11 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="view/assets/imgs/shop/thumbnail-4.jpg" alt="" /></a>
+                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-4.jpg" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Organic Cage-Free Grade A Large Brown Eggs</a>
+                                        <a href="index.php?act=product_full">Organic Cage-Free Grade A Large Brown Eggs</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -4132,11 +4132,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="view/assets/imgs/shop/thumbnail-5.jpg" alt="" /></a>
+                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-5.jpg" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a>
+                                        <a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -4152,11 +4152,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="view/assets/imgs/shop/thumbnail-6.jpg" alt="" /></a>
+                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-6.jpg" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Naturally Flavored Cinnamon Vanilla Light Roast Coffee</a>
+                                        <a href="index.php?act=product_full">Naturally Flavored Cinnamon Vanilla Light Roast Coffee</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -4177,11 +4177,11 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="view/assets/imgs/shop/thumbnail-7.jpg" alt="" /></a>
+                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-7.jpg" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Pepperidge Farm Farmhouse Hearty White Bread</a>
+                                        <a href="index.php?act=product_full">Pepperidge Farm Farmhouse Hearty White Bread</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -4197,11 +4197,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="view/assets/imgs/shop/thumbnail-8.jpg" alt="" /></a>
+                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-8.jpg" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Organic Frozen Triple Berry Blend</a>
+                                        <a href="index.php?act=product_full">Organic Frozen Triple Berry Blend</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -4217,11 +4217,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="view/assets/imgs/shop/thumbnail-9.jpg" alt="" /></a>
+                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-9.jpg" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Oroweat Country Buttermilk Bread</a>
+                                        <a href="index.php?act=product_full">Oroweat Country Buttermilk Bread</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -4242,11 +4242,11 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="view/assets/imgs/shop/thumbnail-10.jpg" alt="" /></a>
+                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-10.jpg" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a>
+                                        <a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -4262,11 +4262,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="view/assets/imgs/shop/thumbnail-11.jpg" alt="" /></a>
+                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-11.jpg" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a>
+                                        <a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -4282,11 +4282,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="view/assets/imgs/shop/thumbnail-12.jpg" alt="" /></a>
+                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-12.jpg" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a>
+                                        <a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">

@@ -33,36 +33,36 @@
                                 <!-- MAIN SLIDES -->
                                 <div class="product-image-slider">
                                     <figure class="border-radius-10">
-                                        <img src="view/view/assets/imgs/shop/product-16-2.jpg" alt="product image" />
+                                        <img src="view/assets/imgs/shop/product-16-2.jpg" alt="product image" />
                                     </figure>
                                     <figure class="border-radius-10">
-                                        <img src="view/view/assets/imgs/shop/product-16-1.jpg" alt="product image" />
+                                        <img src="view/assets/imgs/shop/product-16-1.jpg" alt="product image" />
                                     </figure>
                                     <figure class="border-radius-10">
-                                        <img src="view/view/assets/imgs/shop/product-16-3.jpg" alt="product image" />
+                                        <img src="view/assets/imgs/shop/product-16-3.jpg" alt="product image" />
                                     </figure>
                                     <figure class="border-radius-10">
-                                        <img src="view/view/assets/imgs/shop/product-16-4.jpg" alt="product image" />
+                                        <img src="view/assets/imgs/shop/product-16-4.jpg" alt="product image" />
                                     </figure>
                                     <figure class="border-radius-10">
-                                        <img src="view/view/assets/imgs/shop/product-16-5.jpg" alt="product image" />
+                                        <img src="view/assets/imgs/shop/product-16-5.jpg" alt="product image" />
                                     </figure>
                                     <figure class="border-radius-10">
-                                        <img src="view/view/assets/imgs/shop/product-16-6.jpg" alt="product image" />
+                                        <img src="view/assets/imgs/shop/product-16-6.jpg" alt="product image" />
                                     </figure>
                                     <figure class="border-radius-10">
-                                        <img src="view/view/assets/imgs/shop/product-16-7.jpg" alt="product image" />
+                                        <img src="view/assets/imgs/shop/product-16-7.jpg" alt="product image" />
                                     </figure>
                                 </div>
                                 <!-- THUMBNAILS -->
                                 <div class="slider-nav-thumbnails">
-                                    <div><img src="view/assets/imgs/shop/thumbnail-3.jpg" alt="product image" /></div>
-                                    <div><img src="view/assets/imgs/shop/thumbnail-4.jpg" alt="product image" /></div>
-                                    <div><img src="view/assets/imgs/shop/thumbnail-5.jpg" alt="product image" /></div>
-                                    <div><img src="view/assets/imgs/shop/thumbnail-6.jpg" alt="product image" /></div>
-                                    <div><img src="view/assets/imgs/shop/thumbnail-7.jpg" alt="product image" /></div>
-                                    <div><img src="view/assets/imgs/shop/thumbnail-8.jpg" alt="product image" /></div>
-                                    <div><img src="view/assets/imgs/shop/thumbnail-9.jpg" alt="product image" /></div>
+                                    <div><img src="view/assets/imgs/shop/product-16-2.jpg" alt="product image" /></div>
+                                    <div><img src="view/assets/imgs/shop/product-16-1.jpg" alt="product image" /></div>
+                                    <div><img src="view/assets/imgs/shop/product-16-3.jpg" alt="product image" /></div>
+                                    <div><img src="view/assets/imgs/shop/product-16-4.jpg" alt="product image" /></div>
+                                    <div><img src="view/assets/imgs/shop/product-16-5.jpg" alt="product image" /></div>
+                                    <div><img src="view/assets/imgs/shop/product-16-6.jpg" alt="product image" /></div>
+                                    <div><img src="view/assets/imgs/shop/product-16-7.jpg" alt="product image" /></div>
                                 </div>
                             </div>
                             <!-- End Gallery -->
@@ -70,7 +70,7 @@
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="detail-info pr-30 pl-30">
                                 <span class="stock-status out-stock"> Sale Off </span>
-                                <h3 class="title-detail"><a href="shop-product-right.html" class="text-heading">Seeds of Change Organic Quinoa, Brown</a></h3>
+                                <h3 class="title-detail"><a href="index.php?act=product_full" class="text-heading">Seeds of Change Organic Quinoa, Brown</a></h3>
                                 <div class="product-detail-rating">
                                     <div class="product-rate-cover text-end">
                                         <div class="product-rate d-inline-block">
@@ -187,10 +187,10 @@
                                         <ul>
                                             <li>
                                                 <div class="shopping-cart-img">
-                                                    <a href="shop-product-right.html"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-3.jpg" /></a>
+                                                    <a href="index.php?act=product_full"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-3.jpg" /></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
-                                                    <h4><a href="shop-product-right.html">Daisy Casual Bag</a></h4>
+                                                    <h4><a href="index.php?act=product_full">Daisy Casual Bag</a></h4>
                                                     <h4><span>1 × </span>$800.00</h4>
                                                 </div>
                                                 <div class="shopping-cart-delete">
@@ -199,10 +199,10 @@
                                             </li>
                                             <li>
                                                 <div class="shopping-cart-img">
-                                                    <a href="shop-product-right.html"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-2.jpg" /></a>
+                                                    <a href="index.php?act=product_full"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-2.jpg" /></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
-                                                    <h4><a href="shop-product-right.html">Corduroy Shirts</a></h4>
+                                                    <h4><a href="index.php?act=product_full">Corduroy Shirts</a></h4>
                                                     <h4><span>1 × </span>$3200.00</h4>
                                                 </div>
                                                 <div class="shopping-cart-delete">
@@ -320,15 +320,7 @@
                                 <ul>
                                     <li class="hot-deals"><img src="view/assets/imgs/theme/icons/icon-hot.svg" alt="hot deals" /><a href="index.php?act=deals">Deals</a></li>
                                     <li>
-                                        <a class="active" href="index.php">Home <i class="fi-rs-angle-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="index.html">Home 1</a></li>
-                                            <li><a href="index-2.html">Home 2</a></li>
-                                            <li><a href="index-3.html">Home 3</a></li>
-                                            <li><a href="index-4.html">Home 4</a></li>
-                                            <li><a href="index-5.html">Home 5</a></li>
-                                            <li><a href="index-6.html">Home 6</a></li>
-                                        </ul>
+                                        <a class="active" href="index.php">Home</a>
                                     </li>
                                     <li>
                                         <a href="index.php?act=about">About</a>
@@ -344,7 +336,7 @@
                                             <li>
                                                 <a href="#">Single Product <i class="fi-rs-angle-right"></i></a>
                                                 <ul class="level-menu">
-                                                    <li><a href="shop-product-right.html">Product – Right Sidebar</a></li>
+                                                    <li><a href="index.php?act=product_full">Product – Right Sidebar</a></li>
                                                     <li><a href="shop-product-left.html">Product – Left Sidebar</a></li>
                                                     <li><a href="shop-product-full.html">Product – No sidebar</a></li>
                                                     <li><a href="shop-product-vendor.html">Product – Vendor Infor</a></li>
@@ -385,39 +377,39 @@
                                             <li class="sub-mega-menu sub-mega-menu-width-22">
                                                 <a class="menu-title" href="#">Fruit & Vegetables</a>
                                                 <ul>
-                                                    <li><a href="shop-product-right.html">Meat & Poultry</a></li>
-                                                    <li><a href="shop-product-right.html">Fresh Vegetables</a></li>
-                                                    <li><a href="shop-product-right.html">Herbs & Seasonings</a></li>
-                                                    <li><a href="shop-product-right.html">Cuts & Sprouts</a></li>
-                                                    <li><a href="shop-product-right.html">Exotic Fruits & Veggies</a></li>
-                                                    <li><a href="shop-product-right.html">Packaged Produce</a></li>
+                                                    <li><a href="index.php?act=product_full">Meat & Poultry</a></li>
+                                                    <li><a href="index.php?act=product_full">Fresh Vegetables</a></li>
+                                                    <li><a href="index.php?act=product_full">Herbs & Seasonings</a></li>
+                                                    <li><a href="index.php?act=product_full">Cuts & Sprouts</a></li>
+                                                    <li><a href="index.php?act=product_full">Exotic Fruits & Veggies</a></li>
+                                                    <li><a href="index.php?act=product_full">Packaged Produce</a></li>
                                                 </ul>
                                             </li>
                                             <li class="sub-mega-menu sub-mega-menu-width-22">
                                                 <a class="menu-title" href="#">Breakfast & Dairy</a>
                                                 <ul>
-                                                    <li><a href="shop-product-right.html">Milk & Flavoured Milk</a></li>
-                                                    <li><a href="shop-product-right.html">Butter and Margarine</a></li>
-                                                    <li><a href="shop-product-right.html">Eggs Substitutes</a></li>
-                                                    <li><a href="shop-product-right.html">Marmalades</a></li>
-                                                    <li><a href="shop-product-right.html">Sour Cream</a></li>
-                                                    <li><a href="shop-product-right.html">Cheese</a></li>
+                                                    <li><a href="index.php?act=product_full">Milk & Flavoured Milk</a></li>
+                                                    <li><a href="index.php?act=product_full">Butter and Margarine</a></li>
+                                                    <li><a href="index.php?act=product_full">Eggs Substitutes</a></li>
+                                                    <li><a href="index.php?act=product_full">Marmalades</a></li>
+                                                    <li><a href="index.php?act=product_full">Sour Cream</a></li>
+                                                    <li><a href="index.php?act=product_full">Cheese</a></li>
                                                 </ul>
                                             </li>
                                             <li class="sub-mega-menu sub-mega-menu-width-22">
                                                 <a class="menu-title" href="#">Meat & Seafood</a>
                                                 <ul>
-                                                    <li><a href="shop-product-right.html">Breakfast Sausage</a></li>
-                                                    <li><a href="shop-product-right.html">Dinner Sausage</a></li>
-                                                    <li><a href="shop-product-right.html">Chicken</a></li>
-                                                    <li><a href="shop-product-right.html">Sliced Deli Meat</a></li>
-                                                    <li><a href="shop-product-right.html">Wild Caught Fillets</a></li>
-                                                    <li><a href="shop-product-right.html">Crab and Shellfish</a></li>
+                                                    <li><a href="index.php?act=product_full">Breakfast Sausage</a></li>
+                                                    <li><a href="index.php?act=product_full">Dinner Sausage</a></li>
+                                                    <li><a href="index.php?act=product_full">Chicken</a></li>
+                                                    <li><a href="index.php?act=product_full">Sliced Deli Meat</a></li>
+                                                    <li><a href="index.php?act=product_full">Wild Caught Fillets</a></li>
+                                                    <li><a href="index.php?act=product_full">Crab and Shellfish</a></li>
                                                 </ul>
                                             </li>
                                             <li class="sub-mega-menu sub-mega-menu-width-34">
                                                 <div class="menu-banner-wrap">
-                                                    <a href="shop-product-right.html"><img src="view/assets/imgs/banner/banner-menu.png" alt="Nest" /></a>
+                                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/banner/banner-menu.png" alt="Nest" /></a>
                                                     <div class="menu-banner-content">
                                                         <h4>Hot deals</h4>
                                                         <h3>
@@ -428,7 +420,7 @@
                                                             <span class="new-price text-success">Save to 50%</span>
                                                         </div>
                                                         <div class="menu-banner-btn">
-                                                            <a href="shop-product-right.html">Shop now</a>
+                                                            <a href="index.php?act=product_full">Shop now</a>
                                                         </div>
                                                     </div>
                                                     <div class="menu-banner-discount">
@@ -453,7 +445,7 @@
                                                 <ul class="level-menu level-menu-modify">
                                                     <li><a href="blog-post-left.html">Left Sidebar</a></li>
                                                     <li><a href="blog-post-right.html">Right Sidebar</a></li>
-                                                    <li><a href="blog-post-fullwidth.html">No Sidebar</a></li>
+                                                    <li><a href="index.php?act=blog_post">No Sidebar</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -467,10 +459,10 @@
                                             <li><a href="page-login.html">Login</a></li>
                                             <li><a href="page-register.html">Register</a></li>
                                             <li><a href="page-forgot-password.html">Forgot password</a></li>
-                                            <li><a href="page-reset-password.html">Reset password</a></li>
+                                            <li><a href="index.php?act=reset_password">Reset password</a></li>
                                             <li><a href="page-purchase-guide.html">Purchase Guide</a></li>
-                                            <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
-                                            <li><a href="page-terms.html">Terms of Service</a></li>
+                                            <li><a href="index.php?act=privacy_policy">Privacy Policy</a></li>
+                                            <li><a href="index.php?act=terms">Terms of Service</a></li>
                                             <li><a href="page-404.html">404 Page</a></li>
                                         </ul>
                                     </li>
@@ -509,10 +501,10 @@
                                     <ul>
                                         <li>
                                             <div class="shopping-cart-img">
-                                                <a href="shop-product-right.html"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-3.jpg" /></a>
+                                                <a href="index.php?act=product_full"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-3.jpg" /></a>
                                             </div>
                                             <div class="shopping-cart-title">
-                                                <h4><a href="shop-product-right.html">Plain Striola Shirts</a></h4>
+                                                <h4><a href="index.php?act=product_full">Plain Striola Shirts</a></h4>
                                                 <h3><span>1 × </span>$800.00</h3>
                                             </div>
                                             <div class="shopping-cart-delete">
@@ -521,10 +513,10 @@
                                         </li>
                                         <li>
                                             <div class="shopping-cart-img">
-                                                <a href="shop-product-right.html"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-4.jpg" /></a>
+                                                <a href="index.php?act=product_full"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-4.jpg" /></a>
                                             </div>
                                             <div class="shopping-cart-title">
-                                                <h4><a href="shop-product-right.html">Macbook Pro 2022</a></h4>
+                                                <h4><a href="index.php?act=product_full">Macbook Pro 2022</a></h4>
                                                 <h3><span>1 × </span>$3500.00</h3>
                                             </div>
                                             <div class="shopping-cart-delete">
@@ -595,7 +587,7 @@
                                     <li class="menu-item-has-children">
                                         <a href="#">Single Product</a>
                                         <ul class="dropdown">
-                                            <li><a href="shop-product-right.html">Product – Right Sidebar</a></li>
+                                            <li><a href="index.php?act=product_full">Product – Right Sidebar</a></li>
                                             <li><a href="shop-product-left.html">Product – Left Sidebar</a></li>
                                             <li><a href="shop-product-full.html">Product – No sidebar</a></li>
                                             <li><a href="shop-product-vendor.html">Product – Vendor Infor</a></li>
@@ -636,28 +628,28 @@
                                     <li class="menu-item-has-children">
                                         <a href="#">Women's Fashion</a>
                                         <ul class="dropdown">
-                                            <li><a href="shop-product-right.html">Dresses</a></li>
-                                            <li><a href="shop-product-right.html">Blouses & Shirts</a></li>
-                                            <li><a href="shop-product-right.html">Hoodies & Sweatshirts</a></li>
-                                            <li><a href="shop-product-right.html">Women's Sets</a></li>
+                                            <li><a href="index.php?act=product_full">Dresses</a></li>
+                                            <li><a href="index.php?act=product_full">Blouses & Shirts</a></li>
+                                            <li><a href="index.php?act=product_full">Hoodies & Sweatshirts</a></li>
+                                            <li><a href="index.php?act=product_full">Women's Sets</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
                                         <a href="#">Men's Fashion</a>
                                         <ul class="dropdown">
-                                            <li><a href="shop-product-right.html">Jackets</a></li>
-                                            <li><a href="shop-product-right.html">Casual Faux Leather</a></li>
-                                            <li><a href="shop-product-right.html">Genuine Leather</a></li>
+                                            <li><a href="index.php?act=product_full">Jackets</a></li>
+                                            <li><a href="index.php?act=product_full">Casual Faux Leather</a></li>
+                                            <li><a href="index.php?act=product_full">Genuine Leather</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
                                         <a href="#">Technology</a>
                                         <ul class="dropdown">
-                                            <li><a href="shop-product-right.html">Gaming Laptops</a></li>
-                                            <li><a href="shop-product-right.html">Ultraslim Laptops</a></li>
-                                            <li><a href="shop-product-right.html">Tablets</a></li>
-                                            <li><a href="shop-product-right.html">Laptop Accessories</a></li>
-                                            <li><a href="shop-product-right.html">Tablet Accessories</a></li>
+                                            <li><a href="index.php?act=product_full">Gaming Laptops</a></li>
+                                            <li><a href="index.php?act=product_full">Ultraslim Laptops</a></li>
+                                            <li><a href="index.php?act=product_full">Tablets</a></li>
+                                            <li><a href="index.php?act=product_full">Laptop Accessories</a></li>
+                                            <li><a href="index.php?act=product_full">Tablet Accessories</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -674,7 +666,7 @@
                                         <ul class="dropdown">
                                             <li><a href="blog-post-left.html">Left Sidebar</a></li>
                                             <li><a href="blog-post-right.html">Right Sidebar</a></li>
-                                            <li><a href="blog-post-fullwidth.html">No Sidebar</a></li>
+                                            <li><a href="index.php?act=blog_post">No Sidebar</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -688,10 +680,10 @@
                                     <li><a href="page-login.html">Login</a></li>
                                     <li><a href="page-register.html">Register</a></li>
                                     <li><a href="page-forgot-password.html">Forgot password</a></li>
-                                    <li><a href="page-reset-password.html">Reset password</a></li>
+                                    <li><a href="index.php?act=reset_password">Reset password</a></li>
                                     <li><a href="page-purchase-guide.html">Purchase Guide</a></li>
-                                    <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
-                                    <li><a href="page-terms.html">Terms of Service</a></li>
+                                    <li><a href="index.php?act=privacy_policy">Privacy Policy</a></li>
+                                    <li><a href="index.php?act=terms">Terms of Service</a></li>
                                     <li><a href="page-404.html">404 Page</a></li>
                                 </ul>
                             </li>

@@ -14,7 +14,23 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case 'shop':
             include "view/shop.php";
             break;
-        
+        case 'reset_password':
+            include "view/reset_password.php";
+            break;
+        case 'product_full':
+            include "view/product_full.php";
+            break;
+        case 'blog_post':
+            include "view/blog_post.php";
+            break;
+        case 'privacy_policy':
+            include "view/privacy_policy.php";
+            break;
+        case 'terms':
+            include "view/terms.php";
+            break;
+            
+    
 
         default:
             include "view/home.php";
