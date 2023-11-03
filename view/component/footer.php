@@ -233,6 +233,7 @@
     <script src="view/assets/js/plugins/jquery.vticker-min.js"></script>
     <script src="view/assets/js/plugins/jquery.theia.sticky.js"></script>
     <script src="view/assets/js/plugins/jquery.elevatezoom.js"></script>
+    <script src="view/assets/js/plugins/leaflet.js"></script>
     <!-- Template  JS -->
     <script src="./view/assets/js/main.js?v=5.6"></script>
     <script src="./view/assets/js/shop.js?v=5.6"></script>
