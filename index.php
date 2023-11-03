@@ -59,6 +59,9 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case 'page_404':
             include "view/page_404.php";
             break;
+        case 'search':
+            include "view/search.php";
+            break;
         default:
             include "view/home.php";
             break;
