@@ -2,7 +2,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+                    <a href="index.php" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
                     <span></span> Pages <span></span> Privacy Policy
                 </div>
             </div>
@@ -210,19 +210,19 @@
                                         <h5 class="section-title style-1 mb-30">Category</h5>
                                         <ul>
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-1.svg" alt="" />Milks & Dairies</a><span class="count">30</span>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-1.svg" alt="" />Milks & Dairies</a><span class="count">30</span>
                                             </li>
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-2.svg" alt="" />Clothing</a><span class="count">35</span>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-2.svg" alt="" />Clothing</a><span class="count">35</span>
                                             </li>
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods </a><span class="count">42</span>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods </a><span class="count">42</span>
                                             </li>
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-4.svg" alt="" />Baking material</a><span class="count">68</span>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-4.svg" alt="" />Baking material</a><span class="count">68</span>
                                             </li>
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a><span class="count">87</span>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a><span class="count">87</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -234,7 +234,7 @@
                                                 <img src="view/assets/imgs/shop/thumbnail-3.jpg" alt="#" />
                                             </div>
                                             <div class="content pt-10">
-                                                <h5><a href="shop-product-detail.html">Chen Cardigan</a></h5>
+                                                <h5><a href="shop-product-detail.php">Chen Cardigan</a></h5>
                                                 <p class="price mb-0 mt-5">$99.50</p>
                                                 <div class="product-rate">
                                                     <div class="product-rating" style="width: 90%"></div>
@@ -246,7 +246,7 @@
                                                 <img src="view/assets/imgs/shop/thumbnail-4.jpg" alt="#" />
                                             </div>
                                             <div class="content pt-10">
-                                                <h6><a href="shop-product-detail.html">Chen Sweater</a></h6>
+                                                <h6><a href="shop-product-detail.php">Chen Sweater</a></h6>
                                                 <p class="price mb-0 mt-5">$89.50</p>
                                                 <div class="product-rate">
                                                     <div class="product-rating" style="width: 80%"></div>
@@ -258,7 +258,7 @@
                                                 <img src="view/assets/imgs/shop/thumbnail-5.jpg" alt="#" />
                                             </div>
                                             <div class="content pt-10">
-                                                <h6><a href="shop-product-detail.html">Colorful Jacket</a></h6>
+                                                <h6><a href="shop-product-detail.php">Colorful Jacket</a></h6>
                                                 <p class="price mb-0 mt-5">$25</p>
                                                 <div class="product-rate">
                                                     <div class="product-rating" style="width: 60%"></div>
@@ -270,7 +270,7 @@
                                                 <img src="view/assets/imgs/shop/thumbnail-6.jpg" alt="#" />
                                             </div>
                                             <div class="content pt-10">
-                                                <h6><a href="shop-product-detail.html">Lorem, ipsum</a></h6>
+                                                <h6><a href="shop-product-detail.php">Lorem, ipsum</a></h6>
                                                 <p class="price mb-0 mt-5">$25</p>
                                                 <div class="product-rate">
                                                     <div class="product-rating" style="width: 60%"></div>

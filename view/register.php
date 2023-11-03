@@ -2,7 +2,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.php?act=register" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+                    <a href="index.php" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
                     <span></span> Pages <span></span> My Account
                 </div>
             </div>
@@ -17,7 +17,7 @@
                                     <div class="padding_eight_all bg-white">
                                         <div class="heading_s1">
                                             <h1 class="mb-5">Create an Account</h1>
-                                            <p class="mb-30">Already have an account? <a href="page-login.html">Login</a></p>
+                                            <p class="mb-30">Already have an account? <a href="page-login.php">Login</a></p>
                                         </div>
                                         <form method="post">
                                             <div class="form-group">
@@ -60,7 +60,7 @@
                                                         <label class="form-check-label" for="exampleCheckbox12"><span>I agree to terms &amp; Policy.</span></label>
                                                     </div>
                                                 </div>
-                                                <a href="page-privacy-policy.html"><i class="fi-rs-book-alt mr-5 text-muted"></i>Lean more</a>
+                                                <a href="page-privacy-policy.php"><i class="fi-rs-book-alt mr-5 text-muted"></i>Lean more</a>
                                             </div>
                                             <div class="form-group mb-30">
                                                 <button type="submit" class="btn btn-fill-out btn-block hover-up font-weight-bold" name="login">Submit &amp; Register</button>

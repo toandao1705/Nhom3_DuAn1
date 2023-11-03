@@ -169,18 +169,18 @@
                                     </form>
                                 </div>
                                 <div class="header-action-icon-2">
-                                    <a href="shop-compare.html">
+                                    <a href="shop-compare.php">
                                         <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-compare.svg" />
                                         <span class="pro-count blue">3</span>
                                     </a>
-                                    <a href="shop-compare.html"><span class="lable ml-0">Compare</span></a>
+                                    <a href="shop-compare.php"><span class="lable ml-0">Compare</span></a>
                                 </div>
                                 <div class="header-action-icon-2">
-                                    <a href="shop-wishlist.html">
+                                    <a href="shop-wishlist.php">
                                         <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-heart.svg" />
                                         <span class="pro-count blue">6</span>
                                     </a>
-                                    <a href="shop-wishlist.html"><span class="lable">Wishlist</span></a>
+                                    <a href="shop-wishlist.php"><span class="lable">Wishlist</span></a>
                                 </div>
                                 <div class="header-action-icon-2">
                                     <a class="mini-cart-icon" href="index.php?act=cart">
@@ -220,8 +220,8 @@
                                                 <h4>Total <span>$4000.00</span></h4>
                                             </div>
                                             <div class="shopping-cart-button">
-                                                <a href="shop-cart.html" class="outline">View cart</a>
-                                                <a href="shop-checkout.html">Checkout</a>
+                                                <a href="shop-cart.php" class="outline">View cart</a>
+                                                <a href="shop-checkout.php">Checkout</a>
                                             </div>
                                         </div>
                                     </div>
@@ -233,12 +233,12 @@
                                     <a href="index.php?act=account"><span class="lable ml-0">Account</span></a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                         <ul>
-                                            <li><a href="page-account.html"><i class="fi fi-rs-user mr-10"></i>My Account</a></li>
-                                            <li><a href="page-account.html"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
-                                            <li><a href="page-account.html"><i class="fi fi-rs-label mr-10"></i>My Voucher</a></li>
-                                            <li><a href="shop-wishlist.html"><i class="fi fi-rs-heart mr-10"></i>My Wishlist</a></li>
-                                            <li><a href="page-account.html"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
-                                            <li><a href="page-login.html"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a></li>
+                                            <li><a href="page-account.php"><i class="fi fi-rs-user mr-10"></i>My Account</a></li>
+                                            <li><a href="page-account.php"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
+                                            <li><a href="page-account.php"><i class="fi fi-rs-label mr-10"></i>My Voucher</a></li>
+                                            <li><a href="shop-wishlist.php"><i class="fi fi-rs-heart mr-10"></i>My Wishlist</a></li>
+                                            <li><a href="page-account.php"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
+                                            <li><a href="page-login.php"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -252,7 +252,7 @@
             <div class="container">
                 <div class="header-wrap header-space-between position-relative">
                     <div class="logo logo-width-1 d-block d-lg-none">
-                        <a href="index.html"><img src="assets/imgs/theme/logo.svg" alt="logo" /></a>
+                        <a href="index.php"><img src="assets/imgs/theme/logo.svg" alt="logo" /></a>
                     </div>
                     <div class="header-nav d-none d-lg-flex">
                         <div class="main-categori-wrap d-none d-lg-block">
@@ -264,36 +264,36 @@
                                 <div class="d-flex categori-dropdown-inner">
                                     <ul>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-1.svg" alt="" />Milks and Dairies</a>
+                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-1.svg" alt="" />Milks and Dairies</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-2.svg" alt="" />Clothing & beauty</a>
+                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-2.svg" alt="" />Clothing & beauty</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods & Toy</a>
+                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods & Toy</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-4.svg" alt="" />Baking material</a>
+                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-4.svg" alt="" />Baking material</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a>
+                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a>
                                         </li>
                                     </ul>
                                     <ul class="end">
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-6.svg" alt="" />Wines & Drinks</a>
+                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-6.svg" alt="" />Wines & Drinks</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-7.svg" alt="" />Fresh Seafood</a>
+                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-7.svg" alt="" />Fresh Seafood</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-8.svg" alt="" />Fast food</a>
+                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-8.svg" alt="" />Fast food</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-9.svg" alt="" />Vegetables</a>
+                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-9.svg" alt="" />Vegetables</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-10.svg" alt="" />Bread and Juice</a>
+                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-10.svg" alt="" />Bread and Juice</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -301,18 +301,18 @@
                                     <div class="d-flex categori-dropdown-inner">
                                         <ul>
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/icon-1.svg" alt="" />Milks and Dairies</a>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/icon-1.svg" alt="" />Milks and Dairies</a>
                                             </li>
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/icon-2.svg" alt="" />Clothing & beauty</a>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/icon-2.svg" alt="" />Clothing & beauty</a>
                                             </li>
                                         </ul>
                                         <ul class="end">
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/icon-3.svg" alt="" />Wines & Drinks</a>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/icon-3.svg" alt="" />Wines & Drinks</a>
                                             </li>
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/icon-4.svg" alt="" />Fresh Seafood</a>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/icon-4.svg" alt="" />Fresh Seafood</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -333,34 +333,34 @@
                                     <li>
                                         <a href="index.php?act=shop">Shop <i class="fi-rs-angle-down"></i></a>
                                         <ul class="sub-menu">
-                                            <li><a href="shop-grid-right.html">Shop Grid – Right Sidebar</a></li>
-                                            <li><a href="shop-grid-left.html">Shop Grid – Left Sidebar</a></li>
-                                            <li><a href="shop-list-right.html">Shop List – Right Sidebar</a></li>
-                                            <li><a href="shop-list-left.html">Shop List – Left Sidebar</a></li>
-                                            <li><a href="shop-fullwidth.html">Shop - Wide</a></li>
+                                            <li><a href="shop-grid-right.php">Shop Grid – Right Sidebar</a></li>
+                                            <li><a href="shop-grid-left.php">Shop Grid – Left Sidebar</a></li>
+                                            <li><a href="shop-list-right.php">Shop List – Right Sidebar</a></li>
+                                            <li><a href="shop-list-left.php">Shop List – Left Sidebar</a></li>
+                                            <li><a href="shop-fullwidth.php">Shop - Wide</a></li>
                                             <li>
                                                 <a href="#">Single Product <i class="fi-rs-angle-right"></i></a>
                                                 <ul class="level-menu">
                                                     <li><a href="index.php?act=product_full">Product – Right Sidebar</a></li>
-                                                    <li><a href="shop-product-left.html">Product – Left Sidebar</a></li>
-                                                    <li><a href="shop-product-full.html">Product – No sidebar</a></li>
-                                                    <li><a href="shop-product-vendor.html">Product – Vendor Infor</a></li>
+                                                    <li><a href="shop-product-left.php">Product – Left Sidebar</a></li>
+                                                    <li><a href="shop-product-full.php">Product – No sidebar</a></li>
+                                                    <li><a href="shop-product-vendor.php">Product – Vendor Infor</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="shop-filter.html">Shop – Filter</a></li>
-                                            <li><a href="shop-wishlist.html">Shop – Wishlist</a></li>
-                                            <li><a href="shop-cart.html">Shop – Cart</a></li>
-                                            <li><a href="shop-checkout.html">Shop – Checkout</a></li>
-                                            <li><a href="shop-compare.html">Shop – Compare</a></li>
+                                            <li><a href="shop-filter.php">Shop – Filter</a></li>
+                                            <li><a href="shop-wishlist.php">Shop – Wishlist</a></li>
+                                            <li><a href="shop-cart.php">Shop – Cart</a></li>
+                                            <li><a href="shop-checkout.php">Shop – Checkout</a></li>
+                                            <li><a href="shop-compare.php">Shop – Compare</a></li>
                                             <li>
                                                 <a href="#">Shop Invoice<i class="fi-rs-angle-right"></i></a>
                                                 <ul class="level-menu">
-                                                    <li><a href="shop-invoice-1.html">Shop Invoice 1</a></li>
-                                                    <li><a href="shop-invoice-2.html">Shop Invoice 2</a></li>
-                                                    <li><a href="shop-invoice-3.html">Shop Invoice 3</a></li>
-                                                    <li><a href="shop-invoice-4.html">Shop Invoice 4</a></li>
-                                                    <li><a href="shop-invoice-5.html">Shop Invoice 5</a></li>
-                                                    <li><a href="shop-invoice-6.html">Shop Invoice 6</a></li>
+                                                    <li><a href="shop-invoice-1.php">Shop Invoice 1</a></li>
+                                                    <li><a href="shop-invoice-2.php">Shop Invoice 2</a></li>
+                                                    <li><a href="shop-invoice-3.php">Shop Invoice 3</a></li>
+                                                    <li><a href="shop-invoice-4.php">Shop Invoice 4</a></li>
+                                                    <li><a href="shop-invoice-5.php">Shop Invoice 5</a></li>
+                                                    <li><a href="shop-invoice-6.php">Shop Invoice 6</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -368,12 +368,12 @@
                                     <li>
                                         <a href="#">Vendors <i class="fi-rs-angle-down"></i></a>
                                         <ul class="sub-menu">
-                                            <li><a href="vendors-grid.html">Vendors Grid</a></li>
-                                            <li><a href="vendors-list.html">Vendors List</a></li>
-                                            <li><a href="vendor-details-1.html">Vendor Details 01</a></li>
-                                            <li><a href="vendor-details-2.html">Vendor Details 02</a></li>
-                                            <li><a href="vendor-dashboard.html">Vendor Dashboard</a></li>
-                                            <li><a href="vendor-guide.html">Vendor Guide</a></li>
+                                            <li><a href="vendors-grid.php">Vendors Grid</a></li>
+                                            <li><a href="vendors-list.php">Vendors List</a></li>
+                                            <li><a href="vendor-details-1.php">Vendor Details 01</a></li>
+                                            <li><a href="vendor-details-2.php">Vendor Details 02</a></li>
+                                            <li><a href="vendor-dashboard.php">Vendor Dashboard</a></li>
+                                            <li><a href="vendor-guide.php">Vendor Guide</a></li>
                                         </ul>
                                     </li>
                                     <li class="position-static">
@@ -441,15 +441,15 @@
                                     <li>
                                         <a href="index.php?act=blog">Blog <i class="fi-rs-angle-down"></i></a>
                                         <ul class="sub-menu">
-                                            <li><a href="blog-category-grid.html">Blog Category Grid</a></li>
-                                            <li><a href="blog-category-list.html">Blog Category List</a></li>
-                                            <li><a href="blog-category-big.html">Blog Category Big</a></li>
-                                            <li><a href="blog-category-fullwidth.html">Blog Category Wide</a></li>
+                                            <li><a href="blog-category-grid.php">Blog Category Grid</a></li>
+                                            <li><a href="blog-category-list.php">Blog Category List</a></li>
+                                            <li><a href="blog-category-big.php">Blog Category Big</a></li>
+                                            <li><a href="blog-category-fullwidth.php">Blog Category Wide</a></li>
                                             <li>
                                                 <a href="#">Single Post <i class="fi-rs-angle-right"></i></a>
                                                 <ul class="level-menu level-menu-modify">
-                                                    <li><a href="blog-post-left.html">Left Sidebar</a></li>
-                                                    <li><a href="blog-post-right.html">Right Sidebar</a></li>
+                                                    <li><a href="blog-post-left.php">Left Sidebar</a></li>
+                                                    <li><a href="blog-post-right.php">Right Sidebar</a></li>
                                                     <li><a href="index.php?act=blog_post">No Sidebar</a></li>
                                                 </ul>
                                             </li>
@@ -458,19 +458,19 @@
                                     <li>
                                         <a href="#">Pages <i class="fi-rs-angle-down"></i></a>
                                         <ul class="sub-menu">
-                                            <li><a href="page-about.html">About Us</a></li>
-                                            <li><a href="pase-contact.html">Contact</a></li>
-                                            <li><a href="page-account.html">My Account</a></li>
+                                            <li><a href="page-about.php">About Us</a></li>
+                                            <li><a href="pase-contact.php">Contact</a></li>
+                                            <li><a href="page-account.php">My Account</a></li>
                                             <li><a href="index.php?act=login">Login</a></li>
                                             <li><a href="index.php?act=register">Register</a></li>
-                                            <li><a href="page-forgot-password.html">Forgot password</a></li>
+                                            <li><a href="page-forgot-password.php">Forgot password</a></li>
                                             <li><a href="index.php?act=reset_password">Reset password</a></li>
-                                            <li><a href="page-purchase-guide.html">Purchase Guide</a></li>
+                                            <li><a href="page-purchase-guide.php">Purchase Guide</a></li>
                                             <li><a href="index.php?act=privacy_policy">Privacy Policy</a></li>
                                             <li><a href="index.php?act=terms">Terms of Service</a></li>
-                                            <li><a href="page-404.html">404 Page</a></li>
-                                            <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
-                                            <li><a href="page-terms.html">Terms of Service</a></li>
+                                            <li><a href="page-404.php">404 Page</a></li>
+                                            <li><a href="page-privacy-policy.php">Privacy Policy</a></li>
+                                            <li><a href="page-terms.php">Terms of Service</a></li>
                                             <li><a href="index.php?act=page_404">404 Page</a></li>
                                         </ul>
                                     </li>
@@ -495,13 +495,13 @@
                     <div class="header-action-right d-block d-lg-none">
                         <div class="header-action-2">
                             <div class="header-action-icon-2">
-                                <a href="shop-wishlist.html">
+                                <a href="shop-wishlist.php">
                                     <img alt="Nest" src="view/assets/imgs/theme/icons/icon-heart.svg" />
                                     <span class="pro-count white">4</span>
                                 </a>
                             </div>
                             <div class="header-action-icon-2">
-                                <a class="mini-cart-icon" href="shop-cart.html">
+                                <a class="mini-cart-icon" href="shop-cart.php">
                                     <img alt="Nest" src="view/assets/imgs/theme/icons/icon-cart.svg" />
                                     <span class="pro-count white">2</span>
                                 </a>
@@ -537,8 +537,8 @@
                                             <h4>Total <span>$383.00</span></h4>
                                         </div>
                                         <div class="shopping-cart-button">
-                                            <a href="shop-cart.html">View cart</a>
-                                            <a href="shop-checkout.html">Checkout</a>
+                                            <a href="shop-cart.php">View cart</a>
+                                            <a href="shop-checkout.php">Checkout</a>
                                         </div>
                                     </div>
                                 </div>
@@ -574,47 +574,47 @@
                     <nav>
                         <ul class="mobile-menu font-heading">
                             <li class="menu-item-has-children">
-                                <a href="index.html">Home</a>
+                                <a href="index.php">Home</a>
                                 <ul class="dropdown">
-                                    <li><a href="index.html">Home 1</a></li>
-                                    <li><a href="index-2.html">Home 2</a></li>
-                                    <li><a href="index-3.html">Home 3</a></li>
-                                    <li><a href="index-4.html">Home 4</a></li>
-                                    <li><a href="index-5.html">Home 5</a></li>
-                                    <li><a href="index-6.html">Home 6</a></li>
+                                    <li><a href="index.php">Home 1</a></li>
+                                    <li><a href="index-2.php">Home 2</a></li>
+                                    <li><a href="index-3.php">Home 3</a></li>
+                                    <li><a href="index-4.php">Home 4</a></li>
+                                    <li><a href="index-5.php">Home 5</a></li>
+                                    <li><a href="index-6.php">Home 6</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="shop-grid-right.html">shop</a>
+                                <a href="shop-grid-right.php">shop</a>
                                 <ul class="dropdown">
-                                    <li><a href="shop-grid-right.html">Shop Grid – Right Sidebar</a></li>
-                                    <li><a href="shop-grid-left.html">Shop Grid – Left Sidebar</a></li>
-                                    <li><a href="shop-list-right.html">Shop List – Right Sidebar</a></li>
-                                    <li><a href="shop-list-left.html">Shop List – Left Sidebar</a></li>
-                                    <li><a href="shop-fullwidth.html">Shop - Wide</a></li>
+                                    <li><a href="shop-grid-right.php">Shop Grid – Right Sidebar</a></li>
+                                    <li><a href="shop-grid-left.php">Shop Grid – Left Sidebar</a></li>
+                                    <li><a href="shop-list-right.php">Shop List – Right Sidebar</a></li>
+                                    <li><a href="shop-list-left.php">Shop List – Left Sidebar</a></li>
+                                    <li><a href="shop-fullwidth.php">Shop - Wide</a></li>
                                     <li class="menu-item-has-children">
                                         <a href="#">Single Product</a>
                                         <ul class="dropdown">
                                             <li><a href="index.php?act=product_full">Product – Right Sidebar</a></li>
-                                            <li><a href="shop-product-left.html">Product – Left Sidebar</a></li>
-                                            <li><a href="shop-product-full.html">Product – No sidebar</a></li>
-                                            <li><a href="shop-product-vendor.html">Product – Vendor Infor</a></li>
+                                            <li><a href="shop-product-left.php">Product – Left Sidebar</a></li>
+                                            <li><a href="shop-product-full.php">Product – No sidebar</a></li>
+                                            <li><a href="shop-product-vendor.php">Product – Vendor Infor</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop-filter.html">Shop – Filter</a></li>
-                                    <li><a href="shop-wishlist.html">Shop – Wishlist</a></li>
-                                    <li><a href="shop-cart.html">Shop – Cart</a></li>
-                                    <li><a href="shop-checkout.html">Shop – Checkout</a></li>
-                                    <li><a href="shop-compare.html">Shop – Compare</a></li>
+                                    <li><a href="shop-filter.php">Shop – Filter</a></li>
+                                    <li><a href="shop-wishlist.php">Shop – Wishlist</a></li>
+                                    <li><a href="shop-cart.php">Shop – Cart</a></li>
+                                    <li><a href="shop-checkout.php">Shop – Checkout</a></li>
+                                    <li><a href="shop-compare.php">Shop – Compare</a></li>
                                     <li class="menu-item-has-children">
                                         <a href="#">Shop Invoice</a>
                                         <ul class="dropdown">
-                                            <li><a href="shop-invoice-1.html">Shop Invoice 1</a></li>
-                                            <li><a href="shop-invoice-2.html">Shop Invoice 2</a></li>
-                                            <li><a href="shop-invoice-3.html">Shop Invoice 3</a></li>
-                                            <li><a href="shop-invoice-4.html">Shop Invoice 4</a></li>
-                                            <li><a href="shop-invoice-5.html">Shop Invoice 5</a></li>
-                                            <li><a href="shop-invoice-6.html">Shop Invoice 6</a></li>
+                                            <li><a href="shop-invoice-1.php">Shop Invoice 1</a></li>
+                                            <li><a href="shop-invoice-2.php">Shop Invoice 2</a></li>
+                                            <li><a href="shop-invoice-3.php">Shop Invoice 3</a></li>
+                                            <li><a href="shop-invoice-4.php">Shop Invoice 4</a></li>
+                                            <li><a href="shop-invoice-5.php">Shop Invoice 5</a></li>
+                                            <li><a href="shop-invoice-6.php">Shop Invoice 6</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -622,12 +622,12 @@
                             <li class="menu-item-has-children">
                                 <a href="#">Vendors</a>
                                 <ul class="dropdown">
-                                    <li><a href="vendors-grid.html">Vendors Grid</a></li>
-                                    <li><a href="vendors-list.html">Vendors List</a></li>
-                                    <li><a href="vendor-details-1.html">Vendor Details 01</a></li>
-                                    <li><a href="vendor-details-2.html">Vendor Details 02</a></li>
-                                    <li><a href="vendor-dashboard.html">Vendor Dashboard</a></li>
-                                    <li><a href="vendor-guide.html">Vendor Guide</a></li>
+                                    <li><a href="vendors-grid.php">Vendors Grid</a></li>
+                                    <li><a href="vendors-list.php">Vendors List</a></li>
+                                    <li><a href="vendor-details-1.php">Vendor Details 01</a></li>
+                                    <li><a href="vendor-details-2.php">Vendor Details 02</a></li>
+                                    <li><a href="vendor-dashboard.php">Vendor Dashboard</a></li>
+                                    <li><a href="vendor-guide.php">Vendor Guide</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
@@ -663,17 +663,17 @@
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="blog-category-fullwidth.html">Blog</a>
+                                <a href="blog-category-fullwidth.php">Blog</a>
                                 <ul class="dropdown">
-                                    <li><a href="blog-category-grid.html">Blog Category Grid</a></li>
-                                    <li><a href="blog-category-list.html">Blog Category List</a></li>
-                                    <li><a href="blog-category-big.html">Blog Category Big</a></li>
-                                    <li><a href="blog-category-fullwidth.html">Blog Category Wide</a></li>
+                                    <li><a href="blog-category-grid.php">Blog Category Grid</a></li>
+                                    <li><a href="blog-category-list.php">Blog Category List</a></li>
+                                    <li><a href="blog-category-big.php">Blog Category Big</a></li>
+                                    <li><a href="blog-category-fullwidth.php">Blog Category Wide</a></li>
                                     <li class="menu-item-has-children">
                                         <a href="#">Single Product Layout</a>
                                         <ul class="dropdown">
-                                            <li><a href="blog-post-left.html">Left Sidebar</a></li>
-                                            <li><a href="blog-post-right.html">Right Sidebar</a></li>
+                                            <li><a href="blog-post-left.php">Left Sidebar</a></li>
+                                            <li><a href="blog-post-right.php">Right Sidebar</a></li>
                                             <li><a href="index.php?act=blog_post">No Sidebar</a></li>
                                         </ul>
                                     </li>
@@ -682,17 +682,17 @@
                             <li class="menu-item-has-children">
                                 <a href="#">Pages</a>
                                 <ul class="dropdown">
-                                    <li><a href="page-about.html">About Us</a></li>
-                                    <li><a href="page-contact.html">Contact</a></li>
-                                    <li><a href="page-account.html">My Account</a></li>
-                                    <li><a href="page-login.html">Login</a></li>
-                                    <li><a href="page-register.html">Register</a></li>
-                                    <li><a href="page-forgot-password.html">Forgot password</a></li>
+                                    <li><a href="page-about.php">About Us</a></li>
+                                    <li><a href="page-contact.php">Contact</a></li>
+                                    <li><a href="page-account.php">My Account</a></li>
+                                    <li><a href="page-login.php">Login</a></li>
+                                    <li><a href="page-register.php">Register</a></li>
+                                    <li><a href="page-forgot-password.php">Forgot password</a></li>
                                     <li><a href="index.php?act=reset_password">Reset password</a></li>
-                                    <li><a href="page-purchase-guide.html">Purchase Guide</a></li>
+                                    <li><a href="page-purchase-guide.php">Purchase Guide</a></li>
                                     <li><a href="index.php?act=privacy_policy">Privacy Policy</a></li>
                                     <li><a href="index.php?act=terms">Terms of Service</a></li>
-                                    <li><a href="page-404.html">404 Page</a></li>
+                                    <li><a href="page-404.php">404 Page</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
@@ -710,10 +710,10 @@
                 </div>
                 <div class="mobile-header-info-wrap">
                     <div class="single-mobile-header-info">
-                        <a href="page-contact.html"><i class="fi-rs-marker"></i> Our location </a>
+                        <a href="page-contact.php"><i class="fi-rs-marker"></i> Our location </a>
                     </div>
                     <div class="single-mobile-header-info">
-                        <a href="page-login.html"><i class="fi-rs-user"></i>Log In / Sign Up </a>
+                        <a href="page-login.php"><i class="fi-rs-user"></i>Log In / Sign Up </a>
                     </div>
                     <div class="single-mobile-header-info">
                         <a href="#"><i class="fi-rs-headphones"></i>(+01) - 2345 - 6789 </a>

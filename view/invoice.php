@@ -1,6 +1,6 @@
 <div class="invoice invoice-content invoice-1">
         <div class="back-top-home hover-up mt-30 ml-30">
-            <a class="hover-up" href="index.html"><i class="fi-rs-home mr-5"></i> Homepage</a>
+            <a class="hover-up" href="index.php"><i class="fi-rs-home mr-5"></i> Homepage</a>
         </div>
         <div class="container">
             <div class="row">
@@ -12,7 +12,7 @@
                                     <div class="col-sm-6">
                                         <div class="invoice-name">
                                             <div class="logo">
-                                                <a href="index.html"><img src="view/assets/imgs/theme/logo-light.svg" alt="logo" /></a>
+                                                <a href="index.php"><img src="view/assets/imgs/theme/logo-light.svg" alt="logo" /></a>
                                             </div>
                                         </div>
                                     </div>

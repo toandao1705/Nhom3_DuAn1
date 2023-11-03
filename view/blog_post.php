@@ -48,9 +48,9 @@
                                         <!--Entry bottom-->
                                         <div class="entry-bottom mt-50 mb-30">
                                             <div class="tags w-50 w-sm-100">
-                                                <a href="blog-category-big.html" rel="tag" class="hover-up btn btn-sm btn-rounded mr-10">deer</a>
-                                                <a href="blog-category-big.html" rel="tag" class="hover-up btn btn-sm btn-rounded mr-10">nature</a>
-                                                <a href="blog-category-big.html" rel="tag" class="hover-up btn btn-sm btn-rounded mr-10">conserve</a>
+                                                <a href="blog-category-big.php" rel="tag" class="hover-up btn btn-sm btn-rounded mr-10">deer</a>
+                                                <a href="blog-category-big.php" rel="tag" class="hover-up btn btn-sm btn-rounded mr-10">nature</a>
+                                                <a href="blog-category-big.php" rel="tag" class="hover-up btn btn-sm btn-rounded mr-10">conserve</a>
                                             </div>
                                             <div class="social-icons single-share">
                                                 <ul class="text-grey-5 d-inline-block">
@@ -65,7 +65,7 @@
                                         <!--Author box-->
                                         <div class="author-bio p-30 mt-50 border-radius-15 bg-white">
                                             <div class="author-image mb-30">
-                                                <a href="author.html"><img src="view/assets/imgs/blog/author-1.png" alt="" class="avatar"></a>
+                                                <a href="author.php"><img src="view/assets/imgs/blog/author-1.png" alt="" class="avatar"></a>
                                                 <div class="author-infor">
                                                     <h5 class="mb-5">Barbara Cartland</h5>
                                                     <p class="mb-0 text-muted font-xs">

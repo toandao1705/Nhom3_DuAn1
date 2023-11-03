@@ -2,7 +2,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.php?act=forgot_password" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+                    <a href="index.php" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
                     <span></span> Pages <span></span> My Account
                 </div>
             </div>

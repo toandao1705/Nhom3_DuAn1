@@ -2,8 +2,8 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
-                    <span></span> <a href="shop-grid-right.html">Vegetables & tubers</a> <span></span> Seeds of Change Organic
+                    <a href="index.php" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+                    <span></span> <a href="shop-grid-right.php">Vegetables & tubers</a> <span></span> Seeds of Change Organic
                 </div>
             </div>
         </div>
@@ -94,8 +94,8 @@
                                         </div>
                                         <div class="product-extra-link2">
                                             <button type="submit" class="button button-add-to-cart"><i class="fi-rs-shopping-cart"></i>Add to cart</button>
-                                            <a aria-label="Add To Wishlist" class="action-btn hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
-                                            <a aria-label="Compare" class="action-btn hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
+                                            <a aria-label="Add To Wishlist" class="action-btn hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                            <a aria-label="Compare" class="action-btn hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                         </div>
                                     </div>
                                     <div class="font-xs">
@@ -260,7 +260,7 @@
                                             <img src="view/assets/imgs/vendor/vendor-18.svg" alt="" />
                                             <div class="vendor-name ml-15">
                                                 <h6>
-                                                    <a href="vendor-details-2.html">Noodles Co.</a>
+                                                    <a href="vendor-details-2.php">Noodles Co.</a>
                                                 </h6>
                                                 <div class="product-rate-cover text-end">
                                                     <div class="product-rate d-inline-block">
@@ -445,8 +445,8 @@
                                                 </div>
                                                 <div class="product-action-1">
                                                     <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-search"></i></a>
-                                                    <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html" tabindex="0"><i class="fi-rs-heart"></i></a>
-                                                    <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html" tabindex="0"><i class="fi-rs-shuffle"></i></a>
+                                                    <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php" tabindex="0"><i class="fi-rs-heart"></i></a>
+                                                    <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php" tabindex="0"><i class="fi-rs-shuffle"></i></a>
                                                 </div>
                                                 <div class="product-badges product-badges-position product-badges-mrg">
                                                     <span class="hot">Hot</span>
@@ -475,8 +475,8 @@
                                                 </div>
                                                 <div class="product-action-1">
                                                     <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-search"></i></a>
-                                                    <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html" tabindex="0"><i class="fi-rs-heart"></i></a>
-                                                    <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html" tabindex="0"><i class="fi-rs-shuffle"></i></a>
+                                                    <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php" tabindex="0"><i class="fi-rs-heart"></i></a>
+                                                    <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php" tabindex="0"><i class="fi-rs-shuffle"></i></a>
                                                 </div>
                                                 <div class="product-badges product-badges-position product-badges-mrg">
                                                     <span class="sale">-12%</span>
@@ -505,8 +505,8 @@
                                                 </div>
                                                 <div class="product-action-1">
                                                     <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-search"></i></a>
-                                                    <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html" tabindex="0"><i class="fi-rs-heart"></i></a>
-                                                    <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html" tabindex="0"><i class="fi-rs-shuffle"></i></a>
+                                                    <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php" tabindex="0"><i class="fi-rs-heart"></i></a>
+                                                    <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php" tabindex="0"><i class="fi-rs-shuffle"></i></a>
                                                 </div>
                                                 <div class="product-badges product-badges-position product-badges-mrg">
                                                     <span class="new">New</span>
@@ -535,8 +535,8 @@
                                                 </div>
                                                 <div class="product-action-1">
                                                     <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-search"></i></a>
-                                                    <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html" tabindex="0"><i class="fi-rs-heart"></i></a>
-                                                    <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html" tabindex="0"><i class="fi-rs-shuffle"></i></a>
+                                                    <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php" tabindex="0"><i class="fi-rs-heart"></i></a>
+                                                    <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php" tabindex="0"><i class="fi-rs-shuffle"></i></a>
                                                 </div>
                                                 <div class="product-badges product-badges-position product-badges-mrg">
                                                     <span class="hot">Hot</span>

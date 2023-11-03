@@ -6,26 +6,26 @@
                         <div class="col-xl-3">
                             <h1 class="mb-15">Blog & News</h1>
                             <div class="breadcrumb">
-                                <a href="index.php?act=blog" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+                                <a href="index.php" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
                                 <span></span> Blog & News
                             </div>
                         </div>
                         <div class="col-xl-9 text-end d-none d-xl-block">
                             <ul class="tags-list">
                                 <li class="hover-up">
-                                    <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Shopping</a>
+                                    <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Shopping</a>
                                 </li>
                                 <li class="hover-up active">
-                                    <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Recips</a>
+                                    <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Recips</a>
                                 </li>
                                 <li class="hover-up">
-                                    <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Kitchen</a>
+                                    <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Kitchen</a>
                                 </li>
                                 <li class="hover-up">
-                                    <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>News</a>
+                                    <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>News</a>
                                 </li>
                                 <li class="hover-up mr-0">
-                                    <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Food</a>
+                                    <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Food</a>
                                 </li>
                             </ul>
                         </div>
@@ -88,17 +88,17 @@
                             <div class="row">
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-1.png" alt="" />
                                         </a>
                                         <div class="entry-meta">
-                                            <a class="entry-meta meta-2" href="blog-category-grid.html"><i class="fi-rs-heart"></i></a>
+                                            <a class="entry-meta meta-2" href="blog-category-grid.php"><i class="fi-rs-heart"></i></a>
                                         </div>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Side Dish</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Side Dish</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">The Intermediate Guide to Healthy Food</a>
+                                            <a href="blog-post-right.php">The Intermediate Guide to Healthy Food</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -111,14 +111,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-2.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Soups and Stews</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Soups and Stews</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">Summer Quinoa Salad Jars with Lemon Dill</a>
+                                            <a href="blog-post-right.php">Summer Quinoa Salad Jars with Lemon Dill</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -131,17 +131,17 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-3.png" alt="" />
                                         </a>
                                         <div class="entry-meta">
-                                            <a class="entry-meta meta-2" href="blog-category-grid.html"><i class="fi-rs-link"></i></a>
+                                            <a class="entry-meta meta-2" href="blog-category-grid.php"><i class="fi-rs-link"></i></a>
                                         </div>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Salad</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Salad</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">Caprese Chicken with Smashed Potatoes</a>
+                                            <a href="blog-post-right.php">Caprese Chicken with Smashed Potatoes</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -154,14 +154,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-4.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Dessert</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Dessert</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">Harissa Chickpeas with Whipped Feta</a>
+                                            <a href="blog-post-right.php">Harissa Chickpeas with Whipped Feta</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -174,14 +174,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-5.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Breakfast</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Breakfast</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">Almond Butter Chocolate Chip Zucchini Bars</a>
+                                            <a href="blog-post-right.php">Almond Butter Chocolate Chip Zucchini Bars</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -194,17 +194,17 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-6.png" alt="" />
                                         </a>
                                         <div class="entry-meta">
-                                            <a class="entry-meta meta-2" href="blog-category-grid.html"><i class="fi-rs-picture"></i></a>
+                                            <a class="entry-meta meta-2" href="blog-category-grid.php"><i class="fi-rs-picture"></i></a>
                                         </div>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Vegan</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Vegan</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">Smoky Beans & Greens Tacos with Aji Verde</a>
+                                            <a href="blog-post-right.php">Smoky Beans & Greens Tacos with Aji Verde</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -217,17 +217,17 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-7.png" alt="" />
                                         </a>
                                         <div class="entry-meta">
-                                            <a class="entry-meta meta-2" href="blog-category-grid.html"><i class="fi-rs-play-alt"></i></a>
+                                            <a class="entry-meta meta-2" href="blog-category-grid.php"><i class="fi-rs-play-alt"></i></a>
                                         </div>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Gluten Free</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Gluten Free</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">Sticky Ginger Rice Bowls with Pickled Veg</a>
+                                            <a href="blog-post-right.php">Sticky Ginger Rice Bowls with Pickled Veg</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -240,14 +240,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-8.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Side Dish</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Side Dish</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">Creamy Garlic Sun-Dried Tomato Pasta</a>
+                                            <a href="blog-post-right.php">Creamy Garlic Sun-Dried Tomato Pasta</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -260,14 +260,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-9.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Dairy Free</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Dairy Free</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">The Absolute Easiest Spinach and Pizza</a>
+                                            <a href="blog-post-right.php">The Absolute Easiest Spinach and Pizza</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -280,14 +280,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-10.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Salad</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Salad</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">Sticky Ginger Rice Bowls with Pickled</a>
+                                            <a href="blog-post-right.php">Sticky Ginger Rice Bowls with Pickled</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -300,14 +300,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-1.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Soups</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Soups</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">The Best Soft Chocolate Chip Cookies</a>
+                                            <a href="blog-post-right.php">The Best Soft Chocolate Chip Cookies</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -320,14 +320,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-12.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Vegetarian</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Vegetarian</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">Baked Mozzarella Chicken Rolls</a>
+                                            <a href="blog-post-right.php">Baked Mozzarella Chicken Rolls</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -340,14 +340,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-13.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html"> Dessert </a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php"> Dessert </a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">The Best Avocado Egg Salad</a>
+                                            <a href="blog-post-right.php">The Best Avocado Egg Salad</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -360,14 +360,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-14.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Vegetarian</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Vegetarian</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">The litigants on the screen are not actors</a>
+                                            <a href="blog-post-right.php">The litigants on the screen are not actors</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -380,14 +380,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.html">
+                                        <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-15.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
-                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.html">Vegetarian</a></h6>
+                                        <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Vegetarian</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.html">The litigants on the screen are not actors</a>
+                                            <a href="blog-post-right.php">The litigants on the screen are not actors</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -432,19 +432,19 @@
                                 <h5 class="section-title style-1 mb-30">Category</h5>
                                 <ul>
                                     <li>
-                                        <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-1.svg" alt="" />Milks & Dairies</a><span class="count">30</span>
+                                        <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-1.svg" alt="" />Milks & Dairies</a><span class="count">30</span>
                                     </li>
                                     <li>
-                                        <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-2.svg" alt="" />Clothing</a><span class="count">35</span>
+                                        <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-2.svg" alt="" />Clothing</a><span class="count">35</span>
                                     </li>
                                     <li>
-                                        <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods </a><span class="count">42</span>
+                                        <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods </a><span class="count">42</span>
                                     </li>
                                     <li>
-                                        <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-4.svg" alt="" />Baking material</a><span class="count">68</span>
+                                        <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-4.svg" alt="" />Baking material</a><span class="count">68</span>
                                     </li>
                                     <li>
-                                        <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a><span class="count">87</span>
+                                        <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a><span class="count">87</span>
                                     </li>
                                 </ul>
                             </div>
@@ -456,7 +456,7 @@
                                         <img src="view/assets/imgs/shop/thumbnail-3.jpg" alt="#" />
                                     </div>
                                     <div class="content pt-10">
-                                        <h5><a href="shop-product-detail.html">Chen Cardigan</a></h5>
+                                        <h5><a href="shop-product-detail.php">Chen Cardigan</a></h5>
                                         <p class="price mb-0 mt-5">$99.50</p>
                                         <div class="product-rate">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -468,7 +468,7 @@
                                         <img src="view/assets/imgs/shop/thumbnail-4.jpg" alt="#" />
                                     </div>
                                     <div class="content pt-10">
-                                        <h6><a href="shop-product-detail.html">Chen Sweater</a></h6>
+                                        <h6><a href="shop-product-detail.php">Chen Sweater</a></h6>
                                         <p class="price mb-0 mt-5">$89.50</p>
                                         <div class="product-rate">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -480,7 +480,7 @@
                                         <img src="view/assets/imgs/shop/thumbnail-5.jpg" alt="#" />
                                     </div>
                                     <div class="content pt-10">
-                                        <h6><a href="shop-product-detail.html">Colorful Jacket</a></h6>
+                                        <h6><a href="shop-product-detail.php">Colorful Jacket</a></h6>
                                         <p class="price mb-0 mt-5">$25</p>
                                         <div class="product-rate">
                                             <div class="product-rating" style="width: 60%"></div>
@@ -492,7 +492,7 @@
                                         <img src="view/assets/imgs/shop/thumbnail-6.jpg" alt="#" />
                                     </div>
                                     <div class="content pt-10">
-                                        <h6><a href="shop-product-detail.html">Lorem, ipsum</a></h6>
+                                        <h6><a href="shop-product-detail.php">Lorem, ipsum</a></h6>
                                         <p class="price mb-0 mt-5">$25</p>
                                         <div class="product-rate">
                                             <div class="product-rating" style="width: 60%"></div>
@@ -530,22 +530,22 @@
                                 <h5 class="section-title style-1 mb-30">Popular Tags</h5>
                                 <ul class="tags-list">
                                     <li class="hover-up">
-                                        <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Cabbage</a>
+                                        <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Cabbage</a>
                                     </li>
                                     <li class="hover-up">
-                                        <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Broccoli</a>
+                                        <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Broccoli</a>
                                     </li>
                                     <li class="hover-up">
-                                        <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Smoothie</a>
+                                        <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Smoothie</a>
                                     </li>
                                     <li class="hover-up">
-                                        <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Fruit</a>
+                                        <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Fruit</a>
                                     </li>
                                     <li class="hover-up mr-0">
-                                        <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Salad</a>
+                                        <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Salad</a>
                                     </li>
                                     <li class="hover-up mr-0">
-                                        <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Appetizer</a>
+                                        <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Appetizer</a>
                                     </li>
                                 </ul>
                             </div>

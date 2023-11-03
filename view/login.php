@@ -2,7 +2,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.php?act=login" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+                    <a href="index.php" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
                     <span></span> Pages <span></span> My Account
                 </div>
             </div>
@@ -20,7 +20,7 @@
                                     <div class="padding_eight_all bg-white">
                                         <div class="heading_s1">
                                             <h1 class="mb-5">Login</h1>
-                                            <p class="mb-30">Don't have an account? <a href="page-register.html">Create here</a></p>
+                                            <p class="mb-30">Don't have an account? <a href="index.php?act=register.php">Create here</a></p>
                                         </div>
                                         <form method="post">
                                             <div class="form-group">

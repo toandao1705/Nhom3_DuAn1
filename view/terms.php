@@ -2,7 +2,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+                    <a href="index.php" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
                     <span></span> Pages <span></span> Terms of Service
                 </div>
             </div>
@@ -49,7 +49,7 @@
                                         <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
                                         <p>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p>
                                         <h4>Contact Us</h4>
-                                        <p>If you have any questions about these Terms, please <a href="page-contact.html">contact us</a>.</p>
+                                        <p>If you have any questions about these Terms, please <a href="page-contact.php">contact us</a>.</p>
                                     </div>
                                 </div>
                             </div>
@@ -67,19 +67,19 @@
                                         <h5 class="section-title style-1 mb-30">Category</h5>
                                         <ul>
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-1.svg" alt="" />Milks & Dairies</a><span class="count">30</span>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-1.svg" alt="" />Milks & Dairies</a><span class="count">30</span>
                                             </li>
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-2.svg" alt="" />Clothing</a><span class="count">35</span>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-2.svg" alt="" />Clothing</a><span class="count">35</span>
                                             </li>
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods </a><span class="count">42</span>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods </a><span class="count">42</span>
                                             </li>
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-4.svg" alt="" />Baking material</a><span class="count">68</span>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-4.svg" alt="" />Baking material</a><span class="count">68</span>
                                             </li>
                                             <li>
-                                                <a href="shop-grid-right.html"> <img src="view/assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a><span class="count">87</span>
+                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a><span class="count">87</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -91,7 +91,7 @@
                                                 <img src="view/assets/imgs/shop/thumbnail-3.jpg" alt="#" />
                                             </div>
                                             <div class="content pt-10">
-                                                <h5><a href="shop-product-detail.html">Chen Cardigan</a></h5>
+                                                <h5><a href="shop-product-detail.php">Chen Cardigan</a></h5>
                                                 <p class="price mb-0 mt-5">$99.50</p>
                                                 <div class="product-rate">
                                                     <div class="product-rating" style="width: 90%"></div>
@@ -103,7 +103,7 @@
                                                 <img src="view/assets/imgs/shop/thumbnail-4.jpg" alt="#" />
                                             </div>
                                             <div class="content pt-10">
-                                                <h6><a href="shop-product-detail.html">Chen Sweater</a></h6>
+                                                <h6><a href="shop-product-detail.php">Chen Sweater</a></h6>
                                                 <p class="price mb-0 mt-5">$89.50</p>
                                                 <div class="product-rate">
                                                     <div class="product-rating" style="width: 80%"></div>
@@ -115,7 +115,7 @@
                                                 <img src="view/assets/imgs/shop/thumbnail-5.jpg" alt="#" />
                                             </div>
                                             <div class="content pt-10">
-                                                <h6><a href="shop-product-detail.html">Colorful Jacket</a></h6>
+                                                <h6><a href="shop-product-detail.php">Colorful Jacket</a></h6>
                                                 <p class="price mb-0 mt-5">$25</p>
                                                 <div class="product-rate">
                                                     <div class="product-rating" style="width: 60%"></div>
@@ -127,7 +127,7 @@
                                                 <img src="view/assets/imgs/shop/thumbnail-6.jpg" alt="#" />
                                             </div>
                                             <div class="content pt-10">
-                                                <h6><a href="shop-product-detail.html">Lorem, ipsum</a></h6>
+                                                <h6><a href="shop-product-detail.php">Lorem, ipsum</a></h6>
                                                 <p class="price mb-0 mt-5">$25</p>
                                                 <div class="product-rate">
                                                     <div class="product-rating" style="width: 60%"></div>

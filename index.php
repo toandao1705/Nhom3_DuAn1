@@ -44,7 +44,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case 'account':
             include "view/account.php";
             break;
-        case 'blog':
+        case 'blog_category':
             include "view/blog_category.php";
             break;
         case 'login':

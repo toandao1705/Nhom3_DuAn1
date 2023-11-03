@@ -2,7 +2,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+                    <a href="index.php" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
                     <span></span> Shop
                     <span></span> Checkout
                 </div>
@@ -679,7 +679,7 @@
                                     <tr>
                                         <td class="image product-thumbnail"><img src="view/assets/imgs/shop/product-1-1.jpg" alt="#"></td>
                                         <td>
-                                            <h6 class="w-160 mb-5"><a href="shop-product-full.html" class="text-heading">Yidarton Women Summer Blue</a></h6></span>
+                                            <h6 class="w-160 mb-5"><a href="shop-product-full.php" class="text-heading">Yidarton Women Summer Blue</a></h6></span>
                                             <div class="product-rate-cover">
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width:90%">
@@ -698,7 +698,7 @@
                                     <tr>
                                         <td class="image product-thumbnail"><img src="view/assets/imgs/shop/product-2-1.jpg" alt="#"></td>
                                         <td>
-                                            <h6 class="w-160 mb-5"><a href="shop-product-full.html" class="text-heading">Seeds of Change Organic Quinoa</a></h6></span>
+                                            <h6 class="w-160 mb-5"><a href="shop-product-full.php" class="text-heading">Seeds of Change Organic Quinoa</a></h6></span>
                                             <div class="product-rate-cover">
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width:90%">
@@ -717,7 +717,7 @@
                                     <tr>
                                         <td class="image product-thumbnail"><img src="view/assets/imgs/shop/product-3-1.jpg" alt="#"></td>
                                         <td>
-                                            <h6 class="w-160 mb-5"><a href="shop-product-full.html" class="text-heading">Angie’s Boomchickapop Sweet </a></h6></span>
+                                            <h6 class="w-160 mb-5"><a href="shop-product-full.php" class="text-heading">Angie’s Boomchickapop Sweet </a></h6></span>
                                             <div class="product-rate-cover">
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width:90%">

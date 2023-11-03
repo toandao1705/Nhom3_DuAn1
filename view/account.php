@@ -2,7 +2,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.php?act=account" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+                    <a href="index.php" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
                     <span></span> Pages <span></span> My Account
                 </div>
             </div>
@@ -162,7 +162,7 @@
                                                 <h5>Account Details</h5>
                                             </div>
                                             <div class="card-body">
-                                                <p>Already have an account? <a href="page-login.html">Log in instead!</a></p>
+                                                <p>Already have an account? <a href="index.php?act=login">Log in instead!</a></p>
                                                 <form method="post" name="enq">
                                                     <div class="row">
                                                         <div class="form-group col-md-6">
