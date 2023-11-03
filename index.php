@@ -43,6 +43,10 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/contact.php";
             break;
 
+        case 'search':
+            include "view/search.php";
+            break;
+
 
 
         default:

@@ -128,7 +128,7 @@
                     </div>
                     <div class="header-right">
                         <div class="search-style-2">
-                            <form action="#">
+                            <form action="index.php?act=search" method="post">
                                 <select class="select-active">
                                     <option>All Categories</option>
                                     <option>Milks and Dairies</option>
@@ -143,6 +143,7 @@
                                     <option>Ice cream</option>
                                 </select>
                                 <input type="text" placeholder="Search for items..." />
+                                <button type="submit"><i class="fi-rs-search"></i></button>
                             </form>
                         </div>
                         <div class="header-action-right">
