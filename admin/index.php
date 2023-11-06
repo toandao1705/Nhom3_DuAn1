@@ -6,6 +6,15 @@ include "component/header.php";
     if(isset($_GET['act'])){
         $act=$_GET['act'];
         switch($act){
+            case 'addbn' : 
+                include "banner/add.php";
+                break;
+            case 'listbn' : 
+                include "banner/list.php";
+                break;
+            case 'updatebn' : 
+                include "banner/update.php";
+                break;
             case 'adddm' : 
                 include "danhmuc/add.php";
                 break;

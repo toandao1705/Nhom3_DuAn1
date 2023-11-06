@@ -54,6 +54,12 @@
             </ul>
           </li>
           <li class="nav-item">
+            <a href="index.php?act=addbn" class="nav-link">
+            <i class="nav-icon fas fa-table"></i>
+              <p>Banner</p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="index.php?act=adddm" class="nav-link">
             <i class="nav-icon fas fa-table"></i>
               <p>Danh Mục</p>
