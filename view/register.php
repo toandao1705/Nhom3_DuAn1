@@ -17,7 +17,7 @@
                                     <div class="padding_eight_all bg-white">
                                         <div class="heading_s1">
                                             <h1 class="mb-5">Create an Account</h1>
-                                            <p class="mb-30">Already have an account? <a href="page-login.html">Login</a></p>
+                                            <p class="mb-30">Already have an account? <a href="index.php?act=login">Login</a></p>
                                         </div>
                                         <form method="post">
                                             <div class="form-group">
