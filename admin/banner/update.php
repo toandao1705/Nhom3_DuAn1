@@ -17,6 +17,14 @@
                 <input type="text" class="form-control" name="maloai" disabled>
               </div>
               <div class="form-group">
+                <label for="exampleInputEmail1">Title</label>
+                <input type="text" class="form-control" name="title">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Subtitle</label>
+                <input type="text" class="form-control" name="subtitle">
+              </div>
+              <div class="form-group">
                 <label for="hinh">Hình ảnh</label>
                 <div class="input-group">
                   <div class="custom-file">

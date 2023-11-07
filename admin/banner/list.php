@@ -14,6 +14,8 @@
                                     <tr>
                                         <th>Tích</th>
                                         <th>Mã</th>
+                                        <th>Title</th>
+                                        <th>Subtitle</th>
                                         <th>Hình ảnh</th>
                                         <th>Thao tác</th>
                                     </tr>
@@ -22,6 +24,8 @@
                                     <tr>
                                         <td><input type="checkbox"></td>
                                         <td>1</td>
+                                        <td>text</td>
+                                        <td>text</td>
                                         <td>no photo</td>
                                         <td>
                                             <a href="index.php?act=updatebn"><button class="btn btn-primary">Sửa</button></a>
