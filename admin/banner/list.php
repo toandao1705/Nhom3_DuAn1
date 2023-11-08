@@ -20,8 +20,25 @@
                                         <th>Thao tác</th>
                                     </tr>
                                 </thead>
+                                <?php
+                                    foreach($listbanner as $banner){
+                                        extract($banner);
+                                        echo '<tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>'.$id.'</td>
+                                            <td>'.$title.'</td>
+                                            <td>'.$subtitle.'</td>
+                                            <td>no photo</td>
+                                            <td>
+                                                <a href="index.php?act=updatebn"><button class="btn btn-primary">Sửa</button></a>
+                                                <a href="#"><button class="btn btn-danger">Xóa</button></a>
+
+                                            </td>
+                                        </tr>';
+                                    }
+                                ?>
                                 <tbody>
-                                    <tr>
+                                    <!-- <tr>
                                         <td><input type="checkbox"></td>
                                         <td>1</td>
                                         <td>text</td>
@@ -32,7 +49,7 @@
                                             <a href="#"><button class="btn btn-danger">Xóa</button></a>
 
                                         </td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
 
 
