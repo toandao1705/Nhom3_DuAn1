@@ -4,6 +4,7 @@ ob_start();
 session_start();
 include '../model/pdo.php';
 include '../model/user.php';
+include '../model/banner.php';
 include '../model/category.php';
 $act = 'home';
 if (isset($_SESSION['admin'])) {
@@ -17,6 +18,8 @@ if (isset($_SESSION['admin'])) {
                 include "banner/add.php";
                 break;
             case 'listbn':
+                $banner = new banner();
+                $listbanner = $banner->loadall_banner();
                 include "banner/list.php";
                 break;
             case 'updatebn':
