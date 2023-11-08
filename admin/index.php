@@ -1,8 +1,10 @@
+
 <?php
 ob_start();
 session_start();
 include '../model/pdo.php';
 include '../model/user.php';
+include '../model/category.php';
 $act = 'home';
 if (isset($_SESSION['admin'])) {
     // Nếu đã đăng nhập, bao gồm header, footer và sidebar
@@ -24,6 +26,8 @@ if (isset($_SESSION['admin'])) {
                 include "danhmuc/add.php";
                 break;
             case 'listdm':
+                $category = new category();
+                $categories = $category->loadall_danhmuc();
                 include "danhmuc/list.php";
                 break;
             case 'updatedm':
@@ -69,16 +73,14 @@ if (isset($_SESSION['admin'])) {
 } else {
 
     include "dangnhap/login.php";
-        // Nếu chưa đăng nhập, chỉ hiển thị trang đăng nhập
-        $user = new user();
-        //khai bao hai bien username va password lay tu input
-        $name = $_POST['name'] ?? '';
-        $pass = $_POST['pass'] ?? '';
-    
-        if ($user->checkUser($name, $pass)) {
-            $result = $user->userid($name, $pass);
-            $_SESSION['admin'] = $name; // kiem tra coi co nguoi dung hay chua
-        }
-        
-        
+    // Nếu chưa đăng nhập, chỉ hiển thị trang đăng nhập
+    $user = new user();
+    //khai bao hai bien username va password lay tu input
+    $name = $_POST['name'] ?? '';
+    $pass = $_POST['pass'] ?? '';
+
+    if ($user->checkUser($name, $pass)) {
+        $result = $user->userid($name, $pass);
+        $_SESSION['admin'] = $name; // kiem tra coi co nguoi dung hay chua
+    }
 }

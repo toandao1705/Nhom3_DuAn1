@@ -1,3 +1,4 @@
+
 <section class="content">
   <div class="container-fluid">
     <div class="row">
@@ -22,7 +23,6 @@
                 <span id="tenloai-error" class="error-text text-danger"></span>
               </div>
               <!-- /.card-body -->
-
               <div class="card-footer">
                 <div class="btn-group" role="group" aria-label="Actions">
                   <input type="submit" class="btn btn-primary" name="themmoi" value="THÊM MỚI">

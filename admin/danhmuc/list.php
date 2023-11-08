@@ -18,8 +18,23 @@
                                         <th>Thao tác</th>
                                     </tr>
                                 </thead>
+                                <?php
+                        foreach($categories as $category){
+                            extract($category);
+                            echo ' <tr>
+                                <td><input type="checkbox"></td>
+                                <td>'.$id.'</td>
+                                <td>'.$name.'</td>
+                                <td>
+                                    <a href="index.php?act=updatedm"><button class="btn btn-primary">Sửa</button></a>
+                                    <a href="#"><button class="btn btn-danger">Xóa</button></a>
+
+                                </td>
+                            </tr>';
+                        }
+                    ?>
                                 <tbody>
-                                    <tr>
+                                    <!-- <tr>
                                         <td><input type="checkbox"></td>
                                         <td>1</td>
                                         <td>Đồ Khô</td>
@@ -28,7 +43,7 @@
                                             <a href="#"><button class="btn btn-danger">Xóa</button></a>
 
                                         </td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
 
 
