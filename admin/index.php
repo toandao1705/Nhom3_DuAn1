@@ -26,6 +26,12 @@ if (isset($_SESSION['admin'])) {
                 include "banner/update.php";
                 break;
             case 'adddm':
+                $category = new category();
+                if (isset($_POST['themmoi'])&&($_POST['themmoi'])) {
+                    $tenloai=$_POST['tenloai'];
+                    $categories = $category->insert_danhmuc($tenloai);
+                    $thongbao="Thêm danh mục thành công";
+                }
                 include "danhmuc/add.php";
                 break;
             case 'listdm':
@@ -34,7 +40,22 @@ if (isset($_SESSION['admin'])) {
                 include "danhmuc/list.php";
                 break;
             case 'updatedm':
+                $category = new category();
+                if (isset($_GET['id'])&&($_GET['id'])>0) {
+                    $categories = $category->loadone_danhmuc($_GET['id']);
+                }
                 include "danhmuc/update.php";
+                break;
+            case 'update_category':
+                $category = new category();
+                if (isset($_POST['capnhat'])&&($_POST['capnhat'])) {
+                    $tenloai=$_POST['tenloai'];
+                    $id=$_POST['id'];
+                    $category->update_danhmuc($id,$tenloai);
+                }
+                $sql="SELECT * FROM category ORDER BY id DESC";
+                $categories=$category->loadall_danhmuc();
+                include "danhmuc/list.php";
                 break;
             case 'addsp':
                 include "sanpham/add.php";

@@ -21,14 +21,15 @@
                                 <?php
                                     foreach($categories as $category){
                                         extract($category);
+                                        $suadm="index.php?act=updatedm&id=".$id;
+                                        $xoadm="index.php?act=xoadm&id=".$id;
                                         echo ' <tr>
                                             <td><input type="checkbox"></td>
                                             <td>'.$id.'</td>
                                             <td>'.$name.'</td>
                                             <td>
-                                                <a href="index.php?act=updatedm"><button class="btn btn-primary">Sửa</button></a>
-                                                <a href="#"><button class="btn btn-danger">Xóa</button></a>
-
+                                                <a href="'.$suadm.'"><button class="btn btn-primary" value="">Sửa</button></a>
+                                                <a href="'.$xoadm.'"><button class="btn btn-danger" value="">Xóa</button></a>
                                             </td>
                                         </tr>';
                                     }
