@@ -1,3 +1,8 @@
+<?php
+if (is_array($product)) {
+  extract($product);
+}
+?>
 <section class="content">
   <div class="container-fluid">
     <div class="row">
@@ -10,54 +15,83 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form action="index.php?act=updatesp" method="post" enctype="multipart/form-data" id="myForm" onsubmit="return validateForm()">
+          <form action="index.php?act=update_product" method="post" enctype="multipart/form-data" id="myForm" onsubmit="return validateForm()">
             <div class="card-body">
               <div class="form-group">
                 <select name="iddm" id="">
-                  <option value="0" selected>Tất cả</option>
-                  <option value="0" selected>Rau Củ</option>
-                  <option value="0" selected>Thịt</option>
-                  
+                  <?php
+                  foreach ($categories as $category) {
+                    if ($id_category == $category['id']) $s = "selected";
+                    else $s = "";
+                    echo '<option value="' . $category['id'] . '" ' . $s . '>' . $category['name'] . '</option>';
+                  }
+                  ?>
+
                 </select>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Tên sản phẩm</label>
-                <input type="text" class="form-control" name="tensp" value="">
+                <input type="text" class="form-control" name="tensp" value="<?= $name ?>">
                 <span id="tensp-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Giá</label>
-                <input type="text" class="form-control" name="giasp" value="">
+                <input type="text" class="form-control" name="giasp" value="<?= $price ?>">
                 <span id="giasp-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">
                 <label for="hinh">Hình ảnh</label>
-                <div class="input-group">
-                  <div>
-                    
-                  </div>
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="hinh" name="hinh" id="hinh">
-                    <label class="custom-file-label" for="hinh"></label>
-                  </div>
+                <div class="input-group mb-3">
+                  <label class="custom-file-label" for="hinh">Chọn tệp</label>
+                  <input type="file" class="custom-file-input" id="hinh" name="hinh[]" multiple>
                 </div>
+
+                <div class="row mt-3">
+                  <?php
+                  // Load all images associated with the product
+                  $allImages = $loadedProducts->loadall_images($id);
+
+                  // Display each image
+                  if (is_array($allImages) || is_object($allImages)) {
+                    foreach ($allImages as $image) {
+                      $imagePath = "../upload/" . $image['img'];
+                      if (is_file($imagePath)) {
+                        echo '
+                  <div class="col-md-2 mb-3">
+                      <img src="' . $imagePath . '" class="img-thumbnail" alt="Image" style="width=200px; height:260px;">
+                  </div>';
+                      }
+                    }
+                } else {
+                    // Xử lý khi $allImages không phải là mảng hoặc đối tượng
+                    echo "Không phải là mảng hoặc đối tượng!";
+                }
+                  
+                  ?>
+                </div>
+
                 <span id="hinh-error" class="error-text text-danger"></span>
               </div>
+
+
               <div class="form-group">
                 <label for="exampleInputPassword1">Mô tả</label>
-                <textarea name="mota" id="" cols="30" rows="10" class="form-control"></textarea>
+                <textarea name="mota" id="" cols="30" rows="10" class="form-control"><?= $describe ?></textarea>
                 <span id="mota-error" class="error-text text-danger"></span>
               </div>
             </div>
 
             <div class="card-footer">
               <div class="btn-group" role="group" aria-label="Actions">
-                <input type="hidden" class="btn btn-primary" name="id" value="">
+                <input type="hidden" class="btn btn-primary" name="id" value="<?= $id ?>">
                 <input type="submit" class="btn btn-secondary" name="capnhat" value="CẬP NHẬT">
                 <input type="reset" value="NHẬP LẠi" class="btn btn-info">
                 <a href="index.php?act=listsp"><input class="btn btn-info" type="button" value="DANH SÁCH"></a>
               </div>
             </div>
+            <?php
+            if (isset($thongbao) && ($thongbao != "")) echo $thongbao;
+            ?>
           </form>
 
           <script>

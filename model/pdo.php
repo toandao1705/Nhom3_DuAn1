@@ -90,4 +90,13 @@ class connect
             unset($conn);
         }
     }
+
+    //Truy vấn tham số
+    function pdo_query_with_params($query, $params) {
+        $conn = $this->pdo_get_connection();
+        $stmt = $conn->prepare($query);
+        $stmt->execute($params);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+    
 }

@@ -6,6 +6,7 @@ include '../model/pdo.php';
 include '../model/user.php';
 include '../model/banner.php';
 include '../model/category.php';
+include '../model/product.php';
 $act = 'home';
 if (isset($_SESSION['admin'])) {
     // Nếu đã đăng nhập, bao gồm header, footer và sidebar
@@ -27,10 +28,10 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'adddm':
                 $category = new category();
-                if (isset($_POST['themmoi'])&&($_POST['themmoi'])) {
-                    $tenloai=$_POST['tenloai'];
+                if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
+                    $tenloai = $_POST['tenloai'];
                     $categories = $category->insert_danhmuc($tenloai);
-                    $thongbao="Thêm danh mục thành công";
+                    $thongbao = "Thêm danh mục thành công";
                 }
                 include "danhmuc/add.php";
                 break;
@@ -41,30 +42,112 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'updatedm':
                 $category = new category();
-                if (isset($_GET['id'])&&($_GET['id'])>0) {
+                if (isset($_GET['id']) && ($_GET['id']) > 0) {
                     $categories = $category->loadone_danhmuc($_GET['id']);
                 }
                 include "danhmuc/update.php";
                 break;
             case 'update_category':
                 $category = new category();
-                if (isset($_POST['capnhat'])&&($_POST['capnhat'])) {
-                    $tenloai=$_POST['tenloai'];
-                    $id=$_POST['id'];
-                    $category->update_danhmuc($id,$tenloai);
+                if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
+                    $tenloai = $_POST['tenloai'];
+                    $id = $_POST['id'];
+                    $category->update_danhmuc($id, $tenloai);
                 }
-                $sql="SELECT * FROM category ORDER BY id DESC";
-                $categories=$category->loadall_danhmuc();
+                $sql = "SELECT * FROM category ORDER BY id DESC";
+                $categories = $category->loadall_danhmuc();
                 include "danhmuc/list.php";
                 break;
             case 'addsp':
+                $products = new products();
+                $category = new category();
+                if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
+                    $iddm = $_POST['iddm'];
+                    $tensp = $_POST['tensp'];
+                    $giasp = $_POST['giasp'];
+                    $mota = $_POST['mota'];
+
+                    if (isset($_FILES['hinh']['name']) && !empty($_FILES['hinh']['name'][0])) {
+                        $images = $_FILES['hinh']['name'];
+                        $target_dir = "../upload/";
+                        $target_file = $target_dir . basename($_FILES["hinh"]["name"][0]);
+                        foreach ($images as $key => $image) {
+                            $target_file = $target_dir . basename($image);
+                            if (move_uploaded_file($_FILES["hinh"]["tmp_name"][$key], $target_file)) {
+                                // File uploaded successfully
+                            } else {
+                                // Error uploading file
+                            }
+                        }
+                    }
+
+                    $images = $_FILES['hinh']['name'];
+                    $products->insert_sanpham($tensp, $giasp, $mota, $iddm, $images);
+                    $thongbao = "Thêm thành công";
+                }
+                $categories = $category->loadall_danhmuc();
                 include "sanpham/add.php";
                 break;
             case 'listsp':
+                $loadedProducts = new products();
+                $category = new category();
+                if (isset($_POST['listok']) && ($_POST['listok'])) {
+                    $kyw = $_POST['kyw'];
+                    $iddm = $_POST['iddm'];
+                } else {
+                    $kyw = '';
+                    $iddm = 0;
+                }
+                $categories = $category->loadall_danhmuc();
+                $productsList = $loadedProducts->loadall_sanpham($kyw, $iddm);
+
                 include "sanpham/list.php";
                 break;
             case 'updatesp':
+                $loadedProducts = new products();
+                $category = new category();
+                if (isset($_GET['id']) && ($_GET['id']) > 0) {
+                    $product = $loadedProducts->loadone_sanpham($_GET['id']);
+                }
+                $categories = $category->loadall_danhmuc();
                 include "sanpham/update.php";
+                break;
+            case 'update_product':
+                $loadedProducts = new products();
+                $category = new category();
+                if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
+                    $id = $_POST['id'];
+                    $id_category = $_POST['iddm'];
+                    $tensp = $_POST['tensp'];
+                    $giasp = $_POST['giasp'];
+                    $mota = $_POST['mota'];
+                    // ...
+                    $images = $_FILES['hinh']['name'];
+                    $target_dir = "../upload/";
+                    if (isset($_FILES['hinh']['name']) && !empty($_FILES['hinh']['name'][0])) {
+                        
+
+                        foreach ($images as $key => $image) {
+                            $target_file = $target_dir . basename($image);
+
+                            if (move_uploaded_file($_FILES["hinh"]["tmp_name"][$key], $target_file)) {
+                                // File uploaded successfully
+                            } else {
+                                // Error uploading file
+                            }
+                        }
+
+                        // Truyền đường dẫn của hình ảnh vào hàm update_sanpham
+                        
+                    }
+                    // ...
+                    $loadedProducts->update_sanpham($id, $id_category, $tensp, $giasp, $mota, $images);
+                    $thongbao = "Cập nhật thành công";
+
+                }
+                // $sql="SELECT * FROM sanpham order by id desc";
+                $productsList = $loadedProducts->loadall_sanpham("", 0);
+                include "sanpham/list.php";
                 break;
             case 'listtk':
                 include "taikhoan/list.php";

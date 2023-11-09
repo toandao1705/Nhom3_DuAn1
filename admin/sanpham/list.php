@@ -13,8 +13,12 @@
                                     <input type="text" name="kyw" class="form-control" placeholder="Từ khóa">
                                     <select name="iddm" id="iddm" class="form-select">
                                         <option value="0" selected>Tất cả</option>
-                                        <option value="0">Rau Củ</option>
-                                        <option value="0">Thịt</option>
+                                        <?php
+                                        foreach ($categories as $category) {
+                                            extract($category);
+                                            echo '<option value="' . $id . '">' . $name . '</option>';
+                                        }
+                                        ?>
 
                                     </select>
                                     <div class="input-group-append">
@@ -42,21 +46,41 @@
                                         <th></th>
                                     </tr>
                                 </thead>
-                                <tbody id="product-table">
-                                    <tr>
-                                        <td><input class="checkbox" type="checkbox"></td>
-                                        <td>Rau Củ</td>
-                                        <td>Cà Chua</td>
-                                        <td></td>
-                                        <td>900đ</td>
-                                        <td>20</td>
-                                        <td>
-                                            <a href="index.php?act=updatesp"><button class="btn btn-primary">Sửa</button></a>
-                                            <a href="#"><button class="btn btn-danger">Xóa</button></a>
+                                <?php
+                                foreach ($productsList as $product) {
+                                    extract($product);
+                                    $suasp = "index.php?act=updatesp&id=" . $id;
+                                    $xoasp = "index.php?act=xoasp&id=" . $id;
+                                    $hinhpath = "../upload/";
+                                    // Lấy danh sách hình ảnh từ đối tượng $loadedProducts
+                                    $images = $loadedProducts->load_images($id);
+                                
+                                    // Chỉ lấy ảnh đầu tiên nếu có
+                                    $imageColumn = '';
+                                    if (!empty($images)) {
+                                        $imageColumn = '<img src="'.$hinhpath. $images[0]['img'] . '" alt="Image" style="max-width: 100px;">';
+                                    }
+                                
+                                    echo '
+                                        <tr>
+                                            <td><input class="checkbox" type="checkbox"></td>
+                                            <td>' . $id_category . '</td>
+                                            <td>' . $name . '</td>
+                                            <td>' . $imageColumn . '</td>
+                                            <td>' . $price . '</td>
+                                            <td>' . $view . '</td>
+                                            <td>
+                                                <a href="' . $suasp . '"><button class="btn btn-primary">Sửa</button></a>
+                                                <a href="' . $xoasp . '"><button class="btn btn-danger">Xóa</button></a>
+                                            </td>
+                                        </tr>
+                                    ';
+                                }
+                                
+                                
+                                
+                                ?>
 
-                                        </td>
-                                    </tr>
-                                </tbody>
 
 
                             </table>

@@ -15,9 +15,12 @@
               <div class="form-group">
                 <label for="iddm">Danh mục</label>
                 <select class="form-select" name="iddm" id="iddm">
-                    <option value="1">Đồ Tươi</option>
-                    <option value="1">Thịt</option>
-                    <option value="1">Rau Củ</option>
+                  <?php
+                  foreach ($categories as $category) {
+                    extract($category);
+                    echo '<option value="' . $id . '">' . $name . '</option>';
+                  }
+                  ?>
                 </select>
               </div>
 
@@ -35,13 +38,13 @@
                 <label for="hinh">Hình ảnh</label>
                 <div class="input-group">
                   <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="hinh" name="hinh" id="hinh">
+                    <input type="file" class="custom-file-input" id="hinh" name="hinh[]" multiple>
                     <label class="custom-file-label" for="hinh">Chọn tệp</label>
                   </div>
-
                 </div>
                 <span id="hinh-error" class="error-text text-danger"></span>
               </div>
+
 
               <div class="form-group">
                 <label for="exampleInputPassword1">Mô tả</label>
@@ -57,6 +60,9 @@
                   <a href="index.php?act=listsp" class="btn btn-info">DANH SÁCH</a>
                 </div>
               </div>
+              <?php
+              if (isset($thongbao) && ($thongbao != "")) echo $thongbao;
+              ?>
             </div>
           </form>
 
