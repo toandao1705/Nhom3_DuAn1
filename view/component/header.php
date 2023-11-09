@@ -327,54 +327,9 @@
                                     <li>
                                         <a class="active" href="index.php">Home</a>
                                     </li>
-                                    <li>
-                                        <a href="index.php?act=about">About</a>
-                                    </li>
+                                    
                                     <li>
                                         <a href="index.php?act=shop">Shop <i class="fi-rs-angle-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="shop-grid-right.php">Shop Grid – Right Sidebar</a></li>
-                                            <li><a href="shop-grid-left.php">Shop Grid – Left Sidebar</a></li>
-                                            <li><a href="shop-list-right.php">Shop List – Right Sidebar</a></li>
-                                            <li><a href="shop-list-left.php">Shop List – Left Sidebar</a></li>
-                                            <li><a href="shop-fullwidth.php">Shop - Wide</a></li>
-                                            <li>
-                                                <a href="#">Single Product <i class="fi-rs-angle-right"></i></a>
-                                                <ul class="level-menu">
-                                                    <li><a href="index.php?act=product_full">Product – Right Sidebar</a></li>
-                                                    <li><a href="shop-product-left.php">Product – Left Sidebar</a></li>
-                                                    <li><a href="shop-product-full.php">Product – No sidebar</a></li>
-                                                    <li><a href="shop-product-vendor.php">Product – Vendor Infor</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="shop-filter.php">Shop – Filter</a></li>
-                                            <li><a href="shop-wishlist.php">Shop – Wishlist</a></li>
-                                            <li><a href="shop-cart.php">Shop – Cart</a></li>
-                                            <li><a href="shop-checkout.php">Shop – Checkout</a></li>
-                                            <li><a href="shop-compare.php">Shop – Compare</a></li>
-                                            <li>
-                                                <a href="#">Shop Invoice<i class="fi-rs-angle-right"></i></a>
-                                                <ul class="level-menu">
-                                                    <li><a href="shop-invoice-1.php">Shop Invoice 1</a></li>
-                                                    <li><a href="shop-invoice-2.php">Shop Invoice 2</a></li>
-                                                    <li><a href="shop-invoice-3.php">Shop Invoice 3</a></li>
-                                                    <li><a href="shop-invoice-4.php">Shop Invoice 4</a></li>
-                                                    <li><a href="shop-invoice-5.php">Shop Invoice 5</a></li>
-                                                    <li><a href="shop-invoice-6.php">Shop Invoice 6</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Vendors <i class="fi-rs-angle-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="vendors-grid.php">Vendors Grid</a></li>
-                                            <li><a href="vendors-list.php">Vendors List</a></li>
-                                            <li><a href="vendor-details-1.php">Vendor Details 01</a></li>
-                                            <li><a href="vendor-details-2.php">Vendor Details 02</a></li>
-                                            <li><a href="vendor-dashboard.php">Vendor Dashboard</a></li>
-                                            <li><a href="vendor-guide.php">Vendor Guide</a></li>
-                                        </ul>
                                     </li>
                                     <li class="position-static">
                                         <a href="#">Mega menu <i class="fi-rs-angle-down"></i></a>
@@ -439,40 +394,10 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="index.php?act=blog">Blog <i class="fi-rs-angle-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-category-grid.php">Blog Category Grid</a></li>
-                                            <li><a href="blog-category-list.php">Blog Category List</a></li>
-                                            <li><a href="blog-category-big.php">Blog Category Big</a></li>
-                                            <li><a href="blog-category-fullwidth.php">Blog Category Wide</a></li>
-                                            <li>
-                                                <a href="#">Single Post <i class="fi-rs-angle-right"></i></a>
-                                                <ul class="level-menu level-menu-modify">
-                                                    <li><a href="blog-post-left.php">Left Sidebar</a></li>
-                                                    <li><a href="blog-post-right.php">Right Sidebar</a></li>
-                                                    <li><a href="index.php?act=blog_post">No Sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                        <a href="index.php?act=about">About</a>
                                     </li>
                                     <li>
-                                        <a href="#">Pages <i class="fi-rs-angle-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="page-about.php">About Us</a></li>
-                                            <li><a href="pase-contact.php">Contact</a></li>
-                                            <li><a href="page-account.php">My Account</a></li>
-                                            <li><a href="index.php?act=login">Login</a></li>
-                                            <li><a href="index.php?act=register">Register</a></li>
-                                            <li><a href="page-forgot-password.php">Forgot password</a></li>
-                                            <li><a href="index.php?act=reset_password">Reset password</a></li>
-                                            <li><a href="page-purchase-guide.php">Purchase Guide</a></li>
-                                            <li><a href="index.php?act=privacy_policy">Privacy Policy</a></li>
-                                            <li><a href="index.php?act=terms">Terms of Service</a></li>
-                                            <li><a href="page-404.php">404 Page</a></li>
-                                            <li><a href="page-privacy-policy.php">Privacy Policy</a></li>
-                                            <li><a href="page-terms.php">Terms of Service</a></li>
-                                            <li><a href="index.php?act=page_404">404 Page</a></li>
-                                        </ul>
+                                        <a href="index.php?act=blog">Blog <i class="fi-rs-angle-down"></i></a>
                                     </li>
                                     <li>
                                         <a href="index.php?act=contact">Contact</a>

@@ -90,6 +90,8 @@
                                     <div class="post-thumb">
                                         <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-1.png" alt="" />
+                                        <a href="index.php?act=blog_post">
+                                            <img class="border-radius-15" src="view/assets/imgs/blog/blog-1.png" alt="" />
                                         </a>
                                         <div class="entry-meta">
                                             <a class="entry-meta meta-2" href="blog-category-grid.php"><i class="fi-rs-heart"></i></a>
@@ -98,7 +100,7 @@
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Side Dish</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">The Intermediate Guide to Healthy Food</a>
+                                            <a href="index.php?act=blog_post">The Intermediate Guide to Healthy Food</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -111,14 +113,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                                        <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-2.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Soups and Stews</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">Summer Quinoa Salad Jars with Lemon Dill</a>
+                                            <a href="index.php?act=blog_post">Summer Quinoa Salad Jars with Lemon Dill</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -131,7 +133,7 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                                        <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-3.png" alt="" />
                                         </a>
                                         <div class="entry-meta">
@@ -141,7 +143,7 @@
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Salad</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">Caprese Chicken with Smashed Potatoes</a>
+                                            <a href="index.php?act=blog_post">Caprese Chicken with Smashed Potatoes</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -154,14 +156,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                                        <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-4.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Dessert</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">Harissa Chickpeas with Whipped Feta</a>
+                                            <a href="index.php?act=blog_post">Harissa Chickpeas with Whipped Feta</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -174,14 +176,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                                        <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-5.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Breakfast</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">Almond Butter Chocolate Chip Zucchini Bars</a>
+                                            <a href="index.php?act=blog_post">Almond Butter Chocolate Chip Zucchini Bars</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -194,7 +196,7 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                                        <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-6.png" alt="" />
                                         </a>
                                         <div class="entry-meta">
@@ -204,7 +206,7 @@
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Vegan</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">Smoky Beans & Greens Tacos with Aji Verde</a>
+                                            <a href="index.php?act=blog_post">Smoky Beans & Greens Tacos with Aji Verde</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -217,7 +219,7 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                                        <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-7.png" alt="" />
                                         </a>
                                         <div class="entry-meta">
@@ -227,7 +229,7 @@
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Gluten Free</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">Sticky Ginger Rice Bowls with Pickled Veg</a>
+                                            <a href="index.php?act=blog_post">Sticky Ginger Rice Bowls with Pickled Veg</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -240,14 +242,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                               <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-8.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Side Dish</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">Creamy Garlic Sun-Dried Tomato Pasta</a>
+                                            <a href="index.php?act=blog_post">Creamy Garlic Sun-Dried Tomato Pasta</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -260,14 +262,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                                        <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-9.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Dairy Free</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">The Absolute Easiest Spinach and Pizza</a>
+                                            <a href="index.php?act=blog_post">The Absolute Easiest Spinach and Pizza</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -280,14 +282,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                                        <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-10.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Salad</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">Sticky Ginger Rice Bowls with Pickled</a>
+                                            <a href="index.php?act=blog_post">Sticky Ginger Rice Bowls with Pickled</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -300,14 +302,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                                        <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-1.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Soups</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">The Best Soft Chocolate Chip Cookies</a>
+                                            <a href="index.php?act=blog_post">The Best Soft Chocolate Chip Cookies</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -320,14 +322,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                                        <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-12.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Vegetarian</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">Baked Mozzarella Chicken Rolls</a>
+                                            <a href="index.php?act=blog_post">Baked Mozzarella Chicken Rolls</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -340,14 +342,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                                        <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-13.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php"> Dessert </a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">The Best Avocado Egg Salad</a>
+                                            <a href="index.php?act=blog_post">The Best Avocado Egg Salad</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -360,14 +362,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                                        <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-14.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Vegetarian</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">The litigants on the screen are not actors</a>
+                                            <a href="index.php?act=blog_post">The litigants on the screen are not actors</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
@@ -380,14 +382,14 @@
                                 </article>
                                 <article class="col-xl-4 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
                                     <div class="post-thumb">
-                                        <a href="blog-post-right.php">
+                                        <a href="index.php?act=blog_post">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-15.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="entry-content-2">
                                         <h6 class="mb-10 font-sm"><a class="entry-meta text-muted" href="blog-category-grid.php">Vegetarian</a></h6>
                                         <h4 class="post-title mb-15">
-                                            <a href="blog-post-right.php">The litigants on the screen are not actors</a>
+                                            <a href="index.php?act=blog_post">The litigants on the screen are not actors</a>
                                         </h4>
                                         <div class="entry-meta font-xs color-grey mt-10 pb-10">
                                             <div>
