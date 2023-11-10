@@ -37,7 +37,8 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'listdm':
                 $category = new category();
-                $categories = $category->loadall_danhmuc();
+                $delete = 0;
+                $categories = $category->status_danhmuc($delete);
                 include "danhmuc/list.php";
                 break;
             case 'updatedm':
@@ -55,7 +56,8 @@ if (isset($_SESSION['admin'])) {
                     $category->update_danhmuc($id, $tenloai);
                 }
                 $sql = "SELECT * FROM category ORDER BY id DESC";
-                $categories = $category->loadall_danhmuc();
+                $status = 0;
+                $categories = $category->status_danhmuc($status);
                 include "danhmuc/list.php";
                 break;
             case 'addsp':
@@ -125,7 +127,7 @@ if (isset($_SESSION['admin'])) {
                     $images = $_FILES['hinh']['name'];
                     $target_dir = "../upload/";
                     if (isset($_FILES['hinh']['name']) && !empty($_FILES['hinh']['name'][0])) {
-                        
+
 
                         foreach ($images as $key => $image) {
                             $target_file = $target_dir . basename($image);
@@ -138,16 +140,37 @@ if (isset($_SESSION['admin'])) {
                         }
 
                         // Truyền đường dẫn của hình ảnh vào hàm update_sanpham
-                        
+
                     }
                     // ...
                     $loadedProducts->update_sanpham($id, $id_category, $tensp, $giasp, $mota, $images);
                     $thongbao = "Cập nhật thành công";
-
                 }
                 // $sql="SELECT * FROM sanpham order by id desc";
                 $productsList = $loadedProducts->loadall_sanpham("", 0);
                 include "sanpham/list.php";
+                break;
+            case 'list_delete_history':
+                $category = new category();
+                $delete = 1;
+                $categories = $category->status_danhmuc($delete);
+                include "danhmuc/delete.php";
+                break;
+            case 'delete_hidden':
+                $category = new category();
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $category->delete_hidden($id);
+                }
+                header('location: index.php?act=listdm');
+                break;
+            case 'restoredm':
+                $category = new category();
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $category->restore_danhmuc($id);
+                }
+                header('location: index.php?act=list_delete_history');
                 break;
             case 'listtk':
                 include "taikhoan/list.php";

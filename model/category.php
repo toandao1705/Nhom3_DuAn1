@@ -12,12 +12,6 @@ class category {
         $db->pdo_execute($select);
     }
 
-    function delete_danhmuc($id){
-        $db = new connect();
-        $select="DELETE FROM category where id=".$id;
-        return $db->pdo_query($select);
-    }
-
     function loadone_danhmuc($id){
         $db = new connect();
         $select="SELECT * FROM category where id=".$id;
@@ -29,5 +23,21 @@ class category {
         $select="UPDATE category SET name ='".$tenloai."' WHERE id=".$id;
         $db->pdo_execute($select);
     }
+    function status_danhmuc($delete){
+        $db = new connect();
+        $select = "SELECT * FROM category WHERE `delete`=" . $delete;
+        return $db->pdo_query($select);
+    }
+    function delete_hidden($id){
+        $db = new connect();
+        $select="UPDATE category SET `delete` ='1' WHERE id=".$id;
+        return $db->pdo_query($select);
+    }
+    function restore_danhmuc($id){
+        $db = new connect();
+        $select="UPDATE category SET `delete` ='0' WHERE id=".$id;
+        return $db->pdo_query($select);
+    }
+    
 }
 ?>

@@ -5,8 +5,8 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header d-flex justify-content-between">
-                        <h3 class="card-title">Quản Lý Danh Mục</h3>
-                        <h3 class="card-title ml-auto"><a href="index.php?act=list_delete_history">Lịch sử xóa danh mục</a></h3>
+                        <h3 class="card-title">Lịch Sử Xóa Danh Mục</h3>
+                        <h3 class="card-title ml-auto"><a href="index.php?act=listdm">Trở lại</a></h3>
                         
                     </div>
                     <!-- /.card-header -->
@@ -31,9 +31,8 @@
                                             <td>' . $category['id'] . '</td>
                                             <td>' . $category['name'] . '</td>
                                             <td>
-                                                <a href="index.php?act=updatedm&id=' . $category['id'] . '"><button class="btn btn-primary" value="">Sửa</button></a>
-                                                <a href="index.php?act=delete_hidden&id=' . $category['id'] . '"><button class="btn btn-danger" value="">Xóa</button></a>
-
+                                                <a href="index.php?act=restoredm&id=' . $category['id'] . '"><button class="btn btn-primary" value="">Khôi phục</button></a>
+                                                <a href="index.php?act=deletedm&id=' . $category['id'] . '"><button class="btn btn-danger" value="">Xóa</button></a>
                                             </td>
                                         </tr>';
                                     }
