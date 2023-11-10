@@ -5,7 +5,7 @@ class connect
     {
         $servername = "localhost";
         $username = "root";
-        $password = "";
+        $password = "mysql";
 
         try {
             $conn = new PDO("mysql:host=$servername;dbname=duan1", $username, $password);
@@ -26,20 +26,30 @@ class connect
 
 
     //thêm sửa xóa dữ liệu
-    function pdo_execute($sql)
-    {
-        $sql_args = array_slice(func_get_args(), 1);
-        try {
-            $conn = $this->pdo_get_connection();
-            $stmt = $conn->prepare($sql);
-            $stmt->execute($sql_args);
-        } catch (PDOException $e) {
-            throw $e;
-        } finally {
-            unset($conn);
-        }
-    }
+  
 
+    function pdo_execute($sql)
+{
+    $sql_args = array_slice(func_get_args(), 1);
+    try {
+        $conn = $this->pdo_get_connection();
+        $stmt = $conn->prepare($sql);
+        $stmt->execute($sql_args);
+    } catch (PDOException $e) {
+        throw $e;
+    } finally {
+        unset($conn);
+    }
+}
+ // xóa
+    function delete($select)
+ {
+     $conn = $this->pdo_get_connection();
+     $conn->exec($select);
+     $conn = null;
+ 
+ }
+ 
     function pdo_execute_return_lastInsertId($sql)
     {
         $sql_args = array_slice(func_get_args(), 1);

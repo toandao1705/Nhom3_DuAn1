@@ -10,11 +10,22 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form action="index.php?act=addbn" method="post" onsubmit="return validateForm()">
+          <form action="index.php?act=addbn" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
             <div class="card-body">
               <div class="form-group">
                 <label for="exampleInputEmail1">Mã Banner</label>
-                <input type="text" class="form-control" name="maloai" disabled>
+                <input type="text" class="form-control" name="id" disabled>
+              </div>
+              <div class="form-group">
+                <label for="hinh">Hình ảnh</label>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" name="img" class="custom-file-input" id="exampleInputFile">
+                    <label class="custom-file-label" for="img">Chọn tệp</label>
+                  </div>
+
+                </div>
+                <span id="hinh-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Title</label>
@@ -24,22 +35,12 @@
                 <label for="exampleInputEmail1">Subtitle</label>
                 <input type="text" class="form-control" name="subtitle">
               </div>
-              <div class="form-group">
-                <label for="hinh">Hình ảnh</label>
-                <div class="input-group">
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="hinh" name="hinh" id="hinh">
-                    <label class="custom-file-label" for="hinh">Chọn tệp</label>
-                  </div>
-
-                </div>
-                <span id="hinh-error" class="error-text text-danger"></span>
-              </div>
+             
               <!-- /.card-body -->
-
+              
               <div class="card-footer">
                 <div class="btn-group" role="group" aria-label="Actions">
-                  <input type="submit" class="btn btn-primary" name="themmoi" value="THÊM MỚI">
+                  <input type="submit" class="btn btn-primary" name="addbn" value="THÊM">
                   <input type="reset" class="btn btn-secondary" value="NHẬP LẠi">
                   <a href="index.php?act=listbn" class="btn btn-info">DANH SÁCH</a>
                 </div>

@@ -28,11 +28,10 @@
                                             <td>'.$id.'</td>
                                             <td>'.$title.'</td>
                                             <td>'.$subtitle.'</td>
-                                            <td>no photo</td>
+                                            <td><img src="'.IMG_PATH_ADMIN.$img.'" width="80px"  /></td>
                                             <td>
-                                                <a href="index.php?act=updatebn"><button class="btn btn-primary">Sửa</button></a>
-                                                <a href="#"><button class="btn btn-danger">Xóa</button></a>
-
+                                                <a href="index.php?act=updatebn&id='.$id.'"><button class="btn btn-primary">Sửa</button></a>
+                                                <a href="index.php?act=deletebn&id='.$id.'"><button class="btn btn-danger">Xóa</button></a>
                                             </td>
                                         </tr>';
                                     }

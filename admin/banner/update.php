@@ -1,3 +1,18 @@
+<?php
+if(is_array($onebanner)){
+  extract($onebanner);
+}
+  $hinhpath=IMG_PATH_ADMIN.$img;
+  if(is_file($hinhpath)){
+    $img="<img src='" . $hinhpath . "' height='100px' width='150px'>";
+    
+  }else{
+    $img= "nophoto";
+  }
+
+
+
+?>
 <section class="content">
   <div class="container-fluid">
     <div class="row">
@@ -10,7 +25,7 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form action="index.php?act=updatebn" method="post" onsubmit="return validateForm()">
+          <form action="index.php?act=update_banner" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
             <div class="card-body">
               <div class="form-group">
                 <label for="exampleInputEmail1">Mã Banner</label>
@@ -18,31 +33,30 @@
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Title</label>
-                <input type="text" class="form-control" name="title">
+                <input type="text" class="form-control" name="title" value="<?=$title?>">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Subtitle</label>
-                <input type="text" class="form-control" name="subtitle">
+                <input type="text" class="form-control" name="subtitle" value="<?=$subtitle?>">
               </div>
               <div class="form-group">
                 <label for="hinh">Hình ảnh</label>
                 <div class="input-group">
                   <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="hinh" name="hinh" id="hinh">
-                    <label class="custom-file-label" for="hinh">Chọn tệp</label>
+                    <input type="file" class="custom-file-input" id="hinh" name="img">
+                    <label class="custom-file-label" for="hinh"></label>
                   </div>
 
                 </div>
                 <span id="hinh-error" class="error-text text-danger"></span>
               </div>
+              <div class="mb-2">
+                      <?=$img?>
+                    </div>
               <!-- /.card-body -->
 
-              <div class="card-footer">
-                <div class="btn-group" role="group" aria-label="Actions">
-                  <input type="submit" class="btn btn-primary" name="themmoi" value="THÊM MỚI">
-                  <input type="reset" class="btn btn-secondary" value="NHẬP LẠi">
-                  <a href="index.php?act=listbn" class="btn btn-info">DANH SÁCH</a>
-                </div>
+              <div class="form-group">
+                <button type="submit" name="updatebn" class="btn btn-primary">Cập nhật banner</button>
               </div>
           </form>
         </div>
