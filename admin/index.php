@@ -1,7 +1,7 @@
-
 <?php
-ob_start();
 session_start();
+ob_start();
+include ("../model/global.php");
 include '../model/pdo.php';
 include '../model/user.php';
 include '../model/banner.php';
@@ -15,8 +15,32 @@ if (isset($_SESSION['admin'])) {
     if (isset($_GET['act'])) {
         $act = $_GET['act'];
         switch ($act) {
+            // case 'addbn':
+            //     include "banner/add.php";
+            //     break;
             case 'addbn':
-                include "banner/add.php";
+                if(isset($_POST['addbn'])){
+                    // lấy dữ liệu về 
+                   $title=$_POST['title'];
+                   $subtitle=$_POST['subtitle'];
+                   $img=$_FILES['img']['name'];
+
+                    //insert into
+                    $banner = new banner();
+                    $listbanner = $banner->banner_insert($img, $title, $subtitle);
+                    
+    
+                    // uploads hình ảnh
+                    $target_file=IMG_PATH_ADMIN.$img;
+                    move_uploaded_file($_FILES["img"]["tmp_name"], $target_file);
+    
+                    //trở về trang dsbn
+                    $banner = new banner();
+                    $listbanner = $banner->loadall_banner();
+                    include "banner/list.php";
+                }else{
+                    include "banner/add.php";
+                }
                 break;
             case 'listbn':
                 $banner = new banner();
@@ -24,7 +48,30 @@ if (isset($_SESSION['admin'])) {
                 include "banner/list.php";
                 break;
             case 'updatebn':
+                $banner = new banner();
+                
+                if(isset($_GET['id'])&&($_GET['id']>0)){
+                    $onebanner=$banner->loadone_banner($_GET['id']);
+                }
+                $listbanner = $banner->loadall_banner();
+                // trở về trang danh sách banner
                 include "banner/update.php";
+                break;
+            case 'update_banner':
+                $banner = new banner();
+                if(isset($_POST['updatebn'])&&($_POST['updatebn'])){
+                    $id=$_POST['id'];
+                    $title=$_POST['title'];
+                    $subtitle=$_POST['subtitle'];
+                    $img=$_FILES['img']['name'];
+                     // uploads hình ảnh
+                     $target_file=IMG_PATH_ADMIN.$img;
+                     move_uploaded_file($_FILES["img"]["tmp_name"], $target_file);
+                     $banner->update_banner( $id, $title, $subtitle, $img);
+                     
+                }
+                $listbanner = $banner->loadall_banner();
+                include 'banner/list.php';
                 break;
             case 'adddm':
                 $category = new category();
