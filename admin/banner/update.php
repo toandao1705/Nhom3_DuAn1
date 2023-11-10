@@ -55,8 +55,13 @@ if(is_array($onebanner)){
                     </div>
               <!-- /.card-body -->
 
-              <div class="form-group">
-                <button type="submit" name="updatebn" class="btn btn-primary">Cập nhật banner</button>
+              <div class="card-footer">
+                <div class="btn-group" role="group" aria-label="Actions">
+                  <input type="hidden" name="id" value="<?php if(isset($id)&&($id>0)) echo $id;?>">
+                  <input type="submit" class="btn btn-primary" name="updatebn" value="CẬP NHẬT">
+                  <input type="reset" class="btn btn-secondary" value="NHẬP LẠi">
+                  <a href="index.php?act=listbn"><input class="btn btn-info" type="button" value="DANH SÁCH"></a>
+                </div>
               </div>
           </form>
         </div>
