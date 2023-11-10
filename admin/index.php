@@ -172,6 +172,16 @@ if (isset($_SESSION['admin'])) {
                 }
                 header('location: index.php?act=list_delete_history');
                 break;
+            case 'deletedm':
+                $category = new category();
+                if (isset($_GET['id']) && ($_GET['id']) > 0) {
+                    $category->delete_danhmuc($_GET['id']);
+                }
+                $sql = "SELECT * FROM category order by id desc";
+                $delete = 1;
+                $categories = $category->status_danhmuc($delete);
+                include "danhmuc/delete.php";
+                break;
             case 'listtk':
                 include "taikhoan/list.php";
                 break;

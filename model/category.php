@@ -38,6 +38,11 @@ class category {
         $select="UPDATE category SET `delete` ='0' WHERE id=".$id;
         return $db->pdo_query($select);
     }
+    function delete_danhmuc($id){
+        $db = new connect();
+        $select="DELETE FROM category where id=".$id;
+        return $db->pdo_query($select);
+    }
     
 }
 ?>
