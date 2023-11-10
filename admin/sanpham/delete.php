@@ -5,33 +5,9 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Danh sách sản phẩm</h3>
-                            <h3 class="card-title ml-auto"><a href="index.php?act=list_delete_history_sanpham">Lịch sử xóa danh mục</a></h3>
+                            <h3 class="card-title d-flex">Lịch Sử Xóa Sản Phẩm</h3>
+                            <h3 class="card-title ml-auto"><a href="index.php?act=listsp">Trở lại</a></h3>
                         </div>
-                        <div class="card-header">
-                            <form action="index.php?act=listsp" method="post" class="form-inline">
-                                <div class="input-group">
-                                    <input type="text" name="kyw" class="form-control" placeholder="Từ khóa">
-                                    <select name="iddm" id="iddm" class="form-select">
-                                        <option value="0" selected>Tất cả</option>
-                                        <?php
-                                        foreach ($categories as $category) {
-                                            extract($category);
-                                            echo '<option value="' . $id . '">' . $name . '</option>';
-                                        }
-                                        ?>
-
-                                    </select>
-                                    <div class="input-group-append">
-                                        <input type="submit" name="listok" value="GO" class="btn btn-primary">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-
-
-
                         <!-- /.card-header -->
                         <div class="card-body">
 
@@ -50,8 +26,8 @@
                                 <?php
                                 foreach ($productsList as $product) {
                                     extract($product);
-                                    $suasp = "index.php?act=updatesp&id=" . $id;
-                                    $xoasp = "index.php?act=delete_hidden_sanpham&id=" . $id;
+                                    $suasp = "index.php?act=restoresp&id=" . $id;
+                                    $xoasp = "index.php?act=deletesp&id=" . $id;
                                     $hinhpath = "../upload/";
                                     // Lấy danh sách hình ảnh từ đối tượng $loadedProducts
                                     $images = $loadedProducts->load_images($id);
@@ -71,7 +47,7 @@
                                             <td>' . $price . '</td>
                                             <td>' . $view . '</td>
                                             <td>
-                                                <a href="' . $suasp . '"><button class="btn btn-primary">Sửa</button></a>
+                                                <a href="' . $suasp . '"><button class="btn btn-primary">Khôi phục</button></a>
                                                 <a href="' . $xoasp . '"><button class="btn btn-danger">Xóa</button></a>
                                             </td>
                                         </tr>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 ob_start();
-include ("../model/global.php");
+include("../model/global.php");
 include '../model/pdo.php';
 include '../model/user.php';
 include '../model/banner.php';
@@ -15,30 +15,30 @@ if (isset($_SESSION['admin'])) {
     if (isset($_GET['act'])) {
         $act = $_GET['act'];
         switch ($act) {
-            // case 'addbn':
-            //     include "banner/add.php";
-            //     break;
+                // case 'addbn':
+                //     include "banner/add.php";
+                //     break;
             case 'addbn':
-                if(isset($_POST['addbn'])){
+                if (isset($_POST['addbn'])) {
                     // lấy dữ liệu về 
-                   $title=$_POST['title'];
-                   $subtitle=$_POST['subtitle'];
-                   $img=$_FILES['img']['name'];
+                    $title = $_POST['title'];
+                    $subtitle = $_POST['subtitle'];
+                    $img = $_FILES['img']['name'];
 
                     //insert into
                     $banner = new banner();
                     $listbanner = $banner->banner_insert($img, $title, $subtitle);
-                    
-    
+
+
                     // uploads hình ảnh
-                    $target_file=IMG_PATH_ADMIN.$img;
+                    $target_file = IMG_PATH_ADMIN . $img;
                     move_uploaded_file($_FILES["img"]["tmp_name"], $target_file);
-    
+
                     //trở về trang dsbn
                     $banner = new banner();
                     $listbanner = $banner->loadall_banner();
                     include "banner/list.php";
-                }else{
+                } else {
                     include "banner/add.php";
                 }
                 break;
@@ -49,9 +49,9 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'updatebn':
                 $banner = new banner();
-                
-                if(isset($_GET['id'])&&($_GET['id']>0)){
-                    $onebanner=$banner->loadone_banner($_GET['id']);
+
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    $onebanner = $banner->loadone_banner($_GET['id']);
                 }
                 $listbanner = $banner->loadall_banner();
                 // trở về trang danh sách banner
@@ -59,16 +59,15 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'update_banner':
                 $banner = new banner();
-                if(isset($_POST['updatebn'])&&($_POST['updatebn'])){
-                    $id=$_POST['id'];
-                    $title=$_POST['title'];
-                    $subtitle=$_POST['subtitle'];
-                    $img=$_FILES['img']['name'];
-                     // uploads hình ảnh
-                     $target_file=IMG_PATH_ADMIN.$img;
-                     move_uploaded_file($_FILES["img"]["tmp_name"], $target_file);
-                     $banner->update_banner( $id, $title, $subtitle, $img);
-                     
+                if (isset($_POST['updatebn']) && ($_POST['updatebn'])) {
+                    $id = $_POST['id'];
+                    $title = $_POST['title'];
+                    $subtitle = $_POST['subtitle'];
+                    $img = $_FILES['img']['name'];
+                    // uploads hình ảnh
+                    $target_file = IMG_PATH_ADMIN . $img;
+                    move_uploaded_file($_FILES["img"]["tmp_name"], $target_file);
+                    $banner->update_banner($id, $title, $subtitle, $img);
                 }
                 $listbanner = $banner->loadall_banner();
                 include 'banner/list.php';
@@ -147,8 +146,9 @@ if (isset($_SESSION['admin'])) {
                     $kyw = '';
                     $iddm = 0;
                 }
+                $delete = 0;
                 $categories = $category->loadall_danhmuc();
-                $productsList = $loadedProducts->loadall_sanpham($kyw, $iddm);
+                $productsList = $loadedProducts->loadall_sanpham($kyw, $iddm, $delete);
 
                 include "sanpham/list.php";
                 break;
@@ -194,7 +194,7 @@ if (isset($_SESSION['admin'])) {
                     $thongbao = "Cập nhật thành công";
                 }
                 // $sql="SELECT * FROM sanpham order by id desc";
-                $productsList = $loadedProducts->loadall_sanpham("", 0);
+                $productsList = $loadedProducts->loadall_sanpham("", 0, "");
                 include "sanpham/list.php";
                 break;
             case 'list_delete_history':
@@ -228,6 +228,40 @@ if (isset($_SESSION['admin'])) {
                 $delete = 1;
                 $categories = $category->status_danhmuc($delete);
                 include "danhmuc/delete.php";
+                break;
+            case 'delete_hidden_sanpham':
+                $products = new products();
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $products->delete_hidden_sanpham($id);
+                }
+                header('location: index.php?act=listsp');
+                break;
+            case 'list_delete_history_sanpham':
+                $loadedProducts = new products();
+                $category = new category();
+                $delete = 1;
+                $categories = $category->loadall_danhmuc();
+                $productsList = $loadedProducts->loadall_sanpham("", "", $delete);
+                include "sanpham/delete.php";
+                break;
+            case 'restoresp':
+                $loadedProducts = new products();
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $loadedProducts->restore_sanpham($id);
+                }
+                header('location: index.php?act=list_delete_history_sanpham');
+                break;
+            case 'deletesp':
+                $loadedProducts = new products();
+                if (isset($_GET['id']) && ($_GET['id']) > 0) {
+                    $loadedProducts->delete_sanpham($_GET['id']);
+                }
+                $sql = "SELECT * FROM products order by id desc";
+                $delete = 1;
+                $productsList = $loadedProducts->loadall_sanpham("", "", $delete);
+                include "sanpham/delete.php";
                 break;
             case 'listtk':
                 include "taikhoan/list.php";

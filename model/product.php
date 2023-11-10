@@ -24,7 +24,7 @@ class products
         $db->pdo_execute($select);
     }
 
-    function loadall_sanpham($kyw = "", $iddm = 0)
+    function loadall_sanpham($kyw = "", $iddm = 0, $detete)
     {
         $db = new connect();
         $select = "SELECT * FROM products WHERE 1";
@@ -34,6 +34,7 @@ class products
         if ($iddm > 0) {
             $select .= " and id_category ='" . $iddm . "'";
         }
+        $select .= " and `delete` ='" . $detete . "'";
         $select .= " ORDER BY id DESC";
         return $db->pdo_query($select);
     }
@@ -74,9 +75,6 @@ class products
     public function update_sanpham($id, $id_category, $tensp, $giasp, $mota, $images)
     {
         $db = new connect();
-
-
-
         // Use backticks for reserved keyword `describe`
         $updateProduct = "UPDATE products SET id_category='" . $id_category . "', name='" . $tensp . "', price='" . $giasp . "', `describe`='" . $mota . "' WHERE id=" . $id;
 
@@ -88,5 +86,20 @@ class products
         foreach ($images as $image) {
             $this->insert_image($id, $image);
         }
+    }
+    function delete_hidden_sanpham($id){
+        $db = new connect();
+        $select="UPDATE products SET `delete` ='1' WHERE id=".$id;
+        return $db->pdo_query($select);
+    }
+    function restore_sanpham($id){
+        $db = new connect();
+        $select="UPDATE products SET `delete` ='0' WHERE id=".$id;
+        return $db->pdo_query($select);
+    }
+    function delete_sanpham($id){
+        $db = new connect();
+        $select="DELETE FROM products where id=".$id;
+        return $db->pdo_query($select);
     }
 }
