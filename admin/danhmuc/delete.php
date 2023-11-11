@@ -27,6 +27,9 @@
                             </thead>
                             <tbody>
                                 <?php
+                                // Kiểm tra xem $categories có dữ liệu hay không
+                                if (!empty($categories)) {
+                                    // Hiển thị thông tin danh mục
                                 // Kiểm tra xem $categories có phải là mảng không
                                 if (is_array($categories)) {
                                     // Hiển thị thông tin danh mục
@@ -41,6 +44,9 @@
                                             </td>
                                         </tr>';
                                     }
+                                } else {
+                                    echo '<tr><td colspan="4">Không có danh mục nào.</td></tr>';
+                                }
                                 } else {
                                     echo '<tr><td colspan="4">Không có danh mục nào.</td></tr>';
                                 }
