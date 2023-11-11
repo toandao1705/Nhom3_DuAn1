@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header d-flex justify-content-between">
                             <h3 class="card-title d-flex">Lịch Sử Xóa Sản Phẩm</h3>
                             <h3 class="card-title ml-auto"><a href="index.php?act=listsp">Trở lại</a></h3>
                         </div>
@@ -31,13 +31,13 @@
                                     $hinhpath = "../upload/";
                                     // Lấy danh sách hình ảnh từ đối tượng $loadedProducts
                                     $images = $loadedProducts->load_images($id);
-                                
+
                                     // Chỉ lấy ảnh đầu tiên nếu có
                                     $imageColumn = '';
                                     if (!empty($images)) {
-                                        $imageColumn = '<img src="'.$hinhpath. $images[0]['img'] . '" alt="Image" style="max-width: 100px;">';
+                                        $imageColumn = '<img src="' . $hinhpath . $images[0]['img'] . '" alt="Image" style="max-width: 100px;">';
                                     }
-                                
+
                                     echo '
                                         <tr>
                                             <td><input class="checkbox" type="checkbox"></td>
@@ -48,14 +48,11 @@
                                             <td>' . $view . '</td>
                                             <td>
                                                 <a href="' . $suasp . '"><button class="btn btn-primary">Khôi phục</button></a>
-                                                <a href="' . $xoasp . '"><button class="btn btn-danger">Xóa</button></a>
+                                                <a href="' . $xoasp . '"><button class="btn btn-danger" onclick="deleteProduct(' . $id . ')">Xóa</button></a>
                                             </td>
                                         </tr>
                                     ';
                                 }
-                                
-                                
-                                
                                 ?>
 
 
@@ -69,6 +66,15 @@
                             <button class="btn btn-danger mb-3" id="delete-selected">Xóa các mục đã chọn</button>
                             <a href="index.php?act=addsp"><button class="btn btn-success mb-3" id="add-row">Thêm</button></a>
                         </div>
+                        <script>
+                            function deleteProduct(productId) {
+                                var confirmation = confirm("Bạn có chắc chắn muốn xóa sản phẩm này?");
+                                if (confirmation) {
+                                    window.location.href = 'index.php?act=deletesp&id=' + productId;
+                                }
+                            }
+                        </script>
+
                         <script>
                             document.addEventListener("DOMContentLoaded", function() {
                                 // Lấy các checkbox

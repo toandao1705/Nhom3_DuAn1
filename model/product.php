@@ -97,9 +97,16 @@ class products
         $select="UPDATE products SET `delete` ='0' WHERE id=".$id;
         return $db->pdo_query($select);
     }
-    function delete_sanpham($id){
+
+    function delete_sanpham($id) {
         $db = new connect();
-        $select="DELETE FROM products where id=".$id;
+
+        // Delete images first
+        $this->delete_images($id);
+
+        // Then delete the product
+        $select = "DELETE FROM products WHERE id=" . $id;
         return $db->pdo_query($select);
     }
+
 }
