@@ -3,10 +3,10 @@ require_once 'pdo.php';
 class banner
 {
     // load danh sách banner lên
-    function loadall_banner()
+    function loadall_banner($delete)
     {
         $db = new connect();
-        $select = "SELECT * FROM banner order by id desc";
+        $select = "SELECT * FROM banner WHERE `delete`=" . $delete;
         return $db->pdo_query($select);
     }
     // thêm banner
@@ -34,6 +34,16 @@ class banner
         $db = new connect();
         $select = "UPDATE banner set title='".$title."',subtitle='".$subtitle."',img='".$img."' WHERE id=".$id;
         $db->pdo_execute($select);
+    }
+    function delete_hidden_banner($id){
+        $db = new connect();
+        $select="UPDATE banner SET `delete` ='1' WHERE id=".$id;
+        return $db->pdo_query($select);
+    }
+    function restore_banner($id){
+        $db = new connect();
+        $select="UPDATE banner SET `delete` ='0' WHERE id=".$id;
+        return $db->pdo_query($select);
     }
    
      

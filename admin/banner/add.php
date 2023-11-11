@@ -40,7 +40,7 @@
               
               <div class="card-footer">
                 <div class="btn-group" role="group" aria-label="Actions">
-                  <input type="submit" class="btn btn-primary" name="addbn" value="THÊM">
+                  <input type="submit" class="btn btn-primary" name="addbn" value="THÊM MỚI">
                   <input type="reset" class="btn btn-secondary" value="NHẬP LẠi">
                   <a href="index.php?act=listbn" class="btn btn-info">DANH SÁCH</a>
                 </div>

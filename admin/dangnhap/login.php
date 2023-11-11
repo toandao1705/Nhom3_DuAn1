@@ -43,7 +43,7 @@
                                         </div>
 
                                         <div class="pt-1 mb-4">
-                                        <button class="btn bg-gradient-primary w-100 my-4 mb-2">Sign in</button>
+                                        <button class="btn bg-gradient-primary w-100 my-4 mb-2 btn-primary">Sign in</button>
                                         </div>
 
                                         <a class="small text-muted" href="#!">Forgot password?</a>

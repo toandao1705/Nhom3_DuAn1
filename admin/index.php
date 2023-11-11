@@ -36,7 +36,8 @@ if (isset($_SESSION['admin'])) {
 
                     //trở về trang dsbn
                     $banner = new banner();
-                    $listbanner = $banner->loadall_banner();
+                    $delete = 0;
+                    $listbanner = $banner->loadall_banner($delete);
                     include "banner/list.php";
                 } else {
                     include "banner/add.php";
@@ -44,7 +45,8 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'listbn':
                 $banner = new banner();
-                $listbanner = $banner->loadall_banner();
+                $delete = 0;
+                $listbanner = $banner->loadall_banner($delete);
                 include "banner/list.php";
                 break;
             case 'updatebn':
@@ -53,7 +55,7 @@ if (isset($_SESSION['admin'])) {
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                     $onebanner = $banner->loadone_banner($_GET['id']);
                 }
-                $listbanner = $banner->loadall_banner();
+                $listbanner = $banner->loadall_banner($delete);
                 // trở về trang danh sách banner
                 include "banner/update.php";
                 break;
@@ -69,8 +71,31 @@ if (isset($_SESSION['admin'])) {
                     move_uploaded_file($_FILES["img"]["tmp_name"], $target_file);
                     $banner->update_banner($id, $title, $subtitle, $img);
                 }
-                $listbanner = $banner->loadall_banner();
+                $delete = 0;
+                $listbanner = $banner->loadall_banner($delete);
                 include 'banner/list.php';
+                break;
+            case 'list_delete_history_banner':
+                $banner = new banner();
+                $delete = 1;
+                $listbanner = $banner->loadall_banner($delete);
+                include "banner/delete.php";
+                break;
+            case 'restorebn':
+                $banner = new banner();
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $banner->restore_banner($id);
+                }
+                header('location: index.php?act=list_delete_history_banner');
+                break;
+            case 'delete_hidden_banner':
+                $banner = new banner();
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $banner->delete_hidden_banner($id);
+                }
+                header('location: index.php?act=listbn');
                 break;
             case 'adddm':
                 $category = new category();

@@ -4,9 +4,9 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <div class="card-header d-flex justify-content-between">
-                            <h3 class="card-title">Quản Lý Banner</h3>
-                            <h3 class="card-title ml-auto"><a href="index.php?act=list_delete_history_banner">Lịch sử xóa danh mục</a></h3>
+                    <div class="card-header d-flex justify-content-between">
+                            <h3 class="card-title">Lịch Sử Xóa Banner</h3>
+                            <h3 class="card-title ml-auto"><a href="index.php?act=listbn">Trở lại</a></h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -31,8 +31,8 @@
                                             <td>'.$subtitle.'</td>
                                             <td><img src="'.IMG_PATH_ADMIN.$img.'" width="80px"  /></td>
                                             <td>
-                                                <a href="index.php?act=updatebn&id='.$id.'"><button class="btn btn-primary">Sửa</button></a>
-                                                <a href="index.php?act=delete_hidden_banner&id='.$id.'"><button class="btn btn-danger">Xóa</button></a>
+                                                <a href="index.php?act=restorebn&id='.$id.'"><button class="btn btn-primary">Khôi phục</button></a>
+                                                <a href="index.php?act=deletebn&id='.$id.'"><button class="btn btn-danger">Xóa</button></a>
                                             </td>
                                         </tr>';
                                     }
