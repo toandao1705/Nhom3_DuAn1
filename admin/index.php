@@ -334,16 +334,20 @@ if (isset($_SESSION['admin'])) {
     include "component/sidebar.php";
     include "component/footer.php";
 } else {
-
-    include "dangnhap/login.php";
     // Nếu chưa đăng nhập, chỉ hiển thị trang đăng nhập
     $user = new user();
-    //khai bao hai bien username va password lay tu input
+
+    // Khai báo hai biến username và password lấy từ input
     $name = $_POST['name'] ?? '';
     $pass = $_POST['pass'] ?? '';
 
-    if ($user->checkUser($name, $pass)) {
-        $result = $user->userid($name, $pass);
-        $_SESSION['admin'] = $name; // kiem tra coi co nguoi dung hay chua
+    // Mã hóa mật khẩu theo kiểu MD5
+    $hashedPassword = md5($pass);
+
+    if ($user->checkUser($name, $hashedPassword)) {
+        $result = $user->userid($name, $hashedPassword);
+        $_SESSION['admin'] = $name; // kiểm tra có người dùng hay không
     }
+
+    include "dangnhap/login.php";
 }
