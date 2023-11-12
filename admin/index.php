@@ -97,6 +97,16 @@ if (isset($_SESSION['admin'])) {
                 }
                 header('location: index.php?act=listbn');
                 break;
+            case 'deletebn':
+                $banner = new banner();
+                if (isset($_GET['id']) && ($_GET['id']) > 0) {
+                    $banner->delete_banner($_GET['id']);
+                }
+                $sql = "SELECT * FROM banner order by id desc";
+                $delete = 1;
+                $listbanner = $banner-> loadall_banner($delete);
+                include "banner/delete.php";
+                break;
             case 'adddm':
                 $category = new category();
                 if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {

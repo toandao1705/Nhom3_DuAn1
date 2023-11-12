@@ -45,6 +45,11 @@ class banner
         $select="UPDATE banner SET `delete` ='0' WHERE id=".$id;
         return $db->pdo_query($select);
     }
+    function delete_banner($id){
+        $db = new connect();
+        $select="DELETE FROM banner where id=".$id;
+        return $db->pdo_query($select);
+    }
    
      
 
