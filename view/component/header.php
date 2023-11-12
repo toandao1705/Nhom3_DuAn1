@@ -397,7 +397,7 @@
                                         <a href="index.php?act=about">About</a>
                                     </li>
                                     <li>
-                                        <a href="index.php?act=blog">Blog <i class="fi-rs-angle-down"></i></a>
+                                        <a href="index.php?act=blog_category">Blog <i class="fi-rs-angle-down"></i></a>
                                     </li>
                                     <li>
                                         <a href="index.php?act=contact">Contact</a>

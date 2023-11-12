@@ -91,7 +91,6 @@
                                         <a href="blog-post-right.php">
                                             <img class="border-radius-15" src="view/assets/imgs/blog/blog-1.png" alt="" />
                                         <a href="index.php?act=blog_post">
-                                            <img class="border-radius-15" src="view/assets/imgs/blog/blog-1.png" alt="" />
                                         </a>
                                         <div class="entry-meta">
                                             <a class="entry-meta meta-2" href="blog-category-grid.php"><i class="fi-rs-heart"></i></a>
