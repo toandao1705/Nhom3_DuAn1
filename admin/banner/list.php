@@ -6,7 +6,7 @@
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
                             <h3 class="card-title">Quản Lý Banner</h3>
-                            <h3 class="card-title ml-auto"><a href="index.php?act=list_delete_history_banner">Lịch sử xóa danh mục</a></h3>
+                            <h3 class="card-title ml-auto"><a href="index.php?act=list_delete_history_banner">Lịch sử xóa banner</a></h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -22,6 +22,8 @@
                                     </tr>
                                 </thead>
                                 <?php
+                                if (!empty($listbanner)) {
+                                    // Hiển thị thông tin danh mục
                                     foreach($listbanner as $banner){
                                         extract($banner);
                                         echo '<tr>
@@ -36,6 +38,9 @@
                                             </td>
                                         </tr>';
                                     }
+                                } else {
+                                    echo '<tr><td colspan="4">Không có banner nào.</td></tr>';
+                                }
                                 ?>
                                 <tbody>
                                     <!-- <tr>

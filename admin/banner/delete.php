@@ -22,6 +22,8 @@
                                     </tr>
                                 </thead>
                                 <?php
+                                if (!empty($listbanner)) {
+                                    // Hiển thị thông tin danh mục
                                     foreach($listbanner as $banner){
                                         extract($banner);
                                         echo '<tr>
@@ -36,6 +38,9 @@
                                             </td>
                                         </tr>';
                                     }
+                                } else {
+                                    echo '<tr><td colspan="4">Không có banner nào.</td></tr>';
+                                }
                                 ?>
                                 <tbody>
                                     <!-- <tr>
