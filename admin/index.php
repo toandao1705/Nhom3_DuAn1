@@ -55,6 +55,7 @@ if (isset($_SESSION['admin'])) {
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                     $onebanner = $banner->loadone_banner($_GET['id']);
                 }
+                $delete = 0;
                 $listbanner = $banner->loadall_banner($delete);
                 // trở về trang danh sách banner
                 include "banner/update.php";
