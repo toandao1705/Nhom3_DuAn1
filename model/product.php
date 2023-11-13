@@ -109,4 +109,17 @@ class products
         return $db->pdo_query($select);
     }
 
+    function loadall_sanpham_home() {
+        $db = new connect();
+        $select = "SELECT products.*, images.img as img, category.name as category_name
+                   FROM products 
+                   LEFT JOIN images ON products.id = images.id_pro
+                   LEFT JOIN category ON products.id_category = category.id
+                   WHERE 1 
+                   ORDER BY products.id DESC limit 0,10";
+        return $db->pdo_query($select);
+    }
+    
+    
+
 }
