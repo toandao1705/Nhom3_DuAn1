@@ -36,7 +36,8 @@ if (isset($_SESSION['admin'])) {
 
                     //trở về trang dsbn
                     $banner = new banner();
-                    $listbanner = $banner->loadall_banner();
+                    $delete = 0;
+                    $listbanner = $banner->loadall_banner($delete);
                     include "banner/list.php";
                 } else {
                     include "banner/add.php";
@@ -44,7 +45,8 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'listbn':
                 $banner = new banner();
-                $listbanner = $banner->loadall_banner();
+                $delete = 0;
+                $listbanner = $banner->loadall_banner($delete);
                 include "banner/list.php";
                 break;
             case 'updatebn':
@@ -53,7 +55,7 @@ if (isset($_SESSION['admin'])) {
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                     $onebanner = $banner->loadone_banner($_GET['id']);
                 }
-                $listbanner = $banner->loadall_banner();
+                $listbanner = $banner->loadall_banner($delete);
                 // trở về trang danh sách banner
                 include "banner/update.php";
                 break;
@@ -69,8 +71,41 @@ if (isset($_SESSION['admin'])) {
                     move_uploaded_file($_FILES["img"]["tmp_name"], $target_file);
                     $banner->update_banner($id, $title, $subtitle, $img);
                 }
-                $listbanner = $banner->loadall_banner();
+                $delete = 0;
+                $listbanner = $banner->loadall_banner($delete);
                 include 'banner/list.php';
+                break;
+            case 'list_delete_history_banner':
+                $banner = new banner();
+                $delete = 1;
+                $listbanner = $banner->loadall_banner($delete);
+                include "banner/delete.php";
+                break;
+            case 'restorebn':
+                $banner = new banner();
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $banner->restore_banner($id);
+                }
+                header('location: index.php?act=list_delete_history_banner');
+                break;
+            case 'delete_hidden_banner':
+                $banner = new banner();
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $banner->delete_hidden_banner($id);
+                }
+                header('location: index.php?act=listbn');
+                break;
+            case 'deletebn':
+                $banner = new banner();
+                if (isset($_GET['id']) && ($_GET['id']) > 0) {
+                    $banner->delete_banner($_GET['id']);
+                }
+                $sql = "SELECT * FROM banner order by id desc";
+                $delete = 1;
+                $listbanner = $banner-> loadall_banner($delete);
+                include "banner/delete.php";
                 break;
             case 'adddm':
                 $category = new category();
@@ -222,13 +257,20 @@ if (isset($_SESSION['admin'])) {
             case 'deletedm':
                 $category = new category();
                 if (isset($_GET['id']) && ($_GET['id']) > 0) {
-                    $category->delete_danhmuc($_GET['id']);
+                    $deleted = $category->delete_danhmuc($_GET['id']);
+                    if (!$deleted) {
+                        // Hiển thị một thông báo lỗi thân thiện với người dùng
+                        $error_message = "Không thể xóa danh mục vì có sản phẩm liên quan.";
+                    }
                 }
-                $sql = "SELECT * FROM category order by id desc";
+                $sql = "SELECT * FROM category ORDER BY id DESC";
                 $delete = 1;
                 $categories = $category->status_danhmuc($delete);
                 include "danhmuc/delete.php";
                 break;
+
+
+
             case 'delete_hidden_sanpham':
                 $products = new products();
                 if (isset($_GET['id'])) {
@@ -292,16 +334,20 @@ if (isset($_SESSION['admin'])) {
     include "component/sidebar.php";
     include "component/footer.php";
 } else {
-
-    include "dangnhap/login.php";
     // Nếu chưa đăng nhập, chỉ hiển thị trang đăng nhập
     $user = new user();
-    //khai bao hai bien username va password lay tu input
+
+    // Khai báo hai biến username và password lấy từ input
     $name = $_POST['name'] ?? '';
     $pass = $_POST['pass'] ?? '';
 
-    if ($user->checkUser($name, $pass)) {
-        $result = $user->userid($name, $pass);
-        $_SESSION['admin'] = $name; // kiem tra coi co nguoi dung hay chua
+    // Mã hóa mật khẩu theo kiểu MD5
+    $hashedPassword = md5($pass);
+
+    if ($user->checkUser($name, $hashedPassword)) {
+        $result = $user->userid($name, $hashedPassword);
+        $_SESSION['admin'] = $name; // kiểm tra có người dùng hay không
     }
+
+    include "dangnhap/login.php";
 }

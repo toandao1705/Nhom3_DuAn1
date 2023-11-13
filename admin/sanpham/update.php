@@ -2,6 +2,8 @@
 if (is_array($product)) {
   extract($product);
 }
+
+$allImages = $loadedProducts->loadall_images($id);
 ?>
 <section class="content">
   <div class="container-fluid">
@@ -43,33 +45,31 @@ if (is_array($product)) {
                 <label for="hinh">Hình ảnh</label>
                 <div class="input-group mb-3">
                   <label class="custom-file-label" for="hinh">Chọn tệp</label>
-                  <input type="file" class="custom-file-input" id="hinh" name="hinh[]" multiple>
+                  <input type="file" class="custom-file-input" id="hinh" name="hinh[]" multiple onchange="previewImages(this)">
                 </div>
 
-                <div class="row mt-3">
+                <div class="row mt-3" id="current-images">
                   <?php
-                  // Load all images associated with the product
-                  $allImages = $loadedProducts->loadall_images($id);
-
-                  // Display each image
                   if (is_array($allImages) || is_object($allImages)) {
                     foreach ($allImages as $image) {
                       $imagePath = "../upload/" . $image['img'];
                       if (is_file($imagePath)) {
                         echo '
-                  <div class="col-md-2 mb-3">
-                      <img src="' . $imagePath . '" class="img-thumbnail" alt="Image" style="width=200px; height:260px;">
-                  </div>';
+      <div class="col-md-2 mb-3 current-image">
+          <img src="' . $imagePath . '" class="img-thumbnail" alt="Image" style="width=200px; height:260px;">
+      </div>';
                       }
                     }
-                } else {
+                  } else {
                     // Xử lý khi $allImages không phải là mảng hoặc đối tượng
                     echo "Không phải là mảng hoặc đối tượng!";
-                }
-                  
+                  }
                   ?>
                 </div>
 
+
+                <!-- Dùng để hiển thị các ảnh mới được chọn -->
+                <div class="row mt-3" id="preview-container"></div>
                 <span id="hinh-error" class="error-text text-danger"></span>
               </div>
 
@@ -93,6 +93,36 @@ if (is_array($product)) {
             if (isset($thongbao) && ($thongbao != "")) echo $thongbao;
             ?>
           </form>
+          <script>
+            function previewImages(input) {
+              var previewContainer = document.getElementById('preview-container');
+              previewContainer.innerHTML = '';
+
+              // Ẩn các ảnh hiện tại
+              var currentImages = document.querySelectorAll('.current-image');
+              currentImages.forEach(function(image) {
+                image.style.display = 'none';
+              });
+
+              var files = input.files;
+              for (var i = 0; i < files.length; i++) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                  var img = document.createElement('img');
+                  img.src = e.target.result;
+                  img.className = 'img-thumbnail';
+                  img.alt = 'Image';
+                  img.style = 'width: 200px; height: 260px; margin-right: 10px;';
+
+                  previewContainer.appendChild(img);
+                };
+
+                reader.readAsDataURL(files[i]);
+              }
+            }
+          </script>
+
 
           <script>
             function validateForm() {

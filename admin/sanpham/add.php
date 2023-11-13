@@ -1,3 +1,15 @@
+<style>
+    .image-preview-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .preview-image {
+      max-width: 200px;
+      max-height: 260px;
+      margin: 5px;
+    }
+  </style>
 <section class="content">
   <div class="container-fluid">
     <div class="row">
@@ -38,10 +50,11 @@
                 <label for="hinh">Hình ảnh</label>
                 <div class="input-group">
                   <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="hinh" name="hinh[]" multiple>
+                    <input type="file" class="custom-file-input" id="hinh" name="hinh[]" multiple onchange="previewImages(this)">
                     <label class="custom-file-label" for="hinh">Chọn tệp</label>
                   </div>
                 </div>
+                <div class="image-preview-container" id="image-preview"></div>
                 <span id="hinh-error" class="error-text text-danger"></span>
               </div>
 
@@ -61,10 +74,36 @@
                 </div>
               </div>
               <?php
-              if (isset($thongbao) && ($thongbao != "")) echo $thongbao;
+              if (isset($thongbao) && ($thongbao != "")) 
+              echo '
+                <input type="text" class="form-control btn-success" value="'.$thongbao.'">'
               ?>
             </div>
           </form>
+          
+          <script>
+            function previewImages(input) {
+              var previewContainer = document.getElementById('image-preview');
+              previewContainer.innerHTML = '';
+
+              var files = input.files;
+
+              for (var i = 0; i < files.length; i++) {
+                var file = files[i];
+
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                  var img = document.createElement('img');
+                  img.src = e.target.result;
+                  img.classList.add('preview-image');
+                  previewContainer.appendChild(img);
+                };
+
+                reader.readAsDataURL(file);
+              }
+            }
+          </script>
 
           <script>
             document.getElementById('myForm').addEventListener('submit', function(e) {

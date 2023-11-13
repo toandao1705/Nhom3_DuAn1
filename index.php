@@ -1,7 +1,11 @@
 <?php
+include 'model/pdo.php';
 include "view/component/header.php";
+include "model/product.php";
+include "global.php";
 
-
+$products = new products();
+$spnew= $products->loadall_sanpham_home();
 
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];

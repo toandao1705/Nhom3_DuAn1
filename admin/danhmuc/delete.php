@@ -7,10 +7,15 @@
                     <div class="card-header d-flex justify-content-between">
                         <h3 class="card-title">Lịch Sử Xóa Danh Mục</h3>
                         <h3 class="card-title ml-auto"><a href="index.php?act=listdm">Trở lại</a></h3>
-                        
+
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
+                        <?php
+                        if (isset($error_message)) {
+                            echo '<div class="alert alert-danger" role="alert">' . $error_message . '</div>';
+                        }
+                        ?>
                         <table id="example2" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
@@ -22,6 +27,9 @@
                             </thead>
                             <tbody>
                                 <?php
+                                // Kiểm tra xem $categories có dữ liệu hay không
+                                if (!empty($categories)) {
+                                    // Hiển thị thông tin danh mục
                                 // Kiểm tra xem $categories có phải là mảng không
                                 if (is_array($categories)) {
                                     // Hiển thị thông tin danh mục
@@ -36,6 +44,9 @@
                                             </td>
                                         </tr>';
                                     }
+                                } else {
+                                    echo '<tr><td colspan="4">Không có danh mục nào.</td></tr>';
+                                }
                                 } else {
                                     echo '<tr><td colspan="4">Không có danh mục nào.</td></tr>';
                                 }

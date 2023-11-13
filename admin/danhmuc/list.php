@@ -22,8 +22,8 @@
                             </thead>
                             <tbody>
                                 <?php
-                                // Kiểm tra xem $categories có phải là mảng không
-                                if (is_array($categories)) {
+                                // Kiểm tra xem $categories có dữ liệu hay không
+                                if (!empty($categories)) {
                                     // Hiển thị thông tin danh mục
                                     foreach ($categories as $category) {
                                         echo '<tr>
@@ -33,7 +33,6 @@
                                             <td>
                                                 <a href="index.php?act=updatedm&id=' . $category['id'] . '"><button class="btn btn-primary" value="">Sửa</button></a>
                                                 <a href="index.php?act=delete_hidden&id=' . $category['id'] . '"><button class="btn btn-danger" value="">Xóa</button></a>
-
                                             </td>
                                         </tr>';
                                     }

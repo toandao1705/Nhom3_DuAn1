@@ -38,10 +38,26 @@ class category {
         $select="UPDATE category SET `delete` ='0' WHERE id=".$id;
         return $db->pdo_query($select);
     }
-    function delete_danhmuc($id){
+    function delete_danhmuc($id) {
         $db = new connect();
-        $select="DELETE FROM category where id=".$id;
-        return $db->pdo_query($select);
+        
+        try {
+            // Cố gắng xóa danh mục
+            $select = "DELETE FROM category WHERE id=" . $id;
+            $db->pdo_query($select);
+            
+            // Nếu thành công, trả về true
+            return true;
+        } catch (PDOException $e) {
+            // Nếu xóa thất bại do ràng buộc khóa ngoại, bắt lỗi
+            if ($e->errorInfo[1] == 1451) {
+                // Lỗi vi phạm ràng buộc khóa ngoại (mã lỗi 1451)
+                return false;
+            } else {
+                // Lỗi cơ sở dữ liệu khác
+                throw $e;
+            }
+        }
     }
     
 }
