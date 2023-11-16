@@ -21,14 +21,37 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                <?php
+                                // Kiểm tra xem $user có dữ liệu hay không
+                                if (!empty($listdh)) {
+                                    // Hiển thị thông tin tai khoan
+                                    foreach ($listdh as $donhang) {
+                                        extract($donhang);
+                                        echo ' <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>'.$id.'</td>
+                                                <td>'.$id_user .'</td>
+                                                <td>'.$quantity.'</td>
+                                                <td>'.$status.'</td>
+                                                <td>
+
+                                                    <a href="' . $xoabl . '"><button class="btn btn-danger">Xóa</button></a>
+
+                                                </td>
+                                            </tr>';
+                                    }
+                                } else {
+                                    echo '<tr><td colspan="4">Không có danh mục nào.</td></tr>';
+                                }
+                                ?>
+                                    <!-- <tr>
                                         <td>DH001</td>
                                         <td>Toàn</td>
                                         <td>2</td>
                                         <td>200.000VNĐ</td>
                                         <td>03/11/2023</td>
                                         <td>Thanh toán trực tiếp</td> 
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>

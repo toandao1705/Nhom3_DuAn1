@@ -6,6 +6,12 @@ class user {
    var $Email = null;
    var $images = null;
 
+   function loadall_taikhoan(){
+      $db = new connect();
+      $select="SELECT * FROM user order by id desc";
+      return $db->pdo_query($select);
+  }
+
    function getUser()
    {
       $db = new connect();

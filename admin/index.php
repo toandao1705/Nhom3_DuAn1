@@ -7,6 +7,8 @@ include '../model/user.php';
 include '../model/banner.php';
 include '../model/category.php';
 include '../model/product.php';
+include '../model/comment.php';
+include '../model/cart.php';
 $act = 'home';
 if (isset($_SESSION['admin'])) {
     // Nếu đã đăng nhập, bao gồm header, footer và sidebar
@@ -306,15 +308,21 @@ if (isset($_SESSION['admin'])) {
                 include "sanpham/delete.php";
                 break;
             case 'listtk':
+                $taikhoan = new user();
+                $listtk = $taikhoan->loadall_taikhoan();
                 include "taikhoan/list.php";
                 break;
             case 'updatetk':
                 include "taikhoan/update.php";
                 break;
             case 'listbl':
+                $binhluan = new comment();
+                $listbl = $binhluan->loadall_binhluan();
                 include "binhluan/list.php";
                 break;
             case 'listdh':
+                $donhang = new cart();
+                $listdh = $donhang->loadall_donhang();
                 include "donhang/list.php";
                 break;
             case 'listthongke':
