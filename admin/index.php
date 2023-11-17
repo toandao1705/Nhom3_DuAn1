@@ -260,6 +260,7 @@ if (isset($_SESSION['admin'])) {
             case 'list_delete_history':
                 $category = new category();
                 $delete = 1;
+                $status = 0;
                 // Đặt số lượng bản ghi trên mỗi trang
                 $limit = 5;
 
@@ -274,7 +275,7 @@ if (isset($_SESSION['admin'])) {
 
                 // Đếm tổng số bản ghi
                 $totalCategories = count($category->status_danhmuc($delete, 0, PHP_INT_MAX));
-
+                $totalPages = 0;
                 // Tính tổng số trang
                 $totalPages = ceil($totalCategories / $limit);
                 include "danhmuc/delete.php";
@@ -306,7 +307,7 @@ if (isset($_SESSION['admin'])) {
                 }
                 $sql = "SELECT * FROM category ORDER BY id DESC";
                 $delete = 1;
-                $categories = $category->status_danhmuc($delete, '', '');
+                $categories = $category->status_danhmuc($delete, 0, 0);
                 include "danhmuc/delete.php";
                 break;
 
