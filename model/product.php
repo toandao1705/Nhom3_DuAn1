@@ -47,17 +47,17 @@ class products
                    LEFT JOIN category ON products.id_category = category.id
                    WHERE products.id=" . $id;
         $result = $db->pdo_query_one($select);
-    
+
         // Lấy tất cả các hình ảnh liên quan đến sản phẩm
         $selectImages = "SELECT img FROM images WHERE id_pro=" . $id;
         $images = $db->pdo_query($selectImages);
-    
+
         // Thêm mảng hình ảnh vào kết quả
         $result['images'] = $images;
-    
+
         return $result;
     }
-    
+
     function load_images($id)
     {
         $db = new connect();
@@ -130,17 +130,28 @@ class products
     {
         $db = new connect();
         $select = "SELECT products.*, images.img as img, category.name as category_name
-                   FROM products 
-                   LEFT JOIN images ON products.id = images.id_pro
-                   LEFT JOIN category ON products.id_category = category.id
-                   WHERE 1 
-                   ORDER BY products.id DESC limit 0,10";
-        return $db->pdo_query($select);
+               FROM products 
+               LEFT JOIN images ON products.id = images.id_pro
+               LEFT JOIN category ON products.id_category = category.id
+               WHERE 1 
+               ORDER BY products.id DESC limit 0,10";
+
+        $result = $db->pdo_query($select);
+
+        // Loop through the result and associate images with each product
+        foreach ($result as &$product) {
+            $selectImages = "SELECT img FROM images WHERE id_pro=" . $product['id'];
+            $images = $db->pdo_query($selectImages);
+            $product['images'] = $images;
+        }
+
+        return $result;
     }
-    function load_sanpham_cungloai($id, $iddm)
+
+    function load_sanpham_cungloai($id, $id_category)
     {
         $db = new connect();
-        $select = "SELECT * FROM products WHERE id_category= " . $iddm . " AND id <>" . $id;
+        $select = "SELECT * FROM products WHERE id_category= " . $id_category . " AND id <>" . $id;
         return $db->pdo_query($select);
     }
 }

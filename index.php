@@ -27,8 +27,8 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             if(isset($_GET['idsp']) && ($_GET['idsp'] > 0)){
                 $id = $_GET['idsp'];    
                 $onesp =$product->loadone_sanpham($id);
-                // extract($onesp);
-                // $sp_cung_loai = $product->load_sanpham_cungloai($id, $iddm);
+                extract($onesp);
+                $sp_cung_loai = $product->load_sanpham_cungloai($id, $id_category);
                 include "view/product_full.php";
             }else{
                 include "view/home.php";
