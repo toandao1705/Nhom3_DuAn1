@@ -8,8 +8,17 @@ class category {
 
     function insert_danhmuc($tenloai){
         $db = new connect();
-        $select="INSERT INTO category(name) values('$tenloai')";
-        $db->pdo_execute($select);
+    
+        try {
+            $selectInsert = "INSERT INTO category (name) VALUES ('$tenloai')";
+            $db->pdo_execute($selectInsert);
+            echo "Thêm danh mục thành công";
+        } catch (PDOException $e) {
+            if ($e->getCode() == 23000) {
+            } else {
+                echo "Lỗi: " . $e->getMessage();
+            }
+        }
     }
 
     function loadone_danhmuc($id){

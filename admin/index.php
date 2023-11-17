@@ -111,11 +111,21 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'adddm':
                 $category = new category();
+                $thongbao = "";
+            
                 if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
                     $tenloai = $_POST['tenloai'];
-                    $categories = $category->insert_danhmuc($tenloai);
-                    $thongbao = "Thêm danh mục thành công";
+                    $insertResult = $category->insert_danhmuc($tenloai);
+            
+                    if ($insertResult === true) {
+                        $thongbao = "Thêm danh mục thành công";
+                    } elseif ($insertResult === false) {
+                        $thongbao = "Danh mục đã tồn tại";
+                    } else {
+                        $thongbao = "Danh mục đã tồn tại";
+                    }
                 }
+            
                 include "danhmuc/add.php";
                 break;
             case 'listdm':
