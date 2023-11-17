@@ -1,18 +1,16 @@
 <?php
 class products
 {
-    function insert_sanpham($tensp, $giasp, $mota, $iddm, $images)
+    function insert_sanpham($tensp, $giasp, $mota, $iddm, $targetFiles)
     {
         $db = new connect();
         $select = "INSERT INTO products(name, price, `describe`, id_category) VALUES ('$tensp', '$giasp', '$mota', '$iddm')";
-
-        $db->pdo_execute($select);
-
+    
         // Get the ID of the inserted product
         $productID = $db->pdo_execute_return_lastInsertId($select);
-
+    
         // Insert images
-        foreach ($images as $image) {
+        foreach ($targetFiles as $image) {
             $this->insert_image($productID, $image);
         }
     }

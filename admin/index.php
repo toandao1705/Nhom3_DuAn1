@@ -141,36 +141,43 @@ if (isset($_SESSION['admin'])) {
                 $categories = $category->status_danhmuc($status);
                 include "danhmuc/list.php";
                 break;
-            case 'addsp':
-                $products = new products();
-                $category = new category();
-                if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
-                    $iddm = $_POST['iddm'];
-                    $tensp = $_POST['tensp'];
-                    $giasp = $_POST['giasp'];
-                    $mota = $_POST['mota'];
-
-                    if (isset($_FILES['hinh']['name']) && !empty($_FILES['hinh']['name'][0])) {
-                        $images = $_FILES['hinh']['name'];
-                        $target_dir = "../upload/";
-                        $target_file = $target_dir . basename($_FILES["hinh"]["name"][0]);
-                        foreach ($images as $key => $image) {
-                            $target_file = $target_dir . basename($image);
-                            if (move_uploaded_file($_FILES["hinh"]["tmp_name"][$key], $target_file)) {
-                                // File uploaded successfully
-                            } else {
-                                // Error uploading file
+                case 'addsp':
+                    $products = new products();
+                    $category = new category();
+                    if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
+                        $iddm = $_POST['iddm'];
+                        $tensp = $_POST['tensp'];
+                        $giasp = $_POST['giasp'];
+                        $mota = $_POST['mota'];
+                
+                        // Kiểm tra xem đã tải lên hình ảnh hay chưa
+                        if (isset($_FILES['hinh']['name']) && !empty($_FILES['hinh']['name'][0])) {
+                            $images = $_FILES['hinh']['name'];
+                            $target_dir = "../upload/";
+                
+                            // Di chuyển tất cả hình ảnh vào thư mục đích
+                            $targetFiles = [];
+                            foreach ($images as $key => $image) {
+                                $targetFiles[] = $target_dir . basename($image);
+                                if (move_uploaded_file($_FILES["hinh"]["tmp_name"][$key], $targetFiles[$key])) {
+                                    // File uploaded successfully
+                                } else {
+                                    // Error uploading file
+                                    die('Error uploading file');
+                                }
                             }
+                
+                            // Chèn sản phẩm chỉ khi có hình ảnh
+                            $products->insert_sanpham($tensp, $giasp, $mota, $iddm, $targetFiles);
+                            $thongbao = "Thêm thành công";
+                        } else {
+                            $thongbao = "Thêm không thành công vì không có hình ảnh";
                         }
                     }
-
-                    $images = $_FILES['hinh']['name'];
-                    $products->insert_sanpham($tensp, $giasp, $mota, $iddm, $images);
-                    $thongbao = "Thêm thành công";
-                }
-                $categories = $category->loadall_danhmuc();
-                include "sanpham/add.php";
-                break;
+                
+                    $categories = $category->loadall_danhmuc();
+                    include "sanpham/add.php";
+                    break;
             case 'listsp':
                 $loadedProducts = new products();
                 $category = new category();
