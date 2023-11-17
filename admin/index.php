@@ -7,6 +7,8 @@ include '../model/user.php';
 include '../model/banner.php';
 include '../model/category.php';
 include '../model/product.php';
+include '../model/comment.php';
+include '../model/cart.php';
 $act = 'home';
 if (isset($_SESSION['admin'])) {
     // Nếu đã đăng nhập, bao gồm header, footer và sidebar
@@ -121,9 +123,28 @@ if (isset($_SESSION['admin'])) {
             case 'listdm':
                 $category = new category();
                 $delete = 0;
-                $categories = $category->status_danhmuc($delete);
+
+                //Đặt số lượng bản ghi trên mỗi trang
+                $limit = 5;
+
+                // Lấy số trang hiện tại từ URL
+                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                // Tính điểm bắt đầu để tìm nạp bản ghi
+                $start = ($page - 1) * $limit;
+
+                // Tìm nạp danh mục cho trang hiện tại
+                $categories = $category->status_danhmuc($delete, $start, $limit);
+
+                // Đếm tổng số bản ghi
+                $totalCategories = count($category->status_danhmuc($delete, 0, PHP_INT_MAX));
+
+                // Tính tổng số trang
+                $totalPages = ceil($totalCategories / $limit);
+
                 include "danhmuc/list.php";
                 break;
+
             case 'updatedm':
                 $category = new category();
                 if (isset($_GET['id']) && ($_GET['id']) > 0) {
@@ -139,9 +160,8 @@ if (isset($_SESSION['admin'])) {
                     $category->update_danhmuc($id, $tenloai);
                 }
                 $sql = "SELECT * FROM category ORDER BY id DESC";
-                $status = 0;
-                $categories = $category->status_danhmuc($status);
-                include "danhmuc/list.php";
+                $delete = 0;
+                header('location: index.php?act=listdm');
                 break;
             case 'addsp':
                 $products = new products();
@@ -152,24 +172,31 @@ if (isset($_SESSION['admin'])) {
                     $giasp = $_POST['giasp'];
                     $mota = $_POST['mota'];
 
+                    // Kiểm tra xem đã tải lên hình ảnh hay chưa
                     if (isset($_FILES['hinh']['name']) && !empty($_FILES['hinh']['name'][0])) {
                         $images = $_FILES['hinh']['name'];
                         $target_dir = "../upload/";
-                        $target_file = $target_dir . basename($_FILES["hinh"]["name"][0]);
+
+                        // Di chuyển tất cả hình ảnh vào thư mục đích
+                        $targetFiles = [];
                         foreach ($images as $key => $image) {
-                            $target_file = $target_dir . basename($image);
-                            if (move_uploaded_file($_FILES["hinh"]["tmp_name"][$key], $target_file)) {
+                            $targetFiles[] = $target_dir . basename($image);
+                            if (move_uploaded_file($_FILES["hinh"]["tmp_name"][$key], $targetFiles[$key])) {
                                 // File uploaded successfully
                             } else {
                                 // Error uploading file
+                                die('Error uploading file');
                             }
                         }
-                    }
 
-                    $images = $_FILES['hinh']['name'];
-                    $products->insert_sanpham($tensp, $giasp, $mota, $iddm, $images);
-                    $thongbao = "Thêm thành công";
+                        // Chèn sản phẩm chỉ khi có hình ảnh
+                        $products->insert_sanpham($tensp, $giasp, $mota, $iddm, $targetFiles);
+                        $thongbao = "Thêm thành công";
+                    } else {
+                        $thongbao = "Thêm không thành công vì không có hình ảnh";
+                    }
                 }
+
                 $categories = $category->loadall_danhmuc();
                 include "sanpham/add.php";
                 break;
@@ -237,7 +264,23 @@ if (isset($_SESSION['admin'])) {
             case 'list_delete_history':
                 $category = new category();
                 $delete = 1;
-                $categories = $category->status_danhmuc($delete);
+                // Đặt số lượng bản ghi trên mỗi trang
+                $limit = 5;
+
+                // Lấy số trang hiện tại từ URL
+                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                //Tính điểm bắt đầu để tìm nạp bản ghi
+                $start = ($page - 1) * $limit;
+
+                // Tìm nạp danh mục cho trang hiện tại
+                $categories = $category->status_danhmuc($delete, $start, $limit);
+
+                // Đếm tổng số bản ghi
+                $totalCategories = count($category->status_danhmuc($delete, 0, PHP_INT_MAX));
+
+                // Tính tổng số trang
+                $totalPages = ceil($totalCategories / $limit);
                 include "danhmuc/delete.php";
                 break;
             case 'delete_hidden':
@@ -267,7 +310,7 @@ if (isset($_SESSION['admin'])) {
                 }
                 $sql = "SELECT * FROM category ORDER BY id DESC";
                 $delete = 1;
-                $categories = $category->status_danhmuc($delete);
+                $categories = $category->status_danhmuc($delete, '', '');
                 include "danhmuc/delete.php";
                 break;
 
@@ -308,15 +351,21 @@ if (isset($_SESSION['admin'])) {
                 include "sanpham/delete.php";
                 break;
             case 'listtk':
+                $taikhoan = new user();
+                $listtk = $taikhoan->loadall_taikhoan();
                 include "taikhoan/list.php";
                 break;
             case 'updatetk':
                 include "taikhoan/update.php";
                 break;
             case 'listbl':
+                $binhluan = new comment();
+                $listbl = $binhluan->loadall_binhluan();
                 include "binhluan/list.php";
                 break;
             case 'listdh':
+                $donhang = new cart();
+                $listdh = $donhang->loadall_donhang();
                 include "donhang/list.php";
                 break;
             case 'listthongke':
