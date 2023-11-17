@@ -18,14 +18,19 @@
     <!-- Deals -->
     <link rel="stylesheet" href="view/assets/css/plugins/slider-range.css" />
     <!--leaflet map-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
 </head>
 </head>
 
 <body>
     <!-- Quick view -->
-    <div class="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+    <div class="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -74,7 +79,8 @@
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="detail-info pr-30 pl-30">
                                 <span class="stock-status out-stock"> Sale Off </span>
-                                <h3 class="title-detail"><a href="index.php?act=product_full" class="text-heading">Seeds of Change Organic Quinoa, Brown</a></h3>
+                                <h3 class="title-detail"><a href="index.php?act=product_full" class="text-heading">Seeds
+                                        of Change Organic Quinoa, Brown</a></h3>
                                 <div class="product-detail-rating">
                                     <div class="product-rate-cover text-end">
                                         <div class="product-rate d-inline-block">
@@ -99,7 +105,8 @@
                                         <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
                                     </div>
                                     <div class="product-extra-link2">
-                                        <button type="submit" class="button button-add-to-cart"><i class="fi-rs-shopping-cart"></i>Add to cart</button>
+                                        <button type="submit" class="button button-add-to-cart"><i
+                                                class="fi-rs-shopping-cart"></i>Add to cart</button>
                                     </div>
                                 </div>
                                 <div class="font-xs">
@@ -130,17 +137,12 @@
                         <div class="search-style-2">
                             <form action="index.php?act=search" method="post">
                                 <select class="select-active">
-                                    <option>All Categories</option>
-                                    <option>Milks and Dairies</option>
-                                    <option>Wines & Alcohol</option>
-                                    <option>Clothing & Beauty</option>
-                                    <option>Pet Foods & Toy</option>
-                                    <option>Fast food</option>
-                                    <option>Baking material</option>
-                                    <option>Vegetables</option>
-                                    <option>Fresh Seafood</option>
-                                    <option>Noodles & Rice</option>
-                                    <option>Ice cream</option>
+                                    <?php
+                                    foreach ($categories as $category) {
+                                        extract($category);
+                                        echo '<option>'.$category['name'].'</option>';
+                                    }
+                                    ?>
                                 </select>
                                 <input type="text" placeholder="Search for items..." />
                                 <button type="submit"><i class="fi-rs-search"></i></button>
@@ -170,14 +172,16 @@
                                 </div>
                                 <div class="header-action-icon-2">
                                     <a href="shop-compare.php">
-                                        <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-compare.svg" />
+                                        <img class="svgInject" alt="Nest"
+                                            src="view/assets/imgs/theme/icons/icon-compare.svg" />
                                         <span class="pro-count blue">3</span>
                                     </a>
                                     <a href="shop-compare.php"><span class="lable ml-0">Compare</span></a>
                                 </div>
                                 <div class="header-action-icon-2">
                                     <a href="shop-wishlist.php">
-                                        <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-heart.svg" />
+                                        <img class="svgInject" alt="Nest"
+                                            src="view/assets/imgs/theme/icons/icon-heart.svg" />
                                         <span class="pro-count blue">6</span>
                                     </a>
                                     <a href="shop-wishlist.php"><span class="lable">Wishlist</span></a>
@@ -192,7 +196,8 @@
                                         <ul>
                                             <li>
                                                 <div class="shopping-cart-img">
-                                                    <a href="index.php?act=product_full"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-3.jpg" /></a>
+                                                    <a href="index.php?act=product_full"><img alt="Nest"
+                                                            src="view/assets/imgs/shop/thumbnail-3.jpg" /></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
                                                     <h4><a href="index.php?act=product_full">Daisy Casual Bag</a></h4>
@@ -204,7 +209,8 @@
                                             </li>
                                             <li>
                                                 <div class="shopping-cart-img">
-                                                    <a href="index.php?act=product_full"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-2.jpg" /></a>
+                                                    <a href="index.php?act=product_full"><img alt="Nest"
+                                                            src="view/assets/imgs/shop/thumbnail-2.jpg" /></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
                                                     <h4><a href="index.php?act=product_full">Corduroy Shirts</a></h4>
@@ -228,17 +234,24 @@
                                 </div>
                                 <div class="header-action-icon-2">
                                     <a href="index.php?act=account">
-                                        <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-user.svg" />
+                                        <img class="svgInject" alt="Nest"
+                                            src="view/assets/imgs/theme/icons/icon-user.svg" />
                                     </a>
                                     <a href="index.php?act=account"><span class="lable ml-0">Account</span></a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                         <ul>
-                                            <li><a href="page-account.php"><i class="fi fi-rs-user mr-10"></i>My Account</a></li>
-                                            <li><a href="page-account.php"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
-                                            <li><a href="page-account.php"><i class="fi fi-rs-label mr-10"></i>My Voucher</a></li>
-                                            <li><a href="shop-wishlist.php"><i class="fi fi-rs-heart mr-10"></i>My Wishlist</a></li>
-                                            <li><a href="page-account.php"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
-                                            <li><a href="page-login.php"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a></li>
+                                            <li><a href="page-account.php"><i class="fi fi-rs-user mr-10"></i>My
+                                                    Account</a></li>
+                                            <li><a href="page-account.php"><i
+                                                        class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
+                                            <li><a href="page-account.php"><i class="fi fi-rs-label mr-10"></i>My
+                                                    Voucher</a></li>
+                                            <li><a href="shop-wishlist.php"><i class="fi fi-rs-heart mr-10"></i>My
+                                                    Wishlist</a></li>
+                                            <li><a href="page-account.php"><i
+                                                        class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
+                                            <li><a href="page-login.php"><i class="fi fi-rs-sign-out mr-10"></i>Sign
+                                                    out</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -263,71 +276,73 @@
                             <div class="categories-dropdown-wrap categories-dropdown-active-large font-heading">
                                 <div class="d-flex categori-dropdown-inner">
                                     <ul>
-                                        <li>
-                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-1.svg" alt="" />Milks and Dairies</a>
-                                        </li>
-                                        <li>
-                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-2.svg" alt="" />Clothing & beauty</a>
-                                        </li>
-                                        <li>
-                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods & Toy</a>
-                                        </li>
-                                        <li>
-                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-4.svg" alt="" />Baking material</a>
-                                        </li>
-                                        <li>
-                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a>
-                                        </li>
+                                        <?php
+                                        if (!empty($categories)) {
+                                            $count = 0; // Đếm số lượng danh mục đã hiển thị
+                                            
+                                            foreach ($categories as $category) {
+                                                extract($category);
+                                                
+                                                echo '
+                                                
+                                                <li>
+                                                        <a href="shop-grid-right.php">
+                                                            <img src="view/assets/imgs/theme/icons/category-1.svg" alt=""/> '.$category['name'].'
+                                                        </a>
+                                                    </li>
+                                                    ';
+
+                                                
+                                                $count++;
+                                                if ($count >= 5) {
+                                                    break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
+                                                }
+                                            }
+                                        ?>
                                     </ul>
-                                    <ul class="end">
-                                        <li>
-                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-6.svg" alt="" />Wines & Drinks</a>
-                                        </li>
-                                        <li>
-                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-7.svg" alt="" />Fresh Seafood</a>
-                                        </li>
-                                        <li>
-                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-8.svg" alt="" />Fast food</a>
-                                        </li>
-                                        <li>
-                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-9.svg" alt="" />Vegetables</a>
-                                        </li>
-                                        <li>
-                                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-10.svg" alt="" />Bread and Juice</a>
-                                        </li>
-                                    </ul>
+                                    <?php
+                                            
+                                            // Kiểm tra nếu còn danh mục tiếp theo, thì hiển thị danh mục tiếp theo trong một <ul> mới với lớp CSS là "end"
+                                            if ($count < count($categories)) {
+                                                
+                                                for ($i = $count; $i < count($categories); $i++) {
+                                                    echo '
+                                                    <ul class = "end">
+                                                    <li >
+                                                            <a href="shop-grid-right.php">
+                                                                <img src="view/assets/imgs/theme/icons/category-1.svg" alt=""/> '.$categories[$i]['name'].'
+                                                            </a>
+                                                    </li>';
+                                                        $count++;
+                                                if ($count >= 10) {
+                                                    break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
+                                                }
+                                                }
+                                                
+                                                
+                                                echo '</ul>';
+                                            }
+                                           
+                                        }
+                                        
+                                        ?>
+
+
+
                                 </div>
-                                <div class="more_slide_open" style="display: none">
-                                    <div class="d-flex categori-dropdown-inner">
-                                        <ul>
-                                            <li>
-                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/icon-1.svg" alt="" />Milks and Dairies</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/icon-2.svg" alt="" />Clothing & beauty</a>
-                                            </li>
-                                        </ul>
-                                        <ul class="end">
-                                            <li>
-                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/icon-3.svg" alt="" />Wines & Drinks</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/icon-4.svg" alt="" />Fresh Seafood</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="more_categories"><span class="icon"></span> <span class="heading-sm-1">Show more...</span></div>
+
+
                             </div>
                         </div>
                         <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
                             <nav>
                                 <ul>
-                                    <li class="hot-deals"><img src="view/assets/imgs/theme/icons/icon-hot.svg" alt="hot deals" /><a href="index.php?act=deals">Deals</a></li>
+                                    <li class="hot-deals"><img src="view/assets/imgs/theme/icons/icon-hot.svg"
+                                            alt="hot deals" /><a href="index.php?act=deals">Deals</a></li>
                                     <li>
                                         <a class="active" href="index.php">Home</a>
                                     </li>
-                                    
+
                                     <li>
                                         <a href="index.php?act=shop">Shop <i class="fi-rs-angle-down"></i></a>
                                     </li>
@@ -341,15 +356,18 @@
                                                     <li><a href="index.php?act=product_full">Fresh Vegetables</a></li>
                                                     <li><a href="index.php?act=product_full">Herbs & Seasonings</a></li>
                                                     <li><a href="index.php?act=product_full">Cuts & Sprouts</a></li>
-                                                    <li><a href="index.php?act=product_full">Exotic Fruits & Veggies</a></li>
+                                                    <li><a href="index.php?act=product_full">Exotic Fruits & Veggies</a>
+                                                    </li>
                                                     <li><a href="index.php?act=product_full">Packaged Produce</a></li>
                                                 </ul>
                                             </li>
                                             <li class="sub-mega-menu sub-mega-menu-width-22">
                                                 <a class="menu-title" href="#">Breakfast & Dairy</a>
                                                 <ul>
-                                                    <li><a href="index.php?act=product_full">Milk & Flavoured Milk</a></li>
-                                                    <li><a href="index.php?act=product_full">Butter and Margarine</a></li>
+                                                    <li><a href="index.php?act=product_full">Milk & Flavoured Milk</a>
+                                                    </li>
+                                                    <li><a href="index.php?act=product_full">Butter and Margarine</a>
+                                                    </li>
                                                     <li><a href="index.php?act=product_full">Eggs Substitutes</a></li>
                                                     <li><a href="index.php?act=product_full">Marmalades</a></li>
                                                     <li><a href="index.php?act=product_full">Sour Cream</a></li>
@@ -363,13 +381,16 @@
                                                     <li><a href="index.php?act=product_full">Dinner Sausage</a></li>
                                                     <li><a href="index.php?act=product_full">Chicken</a></li>
                                                     <li><a href="index.php?act=product_full">Sliced Deli Meat</a></li>
-                                                    <li><a href="index.php?act=product_full">Wild Caught Fillets</a></li>
+                                                    <li><a href="index.php?act=product_full">Wild Caught Fillets</a>
+                                                    </li>
                                                     <li><a href="index.php?act=product_full">Crab and Shellfish</a></li>
                                                 </ul>
                                             </li>
                                             <li class="sub-mega-menu sub-mega-menu-width-34">
                                                 <div class="menu-banner-wrap">
-                                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/banner/banner-menu.png" alt="Nest" /></a>
+                                                    <a href="index.php?act=product_full"><img
+                                                            src="view/assets/imgs/banner/banner-menu.png"
+                                                            alt="Nest" /></a>
                                                     <div class="menu-banner-content">
                                                         <h4>Hot deals</h4>
                                                         <h3>
@@ -434,7 +455,8 @@
                                     <ul>
                                         <li>
                                             <div class="shopping-cart-img">
-                                                <a href="index.php?act=product_full"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-3.jpg" /></a>
+                                                <a href="index.php?act=product_full"><img alt="Nest"
+                                                        src="view/assets/imgs/shop/thumbnail-3.jpg" /></a>
                                             </div>
                                             <div class="shopping-cart-title">
                                                 <h4><a href="index.php?act=product_full">Plain Striola Shirts</a></h4>
@@ -446,7 +468,8 @@
                                         </li>
                                         <li>
                                             <div class="shopping-cart-img">
-                                                <a href="index.php?act=product_full"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-4.jpg" /></a>
+                                                <a href="index.php?act=product_full"><img alt="Nest"
+                                                        src="view/assets/imgs/shop/thumbnail-4.jpg" /></a>
                                             </div>
                                             <div class="shopping-cart-title">
                                                 <h4><a href="index.php?act=product_full">Macbook Pro 2022</a></h4>

@@ -1,8 +1,8 @@
 <?php
 class category {
-    function loadall_danhmuc(){
+    function loadall_danhmuc($status){
         $db = new connect();
-        $select="SELECT * FROM category order by id desc";
+        $select="SELECT * FROM category WHERE status = ".$status." order by id desc";
         return $db->pdo_query($select);
     }
 
