@@ -124,20 +124,35 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one">
                     <div class="row product-grid-4">
-                    <?php
-foreach ($spnew as $sp) {
-    extract($sp);
-    $linksp = "index.php?act=sanphamct&idsp=" . $id;
-    
-    $hinh = $img_path.$img;
-    echo '
-        <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
-            <div class="product-cart-wrap mb-30">
-                <div class="product-img-action-wrap">
-                    <div class="product-img product-img-zoom">
-                        <a href="' . $linksp . '">
-                            <img class="default-img" src="' . $hinh . '" alt="' . $name . '" style="width="246.22px"; height="246.22px";" />
-                        </a>
+                        <?php
+                        // Mảng để lưu ID của các sản phẩm đã được hiển thị
+                        $displayedProducts = array();
+
+                        foreach ($spnew as $sp) {
+                            extract($sp);
+
+                            // Kiểm tra xem sản phẩm đã được hiển thị chưa
+                            if (!in_array($id, $displayedProducts)) {
+                                $displayedProducts[] = $id; // Thêm ID vào mảng
+
+                                $linksp = "index.php?act=product_full&idsp=" . $id;
+                                echo '
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="product-cart-wrap mb-30">
+                    <div class="product-img-action-wrap">
+                        <div class="product-img product-img-zoom">';
+                        ?>
+                                <?php
+                                // Di chuyển vòng lặp hình ảnh ra khỏi vòng lặp sản phẩm
+                                    $imgPath = $img_path . $img;
+                                ?>
+                                    <a href="<?= $linksp ?>">
+                                        <img class="default-img" src="<?php echo $imgPath; ?>" style="width:246.22px; height:246.22px;" />
+                                    </a>
+                                <?php
+                                ?>
+                        <?php
+                                echo '
                     </div>
                     <div class="product-action-1">
                         <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
@@ -174,9 +189,12 @@ foreach ($spnew as $sp) {
                 </div>
             </div>
         </div>
-    ';
-}
-?>
+        ';
+                            }
+                        }
+                        ?>
+
+
 
                         <!--end product card-->
                         <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
