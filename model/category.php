@@ -23,11 +23,12 @@ class category {
         $select="UPDATE category SET name ='".$tenloai."' WHERE id=".$id;
         $db->pdo_execute($select);
     }
-    function status_danhmuc($delete){
+    function status_danhmuc($delete, $start, $limit){
         $db = new connect();
-        $select = "SELECT * FROM category WHERE `delete`=" . $delete;
+        $select = "SELECT * FROM category WHERE `delete`=" . $delete . " LIMIT $start, $limit";
         return $db->pdo_query($select);
     }
+    
     function delete_hidden($id){
         $db = new connect();
         $select="UPDATE category SET `delete` ='1' WHERE id=".$id;

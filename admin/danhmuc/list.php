@@ -7,7 +7,7 @@
                     <div class="card-header d-flex justify-content-between">
                         <h3 class="card-title">Quản Lý Danh Mục</h3>
                         <h3 class="card-title ml-auto"><a href="index.php?act=list_delete_history">Lịch sử xóa danh mục</a></h3>
-                        
+
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
@@ -42,6 +42,14 @@
                                 ?>
                             </tbody>
                         </table>
+                        <!-- Pagination -->
+                        <ul class="pagination">
+                            <?php
+                            for ($i = 1; $i <= $totalPages; $i++) {
+                                echo '<li class="page-item"><a class="page-link" href="index.php?act=listdm&page=' . $i . '">' . $i . '</a></li>';
+                            }
+                            ?>
+                        </ul>
                         <div class="box mt-3">
                             <button class="btn btn-primary mb-3" id="select-all">Chọn tất cả</button>
                             <button class="btn btn-warning mb-3" id="deselect-all">Bỏ chọn tất cả</button>
