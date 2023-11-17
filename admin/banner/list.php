@@ -1,49 +1,50 @@
-    <!-- Main content -->
-    <section class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header d-flex justify-content-between">
-                            <h3 class="card-title">Quản Lý Banner</h3>
-                            <h3 class="card-title ml-auto"><a href="index.php?act=list_delete_history_banner">Lịch sử xóa banner</a></h3>
-                        </div>
-                        <!-- /.card-header -->
-                        <div class="card-body">
-                            <table id="example2" class="table table-bordered table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Tích</th>
-                                        <th>Mã</th>
-                                        <th>Title</th>
-                                        <th>Subtitle</th>
-                                        <th>Hình ảnh</th>
-                                        <th>Thao tác</th>
-                                    </tr>
-                                </thead>
-                                <?php
-                                if (!empty($listbanner)) {
-                                    // Hiển thị thông tin danh mục
-                                    foreach($listbanner as $banner){
-                                        extract($banner);
-                                        echo '<tr>
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h3 class="card-title">Quản Lý Banner</h3>
+                        <h3 class="card-title ml-auto"><a href="index.php?act=list_delete_history_banner">Lịch sử xóa
+                                banner</a></h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="example2" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tích</th>
+                                    <th>Mã</th>
+                                    <th>Title</th>
+                                    <th>Subtitle</th>
+                                    <th>Hình ảnh</th>
+                                    <th>Thao tác</th>
+                                </tr>
+                            </thead>
+                            <?php
+                            if (!empty($listbanner)) {
+                                // Hiển thị thông tin danh mục
+                                foreach ($listbanner as $banner) {
+                                    extract($banner);
+                                    echo '<tr>
                                             <td><input type="checkbox"></td>
-                                            <td>'.$id.'</td>
-                                            <td>'.$title.'</td>
-                                            <td>'.$subtitle.'</td>
-                                            <td><img src="'.IMG_PATH_ADMIN.$img.'" width="80px"  /></td>
+                                            <td>' . $id . '</td>
+                                            <td>' . $title . '</td>
+                                            <td>' . $subtitle . '</td>
+                                            <td><img src="' . IMG_PATH_ADMIN . $img . '" width="80px"  /></td>
                                             <td>
-                                                <a href="index.php?act=updatebn&id='.$id.'"><button class="btn btn-primary">Sửa</button></a>
-                                                <a href="index.php?act=delete_hidden_banner&id='.$id.'"><button class="btn btn-danger">Xóa</button></a>
+                                                <a href="index.php?act=updatebn&id=' . $id . '"><button class="btn btn-primary">Sửa</button></a>
+                                                <a href="index.php?act=delete_hidden_banner&id=' . $id . '"><button class="btn btn-danger">Xóa</button></a>
                                             </td>
                                         </tr>';
-                                    }
-                                } else {
-                                    echo '<tr><td colspan="4">Không có banner nào.</td></tr>';
                                 }
-                                ?>
-                                <tbody>
-                                    <!-- <tr>
+                            } else {
+                                echo '<tr><td colspan="4">Không có banner nào.</td></tr>';
+                            }
+                            ?>
+                            <tbody>
+                                <!-- <tr>
                                         <td><input type="checkbox"></td>
                                         <td>1</td>
                                         <td>text</td>
@@ -55,28 +56,29 @@
 
                                         </td>
                                     </tr> -->
-                                </tbody>
+                            </tbody>
 
 
-                            </table>
-                            <div class="box mt-3">
-                                <button class="btn btn-primary mb-3" id="select-all">Chọn tất cả</button>
-                                <button class="btn btn-warning mb-3" id="deselect-all">Bỏ chọn tất cả</button>
-                                <button class="btn btn-danger mb-3" id="delete-selected">Xóa các mục đã chọn</button>
-                                <a href="index.php?act=addbn"><button class="btn btn-success mb-3" id="add-row">Thêm</button></a>
-                            </div>
+                        </table>
+                        <div class="box mt-3">
+                            <button class="btn btn-primary mb-3" id="select-all">Chọn tất cả</button>
+                            <button class="btn btn-warning mb-3" id="deselect-all">Bỏ chọn tất cả</button>
+                            <button class="btn btn-danger mb-3" id="delete-selected">Xóa các mục đã chọn</button>
+                            <a href="index.php?act=addbn"><button class="btn btn-success mb-3"
+                                    id="add-row">Thêm</button></a>
                         </div>
-
-                        <!-- /.card-body -->
                     </div>
-                    <!-- /.card -->
 
-                    <!-- /.card -->
+                    <!-- /.card-body -->
                 </div>
-                <!-- /.col -->
+                <!-- /.card -->
+
+                <!-- /.card -->
             </div>
-            <!-- /.row -->
+            <!-- /.col -->
         </div>
-        <!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->

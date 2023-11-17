@@ -15,9 +15,9 @@ if (isset($_SESSION['admin'])) {
     if (isset($_GET['act'])) {
         $act = $_GET['act'];
         switch ($act) {
-                // case 'addbn':
-                //     include "banner/add.php";
-                //     break;
+            // case 'addbn':
+            //     include "banner/add.php";
+            //     break;
             case 'addbn':
                 if (isset($_POST['addbn'])) {
                     // lấy dữ liệu về 
@@ -38,10 +38,11 @@ if (isset($_SESSION['admin'])) {
                     $banner = new banner();
                     $delete = 0;
                     $listbanner = $banner->loadall_banner($delete);
-                    include "banner/list.php";
-                } else {
-                    include "banner/add.php";
+                    $thongbao = "Thêm banner thành công";
+                
                 }
+                include "banner/add.php";
+                
                 break;
             case 'listbn':
                 $banner = new banner();
@@ -105,7 +106,7 @@ if (isset($_SESSION['admin'])) {
                 }
                 $sql = "SELECT * FROM banner order by id desc";
                 $delete = 1;
-                $listbanner = $banner-> loadall_banner($delete);
+                $listbanner = $banner->loadall_banner($delete);
                 include "banner/delete.php";
                 break;
             case 'adddm':
