@@ -41,9 +41,23 @@ class products
     function loadone_sanpham($id)
     {
         $db = new connect();
-        $select = "SELECT * FROM products WHERE id=" . $id;
-        return $db->pdo_query_one($select);
+        $select = "SELECT products.*, images.img as img, category.name as category_name
+                   FROM products 
+                   LEFT JOIN images ON products.id = images.id_pro
+                   LEFT JOIN category ON products.id_category = category.id
+                   WHERE products.id=" . $id;
+        $result = $db->pdo_query_one($select);
+    
+        // Lấy tất cả các hình ảnh liên quan đến sản phẩm
+        $selectImages = "SELECT img FROM images WHERE id_pro=" . $id;
+        $images = $db->pdo_query($selectImages);
+    
+        // Thêm mảng hình ảnh vào kết quả
+        $result['images'] = $images;
+    
+        return $result;
     }
+    
     function load_images($id)
     {
         $db = new connect();
@@ -87,18 +101,21 @@ class products
             $this->insert_image($id, $image);
         }
     }
-    function delete_hidden_sanpham($id){
+    function delete_hidden_sanpham($id)
+    {
         $db = new connect();
-        $select="UPDATE products SET `delete` ='1' WHERE id=".$id;
+        $select = "UPDATE products SET `delete` ='1' WHERE id=" . $id;
         return $db->pdo_query($select);
     }
-    function restore_sanpham($id){
+    function restore_sanpham($id)
+    {
         $db = new connect();
-        $select="UPDATE products SET `delete` ='0' WHERE id=".$id;
+        $select = "UPDATE products SET `delete` ='0' WHERE id=" . $id;
         return $db->pdo_query($select);
     }
 
-    function delete_sanpham($id) {
+    function delete_sanpham($id)
+    {
         $db = new connect();
 
         // Delete images first
@@ -109,7 +126,8 @@ class products
         return $db->pdo_query($select);
     }
 
-    function loadall_sanpham_home() {
+    function loadall_sanpham_home()
+    {
         $db = new connect();
         $select = "SELECT products.*, images.img as img, category.name as category_name
                    FROM products 
@@ -119,7 +137,10 @@ class products
                    ORDER BY products.id DESC limit 0,10";
         return $db->pdo_query($select);
     }
-    
-    
-
+    function load_sanpham_cungloai($id, $iddm)
+    {
+        $db = new connect();
+        $select = "SELECT * FROM products WHERE id_category= " . $iddm . " AND id <>" . $id;
+        return $db->pdo_query($select);
+    }
 }

@@ -23,7 +23,16 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/reset_password.php";
             break;
         case 'product_full':
-            include "view/product_full.php";
+            $product = new products();
+            if(isset($_GET['idsp']) && ($_GET['idsp'] > 0)){
+                $id = $_GET['idsp'];    
+                $onesp =$product->loadone_sanpham($id);
+                // extract($onesp);
+                // $sp_cung_loai = $product->load_sanpham_cungloai($id, $iddm);
+                include "view/product_full.php";
+            }else{
+                include "view/home.php";
+            }
             break;
         case 'blog_post':
             include "view/blog_post.php";

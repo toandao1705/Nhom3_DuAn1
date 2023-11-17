@@ -127,7 +127,7 @@
                     <?php
 foreach ($spnew as $sp) {
     extract($sp);
-    $linksp = "index.php?act=sanphamct&idsp=" . $id;
+    $linksp = "index.php?act=product_full&idsp=" . $id;
     
     $hinh = $img_path.$img;
     echo '
