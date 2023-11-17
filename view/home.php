@@ -5,19 +5,29 @@
                 <div class="col-xl-8 col-lg-12">
                     <div class="home-slide-cover">
                         <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
-                            <div class="single-hero-slider single-animation-wrap" style="background-image: url(view/assets/imgs/slider/slider-3.png)">
-                                <div class="slider-content">
-                                    <h1 class="display-2 mb-40">
-                                        Pure Coffe<br />
-                                        Big discount
-                                    </h1>
-                                    <p class="mb-65">Save up to 50% off on your first order</p>
-                                    <form class="form-subcriber d-flex">
-                                        <input type="email" placeholder="Your emaill address" />
-                                        <button class="btn" type="submit">Subscribe</button>
-                                    </form>
+                            <?php
+                            foreach ($listbanner as $banner) {
+                                extract($banner);
+                                // $imgPath = $img_path . $img;
+                                echo '
+                                <div class="single-hero-slider single-animation-wrap" style="background-image: url(' . IMG_PATH_ADMIN . $img . ')">
+                                    <div class="slider-content">
+                                        <h1 class="display-2 mb-40">
+                                            '.$title.'
+                                           
+                                        </h1>
+                                        <p class="mb-65">'.$subtitle.'</p>
+                                        <form class="form-subcriber d-flex">
+                                            <input type="email" placeholder="Your emaill address" />
+                                            <button class="btn" type="submit">Subscribe</button>
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
+                                ';
+                            }
+
+                            ?>
+                            
                             <div class="single-hero-slider single-animation-wrap" style="background-image: url(view/assets/imgs/slider/slider-4.png)">
                                 <div class="slider-content">
                                     <h1 class="display-2 mb-40">
@@ -134,24 +144,24 @@
                             // Kiểm tra xem sản phẩm đã được hiển thị chưa
                             if (!in_array($id, $displayedProducts)) {
                                 $displayedProducts[] = $id; // Thêm ID vào mảng
-
+                        
                                 $linksp = "index.php?act=product_full&idsp=" . $id;
                                 echo '
             <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
                 <div class="product-cart-wrap mb-30">
                     <div class="product-img-action-wrap">
                         <div class="product-img product-img-zoom">';
-                        ?>
-                                <?php
-                                // Di chuyển vòng lặp hình ảnh ra khỏi vòng lặp sản phẩm
-                                    $imgPath = $img_path . $img;
                                 ?>
-                                    <a href="<?= $linksp ?>">
-                                        <img class="default-img" src="<?php echo $imgPath; ?>" style="width:246.22px; height:246.22px;" />
-                                    </a>
+                                        <?php
+                                        // Di chuyển vòng lặp hình ảnh ra khỏi vòng lặp sản phẩm
+                                        $imgPath = $img_path . $img;
+                                        ?>
+                                            <a href="<?= $linksp ?>">
+                                                <img class="default-img" src="<?php echo $imgPath; ?>" style="width:246.22px; height:246.22px;" />
+                                            </a>
+                                        <?php
+                                        ?>
                                 <?php
-                                ?>
-                        <?php
                                 echo '
                     </div>
                     <div class="product-action-1">
