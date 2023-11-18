@@ -10,7 +10,7 @@
                                 extract($banner);
                                 // $imgPath = $img_path . $img;
                                 echo '
-                                <div class="single-hero-slider single-animation-wrap" style="background-image: url(' . IMG_PATH_ADMIN . $img . ')">
+                                <div class="single-hero-slider single-animation-wrap" style="background-image: url(' . IMG_PATH_USER . $img . ')">
                                     <div class="slider-content">
                                         <h1 class="display-2 mb-40">
                                             '.$title.'
