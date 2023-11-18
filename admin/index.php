@@ -113,11 +113,18 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'adddm':
                 $category = new category();
+                $thongbao = "";
+            
                 if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
                     $tenloai = $_POST['tenloai'];
-                    $categories = $category->insert_danhmuc($tenloai);
-                    $thongbao = "Thêm danh mục thành công";
+                    try {
+                        $insertResult = $category->insert_danhmuc($tenloai);
+                        $thongbao = "Thêm danh mục thành công";
+                    } catch (Exception $e) {
+                        $thongbao = $e->getMessage();
+                    }
                 }
+            
                 include "danhmuc/add.php";
                 break;
             case 'listdm':
@@ -134,6 +141,7 @@ if (isset($_SESSION['admin'])) {
                 $start = ($page - 1) * $limit;
 
                 // Tìm nạp danh mục cho trang hiện tại
+                
                 $categories = $category->status_danhmuc($delete, $start, $limit);
 
                 // Đếm tổng số bản ghi
@@ -196,8 +204,8 @@ if (isset($_SESSION['admin'])) {
                         $thongbao = "Thêm không thành công vì không có hình ảnh";
                     }
                 }
-
-                $categories = $category->loadall_danhmuc();
+                $status = 0;
+                $categories = $category->loadall_danhmuc($status);
                 include "sanpham/add.php";
                 break;
             case 'listsp':
@@ -211,7 +219,8 @@ if (isset($_SESSION['admin'])) {
                     $iddm = 0;
                 }
                 $delete = 0;
-                $categories = $category->loadall_danhmuc();
+                $status = 0;
+                $categories = $category->loadall_danhmuc($status);
                 $productsList = $loadedProducts->loadall_sanpham($kyw, $iddm, $delete);
 
                 include "sanpham/list.php";
@@ -222,7 +231,8 @@ if (isset($_SESSION['admin'])) {
                 if (isset($_GET['id']) && ($_GET['id']) > 0) {
                     $product = $loadedProducts->loadone_sanpham($_GET['id']);
                 }
-                $categories = $category->loadall_danhmuc();
+                $status=0;
+                $categories = $category->loadall_danhmuc($status);
                 include "sanpham/update.php";
                 break;
             case 'update_product':
