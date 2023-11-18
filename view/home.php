@@ -5,23 +5,7 @@
                 <div class="col-xl-8 col-lg-12">
                     <div class="home-slide-cover">
                         <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
-                            <div class="single-hero-slider single-animation-wrap"
-                                style="background-image: url(view/assets/imgs/slider/slider-3.png)">
-                                <div class="slider-content">
-                                    <h1 class="display-2 mb-40">
-                                        Pure Coffe<br />
-                                        Big discount
-                                    </h1>
-                                    <p class="mb-65">Save up to 50% off on your first order</p>
-                                    <form class="form-subcriber d-flex">
-                                        <input type="email" placeholder="Your emaill address" />
-                                        <button class="btn" type="submit">Subscribe</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="single-hero-slider single-animation-wrap"
-                                style="background-image: url(view/assets/imgs/slider/slider-4.png)">
-                            <?php
+                        <?php
                             foreach ($listbanner as $banner) {
                                 extract($banner);
                                 // $imgPath = $img_path . $img;
@@ -30,7 +14,6 @@
                                     <div class="slider-content">
                                         <h1 class="display-2 mb-40">
                                             '.$title.'
-                                           
                                         </h1>
                                         <p class="mb-65">'.$subtitle.'</p>
                                         <form class="form-subcriber d-flex">
@@ -43,20 +26,6 @@
                             }
 
                             ?>
-                            
-                            <div class="single-hero-slider single-animation-wrap" style="background-image: url(view/assets/imgs/slider/slider-4.png)">
-                                <div class="slider-content">
-                                    <h1 class="display-2 mb-40">
-                                        Snacks box<br />
-                                        daily save
-                                    </h1>
-                                    <p class="mb-65">Sign up for the daily newsletter</p>
-                                    <form class="form-subcriber d-flex">
-                                        <input type="email" placeholder="Your emaill address" />
-                                        <button class="btn" type="submit">Subscribe</button>
-                                    </form>
-                                </div>
-                            </div>
                         </div>
                         <div class="slider-arrow hero-slider-1-arrow"></div>
                     </div>
