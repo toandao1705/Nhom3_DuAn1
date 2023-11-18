@@ -33,17 +33,18 @@
 
                             <!-- Thông báo thành công -->
                             <?php if (isset($thongbao) && ($thongbao != "")) : ?>
-                            <div id="success-alert" class="alert mt-3 btn-danger">
+                            <div id="success-alert"
+                                class="alert mt-3 <?php echo ($insertResult ? 'alert-success' : 'alert-danger'); ?>">
                                 <?php echo $thongbao; ?>
                             </div>
                             <?php endif; ?>
 
                             <!-- Thêm đoạn mã JavaScript -->
                             <script>
-                            // Sử dụng setTimeout để tự động ẩn đi sau 1 giây
+                            // Sử dụng setTimeout để tự động ẩn đi sau 3 giây
                             setTimeout(function() {
                                 document.getElementById('success-alert').style.display = 'none';
-                            }, 2000);
+                            }, 3000);
                             </script>
 
                     </form>

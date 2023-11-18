@@ -115,14 +115,11 @@ if (isset($_SESSION['admin'])) {
             
                 if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
                     $tenloai = $_POST['tenloai'];
-                    $insertResult = $category->insert_danhmuc($tenloai);
-            
-                    if ($insertResult === true) {
+                    try {
+                        $insertResult = $category->insert_danhmuc($tenloai);
                         $thongbao = "Thêm danh mục thành công";
-                    } elseif ($insertResult === false) {
-                        $thongbao = "Danh mục đã tồn tại";
-                    } else {
-                        $thongbao = "Danh mục đã tồn tại";
+                    } catch (Exception $e) {
+                        $thongbao = $e->getMessage();
                     }
                 }
             
@@ -142,6 +139,7 @@ if (isset($_SESSION['admin'])) {
                 $start = ($page - 1) * $limit;
 
                 // Tìm nạp danh mục cho trang hiện tại
+                
                 $categories = $category->status_danhmuc($delete, $start, $limit);
 
                 // Đếm tổng số bản ghi

@@ -5,7 +5,8 @@
                 <div class="col-xl-8 col-lg-12">
                     <div class="home-slide-cover">
                         <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
-                            <div class="single-hero-slider single-animation-wrap" style="background-image: url(view/assets/imgs/slider/slider-3.png)">
+                            <div class="single-hero-slider single-animation-wrap"
+                                style="background-image: url(view/assets/imgs/slider/slider-3.png)">
                                 <div class="slider-content">
                                     <h1 class="display-2 mb-40">
                                         Pure Coffe<br />
@@ -18,7 +19,8 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="single-hero-slider single-animation-wrap" style="background-image: url(view/assets/imgs/slider/slider-4.png)">
+                            <div class="single-hero-slider single-animation-wrap"
+                                style="background-image: url(view/assets/imgs/slider/slider-4.png)">
                                 <div class="slider-content">
                                     <h1 class="display-2 mb-40">
                                         Snacks box<br />
@@ -44,7 +46,8 @@
                                 <span class="text-brand">your<br />
                                     home</span>
                             </h2>
-                            <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                            <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i
+                                    class="fi-rs-arrow-small-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -63,7 +66,8 @@
                                 Everyday Fresh & <br />Clean with Our<br />
                                 Products
                             </h4>
-                            <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                            <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i
+                                    class="fi-rs-arrow-small-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +79,8 @@
                                 Make your Breakfast<br />
                                 Healthy and Easy
                             </h4>
-                            <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                            <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i
+                                    class="fi-rs-arrow-small-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +89,8 @@
                         <img src="view/assets/imgs/banner/banner-3.png" alt="" />
                         <div class="banner-text">
                             <h4>The best Organic <br />Products Online</h4>
-                            <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                            <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i
+                                    class="fi-rs-arrow-small-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -98,25 +104,34 @@
                 <h3>Popular Products</h3>
                 <ul class="nav nav-tabs links" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="nav-tab-one" data-bs-toggle="tab" data-bs-target="#tab-one" type="button" role="tab" aria-controls="tab-one" aria-selected="true">All</button>
+                        <button class="nav-link active" id="nav-tab-one" data-bs-toggle="tab" data-bs-target="#tab-one"
+                            type="button" role="tab" aria-controls="tab-one" aria-selected="true">All</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-two" data-bs-toggle="tab" data-bs-target="#tab-two" type="button" role="tab" aria-controls="tab-two" aria-selected="false">Milks & Dairies</button>
+                        <button class="nav-link" id="nav-tab-two" data-bs-toggle="tab" data-bs-target="#tab-two"
+                            type="button" role="tab" aria-controls="tab-two" aria-selected="false">Milks &
+                            Dairies</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-three" data-bs-toggle="tab" data-bs-target="#tab-three" type="button" role="tab" aria-controls="tab-three" aria-selected="false">Coffes & Teas</button>
+                        <button class="nav-link" id="nav-tab-three" data-bs-toggle="tab" data-bs-target="#tab-three"
+                            type="button" role="tab" aria-controls="tab-three" aria-selected="false">Coffes &
+                            Teas</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-four" data-bs-toggle="tab" data-bs-target="#tab-four" type="button" role="tab" aria-controls="tab-four" aria-selected="false">Pet Foods</button>
+                        <button class="nav-link" id="nav-tab-four" data-bs-toggle="tab" data-bs-target="#tab-four"
+                            type="button" role="tab" aria-controls="tab-four" aria-selected="false">Pet Foods</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-five" data-bs-toggle="tab" data-bs-target="#tab-five" type="button" role="tab" aria-controls="tab-five" aria-selected="false">Meats</button>
+                        <button class="nav-link" id="nav-tab-five" data-bs-toggle="tab" data-bs-target="#tab-five"
+                            type="button" role="tab" aria-controls="tab-five" aria-selected="false">Meats</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-six" data-bs-toggle="tab" data-bs-target="#tab-six" type="button" role="tab" aria-controls="tab-six" aria-selected="false">Vegetables</button>
+                        <button class="nav-link" id="nav-tab-six" data-bs-toggle="tab" data-bs-target="#tab-six"
+                            type="button" role="tab" aria-controls="tab-six" aria-selected="false">Vegetables</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-seven" data-bs-toggle="tab" data-bs-target="#tab-seven" type="button" role="tab" aria-controls="tab-seven" aria-selected="false">Fruits</button>
+                        <button class="nav-link" id="nav-tab-seven" data-bs-toggle="tab" data-bs-target="#tab-seven"
+                            type="button" role="tab" aria-controls="tab-seven" aria-selected="false">Fruits</button>
                     </li>
                 </ul>
             </div>
@@ -142,15 +157,14 @@
                     <div class="product-img-action-wrap">
                         <div class="product-img product-img-zoom">';
                         ?>
-                                <?php
+                        <?php
                                 // Di chuyển vòng lặp hình ảnh ra khỏi vòng lặp sản phẩm
                                     $imgPath = $img_path . $img;
                                 ?>
-                                    <a href="<?= $linksp ?>">
-                                        <img class="default-img" src="<?php echo $imgPath; ?>" style="width:246.22px; height:246.22px;" />
-                                    </a>
-                                <?php
-                                ?>
+                        <a href="<?= $linksp ?>">
+                            <img class="default-img" src="<?php echo $imgPath; ?>"
+                                style="width:246.22px; height:246.22px;" />
+                        </a>
                         <?php
                                 echo '
                     </div>
@@ -175,7 +189,7 @@
                         <span class="font-small ml-5 text-muted">3.5</span>
                     </div>
                     <div>
-                        <span class="font-small text-muted">By ' . $category_name . ' <a href="vendor-details-1.php"></a></span>
+                            <span class="font-small text-muted">By <a  href="vendor-details-1.php"> ' . $category_name . ' </a></span>
                     </div>
                     <div class="product-card-bottom">
                         <div class="product-price">
@@ -202,14 +216,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-2-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-2-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-2-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -219,7 +237,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken
+                                            Meatballs</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -227,7 +246,8 @@
                                         <span class="font-small ml-5 text-muted"> (3.5)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Stouffer</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Stouffer</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -235,7 +255,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -247,14 +268,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-3-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="new">New</span>
@@ -264,7 +289,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle
+                                            Corn</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 85%"></div>
@@ -272,7 +298,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">StarKist</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">StarKist</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -280,7 +307,8 @@
                                             <span class="old-price">$52.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -292,21 +320,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-4-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Vegetables</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo
+                                            Wings</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -314,7 +347,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -322,7 +356,8 @@
                                             <span class="old-price">$19.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -334,14 +369,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="best">-14%</span>
@@ -351,7 +390,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Pet Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted
+                                            Vegetables</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -359,7 +399,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -367,7 +408,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -379,21 +421,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-6-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -401,7 +448,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -409,7 +457,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -421,21 +470,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Meats</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml
+                                            - 400g</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -443,7 +497,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -451,7 +506,8 @@
                                             <span class="old-price">$33.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -463,14 +519,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -480,7 +540,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -488,7 +549,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -496,7 +558,8 @@
                                             <span class="old-price">$37.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -508,14 +571,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="hot">Hot</span>
@@ -525,7 +592,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Coffes</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with
+                                            soft paper</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -533,7 +601,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El Paso</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El
+                                                Paso</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -541,7 +610,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -553,21 +623,27 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Cream</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream
+                                            Ketchup</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 50%"></div>
@@ -575,7 +651,8 @@
                                         <span class="font-small ml-5 text-muted"> (2.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Tyson</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Tyson</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -583,7 +660,8 @@
                                             <span class="old-price">$24.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -601,14 +679,19 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="hot">Hot</span>
@@ -618,7 +701,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                    <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, &
+                                            Red Rice</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -626,7 +710,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -634,7 +719,8 @@
                                             <span class="old-price">$32.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -646,14 +732,19 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-12-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-12-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-12-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-12-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -663,7 +754,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken
+                                            Meatballs</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -671,7 +763,8 @@
                                         <span class="font-small ml-5 text-muted"> (3.5)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Stouffer</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Stouffer</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -679,7 +772,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -691,14 +785,19 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-13-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-13-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-13-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-13-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="new">New</span>
@@ -708,7 +807,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle
+                                            Corn</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 85%"></div>
@@ -716,7 +816,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">StarKist</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">StarKist</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -724,7 +825,8 @@
                                             <span class="old-price">$52.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -736,21 +838,27 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-14-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-14-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-14-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-14-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Vegetables</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo
+                                            Wings</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -758,7 +866,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -766,7 +875,8 @@
                                             <span class="old-price">$19.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -778,14 +888,19 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-15-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-15-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-15-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-15-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="best">-14%</span>
@@ -795,7 +910,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Pet Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted
+                                            Vegetables</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -803,7 +919,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -811,7 +928,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -823,21 +941,27 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-16-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-16-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-16-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-16-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -845,7 +969,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -853,7 +978,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -865,21 +991,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Meats</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml
+                                            - 400g</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -887,7 +1018,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -895,7 +1027,8 @@
                                             <span class="old-price">$33.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -907,14 +1040,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -924,7 +1061,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -932,7 +1070,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -940,7 +1079,8 @@
                                             <span class="old-price">$37.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -952,14 +1092,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="hot">Hot</span>
@@ -969,7 +1113,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Coffes</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with
+                                            soft paper</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -977,7 +1122,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El Paso</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El
+                                                Paso</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -985,7 +1131,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -997,21 +1144,27 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Cream</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream
+                                            Ketchup</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 50%"></div>
@@ -1019,7 +1172,8 @@
                                         <span class="font-small ml-5 text-muted"> (2.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Tyson</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Tyson</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1027,7 +1181,8 @@
                                             <span class="old-price">$24.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1045,14 +1200,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="hot">Hot</span>
@@ -1062,7 +1221,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                    <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, &
+                                            Red Rice</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1070,7 +1230,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1078,7 +1239,8 @@
                                             <span class="old-price">$32.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1090,14 +1252,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -1107,7 +1273,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken
+                                            Meatballs</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -1115,7 +1282,8 @@
                                         <span class="font-small ml-5 text-muted"> (3.5)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Stouffer</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Stouffer</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1123,7 +1291,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1135,14 +1304,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="new">New</span>
@@ -1152,7 +1325,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle
+                                            Corn</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 85%"></div>
@@ -1160,7 +1334,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">StarKist</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">StarKist</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1168,7 +1343,8 @@
                                             <span class="old-price">$52.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1180,21 +1356,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-6-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Vegetables</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo
+                                            Wings</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1202,7 +1383,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1210,7 +1392,8 @@
                                             <span class="old-price">$19.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1222,14 +1405,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="best">-14%</span>
@@ -1239,7 +1426,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Pet Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted
+                                            Vegetables</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1247,7 +1435,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1255,7 +1444,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1267,21 +1457,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-4-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1289,7 +1484,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1297,7 +1493,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1309,21 +1506,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-3-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Meats</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml
+                                            - 400g</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1331,7 +1533,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1339,7 +1542,8 @@
                                             <span class="old-price">$33.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1351,14 +1555,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-2-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-2-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-2-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -1368,7 +1576,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1376,7 +1585,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1384,7 +1594,8 @@
                                             <span class="old-price">$37.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1396,14 +1607,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="hot">Hot</span>
@@ -1413,7 +1628,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Coffes</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with
+                                            soft paper</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1421,7 +1637,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El Paso</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El
+                                                Paso</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1429,7 +1646,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1441,21 +1659,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-1-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-1-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-1-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Cream</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream
+                                            Ketchup</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 50%"></div>
@@ -1463,7 +1686,8 @@
                                         <span class="font-small ml-5 text-muted"> (2.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Tyson</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Tyson</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1471,7 +1695,8 @@
                                             <span class="old-price">$24.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1489,14 +1714,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-6-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="hot">Hot</span>
@@ -1506,7 +1735,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                    <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, &
+                                            Red Rice</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1514,7 +1744,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1522,7 +1753,8 @@
                                             <span class="old-price">$32.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1534,14 +1766,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -1551,7 +1787,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken
+                                            Meatballs</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -1559,7 +1796,8 @@
                                         <span class="font-small ml-5 text-muted"> (3.5)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Stouffer</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Stouffer</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1567,7 +1805,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1579,14 +1818,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="new">New</span>
@@ -1596,7 +1839,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle
+                                            Corn</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 85%"></div>
@@ -1604,7 +1848,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">StarKist</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">StarKist</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1612,7 +1857,8 @@
                                             <span class="old-price">$52.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1624,21 +1870,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Vegetables</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo
+                                            Wings</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1646,7 +1897,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1654,7 +1906,8 @@
                                             <span class="old-price">$19.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1666,14 +1919,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-4-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="best">-14%</span>
@@ -1683,7 +1940,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Pet Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted
+                                            Vegetables</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1691,7 +1949,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1699,7 +1958,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1711,21 +1971,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-3-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1733,7 +1998,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1741,7 +2007,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1753,21 +2020,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-2-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-2-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-2-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Meats</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml
+                                            - 400g</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1775,7 +2047,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1783,7 +2056,8 @@
                                             <span class="old-price">$33.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1795,14 +2069,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-1-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-1-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-1-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -1812,7 +2090,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1820,7 +2099,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1828,7 +2108,8 @@
                                             <span class="old-price">$37.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1840,14 +2121,19 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-11-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-11-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-11-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-11-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="hot">Hot</span>
@@ -1857,7 +2143,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Coffes</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with
+                                            soft paper</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1865,7 +2152,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El Paso</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El
+                                                Paso</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1873,7 +2161,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1885,21 +2174,27 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-12-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-12-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-12-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-12-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Cream</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream
+                                            Ketchup</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 50%"></div>
@@ -1907,7 +2202,8 @@
                                         <span class="font-small ml-5 text-muted"> (2.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Tyson</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Tyson</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1915,7 +2211,8 @@
                                             <span class="old-price">$24.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1933,14 +2230,19 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-12-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-12-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-12-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-12-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="hot">Hot</span>
@@ -1950,7 +2252,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                    <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, &
+                                            Red Rice</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1958,7 +2261,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1966,7 +2270,8 @@
                                             <span class="old-price">$32.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1978,14 +2283,19 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-13-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-13-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-13-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-13-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -1995,7 +2305,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken
+                                            Meatballs</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -2003,7 +2314,8 @@
                                         <span class="font-small ml-5 text-muted"> (3.5)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Stouffer</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Stouffer</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2011,7 +2323,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2023,14 +2336,19 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-14-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-14-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-14-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-14-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="new">New</span>
@@ -2040,7 +2358,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle
+                                            Corn</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 85%"></div>
@@ -2048,7 +2367,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">StarKist</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">StarKist</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2056,7 +2376,8 @@
                                             <span class="old-price">$52.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2068,21 +2389,27 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-15-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-15-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-15-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-15-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Vegetables</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo
+                                            Wings</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2090,7 +2417,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2098,7 +2426,8 @@
                                             <span class="old-price">$19.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2110,14 +2439,19 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-16-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-16-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-16-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-16-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="best">-14%</span>
@@ -2127,7 +2461,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Pet Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted
+                                            Vegetables</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2135,7 +2470,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2143,7 +2479,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2155,21 +2492,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2177,7 +2519,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2185,7 +2528,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2197,21 +2541,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Meats</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml
+                                            - 400g</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2219,7 +2568,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2227,7 +2577,8 @@
                                             <span class="old-price">$33.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2239,14 +2590,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -2256,7 +2611,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2264,7 +2620,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2272,7 +2629,8 @@
                                             <span class="old-price">$37.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2284,14 +2642,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="hot">Hot</span>
@@ -2301,7 +2663,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Coffes</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with
+                                            soft paper</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2309,7 +2672,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El Paso</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El
+                                                Paso</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2317,7 +2681,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2329,21 +2694,27 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Cream</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream
+                                            Ketchup</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 50%"></div>
@@ -2351,7 +2722,8 @@
                                         <span class="font-small ml-5 text-muted"> (2.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Tyson</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Tyson</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2359,7 +2731,8 @@
                                             <span class="old-price">$24.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2377,14 +2750,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-4-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="hot">Hot</span>
@@ -2394,7 +2771,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                    <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, &
+                                            Red Rice</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2402,7 +2780,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2410,7 +2789,8 @@
                                             <span class="old-price">$32.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2422,14 +2802,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-6-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -2439,7 +2823,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken
+                                            Meatballs</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -2447,7 +2832,8 @@
                                         <span class="font-small ml-5 text-muted"> (3.5)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Stouffer</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Stouffer</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2455,7 +2841,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2467,14 +2854,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="new">New</span>
@@ -2484,7 +2875,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle
+                                            Corn</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 85%"></div>
@@ -2492,7 +2884,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">StarKist</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">StarKist</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2500,7 +2893,8 @@
                                             <span class="old-price">$52.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2512,21 +2906,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Vegetables</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo
+                                            Wings</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2534,7 +2933,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2542,7 +2942,8 @@
                                             <span class="old-price">$19.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2554,14 +2955,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="best">-14%</span>
@@ -2571,7 +2976,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Pet Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted
+                                            Vegetables</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2579,7 +2985,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2587,7 +2994,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2599,21 +3007,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-6-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-6-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2621,7 +3034,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2629,7 +3043,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2641,21 +3056,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Meats</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml
+                                            - 400g</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2663,7 +3083,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2671,7 +3092,8 @@
                                             <span class="old-price">$33.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2683,14 +3105,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -2700,7 +3126,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2708,7 +3135,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2716,7 +3144,8 @@
                                             <span class="old-price">$37.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2728,14 +3157,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="hot">Hot</span>
@@ -2745,7 +3178,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Coffes</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with
+                                            soft paper</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2753,7 +3187,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El Paso</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El
+                                                Paso</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2761,7 +3196,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2773,21 +3209,27 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Cream</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream
+                                            Ketchup</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 50%"></div>
@@ -2795,7 +3237,8 @@
                                         <span class="font-small ml-5 text-muted"> (2.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Tyson</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Tyson</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2803,7 +3246,8 @@
                                             <span class="old-price">$24.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2821,14 +3265,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="hot">Hot</span>
@@ -2838,7 +3286,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                    <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, &
+                                            Red Rice</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2846,7 +3295,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2854,7 +3304,8 @@
                                             <span class="old-price">$32.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2866,14 +3317,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-3-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -2883,7 +3338,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                    <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken
+                                            Meatballs</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -2891,7 +3347,8 @@
                                         <span class="font-small ml-5 text-muted"> (3.5)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Stouffer</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Stouffer</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2899,7 +3356,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2911,14 +3369,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="new">New</span>
@@ -2928,7 +3390,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                    <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle
+                                            Corn</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 85%"></div>
@@ -2936,7 +3399,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">StarKist</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">StarKist</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2944,7 +3408,8 @@
                                             <span class="old-price">$52.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2956,21 +3421,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Vegetables</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                    <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo
+                                            Wings</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -2978,7 +3448,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -2986,7 +3457,8 @@
                                             <span class="old-price">$19.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2998,14 +3470,19 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="best">-14%</span>
@@ -3015,7 +3492,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Pet Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                    <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted
+                                            Vegetables</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -3023,7 +3501,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -3031,7 +3510,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -3043,21 +3523,27 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-16-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-16-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-16-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-16-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Hodo Foods</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                    <h2><a href="index.php?act=product_full">Chobani Complete Vanilla Greek Yogurt</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -3065,7 +3551,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -3073,7 +3560,8 @@
                                             <span class="old-price">$55.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -3085,21 +3573,26 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Meats</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                    <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle - 200ml
+                                            - 400g</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -3107,7 +3600,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -3115,7 +3609,8 @@
                                             <span class="old-price">$33.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -3127,14 +3622,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="sale">Sale</span>
@@ -3144,7 +3643,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Snack</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                    <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan Salmon</a>
+                                    </h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -3152,7 +3652,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">NestFood</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -3160,7 +3661,8 @@
                                             <span class="old-price">$37.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -3172,14 +3674,18 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg"
+                                                alt="" />
                                             <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
                                         <span class="hot">Hot</span>
@@ -3189,7 +3695,8 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Coffes</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                    <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish Fillets with
+                                            soft paper</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -3197,7 +3704,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El Paso</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El
+                                                Paso</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -3205,7 +3713,8 @@
                                             <span class="old-price">$25.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -3217,21 +3726,27 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="index.php?act=product_full">
-                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
-                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
+                                            <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg"
+                                                alt="" />
+                                            <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg"
+                                                alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
-                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i
+                                                class="fi-rs-heart"></i></a>
+                                        <a aria-label="Compare" class="action-btn" href="shop-compare.php"><i
+                                                class="fi-rs-shuffle"></i></a>
+                                        <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.php">Cream</a>
                                     </div>
-                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                    <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice Cream
+                                            Ketchup</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 50%"></div>
@@ -3239,7 +3754,8 @@
                                         <span class="font-small ml-5 text-muted"> (2.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">Tyson</a></span>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details-1.php">Tyson</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -3247,7 +3763,8 @@
                                             <span class="old-price">$24.8</span>
                                         </div>
                                         <div class="add-cart">
-                                            <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            <a class="add" href="shop-cart.php"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                         </div>
                                     </div>
                                 </div>
@@ -3269,13 +3786,17 @@
                 <h3 class="">Daily Best Sells</h3>
                 <ul class="nav nav-tabs links" id="myTab-2" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="nav-tab-one-1" data-bs-toggle="tab" data-bs-target="#tab-one-1" type="button" role="tab" aria-controls="tab-one" aria-selected="true">Featured</button>
+                        <button class="nav-link active" id="nav-tab-one-1" data-bs-toggle="tab"
+                            data-bs-target="#tab-one-1" type="button" role="tab" aria-controls="tab-one"
+                            aria-selected="true">Featured</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-two-1" data-bs-toggle="tab" data-bs-target="#tab-two-1" type="button" role="tab" aria-controls="tab-two" aria-selected="false">Popular</button>
+                        <button class="nav-link" id="nav-tab-two-1" data-bs-toggle="tab" data-bs-target="#tab-two-1"
+                            type="button" role="tab" aria-controls="tab-two" aria-selected="false">Popular</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-three-1" data-bs-toggle="tab" data-bs-target="#tab-three-1" type="button" role="tab" aria-controls="tab-three" aria-selected="false">New added</button>
+                        <button class="nav-link" id="nav-tab-three-1" data-bs-toggle="tab" data-bs-target="#tab-three-1"
+                            type="button" role="tab" aria-controls="tab-three" aria-selected="false">New added</button>
                     </li>
                 </ul>
             </div>
@@ -3284,28 +3805,37 @@
                     <div class="banner-img style-2">
                         <div class="banner-text">
                             <h2 class="mb-100">Bring nature into your home</h2>
-                            <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                            <a href="index.php?act=shop" class="btn btn-xs">Shop Now <i
+                                    class="fi-rs-arrow-small-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-12">
                     <div class="tab-content" id="myTabContent-1">
-                        <div class="tab-pane fade show active" id="tab-one-1" role="tabpanel" aria-labelledby="tab-one-1">
+                        <div class="tab-pane fade show active" id="tab-one-1" role="tabpanel"
+                            aria-labelledby="tab-one-1">
                             <div class="carausel-4-columns-cover arrow-center position-relative">
-                                <div class="slider-arrow slider-arrow-2 carausel-4-columns-arrow" id="carausel-4-columns-arrows"></div>
+                                <div class="slider-arrow slider-arrow-2 carausel-4-columns-arrow"
+                                    id="carausel-4-columns-arrows"></div>
                                 <div class="carausel-4-columns carausel-arrow-center" id="carausel-4-columns">
                                     <div class="product-cart-wrap">
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-1-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-1-2.jpg" alt="" />
+                                                    <img class="default-img" src="view/assets/imgs/shop/product-1-1.jpg"
+                                                        alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-1-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="hot">Save 15%</span>
@@ -3315,7 +3845,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown</a></h2>
+                                            <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa,
+                                                    Brown</a></h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3325,11 +3856,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3337,14 +3870,20 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg" alt="" />
+                                                    <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg"
+                                                        alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="new">Save 35%</span>
@@ -3354,7 +3893,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                            <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken
+                                                    Meatballs</a></h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3364,11 +3904,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3376,14 +3918,20 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-2-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-2-2.jpg" alt="" />
+                                                    <img class="default-img" src="view/assets/imgs/shop/product-2-1.jpg"
+                                                        alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-2-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="sale">Sale</span>
@@ -3393,7 +3941,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet and womnies</a></h2>
+                                            <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet and
+                                                    womnies</a></h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3403,11 +3952,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3415,14 +3966,20 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-3-2.jpg" alt="" />
+                                                    <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg"
+                                                        alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-3-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="best">Best sale</span>
@@ -3432,7 +3989,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic </a></h2>
+                                            <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic
+                                                </a></h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3442,11 +4000,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3454,14 +4014,20 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-4-2.jpg" alt="" />
+                                                    <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg"
+                                                        alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-4-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="hot">Save 15%</span>
@@ -3471,7 +4037,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly Salted</a></h2>
+                                            <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly
+                                                    Salted</a></h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3481,11 +4048,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3495,20 +4064,27 @@
                         <!--End tab-pane-->
                         <div class="tab-pane fade" id="tab-two-1" role="tabpanel" aria-labelledby="tab-two-1">
                             <div class="carausel-4-columns-cover arrow-center position-relative">
-                                <div class="slider-arrow slider-arrow-2 carausel-4-columns-arrow" id="carausel-4-columns-2-arrows"></div>
+                                <div class="slider-arrow slider-arrow-2 carausel-4-columns-arrow"
+                                    id="carausel-4-columns-2-arrows"></div>
                                 <div class="carausel-4-columns carausel-arrow-center" id="carausel-4-columns-2">
                                     <div class="product-cart-wrap">
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg" alt="" />
+                                                    <img class="default-img"
+                                                        src="view/assets/imgs/shop/product-10-1.jpg" alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-10-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="hot">Save 15%</span>
@@ -3518,7 +4094,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L Bottle</a></h2>
+                                            <h2><a href="index.php?act=product_full">Canada Dry Ginger Ale – 2 L
+                                                    Bottle</a></h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3528,11 +4105,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3540,14 +4119,20 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-15-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-15-2.jpg" alt="" />
+                                                    <img class="default-img"
+                                                        src="view/assets/imgs/shop/product-15-1.jpg" alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-15-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="new">Save 35%</span>
@@ -3557,7 +4142,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan</a></h2>
+                                            <h2><a href="index.php?act=product_full">Encore Seafoods Stuffed Alaskan</a>
+                                            </h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3567,11 +4153,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3579,14 +4167,20 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-12-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-12-2.jpg" alt="" />
+                                                    <img class="default-img"
+                                                        src="view/assets/imgs/shop/product-12-1.jpg" alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-12-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="sale">Sale</span>
@@ -3596,7 +4190,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish </a></h2>
+                                            <h2><a href="index.php?act=product_full">Gorton’s Beer Battered Fish </a>
+                                            </h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3606,11 +4201,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3618,14 +4215,20 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-13-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-13-2.jpg" alt="" />
+                                                    <img class="default-img"
+                                                        src="view/assets/imgs/shop/product-13-1.jpg" alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-13-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="best">Best sale</span>
@@ -3635,7 +4238,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice</a></h2>
+                                            <h2><a href="index.php?act=product_full">Haagen-Dazs Caramel Cone Ice</a>
+                                            </h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3645,11 +4249,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3657,14 +4263,20 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-14-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-14-2.jpg" alt="" />
+                                                    <img class="default-img"
+                                                        src="view/assets/imgs/shop/product-14-1.jpg" alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-14-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="hot">Save 15%</span>
@@ -3674,7 +4286,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Italian-Style Chicken Meatball</a></h2>
+                                            <h2><a href="index.php?act=product_full">Italian-Style Chicken Meatball</a>
+                                            </h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3684,11 +4297,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3697,20 +4312,27 @@
                         </div>
                         <div class="tab-pane fade" id="tab-three-1" role="tabpanel" aria-labelledby="tab-three-1">
                             <div class="carausel-4-columns-cover arrow-center position-relative">
-                                <div class="slider-arrow slider-arrow-2 carausel-4-columns-arrow" id="carausel-4-columns-3-arrows"></div>
+                                <div class="slider-arrow slider-arrow-2 carausel-4-columns-arrow"
+                                    id="carausel-4-columns-3-arrows"></div>
                                 <div class="carausel-4-columns carausel-arrow-center" id="carausel-4-columns-3">
                                     <div class="product-cart-wrap">
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg" alt="" />
+                                                    <img class="default-img" src="view/assets/imgs/shop/product-7-1.jpg"
+                                                        alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-7-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="hot">Save 15%</span>
@@ -3720,7 +4342,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Perdue Simply Smart Organics Gluten Free</a></h2>
+                                            <h2><a href="index.php?act=product_full">Perdue Simply Smart Organics Gluten
+                                                    Free</a></h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3730,11 +4353,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3742,14 +4367,20 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg" alt="" />
+                                                    <img class="default-img" src="view/assets/imgs/shop/product-8-1.jpg"
+                                                        alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-8-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="new">Save 35%</span>
@@ -3759,7 +4390,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa</a></h2>
+                                            <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa</a>
+                                            </h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3769,11 +4401,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3781,14 +4415,20 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg" alt="" />
+                                                    <img class="default-img" src="view/assets/imgs/shop/product-9-1.jpg"
+                                                        alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-9-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="sale">Sale</span>
@@ -3798,7 +4438,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Signature Wood-Fired Mushroom</a></h2>
+                                            <h2><a href="index.php?act=product_full">Signature Wood-Fired Mushroom</a>
+                                            </h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3808,11 +4449,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3820,14 +4463,20 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-13-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-13-2.jpg" alt="" />
+                                                    <img class="default-img"
+                                                        src="view/assets/imgs/shop/product-13-1.jpg" alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-13-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="best">Best sale</span>
@@ -3837,7 +4486,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Simply Lemonade with Raspberry Juice</a></h2>
+                                            <h2><a href="index.php?act=product_full">Simply Lemonade with Raspberry
+                                                    Juice</a></h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3847,11 +4497,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3859,14 +4511,20 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-14-1.jpg" alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-14-2.jpg" alt="" />
+                                                    <img class="default-img"
+                                                        src="view/assets/imgs/shop/product-14-1.jpg" alt="" />
+                                                    <img class="hover-img" src="view/assets/imgs/shop/product-14-2.jpg"
+                                                        alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up"
+                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
+                                                        class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
+                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up"
+                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="hot">Save 15%</span>
@@ -3876,7 +4534,8 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.php">Hodo Foods</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Organic Quinoa, Brown, & Red Rice</a></h2>
+                                            <h2><a href="index.php?act=product_full">Organic Quinoa, Brown, & Red
+                                                    Rice</a></h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
@@ -3886,11 +4545,13 @@
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
                                     <!--End product Wrap-->
@@ -3929,7 +4590,8 @@
                                 <div class="deals-countdown" data-countdown="2025/03/25 00:00:00"></div>
                             </div>
                             <div class="deals-content">
-                                <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red
+                                        Rice</a></h2>
                                 <div class="product-rate-cover">
                                     <div class="product-rate d-inline-block">
                                         <div class="product-rating" style="width: 90%"></div>
@@ -3937,7 +4599,8 @@
                                     <span class="font-small ml-5 text-muted"> (4.0)</span>
                                 </div>
                                 <div>
-                                    <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                    <span class="font-small text-muted">By <a
+                                            href="vendor-details-1.php">NestFood</a></span>
                                 </div>
                                 <div class="product-card-bottom">
                                     <div class="product-price">
@@ -3945,7 +4608,8 @@
                                         <span class="old-price">$33.8</span>
                                     </div>
                                     <div class="add-cart">
-                                        <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                        <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -3966,7 +4630,8 @@
                                 <div class="deals-countdown" data-countdown="2026/04/25 00:00:00"></div>
                             </div>
                             <div class="deals-content">
-                                <h2><a href="index.php?act=product_full">Perdue Simply Smart Organics Gluten Free</a></h2>
+                                <h2><a href="index.php?act=product_full">Perdue Simply Smart Organics Gluten Free</a>
+                                </h2>
                                 <div class="product-rate-cover">
                                     <div class="product-rate d-inline-block">
                                         <div class="product-rating" style="width: 90%"></div>
@@ -3974,7 +4639,8 @@
                                     <span class="font-small ml-5 text-muted"> (4.0)</span>
                                 </div>
                                 <div>
-                                    <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El Paso</a></span>
+                                    <span class="font-small text-muted">By <a href="vendor-details-1.php">Old El
+                                            Paso</a></span>
                                 </div>
                                 <div class="product-card-bottom">
                                     <div class="product-price">
@@ -3982,7 +4648,8 @@
                                         <span class="old-price">$26.8</span>
                                     </div>
                                     <div class="add-cart">
-                                        <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                        <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -4003,7 +4670,8 @@
                                 <div class="deals-countdown" data-countdown="2027/03/25 00:00:00"></div>
                             </div>
                             <div class="deals-content">
-                                <h2><a href="index.php?act=product_full">Signature Wood-Fired Mushroom and Caramelized</a></h2>
+                                <h2><a href="index.php?act=product_full">Signature Wood-Fired Mushroom and
+                                        Caramelized</a></h2>
                                 <div class="product-rate-cover">
                                     <div class="product-rate d-inline-block">
                                         <div class="product-rating" style="width: 80%"></div>
@@ -4011,7 +4679,8 @@
                                     <span class="font-small ml-5 text-muted"> (3.0)</span>
                                 </div>
                                 <div>
-                                    <span class="font-small text-muted">By <a href="vendor-details-1.php">Progresso</a></span>
+                                    <span class="font-small text-muted">By <a
+                                            href="vendor-details-1.php">Progresso</a></span>
                                 </div>
                                 <div class="product-card-bottom">
                                     <div class="product-price">
@@ -4019,7 +4688,8 @@
                                         <span class="old-price">$13.8</span>
                                     </div>
                                     <div class="add-cart">
-                                        <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                        <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -4048,7 +4718,8 @@
                                     <span class="font-small ml-5 text-muted"> (3.0)</span>
                                 </div>
                                 <div>
-                                    <span class="font-small text-muted">By <a href="vendor-details-1.php">Yoplait</a></span>
+                                    <span class="font-small text-muted">By <a
+                                            href="vendor-details-1.php">Yoplait</a></span>
                                 </div>
                                 <div class="product-card-bottom">
                                     <div class="product-price">
@@ -4056,7 +4727,8 @@
                                         <span class="old-price">$16.8</span>
                                     </div>
                                     <div class="add-cart">
-                                        <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                        <a class="add" href="shop-cart.php"><i class="fi-rs-shopping-cart mr-5"></i>Add
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -4075,7 +4747,8 @@
                     <div class="product-list-small animated animated">
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-1.jpg" alt="" /></a>
+                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-1.jpg"
+                                        alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
@@ -4095,7 +4768,8 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-2.jpg" alt="" /></a>
+                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-2.jpg"
+                                        alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
@@ -4115,7 +4789,8 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-3.jpg" alt="" /></a>
+                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-3.jpg"
+                                        alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
@@ -4140,7 +4815,8 @@
                     <div class="product-list-small animated animated">
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-4.jpg" alt="" /></a>
+                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-4.jpg"
+                                        alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
@@ -4160,11 +4836,13 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-5.jpg" alt="" /></a>
+                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-5.jpg"
+                                        alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
-                                    <a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red Rice</a>
+                                    <a href="index.php?act=product_full">Seeds of Change Organic Quinoa, Brown, & Red
+                                        Rice</a>
                                 </h6>
                                 <div class="product-rate-cover">
                                     <div class="product-rate d-inline-block">
@@ -4180,11 +4858,13 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-6.jpg" alt="" /></a>
+                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-6.jpg"
+                                        alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
-                                    <a href="index.php?act=product_full">Naturally Flavored Cinnamon Vanilla Light Roast Coffee</a>
+                                    <a href="index.php?act=product_full">Naturally Flavored Cinnamon Vanilla Light Roast
+                                        Coffee</a>
                                 </h6>
                                 <div class="product-rate-cover">
                                     <div class="product-rate d-inline-block">
@@ -4205,11 +4885,13 @@
                     <div class="product-list-small animated animated">
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-7.jpg" alt="" /></a>
+                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-7.jpg"
+                                        alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
-                                    <a href="index.php?act=product_full">Pepperidge Farm Farmhouse Hearty White Bread</a>
+                                    <a href="index.php?act=product_full">Pepperidge Farm Farmhouse Hearty White
+                                        Bread</a>
                                 </h6>
                                 <div class="product-rate-cover">
                                     <div class="product-rate d-inline-block">
@@ -4225,7 +4907,8 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-8.jpg" alt="" /></a>
+                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-8.jpg"
+                                        alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
@@ -4245,7 +4928,8 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-9.jpg" alt="" /></a>
+                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-9.jpg"
+                                        alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
@@ -4270,11 +4954,13 @@
                     <div class="product-list-small animated animated">
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-10.jpg" alt="" /></a>
+                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-10.jpg"
+                                        alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
-                                    <a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo Wings</a>
+                                    <a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic Buffalo
+                                        Wings</a>
                                 </h6>
                                 <div class="product-rate-cover">
                                     <div class="product-rate d-inline-block">
@@ -4290,11 +4976,13 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-11.jpg" alt="" /></a>
+                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-11.jpg"
+                                        alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
-                                    <a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a>
+                                    <a href="index.php?act=product_full">Angie’s Boomchickapop Sweet & Salty Kettle
+                                        Corn</a>
                                 </h6>
                                 <div class="product-rate-cover">
                                     <div class="product-rate d-inline-block">
@@ -4310,7 +4998,8 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-12.jpg" alt="" /></a>
+                                <a href="index.php?act=product_full"><img src="view/assets/imgs/shop/thumbnail-12.jpg"
+                                        alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
@@ -4344,13 +5033,15 @@
                         <i class="fi-rs-angle-right"></i>
                     </a>
                 </div>
-                <div class="slider-arrow slider-arrow-2 flex-right carausel-8-columns-arrow" id="carausel-8-columns-arrows"></div>
+                <div class="slider-arrow slider-arrow-2 flex-right carausel-8-columns-arrow"
+                    id="carausel-8-columns-arrows"></div>
             </div>
             <div class="carausel-8-columns-cover position-relative">
                 <div class="carausel-8-columns" id="carausel-8-columns">
                     <div class="card-1">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-1.svg" alt="" /></a>
+                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-1.svg"
+                                    alt="" /></a>
                         </figure>
                         <h6>
                             <a href="shop-grid-right.php">Milks and <br />Dairies</a>
@@ -4358,7 +5049,8 @@
                     </div>
                     <div class="card-1">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-2.svg" alt="" /></a>
+                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-2.svg"
+                                    alt="" /></a>
                         </figure>
                         <h6>
                             <a href="shop-grid-right.php">Wines & <br />
@@ -4367,7 +5059,8 @@
                     </div>
                     <div class="card-1">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-3.svg" alt="" /></a>
+                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-3.svg"
+                                    alt="" /></a>
                         </figure>
                         <h6>
                             <a href="shop-grid-right.php">Clothing & <br />Beauty</a>
@@ -4375,7 +5068,8 @@
                     </div>
                     <div class="card-1">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-4.svg" alt="" /></a>
+                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-4.svg"
+                                    alt="" /></a>
                         </figure>
                         <h6>
                             <a href="shop-grid-right.php">Pet Foods <br />& Toy</a>
@@ -4383,7 +5077,8 @@
                     </div>
                     <div class="card-1">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-5.svg" alt="" /></a>
+                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-5.svg"
+                                    alt="" /></a>
                         </figure>
                         <h6>
                             <a href="shop-grid-right.php">Packaged <br />fast food</a>
@@ -4391,7 +5086,8 @@
                     </div>
                     <div class="card-1">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-6.svg" alt="" /></a>
+                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-6.svg"
+                                    alt="" /></a>
                         </figure>
                         <h6>
                             <a href="shop-grid-right.php">Baking <br />material</a>
@@ -4399,7 +5095,8 @@
                     </div>
                     <div class="card-1">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-7.svg" alt="" /></a>
+                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-7.svg"
+                                    alt="" /></a>
                         </figure>
                         <h6>
                             <a href="shop-grid-right.php">Vegetables <br />& tubers</a>
@@ -4407,7 +5104,8 @@
                     </div>
                     <div class="card-1">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-8.svg" alt="" /></a>
+                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-8.svg"
+                                    alt="" /></a>
                         </figure>
                         <h6>
                             <a href="shop-grid-right.php">Fresh <br />Seafood</a>
@@ -4415,7 +5113,8 @@
                     </div>
                     <div class="card-1">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-9.svg" alt="" /></a>
+                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-9.svg"
+                                    alt="" /></a>
                         </figure>
                         <h6>
                             <a href="shop-grid-right.php">Noodles <br />Rice</a>
@@ -4423,13 +5122,15 @@
                     </div>
                     <div class="card-1">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-10.svg" alt="" /></a>
+                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-10.svg"
+                                    alt="" /></a>
                         </figure>
                         <h6><a href="shop-grid-right.php">Fastfood</a></h6>
                     </div>
                     <div class="card-1">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-11.svg" alt="" /></a>
+                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-11.svg"
+                                    alt="" /></a>
                         </figure>
                         <h6><a href="shop-grid-right.php">Ice cream</a></h6>
                     </div>
