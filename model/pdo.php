@@ -5,7 +5,7 @@ class connect
     {
         $servername = "localhost";
         $username = "root";
-        $password = "mysql";
+        $password = "";
 
         try {
             $conn = new PDO("mysql:host=$servername;dbname=duan1", $username, $password);

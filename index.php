@@ -1,5 +1,9 @@
 <?php
 include 'model/pdo.php';
+include "model/category.php";
+$category = new category();
+$status = 0;
+$categories = $category->loadall_danhmuc($status);
 include "view/component/header.php";
 include "model/product.php";
 include "model/banner.php";
@@ -11,6 +15,7 @@ $spnew= $products->loadall_sanpham_home();
 $delete = 0;
 $banner = new banner();
 $listbanner = $banner->loadall_banner($delete);
+
 
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
