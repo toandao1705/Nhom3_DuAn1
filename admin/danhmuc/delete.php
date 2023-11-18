@@ -34,6 +34,7 @@
                                 if (is_array($categories)) {
                                     // Hiển thị thông tin danh mục
                                     foreach ($categories as $category) {
+                                        extract($category);
                                         echo '<tr>
                                             <td><input type="checkbox"></td>
                                             <td>' . $category['id'] . '</td>
@@ -55,6 +56,7 @@
                         </table>
                         <ul class="pagination">
                             <?php
+                            $totalPages = 0;
                             for ($i = 1; $i <= $totalPages; $i++) {
                                 echo '<li class="page-item"><a class="page-link" href="index.php?act=list_delete_history&page=' . $i . '">' . $i . '</a></li>';
                             }
