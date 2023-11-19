@@ -1,4 +1,6 @@
 <?php
+session_start();
+ob_start();
 include 'model/pdo.php';
 include "model/category.php";
 $category = new category();
@@ -8,6 +10,7 @@ include "view/component/header.php";
 include "model/product.php";
 include "model/banner.php";
 include "model/global.php";
+include "model/user.php";
 include "global.php";
 
 $products = new products();
@@ -75,6 +78,17 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/login.php";
             break;
         case 'register':
+            $register = new user();
+            if(isset($_POST['register']) && ($_POST['register'])){
+                $email=$_POST['email'];
+                $name=$_POST['name'];
+                $pass=$_POST['pass'];
+                $address=$_POST['address'];
+                $phone=$_POST['phone'];
+                $registers = $register->insert_taikhoan($name, $email, $pass, $address, $phone);
+                $thongbao="Đã đăng ký thành công vui lòng đăng nhập";
+                header("Location: index.php?act=login");
+            }
             include "view/register.php";
             break;
         case 'forgot_password':

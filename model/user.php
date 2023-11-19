@@ -28,6 +28,12 @@ class user {
        else 
            return false; 
    }
+   function insert_taikhoan($name, $email, $pass, $address, $phone){
+      $db = new connect();
+      $passwordEncryption = md5($pass);
+      $sql = "INSERT INTO user(name, email, pass, address, phone) values('$name', '$email', '$passwordEncryption', '$address', '$phone')";
+      $db->pdo_execute($sql);
+  }
 
    public function userid($name,$pass) 
     { 
