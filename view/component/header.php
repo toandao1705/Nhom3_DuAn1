@@ -18,19 +18,14 @@
     <!-- Deals -->
     <link rel="stylesheet" href="view/assets/css/plugins/slider-range.css" />
     <!--leaflet map-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-        crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 </head>
 </head>
 
 <body>
     <!-- Quick view -->
-    <div class="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel"
-        aria-hidden="true">
+    <div class="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -105,8 +100,7 @@
                                         <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
                                     </div>
                                     <div class="product-extra-link2">
-                                        <button type="submit" class="button button-add-to-cart"><i
-                                                class="fi-rs-shopping-cart"></i>Add to cart</button>
+                                        <button type="submit" class="button button-add-to-cart"><i class="fi-rs-shopping-cart"></i>Add to cart</button>
                                     </div>
                                 </div>
                                 <div class="font-xs">
@@ -140,7 +134,7 @@
                                     <?php
                                     foreach ($categories as $category) {
                                         extract($category);
-                                        echo '<option>'.$category['name'].'</option>';
+                                        echo '<option>' . $category['name'] . '</option>';
                                     }
                                     ?>
                                 </select>
@@ -172,16 +166,14 @@
                                 </div>
                                 <div class="header-action-icon-2">
                                     <a href="shop-compare.php">
-                                        <img class="svgInject" alt="Nest"
-                                            src="view/assets/imgs/theme/icons/icon-compare.svg" />
+                                        <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-compare.svg" />
                                         <span class="pro-count blue">3</span>
                                     </a>
                                     <a href="shop-compare.php"><span class="lable ml-0">Compare</span></a>
                                 </div>
                                 <div class="header-action-icon-2">
                                     <a href="shop-wishlist.php">
-                                        <img class="svgInject" alt="Nest"
-                                            src="view/assets/imgs/theme/icons/icon-heart.svg" />
+                                        <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-heart.svg" />
                                         <span class="pro-count blue">6</span>
                                     </a>
                                     <a href="shop-wishlist.php"><span class="lable">Wishlist</span></a>
@@ -196,8 +188,7 @@
                                         <ul>
                                             <li>
                                                 <div class="shopping-cart-img">
-                                                    <a href="index.php?act=product_full"><img alt="Nest"
-                                                            src="view/assets/imgs/shop/thumbnail-3.jpg" /></a>
+                                                    <a href="index.php?act=product_full"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-3.jpg" /></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
                                                     <h4><a href="index.php?act=product_full">Daisy Casual Bag</a></h4>
@@ -209,8 +200,7 @@
                                             </li>
                                             <li>
                                                 <div class="shopping-cart-img">
-                                                    <a href="index.php?act=product_full"><img alt="Nest"
-                                                            src="view/assets/imgs/shop/thumbnail-2.jpg" /></a>
+                                                    <a href="index.php?act=product_full"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-2.jpg" /></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
                                                     <h4><a href="index.php?act=product_full">Corduroy Shirts</a></h4>
@@ -233,27 +223,47 @@
                                     </div>
                                 </div>
                                 <div class="header-action-icon-2">
-                                    <a href="index.php?act=account">
-                                        <img class="svgInject" alt="Nest"
-                                            src="view/assets/imgs/theme/icons/icon-user.svg" />
-                                    </a>
-                                    <a href="index.php?act=account"><span class="lable ml-0">Account</span></a>
-                                    <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
-                                        <ul>
-                                            <li><a href="page-account.php"><i class="fi fi-rs-user mr-10"></i>My
-                                                    Account</a></li>
-                                            <li><a href="page-account.php"><i
-                                                        class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
-                                            <li><a href="page-account.php"><i class="fi fi-rs-label mr-10"></i>My
-                                                    Voucher</a></li>
-                                            <li><a href="shop-wishlist.php"><i class="fi fi-rs-heart mr-10"></i>My
-                                                    Wishlist</a></li>
-                                            <li><a href="page-account.php"><i
-                                                        class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
-                                            <li><a href="page-login.php"><i class="fi fi-rs-sign-out mr-10"></i>Sign
-                                                    out</a></li>
-                                        </ul>
-                                    </div>
+
+                                    <?php
+                                    if (isset($_SESSION['user'])) {
+                                        extract($_SESSION['user']);
+                                    ?>
+                                        <a href="index.php?act=account">
+                                            <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-user.svg" />
+                                        </a>
+                                        <a href="index.php?act=account"><span class="lable ml-0"><?= $name ?></span></a>
+                                        <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
+                                            <ul>
+                                                <li><a href="page-account.php"><i class="fi fi-rs-user mr-10"></i>My
+                                                        Account</a></li>
+                                                <li><a href="page-account.php"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
+                                                <li><a href="page-account.php"><i class="fi fi-rs-label mr-10"></i>My
+                                                        Voucher</a></li>
+                                                <li><a href="shop-wishlist.php"><i class="fi fi-rs-heart mr-10"></i>My
+                                                        Wishlist</a></li>
+                                                <li><a href="page-account.php"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
+                                                <li><a href="index.php?act=logout"><i class="fi fi-rs-sign-out mr-10"></i>Sign
+                                                        out</a></li>
+                                            </ul>
+                                        </div>
+                                    <?php
+                                    } else {
+                                    ?>
+                                         <a href="index.php?act=login.php">
+                                            <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-user.svg" />
+                                        </a>
+                                        <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
+                                            <ul>
+                                                <li><a href="index.php?act=register"><i class="fi fi-rs-user mr-10"></i>Register
+                                                    </a></li>
+                                                <li><a href="page-account.php"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
+                                                <li><a href="page-account.php"><i class="fi fi-rs-label mr-10"></i>My
+                                                        Voucher</a></li>
+                                                <li><a href="page-account.php"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
+                                            </ul>
+                                        </div>
+
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>
@@ -279,20 +289,20 @@
                                         <?php
                                         if (!empty($categories)) {
                                             $count = 0; // Đếm số lượng danh mục đã hiển thị
-                                            
+
                                             foreach ($categories as $category) {
                                                 extract($category);
-                                                
+
                                                 echo '
                                                 
                                                 <li>
                                                         <a href="shop-grid-right.php">
-                                                            <img src="view/assets/imgs/theme/icons/category-1.svg" alt=""/> '.$category['name'].'
+                                                            <img src="view/assets/imgs/theme/icons/category-1.svg" alt=""/> ' . $category['name'] . '
                                                         </a>
                                                     </li>
                                                     ';
 
-                                                
+
                                                 $count++;
                                                 if ($count >= 5) {
                                                     break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
@@ -300,32 +310,31 @@
                                             }
                                         ?>
                                     </ul>
-                                    <?php
-                                            
+                                <?php
+
                                             // Kiểm tra nếu còn danh mục tiếp theo, thì hiển thị danh mục tiếp theo trong một <ul> mới với lớp CSS là "end"
                                             if ($count < count($categories)) {
-                                                
+
                                                 for ($i = $count; $i < count($categories); $i++) {
                                                     echo '
                                                     <ul class = "end">
                                                     <li >
                                                             <a href="shop-grid-right.php">
-                                                                <img src="view/assets/imgs/theme/icons/category-1.svg" alt=""/> '.$categories[$i]['name'].'
+                                                                <img src="view/assets/imgs/theme/icons/category-1.svg" alt=""/> ' . $categories[$i]['name'] . '
                                                             </a>
                                                     </li>';
-                                                        $count++;
-                                                if ($count >= 10) {
-                                                    break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
+                                                    $count++;
+                                                    if ($count >= 10) {
+                                                        break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
+                                                    }
                                                 }
-                                                }
-                                                
-                                                
+
+
                                                 echo '</ul>';
                                             }
-                                           
                                         }
-                                        
-                                        ?>
+
+                                ?>
 
 
 
@@ -337,8 +346,7 @@
                         <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
                             <nav>
                                 <ul>
-                                    <li class="hot-deals"><img src="view/assets/imgs/theme/icons/icon-hot.svg"
-                                            alt="hot deals" /><a href="index.php?act=deals">Deals</a></li>
+                                    <li class="hot-deals"><img src="view/assets/imgs/theme/icons/icon-hot.svg" alt="hot deals" /><a href="index.php?act=deals">Deals</a></li>
                                     <li>
                                         <a class="active" href="index.php">Home</a>
                                     </li>
@@ -388,9 +396,7 @@
                                             </li>
                                             <li class="sub-mega-menu sub-mega-menu-width-34">
                                                 <div class="menu-banner-wrap">
-                                                    <a href="index.php?act=product_full"><img
-                                                            src="view/assets/imgs/banner/banner-menu.png"
-                                                            alt="Nest" /></a>
+                                                    <a href="index.php?act=product_full"><img src="view/assets/imgs/banner/banner-menu.png" alt="Nest" /></a>
                                                     <div class="menu-banner-content">
                                                         <h4>Hot deals</h4>
                                                         <h3>
@@ -455,8 +461,7 @@
                                     <ul>
                                         <li>
                                             <div class="shopping-cart-img">
-                                                <a href="index.php?act=product_full"><img alt="Nest"
-                                                        src="view/assets/imgs/shop/thumbnail-3.jpg" /></a>
+                                                <a href="index.php?act=product_full"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-3.jpg" /></a>
                                             </div>
                                             <div class="shopping-cart-title">
                                                 <h4><a href="index.php?act=product_full">Plain Striola Shirts</a></h4>
@@ -468,8 +473,7 @@
                                         </li>
                                         <li>
                                             <div class="shopping-cart-img">
-                                                <a href="index.php?act=product_full"><img alt="Nest"
-                                                        src="view/assets/imgs/shop/thumbnail-4.jpg" /></a>
+                                                <a href="index.php?act=product_full"><img alt="Nest" src="view/assets/imgs/shop/thumbnail-4.jpg" /></a>
                                             </div>
                                             <div class="shopping-cart-title">
                                                 <h4><a href="index.php?act=product_full">Macbook Pro 2022</a></h4>
