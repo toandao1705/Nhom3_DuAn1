@@ -1,4 +1,6 @@
 <?php
+session_start();
+ob_start();
 include 'model/pdo.php';
 include "model/category.php";
 $category = new category();
@@ -8,12 +10,16 @@ include "view/component/header.php";
 include "model/product.php";
 include "model/banner.php";
 include "model/global.php";
+include "model/user.php";
 include "global.php";
 
 
 $products = new products();
+
 $spnew= $products->loadall_sanpham_home();
 $spview= $products->hienthi_sanpham_view();
+
+
 $delete = 0;
 $banner = new banner();
 $listbanner = $banner->loadall_banner($delete);
@@ -39,13 +45,13 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
         case 'product_full':
             $product = new products();
-            if(isset($_GET['idsp']) && ($_GET['idsp'] > 0)){
-                $id = $_GET['idsp'];    
-                $onesp =$product->loadone_sanpham($id);
+            if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
+                $id = $_GET['idsp'];
+                $onesp = $product->loadone_sanpham($id);
                 extract($onesp);
                 $sp_cung_loai = $product->load_sanpham_cungloai($id, $id_category);
                 include "view/product_full.php";
-            }else{
+            } else {
                 include "view/home.php";
             }
             break;
@@ -77,9 +83,35 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/blog_category.php";
             break;
         case 'login':
+            $login = new user();
+            if (isset($_POST['login']) && ($_POST['login'])) {
+                $name = $_POST['name'];
+                $pass = $_POST['pass'];
+                $checkuser = $login->checkUsers($name, $pass);
+
+                if (is_array($checkuser)) {
+                    $_SESSION['user'] = $checkuser;
+                    header("Location: index.php?act=shop");
+                    exit;
+                } else {
+                    $thongbao = "Tài khoản không tồn tại. Vui lòng kiểm tra lại";
+                }
+            }
             include "view/login.php";
             break;
+
         case 'register':
+            $register = new user();
+            if (isset($_POST['register']) && ($_POST['register'])) {
+                $email = $_POST['email'];
+                $name = $_POST['name'];
+                $pass = $_POST['pass'];
+                $address = $_POST['address'];
+                $phone = $_POST['phone'];
+                $registers = $register->insert_taikhoan($name, $email, $pass, $address, $phone);
+                $thongbao = "Đã đăng ký thành công vui lòng đăng nhập";
+                header("Location: index.php?act=login");
+            }
             include "view/register.php";
             break;
         case 'forgot_password':
