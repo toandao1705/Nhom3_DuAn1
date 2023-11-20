@@ -134,16 +134,7 @@
                     <div class="product-img-action-wrap">
                         <div class="product-img product-img-zoom">';
                         ?>
-                        <?php
-                                // Di chuyển vòng lặp hình ảnh ra khỏi vòng lặp sản phẩm
-                                    $imgPath = $img_path . $img;
-                                ?>
-                        <a href="<?= $linksp ?>">
-                            <img class="default-img" src="<?php echo $imgPath; ?>"
-                                style="width:246.22px; height:246.22px;" />
-                        </a>
-                        <?php
-                                ?>
+                        
                         <?php
                                         // Di chuyển vòng lặp hình ảnh ra khỏi vòng lặp sản phẩm
                                         $imgPath = $img_path . $img;
