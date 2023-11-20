@@ -101,14 +101,21 @@
                             type="button" role="tab" aria-controls="tab-one" aria-selected="true">All</button>
                     </li>
                     <?php
-                    foreach ($categories as $category) {
-                        extract($category);
-                        echo '  
-                            <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="nav-tab-two" data-bs-toggle="tab" data-bs-target="#tab-two"
-                                type="button" role="tab" aria-controls="tab-two" aria-selected="false">'.$category['name'].'</button>
-                            </li>';
-                    }
+                        $imgdm=0;
+                        if (!empty($categories)) {
+                            $count = 0; // Đếm số lượng danh mục đã hiển thị
+                            foreach ($categories as $category) {
+                                extract($category);
+                                $imgdm++;
+                                echo '  
+                                <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="nav-tab-two" data-bs-toggle="tab" data-bs-target="#tab-two"
+                                    type="button" role="tab" aria-controls="tab-two" aria-selected="false">'.$category['name'].'</button>
+                                </li>';
+                                $count++;
+                            if ($count >= 7) {
+                                break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
+                            }}}
                     ?>
                 </ul>
             </div>
@@ -134,7 +141,7 @@
                     <div class="product-img-action-wrap">
                         <div class="product-img product-img-zoom">';
                         ?>
-                        
+
                         <?php
                                         // Di chuyển vòng lặp hình ảnh ra khỏi vòng lặp sản phẩm
                                         $imgPath = $img_path . $img;
