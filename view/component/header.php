@@ -278,21 +278,18 @@
                                     <ul>
                                         <?php
                                         if (!empty($categories)) {
+                                            $imgdm = 0;
                                             $count = 0; // Đếm số lượng danh mục đã hiển thị
-                                            
                                             foreach ($categories as $category) {
+                                                $imgdm++;
                                                 extract($category);
-                                                
                                                 echo '
-                                                
                                                 <li>
                                                         <a href="shop-grid-right.php">
-                                                            <img src="view/assets/imgs/theme/icons/category-1.svg" alt=""/> '.$category['name'].'
+                                                            <img src="view/assets/imgs/theme/icons/category-'.$imgdm.'.svg" alt=""/> '.$category['name'].'
                                                         </a>
                                                     </li>
                                                     ';
-
-                                                
                                                 $count++;
                                                 if ($count >= 5) {
                                                     break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
@@ -310,7 +307,7 @@
                                                     <ul class = "end">
                                                     <li >
                                                             <a href="shop-grid-right.php">
-                                                                <img src="view/assets/imgs/theme/icons/category-1.svg" alt=""/> '.$categories[$i]['name'].'
+                                                                <img src="view/assets/imgs/theme/icons/category-'.$count.'.svg" alt=""/> '.$categories[$i]['name'].'
                                                             </a>
                                                     </li>';
                                                         $count++;

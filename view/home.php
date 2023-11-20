@@ -5,7 +5,7 @@
                 <div class="col-xl-8 col-lg-12">
                     <div class="home-slide-cover">
                         <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
-                        <?php
+                            <?php
                             foreach ($listbanner as $banner) {
                                 extract($banner);
                                 // $imgPath = $img_path . $img;
@@ -100,32 +100,16 @@
                         <button class="nav-link active" id="nav-tab-one" data-bs-toggle="tab" data-bs-target="#tab-one"
                             type="button" role="tab" aria-controls="tab-one" aria-selected="true">All</button>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-two" data-bs-toggle="tab" data-bs-target="#tab-two"
-                            type="button" role="tab" aria-controls="tab-two" aria-selected="false">Milks &
-                            Dairies</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-three" data-bs-toggle="tab" data-bs-target="#tab-three"
-                            type="button" role="tab" aria-controls="tab-three" aria-selected="false">Coffes &
-                            Teas</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-four" data-bs-toggle="tab" data-bs-target="#tab-four"
-                            type="button" role="tab" aria-controls="tab-four" aria-selected="false">Pet Foods</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-five" data-bs-toggle="tab" data-bs-target="#tab-five"
-                            type="button" role="tab" aria-controls="tab-five" aria-selected="false">Meats</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-six" data-bs-toggle="tab" data-bs-target="#tab-six"
-                            type="button" role="tab" aria-controls="tab-six" aria-selected="false">Vegetables</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="nav-tab-seven" data-bs-toggle="tab" data-bs-target="#tab-seven"
-                            type="button" role="tab" aria-controls="tab-seven" aria-selected="false">Fruits</button>
-                    </li>
+                    <?php
+                    foreach ($categories as $category) {
+                        extract($category);
+                        echo '  
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="nav-tab-two" data-bs-toggle="tab" data-bs-target="#tab-two"
+                                type="button" role="tab" aria-controls="tab-two" aria-selected="false">'.$category['name'].'</button>
+                            </li>';
+                    }
+                    ?>
                 </ul>
             </div>
             <!--End nav-tabs-->
@@ -160,16 +144,17 @@
                         </a>
                         <?php
                                 ?>
-                                        <?php
+                        <?php
                                         // Di chuyển vòng lặp hình ảnh ra khỏi vòng lặp sản phẩm
                                         $imgPath = $img_path . $img;
                                         ?>
-                                            <a href="<?= $linksp ?>">
-                                                <img class="default-img" src="<?php echo $imgPath; ?>" style="width:246.22px; height:246.22px;" />
-                                            </a>
-                                        <?php
+                        <a href="<?= $linksp ?>">
+                            <img class="default-img" src="<?php echo $imgPath; ?>"
+                                style="width:246.22px; height:246.22px;" />
+                        </a>
+                        <?php
                                         ?>
-                                <?php
+                        <?php
                                 echo '
                     </div>
                     <div class="product-action-1">
@@ -5042,102 +5027,23 @@
             </div>
             <div class="carausel-8-columns-cover position-relative">
                 <div class="carausel-8-columns" id="carausel-8-columns">
-                    <div class="card-1">
+                    <?php
+                    $imgdm=0;
+                    foreach ($categories as $category) {
+                        $imgdm++;
+                        extract($category);
+                        echo '
+                        <div class="card-1">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-1.svg"
+                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-'.$imgdm.'.svg"
                                     alt="" /></a>
                         </figure>
                         <h6>
-                            <a href="shop-grid-right.php">Milks and <br />Dairies</a>
+                            <a href="shop-grid-right.php">'.$category['name'].'</a>
                         </h6>
-                    </div>
-                    <div class="card-1">
-                        <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-2.svg"
-                                    alt="" /></a>
-                        </figure>
-                        <h6>
-                            <a href="shop-grid-right.php">Wines & <br />
-                                Alcohol</a>
-                        </h6>
-                    </div>
-                    <div class="card-1">
-                        <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-3.svg"
-                                    alt="" /></a>
-                        </figure>
-                        <h6>
-                            <a href="shop-grid-right.php">Clothing & <br />Beauty</a>
-                        </h6>
-                    </div>
-                    <div class="card-1">
-                        <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-4.svg"
-                                    alt="" /></a>
-                        </figure>
-                        <h6>
-                            <a href="shop-grid-right.php">Pet Foods <br />& Toy</a>
-                        </h6>
-                    </div>
-                    <div class="card-1">
-                        <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-5.svg"
-                                    alt="" /></a>
-                        </figure>
-                        <h6>
-                            <a href="shop-grid-right.php">Packaged <br />fast food</a>
-                        </h6>
-                    </div>
-                    <div class="card-1">
-                        <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-6.svg"
-                                    alt="" /></a>
-                        </figure>
-                        <h6>
-                            <a href="shop-grid-right.php">Baking <br />material</a>
-                        </h6>
-                    </div>
-                    <div class="card-1">
-                        <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-7.svg"
-                                    alt="" /></a>
-                        </figure>
-                        <h6>
-                            <a href="shop-grid-right.php">Vegetables <br />& tubers</a>
-                        </h6>
-                    </div>
-                    <div class="card-1">
-                        <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-8.svg"
-                                    alt="" /></a>
-                        </figure>
-                        <h6>
-                            <a href="shop-grid-right.php">Fresh <br />Seafood</a>
-                        </h6>
-                    </div>
-                    <div class="card-1">
-                        <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-9.svg"
-                                    alt="" /></a>
-                        </figure>
-                        <h6>
-                            <a href="shop-grid-right.php">Noodles <br />Rice</a>
-                        </h6>
-                    </div>
-                    <div class="card-1">
-                        <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-10.svg"
-                                    alt="" /></a>
-                        </figure>
-                        <h6><a href="shop-grid-right.php">Fastfood</a></h6>
-                    </div>
-                    <div class="card-1">
-                        <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-11.svg"
-                                    alt="" /></a>
-                        </figure>
-                        <h6><a href="shop-grid-right.php">Ice cream</a></h6>
-                    </div>
+                    </div>';
+                    }
+                    ?>
                 </div>
             </div>
         </div>
