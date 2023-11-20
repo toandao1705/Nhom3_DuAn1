@@ -249,7 +249,7 @@
                                     <?php
                                     } else {
                                     ?>
-                                         <a href="index.php?act=login.php">
+                                        <a href="index.php?act=login.php">
                                             <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-user.svg" />
                                         </a>
                                         <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
@@ -288,21 +288,18 @@
                                     <ul>
                                         <?php
                                         if (!empty($categories)) {
+                                            $imgdm = 0;
                                             $count = 0; // Đếm số lượng danh mục đã hiển thị
-
                                             foreach ($categories as $category) {
+                                                $imgdm++;
                                                 extract($category);
-
                                                 echo '
-                                                
                                                 <li>
-                                                        <a href="shop-grid-right.php">
-                                                            <img src="view/assets/imgs/theme/icons/category-1.svg" alt=""/> ' . $category['name'] . '
-                                                        </a>
-                                                    </li>
+                                                    <a href="shop-grid-right.php">    
+                                                         <img src="view/assets/imgs/theme/icons/category-' . $imgdm . '.svg" alt=""/> ' . $category['name'] . '
+                                                    </a>
+                                                </li>
                                                     ';
-
-
                                                 $count++;
                                                 if ($count >= 5) {
                                                     break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
@@ -320,7 +317,7 @@
                                                     <ul class = "end">
                                                     <li >
                                                             <a href="shop-grid-right.php">
-                                                                <img src="view/assets/imgs/theme/icons/category-1.svg" alt=""/> ' . $categories[$i]['name'] . '
+                                                                <img src="view/assets/imgs/theme/icons/category-' . $count . '.svg" alt=""/> ' . $categories[$i]['name'] . '
                                                             </a>
                                                     </li>';
                                                     $count++;

@@ -12,21 +12,20 @@
                     </div>
                     <div class="col-xl-9 text-end d-none d-xl-block">
                         <ul class="tags-list">
-                            <li class="hover-up">
-                                <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Cabbage</a>
-                            </li>
-                            <li class="hover-up active">
-                                <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Broccoli</a>
-                            </li>
-                            <li class="hover-up">
-                                <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Artichoke</a>
-                            </li>
-                            <li class="hover-up">
-                                <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Celery</a>
-                            </li>
-                            <li class="hover-up mr-0">
-                                <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Spinach</a>
-                            </li>
+                            <?php
+                            if (!empty($categories)) {
+                                $count = 0; // Đếm số lượng danh mục đã hiển thị
+                                foreach ($categories as $category) {
+                                    extract($category);
+                                    echo '<li class="hover-up">
+                                    <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>'.$category['name'].'</a>
+                                    </li>';
+                                    $count++;
+                                    if ($count >= 5) {
+                                        break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
+                                    }
+                                }}
+                            ?>
                         </ul>
                     </div>
                 </div>
@@ -1290,26 +1289,18 @@
                 <div class="sidebar-widget widget-category-2 mb-30">
                     <h5 class="section-title style-1 mb-30">Category</h5>
                     <ul>
-                        <li>
-                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-1.svg"
-                                    alt="" />Milks & Dairies</a><span class="count">30</span>
-                        </li>
-                        <li>
-                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-2.svg"
-                                    alt="" />Clothing</a><span class="count">35</span>
-                        </li>
-                        <li>
-                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-3.svg"
-                                    alt="" />Pet Foods </a><span class="count">42</span>
-                        </li>
-                        <li>
-                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-4.svg"
-                                    alt="" />Baking material</a><span class="count">68</span>
-                        </li>
-                        <li>
-                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-5.svg"
-                                    alt="" />Fresh Fruit</a><span class="count">87</span>
-                        </li>
+                        <?php
+                        $imgdm=0;
+                        foreach ($categories as $category) {
+                            $imgdm++;
+                            extract($category);
+                            echo '
+                            <li>
+                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-'.$imgdm.'.svg"
+                                    alt="" />'.$category['name'].'</a><span class="count">30</span>
+                            </li>';
+                        }
+                        ?>
                     </ul>
                 </div>
                 <!-- Fillter By Price -->
