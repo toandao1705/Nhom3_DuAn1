@@ -10,11 +10,16 @@ include "model/banner.php";
 include "model/global.php";
 include "global.php";
 
+
 $products = new products();
 $spnew= $products->loadall_sanpham_home();
+$spview= $products->hienthi_sanpham_view();
 $delete = 0;
 $banner = new banner();
 $listbanner = $banner->loadall_banner($delete);
+
+// data dành cho trang chủ
+// $dssp_view=get_dssp_view(8);
 
 
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
