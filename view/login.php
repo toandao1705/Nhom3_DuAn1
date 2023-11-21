@@ -22,7 +22,7 @@
                                         <h1 class="mb-5">Login</h1>
                                         <p class="mb-30">Don't have an account? <a href="index.php?act=register">Create here</a></p>
                                     </div>
-                                    <form action="index.php?act=login" method="post">
+                                    <form action="index.php?act=login_google" method="post">
                                         <div class="form-group">
                                             <input type="text" required="" name="name" placeholder="Username*" />
                                         </div>
@@ -39,9 +39,26 @@
                                             <a class="text-muted" href="index.php?act=forgot_password">Forgot password?</a>
                                         </div>
                                         <div class="form-group">
-                                            <input type="submit" name="login" value="Login">
+                                            <input type="submit" name="login" value="Login" class="font-weight-bold text-light" style="background-color: #3bb77e;">
                                         </div>
                                     </form>
+                                    <div class="col-lg-12 d-none d-lg-block">
+                                        <div class="card-login">
+                                            <a href="#" class="social-login facebook-login">
+                                                <img src="view/assets/imgs/theme/icons/logo-facebook.svg" alt="" />
+                                                <span>Continue with Facebook</span>
+                                            </a>
+                                            <a class="social-login google-login" href="<?php echo $client->createAuthUrl(); ?>">
+                                                <img src="view/assets/imgs/theme/icons/logo-google.svg" alt="" />
+                                                <span>Continue with Google</span>
+                                            </a>
+                                            <a href="#" class="social-login apple-login">
+                                                <img src="view/assets/imgs/theme/icons/logo-apple.svg" alt="" />
+                                                <span>Continue with Apple</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
                                     <?php
                                     if (isset($thongbao) && ($thongbao != "")) {
                                         echo $thongbao;

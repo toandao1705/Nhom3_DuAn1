@@ -16,8 +16,8 @@ include "global.php";
 
 $products = new products();
 
-$spnew= $products->loadall_sanpham_home();
-$spview= $products->hienthi_sanpham_view();
+$spnew = $products->loadall_sanpham_home();
+$spview = $products->hienthi_sanpham_view();
 $delete = 0;
 $banner = new banner();
 $listbanner = $banner->loadall_banner($delete);
@@ -80,24 +80,6 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case 'blog_category':
             include "view/blog_category.php";
             break;
-        case 'login':
-            $login = new user();
-            if (isset($_POST['login']) && ($_POST['login'])) {
-                $name = $_POST['name'];
-                $pass = $_POST['pass'];
-                $checkuser = $login->checkUsers($name, $pass);
-
-                if (is_array($checkuser)) {
-                    $_SESSION['user'] = $checkuser;
-                    header("Location: index.php?act=shop");
-                    exit;
-                } else {
-                    $thongbao = "Tài khoản không tồn tại. Vui lòng kiểm tra lại";
-                }
-            }
-            include "view/login.php";
-            break;
-
         case 'register':
             $register = new user();
             if (isset($_POST['register']) && ($_POST['register'])) {
@@ -118,6 +100,9 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case 'page_404':
             include "view/page_404.php";
             break;
+        case 'home1':
+            include "view/home1.php";
+            break;
         case 'search':
             $search = new products();
             if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
@@ -135,10 +120,139 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             $tendm = $search->load_ten_dm($iddm);
             include "view/search.php";
             break;
+            // case 'logout':
+            //     session_unset();
+            //     header("Location: index.php");
+            //     break;
         case 'logout':
-            session_unset();
+            // Initialize the session.
+            // If you are using session_name("something"), don't forget it now!
+            // session_start();
+
+            // Unset all of the session variables.
+            $_SESSION = array();
+
+            // If it's desired to kill the session, also delete the session cookie.
+            // Note: This will destroy the session, and not just the session data!
+            if (ini_get("session.use_cookies")) {
+                $params = session_get_cookie_params();
+                setcookie(
+                    session_name(),
+                    '',
+                    time() - 42000,
+                    $params["path"],
+                    $params["domain"],
+                    $params["secure"],
+                    $params["httponly"]
+                );
+            }
+
+            // Finally, destroy the session.
+            session_destroy();
             header("Location: index.php");
+            exit;
             break;
+        case 'login_google':
+            $login = new user();
+            if (isset($_POST['login']) && ($_POST['login'])) {
+                $name = $_POST['name'];
+                $pass = $_POST['pass'];
+                $checkuser = $login->checkUsers($name, $pass);
+
+                if (is_array($checkuser)) {
+                    $_SESSION['user'] = $checkuser;
+                    header("Location: index.php?act=shop");
+                    exit;
+                } else {
+                    $thongbao = "Tài khoản không tồn tại. Vui lòng kiểm tra lại";
+                }
+            }
+
+            session_regenerate_id(true);
+            // require 'config.php';
+
+            if (isset($_SESSION['login_id'])) {
+                header('Location: index.php?act=shop');
+                exit;
+            }
+
+            require 'view/google-api/vendor/autoload.php';
+
+            // Creating new google client instance
+            $client = new Google_Client();
+
+            // Enter your Client ID
+            $client->setClientId('444210929427-tgnqn412o963o71gh41mps89t9h9n12f.apps.googleusercontent.com');
+            // Enter your Client Secrect
+            $client->setClientSecret('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');
+            // Enter the Redirect URL
+            $client->setRedirectUri('http://localhost/nhom3_duan1/index.php?act=login_google');
+
+            // Adding those scopes which we want to get (email & profile Information)
+            $client->addScope("email");
+            $client->addScope("profile");
+
+
+
+            // ...
+
+            if (isset($_GET['code'])) {
+                $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
+
+                if (!isset($token["error"])) {
+                    $client->setAccessToken($token['access_token']);
+
+                    // getting profile information
+                    $google_oauth = new Google_Service_Oauth2($client);
+                    $google_account_info = $google_oauth->userinfo->get();
+
+                    // Storing data into database
+                    $id = mysqli_real_escape_string($db_connection, $google_account_info->id);
+                    $full_name = mysqli_real_escape_string($db_connection, trim($google_account_info->name));
+                    $email = mysqli_real_escape_string($db_connection, $google_account_info->email);
+                    $profile_pic = mysqli_real_escape_string($db_connection, $google_account_info->picture);
+
+                    // checking user already exists or not
+                    $get_user = mysqli_query($db_connection, "SELECT * FROM `user` WHERE `google_id`='$id'");
+                    if (mysqli_num_rows($get_user) > 0) {
+                        $user_info = mysqli_fetch_assoc($get_user);
+
+                        $_SESSION['login_id'] = $id;
+                        $_SESSION['user'] = $user_info; // Lưu thông tin user vào session
+
+                        header('Location: index.php');
+                        exit;
+                    } else {
+                        // if user not exists we will insert the user
+                        $insert = mysqli_query($db_connection, "INSERT INTO `user`(`google_id`,`name`,`email`) VALUES('$id','$full_name','$email')");
+
+                        if ($insert) {
+                            $_SESSION['login_id'] = $id;
+                            $_SESSION['user'] = array(
+                                'id' => mysqli_insert_id($db_connection),
+                                'google_id' => $id,
+                                'name' => $full_name,
+                                'email' => $email
+                            ); // Lưu thông tin user vào session
+
+                            header('Location: index.php');
+                            exit;
+                        } else {
+                            echo "Sign up failed!(Something went wrong).";
+                        }
+                    }
+                } else {
+                    header('Location: index.php?act=login');
+                    exit;
+                }
+            }
+
+            // ...
+
+
+            include "view/login.php";
+            break;
+
         default:
             include "view/home.php";
             break;
