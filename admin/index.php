@@ -9,6 +9,8 @@ include '../model/category.php';
 include '../model/product.php';
 include '../model/comment.php';
 include '../model/cart.php';
+include '../model/statistical.php';
+
 $act = 'home';
 if (isset($_SESSION['admin'])) {
     // Nếu đã đăng nhập, bao gồm header, footer và sidebar
@@ -386,7 +388,24 @@ if (isset($_SESSION['admin'])) {
                 include "donhang/list.php";
                 break;
             case 'listthongke':
+                $thongke = new statistical();
+                $listthongke = $thongke->loadall_thongke();
                 include "thongke/thongke.php";
+                break;
+            case 'bieudo':
+                $thongke = new statistical();
+                $listthongke = $thongke->loadall_thongke();
+                include "thongke/bieudo.php";
+                break;
+            case 'listthongkebl':
+                $thongkebl = new statistical();
+                $listthongkebl = $thongkebl->loadall_thongkebl();
+                include "thongke/thongkebl.php";
+                break;
+            case 'bieudobl':
+                $thongkebl = new statistical();
+                $listthongkebl = $thongkebl->loadall_thongkebl();
+                include "thongke/bieudobl.php";
                 break;
             case 'logout':
                 include "dangnhap/logout.php";

@@ -26,6 +26,30 @@
                                     }
                                 }}
                             ?>
+                            .........
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         </ul>
                     </div>
                 </div>
@@ -1291,15 +1315,21 @@
                     <ul>
                         <?php
                         $imgdm=0;
-                        foreach ($categories as $category) {
-                            $imgdm++;
-                            extract($category);
-                            echo '
-                            <li>
-                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-'.$imgdm.'.svg"
+                        if (!empty($categories)) {
+                            $count = 0; // Đếm số lượng danh mục đã hiển thị
+                            foreach ($categories as $category) {
+                                extract($category);
+                                $imgdm++;
+                                echo '
+                                <li>
+                                    <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-'.$imgdm.'.svg"
                                     alt="" />'.$category['name'].'</a><span class="count">30</span>
-                            </li>';
-                        }
+                                </li>';
+                                $count++;
+                                if ($count >= 8) {
+                                    break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
+                                }
+                            }}
                         ?>
                     </ul>
                 </div>

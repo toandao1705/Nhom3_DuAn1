@@ -18,6 +18,7 @@ class user {
       $select = "select * from user";
       return $db->pdo_query($select);
    }
+   
    public function checkUser($name,$pass) 
    { 
        $db = new connect();               
@@ -28,6 +29,7 @@ class user {
        else 
            return false; 
    }
+
    function checkUsers($name, $pass) 
    { 
        $db = new connect();
@@ -39,6 +41,14 @@ class user {
 
        return $db->pdo_query_one($select);
    }
+
+   function checkEmail($email) 
+{ 
+    $db = new connect();
+    $select = "SELECT * FROM user WHERE email = '".$email."'";
+    return $db->pdo_query_one($select);
+}
+   
    function insert_taikhoan($name, $email, $pass, $address, $phone){
       $db = new connect();
       $passwordEncryption = md5($pass);

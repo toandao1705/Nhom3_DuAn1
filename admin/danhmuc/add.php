@@ -38,6 +38,7 @@
                                 <?php echo $thongbao; ?>
                             </div>
                             <?php endif; ?>
+                            <!-- Thông báo thất bại -->
                             <?php if (isset($thongbaoloi) && ($thongbaoloi != "")) : ?>
                             <div id="success-alert"
                                 class="alert mt-3 <?php echo ($insertResult ? 'alert-success' : 'alert-danger'); ?>">

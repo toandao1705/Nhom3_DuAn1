@@ -95,6 +95,17 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/register.php";
             break;
         case 'forgot_password':
+            $forgot_password = new user();
+            if (isset($_POST['forgot_password']) && ($_POST['forgot_password'] == "Submit")) {
+                $email = $_POST['email'];
+                $checkemail = $forgot_password->checkEmail($email);
+        
+                if (is_array($checkemail)) {
+                    $thongbao = "Mật khẩu của bạn là: " . $checkemail['pass'];
+                } else {
+                    $thongbaoloi = "Email này không tồn tại. Vui lòng kiểm tra lại";
+                }
+            }
             include "view/forgot_password.php";
             break;
         case 'page_404':
