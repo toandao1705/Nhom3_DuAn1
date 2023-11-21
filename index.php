@@ -84,6 +84,21 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/page_404.php";
             break;
         case 'search':
+            $search = new products();
+            if(isset($_POST['kyw']) && ($_POST['kyw']!="")){
+                $kyw=$_POST['kyw'];
+            }else{
+                $kyw="";
+            }
+            if(isset($_GET['iddm']) && ($_GET['iddm'] > 0)){
+                $iddm = $_GET['iddm'];    
+                
+            }else{
+                $iddm=0;
+            }
+            $delete=0;
+            $dssp=$search->loadall_tksanpham($kyw, $iddm,$delete);
+            $tendm=$search->load_ten_dm($iddm);
             include "view/search.php";
             break;
         default:

@@ -152,4 +152,39 @@ class products
         $select = "SELECT * FROM products WHERE id_category= " . $id_category . " AND id <>" . $id;
         return $db->pdo_query($select);
     }
+    function loadall_tksanpham($kyw = "", $iddm = 0, $detete)
+{
+    $db = new connect();
+    $select = "SELECT products.*, images.img as img, category.name as category_name
+           FROM products 
+           LEFT JOIN images ON products.id = images.id_pro
+           LEFT JOIN category ON products.id_category = category.id
+           WHERE 1";
+
+            if ($kyw != "") {
+                $select .= " and products.name like '%" . $kyw . "%'";
+            }
+
+            if ($iddm > 0) {
+                $select .= " and products.id_category ='" . $iddm . "'";
+            }
+
+            $select .= " and products.`delete` ='" . $detete . "'";
+            $select .= " ORDER BY products.id DESC";
+
+            return $db->pdo_query($select);
+}
+    function load_ten_dm($iddm){
+        $db = new connect();
+        if($iddm>0){
+            $sql="SELECT * FROM category WHERE id=".$iddm;
+            $dm=$db->pdo_query_one($sql);
+            extract($dm);
+            return $name;
+        }else{
+            return "";
+        }
+        
+    }
+
 }
