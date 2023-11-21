@@ -18,8 +18,6 @@ $products = new products();
 
 $spnew= $products->loadall_sanpham_home();
 $spview= $products->hienthi_sanpham_view();
-
-
 $delete = 0;
 $banner = new banner();
 $listbanner = $banner->loadall_banner($delete);
@@ -122,21 +120,24 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
         case 'search':
             $search = new products();
-            if(isset($_POST['kyw']) && ($_POST['kyw']!="")){
-                $kyw=$_POST['kyw'];
-            }else{
-                $kyw="";
+            if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
+                $kyw = $_POST['kyw'];
+            } else {
+                $kyw = "";
             }
-            if(isset($_GET['iddm']) && ($_GET['iddm'] > 0)){
-                $iddm = $_GET['iddm'];    
-                
-            }else{
-                $iddm=0;
+            if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
+                $iddm = $_GET['iddm'];
+            } else {
+                $iddm = 0;
             }
-            $delete=0;
-            $dssp=$search->loadall_tksanpham($kyw, $iddm,$delete);
-            $tendm=$search->load_ten_dm($iddm);
+            $delete = 0;
+            $dssp = $search->loadall_tksanpham($kyw, $iddm, $delete);
+            $tendm = $search->load_ten_dm($iddm);
             include "view/search.php";
+            break;
+        case 'logout':
+            session_unset();
+            header("Location: index.php");
             break;
         default:
             include "view/home.php";
