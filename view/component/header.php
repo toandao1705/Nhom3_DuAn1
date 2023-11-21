@@ -513,9 +513,9 @@
             </div>
             <div class="mobile-header-content-area">
                 <div class="mobile-search search-style-3 mobile-header-border">
-                    <form action="#">
-                        <input type="text" placeholder="Search for items…" />
-                        <button type="submit"><i class="fi-rs-search"></i></button>
+                    <form action="index.php?act=search" method="post">
+                        <input type="text" name="kyw" placeholder="Search for items…"/>
+                        <input type="submit" name="search"><i class="fi-rs-search"></i></button>
                     </form>
                 </div>
                 <div class="mobile-menu-wrap mobile-header-border">
