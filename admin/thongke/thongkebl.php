@@ -4,48 +4,38 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <div class="card-header d-flex justify-content-between">
-                            <h3 class="card-title">Danh sách thống kê sản phẩm theo danh mục</h3>
-                            <h3 class="card-title ml-auto"><a href="index.php?act=listthongkebl">thống kê bình
-                                    luận theo sản phẩm</a></h3>
+                        <div class="card-header">
+                            <h3 class="card-title">Danh sách thống kê bình luận theo sản phẩm</h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
                             <table id="example2" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-
-                                        <th>Mã Danh Mục</th>
-                                        <th>Tên danh mục</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Tên khách hàng</th>
                                         <th>Số lượng</th>
-                                        <th>Giá cao nhất</th>
-                                        <th>Giá thấp nhất</th>
-                                        <th>Giá trung bình</th>
-
+                                        <th>Ngày bình luận gần nhất</th>
+                                        <th>Ngày bình luận lâu nhất</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php 
-                                    foreach ($listthongke as $thongke) {
-                                        extract($thongke);
+                                    foreach ($listthongkebl as $thongkebl) {
+                                        extract($thongkebl);
                                         echo'<tr>
-                                        <td>'.$madm.'</td>
-                                        <td>'.$tendm.'</td>
-                                        <td>'.$countsp.'</td>
-                                        <td>'.$maxprice.' VND</td>
-                                        <td>'.$minprice.' VNĐ</td>
-                                        <td>'.$avgprice.' VND</td>
-                                        </tr>';
+                                        <td>'.$tensp.'</td>
+                                        <td>'.$tenkh.'</td>
+                                        <td>'.$countcm.'</td>
+                                        <td>'.$ngaybl_gannhat.'</td>
+                                        <td>'.$ngaybl_launhat.'</td>';
                                     }
                                     ?>
                                 </tbody>
-
-
                             </table>
                             <div class="box mt-3">
-                                <a href="index.php?act=bieudo">
+                                <a href="index.php?act=bieudobl">
                                     <button class="btn btn-primary mb-3" id="select-all"> Xem biểu đồ
-
                                     </button>
                                 </a>
                             </div>
