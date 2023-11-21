@@ -377,7 +377,7 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'listbl':
                 $binhluan = new comment();
-                $listbl = $binhluan->loadall_binhluan();
+                $listbl = $binhluan->loadall_binhluan(0);
                 include "binhluan/list.php";
                 break;
             case 'listdh':
