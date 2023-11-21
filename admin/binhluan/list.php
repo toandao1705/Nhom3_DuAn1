@@ -29,6 +29,7 @@
                                     // Hiển thị thông tin tai khoan
                                     foreach ($listbl as $binhluan) {
                                         extract($binhluan);
+                                        $xoabl = "index.php?act=xoabl&id=" . $id;
                                         echo ' <tr>
                                                 <td><input type="checkbox"></td>
                                                 <td>'.$id.'</td>
