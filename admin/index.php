@@ -121,7 +121,13 @@ if (isset($_SESSION['admin'])) {
                         $insertResult = $category->insert_danhmuc($tenloai);
                         $thongbao = "Thêm danh mục thành công";
                     } catch (Exception $e) {
-                        $thongbao = $e->getMessage();
+                        $errorCode = $e->getCode();
+                        if ($errorCode == 23000) {
+                            // Mã lỗi 23000 thường là lỗi ràng buộc duy nhất (unique constraint)
+                            $thongbaoloi = "Danh mục đã tồn tại.";
+                        } else {
+                            $thongbaoloi = $e->getMessage();
+                        }
                     }
                 }
             
@@ -322,7 +328,7 @@ if (isset($_SESSION['admin'])) {
                 $sql = "SELECT * FROM category ORDER BY id DESC";
                 $delete = 1;
                 $categories = $category->status_danhmuc($delete, 0, 0);
-                include "danhmuc/delete.php";
+                header('location: index.php?act=list_delete_history');
                 break;
 
 

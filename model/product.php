@@ -152,6 +152,28 @@ class products
         $select = "SELECT * FROM products WHERE id_category= " . $id_category . " AND id <>" . $id;
         return $db->pdo_query($select);
     }
+    function hienthi_sanpham_view()
+    {
+        $db = new connect();
+        $select = "SELECT products.*, images.img as img, category.name as category_name
+               FROM products 
+               LEFT JOIN images ON products.id = images.id_pro
+               LEFT JOIN category ON products.id_category = category.id
+               WHERE 1 
+               ORDER BY products.view DESC limit 0,8";
+
+        $result = $db->pdo_query($select);
+
+        // Loop through the result and associate images with each product
+        foreach ($result as &$product) {
+            $selectImages = "SELECT img FROM images WHERE id_pro=" . $product['id'];
+            $images = $db->pdo_query($selectImages);
+            $product['images'] = $images;
+        }
+
+        return $result;
+    }
+    
     function loadall_tksanpham($kyw = "", $iddm = 0, $detete)
 {
     $db = new connect();
@@ -186,5 +208,5 @@ class products
         }
         
     }
-
 }
+

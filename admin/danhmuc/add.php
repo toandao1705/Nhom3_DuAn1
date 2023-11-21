@@ -34,8 +34,14 @@
                             <!-- Thông báo thành công -->
                             <?php if (isset($thongbao) && ($thongbao != "")) : ?>
                             <div id="success-alert"
-                                class="alert mt-3 <?php echo ($insertResult ? 'alert-success' : 'alert-danger'); ?>">
+                                class="alert mt-3 <?php echo ($insertResult ? 'alert-success' : 'alert-success'); ?>">
                                 <?php echo $thongbao; ?>
+                            </div>
+                            <?php endif; ?>
+                            <?php if (isset($thongbaoloi) && ($thongbaoloi != "")) : ?>
+                            <div id="success-alert"
+                                class="alert mt-3 <?php echo ($insertResult ? 'alert-success' : 'alert-danger'); ?>">
+                                <?php echo $thongbaoloi; ?>
                             </div>
                             <?php endif; ?>
 
