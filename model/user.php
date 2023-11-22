@@ -108,5 +108,17 @@ class user {
       $select="DELETE FROM user where id=".$id;
       return $db->pdo_query($select);
   }
+  function loadone_taikhoan($id){
+   $db = new connect();
+   $select="SELECT * FROM user WHERE id=".$id;
+   $sp=$db->pdo_query_one($select);
+   return $sp;
+}
+function update_taikhoan($id, $email, $pass, $address, $phone){
+   $db = new connect();
+   $passwordEncryption = md5($pass);
+   $select = "UPDATE user set pass='".$passwordEncryption."', email='".$email."', address='".$address."', phone='".$phone."' WHERE id=".$id;
+   $db->pdo_execute($select);
+}
 }
 ?>

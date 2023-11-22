@@ -5,7 +5,7 @@ class connect
     {
         $servername = "localhost";
         $username = "root";
-        $password = "";
+        $password = "mysql";
 
         try {
             $conn = new PDO("mysql:host=$servername;dbname=duan1", $username, $password);
@@ -111,7 +111,7 @@ class connect
     
 }
 // change the information according to your database
-$db_connection = mysqli_connect("localhost","root","","duan1");
+$db_connection = mysqli_connect("localhost","root","mysql","duan1");
 // CHECK DATABASE CONNECTION
 if(mysqli_connect_errno()){
     echo "Connection Failed".mysqli_connect_error();

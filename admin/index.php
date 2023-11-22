@@ -407,8 +407,27 @@ if (isset($_SESSION['admin'])) {
                 $users = $user->loadall_taikhoan($delete);
                 include "taikhoan/delete.php";
                 break;
-            case 'updatetk':
+            case 'suatk':
+                $user = new user();
+                if(isset($_GET['id'])&&($_GET['id'])>0){
+                    $taikhoan=$user->loadone_taikhoan($_GET['id']);
+                }
+                $delete = 0;
+                $listtaikhoan=$user->loadall_taikhoan($delete);
                 include "taikhoan/update.php";
+                break;
+            case 'updatetk':
+                $user = new user();
+                if(isset($_POST['capnhat'])&&($_POST['capnhat'])){
+                    $id=$_POST['id'];
+                    $email=$_POST['email'];
+                    $pass=$_POST['pass'];
+                    $address=$_POST['address'];
+                    $phone=$_POST['phone'];
+                    $user->update_taikhoan($id, $email, $pass, $address, $phone);
+                    $thongbao = "Cập nhật thành công";
+                }
+                header('location: index.php?act=listtk');
                 break;
             case 'listbl':
                 $binhluan = new comment();
