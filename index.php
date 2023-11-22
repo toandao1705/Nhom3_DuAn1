@@ -12,7 +12,7 @@ include "model/banner.php";
 include "model/global.php";
 include "model/user.php";
 include "global.php";
-
+if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
 
 $products = new products();
 
@@ -21,6 +21,7 @@ $spview = $products->hienthi_sanpham_view();
 $delete = 0;
 $banner = new banner();
 $listbanner = $banner->loadall_banner($delete);
+
 
 // data dành cho trang chủ
 // $dssp_view=get_dssp_view(8);
@@ -62,8 +63,48 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case 'terms':
             include "view/terms.php";
             break;
-        case 'cart':
-            include "view/cart.php";
+        case 'addtocart':
+            // Thêm thông tin sản phẩm từ biểu mẫu thêm vào giỏ hàng vào session
+            if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
+                // var_dump($_POST);
+                // exit;
+                $id = $_POST['id'];
+                $name = $_POST['name'];
+                $img = $_POST['img'];
+                $price = $_POST['price'];
+                $quantity = isset($_POST['quantity']) ? intval($_POST['quantity']) : 1;
+                $ttien = $quantity * $price;
+                $spadd = [$id, $name, $img, $price, $quantity, $ttien];
+
+                // Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
+                $productExists = false;
+                foreach ($_SESSION['mycart'] as $index => $cartItem) {
+                    if ($cartItem[0] == $id) {
+                        $productExists = true;
+                        // Nếu sản phẩm đã tồn tại trong giỏ hàng, cập nhật số lượng mới
+                        $_SESSION['mycart'][$index][4] += $quantity;
+                        break;
+                    }
+                }
+
+                // Nếu sản phẩm chưa có trong giỏ hàng, thêm vào
+                if (!$productExists) {
+                    array_push($_SESSION['mycart'], $spadd);
+                }
+            }
+
+            include "view/cart/cart.php";
+            break;
+
+
+
+        case 'delcart':
+            if (isset($_GET['idcart'])) {
+                array_splice($_SESSION['mycart'], $_GET['idcart'], 1);
+            } else {
+                $_SESSION['mycart'] = [];
+            }
+            header('Location: index.php?act=addtocart');
             break;
         case 'checkout':
             include "view/checkout.php";
