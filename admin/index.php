@@ -371,8 +371,41 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'listtk':
                 $taikhoan = new user();
-                $listtk = $taikhoan->loadall_taikhoan();
+                $delete=0;
+                $listtk = $taikhoan->loadall_taikhoan($delete);
                 include "taikhoan/list.php";
+                break;
+            case 'delete_hidden_taikhoan':
+                $user = new user();
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $user->delete_hidden_taikhoan($id);
+                }
+                header('location: index.php?act=listtk');
+                break;
+            case 'list_delete_history_taikhoan':
+                $user = new user();
+                $delete = 1;
+                $users = $user->loadall_taikhoan($delete);
+                include "taikhoan/delete.php";
+                break;
+            case 'restoretk':
+                $user = new user();
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $user->restore_taikhoan($id);
+                }
+                header('location: index.php?act=list_delete_history_taikhoan');
+                break;
+            case 'deletetk':
+                $user = new user();
+                if (isset($_GET['id']) && ($_GET['id']) > 0) {
+                    $user->delete_taikhoan($_GET['id']);
+                }
+                $sql = "SELECT * FROM user order by id desc";
+                $delete = 1;
+                $users = $user->loadall_taikhoan($delete);
+                include "taikhoan/delete.php";
                 break;
             case 'updatetk':
                 include "taikhoan/update.php";

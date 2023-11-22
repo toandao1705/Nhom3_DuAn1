@@ -6,9 +6,9 @@ class user {
    var $Email = null;
    var $images = null;
 
-   function loadall_taikhoan(){
+   function loadall_taikhoan($delete){
       $db = new connect();
-      $select="SELECT * FROM user order by id desc";
+      $select="SELECT * FROM user WHERE `delete`=" . $delete . " order by id desc";
       return $db->pdo_query($select);
   }
 
@@ -93,5 +93,20 @@ class user {
       $query = "delete from users where UserName = '$id'";
       $db->pdo_execute($query);
    }
+   function delete_hidden_taikhoan($id){
+      $db = new connect();
+      $select="UPDATE user SET `delete` ='1' WHERE id=".$id;
+      return $db->pdo_query($select);
+  }
+  function restore_taikhoan($id){
+        $db = new connect();
+        $select="UPDATE user SET `delete` ='0' WHERE id=".$id;
+        return $db->pdo_query($select);
+    }
+   function delete_taikhoan($id){
+      $db = new connect();
+      $select="DELETE FROM user where id=".$id;
+      return $db->pdo_query($select);
+  }
 }
 ?>
