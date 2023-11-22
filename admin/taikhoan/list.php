@@ -4,8 +4,9 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <div class="card-header">
+                    <div class="card-header d-flex justify-content-between">
                             <h3 class="card-title">Danh sách tài khoản</h3>
+                            <h3 class="card-title ml-auto"><a href="index.php?act=list_delete_history_taikhoan">Lịch sử xóa tài khoản</a></h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -29,6 +30,7 @@
                                     // Hiển thị thông tin tai khoan
                                     foreach ($listtk as $taikhoan) {
                                         extract($taikhoan);
+                                        $xoasp = "index.php?act=delete_hidden_taikhoan&id=" . $id;
                                         echo '<tr>
                                             <td><input type="checkbox"></td>
                                             <td>'.$id.'</td>
@@ -39,7 +41,7 @@
                                             <td>'.$role.'</td>
                                             <td>
                                                 <a href="index.php?act=updatetk"><button class="btn btn-primary">Sửa</button></a>
-                                                <a href="#"><button class="btn btn-danger">Xóa</button></a>
+                                                <a href="'.$xoasp.'"><button class="btn btn-danger">Xóa</button></a>
 
                                             </td>';
                                     }
