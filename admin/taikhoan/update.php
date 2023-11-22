@@ -1,3 +1,8 @@
+<?php 
+if(is_array($taikhoan)){
+  extract($taikhoan);
+}
+?>
 <section class="content">
   <div class="container-fluid">
     <div class="row">
@@ -14,33 +19,32 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="exampleInputPassword1">Tên tài khoản</label>
-                <input type="text" class="form-control" name="name" value="">
-                <span id="name-error" class="error-text text-danger"></span>
+                <input type="text" class="form-control" name="name" value="<?php echo $name ?>" disabled>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Email</label>
-                <input type="text" class="form-control" name="email" value="">
+                <input type="text" class="form-control" name="email" value="<?= $email ?>">
                 <span id="email-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Mật khẩu</label>
-                <input type="text" class="form-control" name="pass" value="">
+                <input type="text" class="form-control" name="pass" value="<?= $pass ?>">
                 <span id="pass-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Địa chỉ</label>
-                <input type="text" class="form-control" name="address" value="">
+                <input type="text" class="form-control" name="address" value="<?= $address ?>">
                 <span id="address-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Số điện thoại</label>
-                <input type="text" class="form-control" name="tel" value="">
+                <input type="text" class="form-control" name="phone" value="<?= $phone ?>">
                 <span id="tel-error" class="error-text text-danger"></span>
               </div>
             </div>
 
             <div class="card-footer">
-              <input type="hidden" name="id" value="">
+              <input type="hidden" name="id" value="<?= $id ?>">
               <input type="submit" name="capnhat" value="CẬP NHẬT">
               <input type="reset" value="NHẬP LẠi">
               <a href="index.php?act=listtk"><input type="button" value="DANH SÁCH"></a>
@@ -55,22 +59,11 @@
               var address = document.getElementsByName("address")[0].value;
               var tel = document.getElementsByName("tel")[0].value;
 
-              var namePattern = /^[a-zA-Z0-9\s]+$/;
               var passPattern = /^.{6,}$/;
               var telPattern = /^\d{10}$/;
               var emailPattern = /\S+@\S+\.\S+/;
 
               var isValid = true;
-
-              if (name.trim() === "") {
-                document.getElementById("name-error").textContent = "Tên tài khoản không được để trống";
-                isValid = false;
-              } else if (!name.match(namePattern)) {
-                document.getElementById("name-error").textContent = "Tên không được chứa ký tự đặt biệt";
-                isValid = false;
-              } else {
-                document.getElementById("name-error").textContent = "";
-              }
 
               if (email.trim() === "") {
                 document.getElementById("email-error").textContent = "Email không được để trống";
