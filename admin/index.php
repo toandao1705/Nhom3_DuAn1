@@ -431,8 +431,41 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'listbl':
                 $binhluan = new comment();
-                $listbl = $binhluan->loadall_binhluan(0);
+                $delete = 0;
+                $listbl = $binhluan->loadall_binhluan(0, $delete);
                 include "binhluan/list.php";
+                break;
+            case 'delete_hidden_binhluan':
+                $comment = new comment();
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $comment->delete_hidden_binhluan($id);
+                }
+                header('location: index.php?act=listbl');
+                break;
+            case 'list_delete_history_binhluan':
+                $comment = new comment();
+                $delete = 1;
+                $listbl = $comment->loadall_binhluan(0,$delete);
+                include "binhluan/delete.php";
+                break;
+            case 'restorebl':
+                $comment = new comment();
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $comment->restore_binhluan($id);
+                }
+                header('location: index.php?act=list_delete_history_binhluan');
+                break;
+            case 'deletebl':
+                $comment = new comment();
+                if (isset($_GET['id']) && ($_GET['id']) > 0) {
+                    $comment->delete_binhluan($_GET['id']);
+                }
+                $sql = "SELECT * FROM comment order by id desc";
+                $delete = 1;
+                $listbl = $comment->loadall_binhluan('',$delete);
+                include "binhluan/delete.php";
                 break;
             case 'listdh':
                 $donhang = new cart();
