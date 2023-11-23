@@ -62,12 +62,7 @@
                             }
                             ?>
                         </ul>
-                        <div class="box mt-3">
-                            <button class="btn btn-primary mb-3" id="select-all">Chọn tất cả</button>
-                            <button class="btn btn-warning mb-3" id="deselect-all">Bỏ chọn tất cả</button>
-                            <button class="btn btn-danger mb-3" id="delete-selected">Xóa các mục đã chọn</button>
-                            <a href="index.php?act=adddm"><button class="btn btn-success mb-3" id="add-row">Thêm</button></a>
-                        </div>
+                        
                     </div>
                     <!-- /.card-body -->
                 </div>

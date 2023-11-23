@@ -6,7 +6,8 @@ include '../model/pdo.php';
 $id_pro = $_REQUEST['id_pro'];
 // $id_user = $_SESSION['user']['id'];
 $comment  = new comment();
-$dsbl = $comment->loadall_binhluan($id_pro);
+$delete = 0;
+$dsbl = $comment->loadall_binhluan($id_pro, $delete);
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
