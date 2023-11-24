@@ -65,7 +65,7 @@
                                     echo '
                                         <tr>
                                             <td><input class="checkbox" type="checkbox"></td>
-                                            <td>' . $id_category . '</td>
+                                            <td>' . $category_name . '</td>
                                             <td>' . $name . '</td>
                                             <td>' . $imageColumn . '</td>
                                             <td>' . $price . '</td>
