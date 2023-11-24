@@ -127,18 +127,14 @@
               if (giasp.trim() === "") {
                 e.preventDefault(); // Ngăn chặn việc submit form
                 document.getElementById('giasp-error').textContent = 'Giá sản phẩm không được để trống';
-              }
-
-              // Bắt lỗi nếu giá sản phẩm không phải là số
-              if (isNaN(giasp)) {
+              }else if (isNaN(giasp)) { // Bắt lỗi nếu giá sản phẩm không phải là số
                 e.preventDefault(); // Ngăn chặn việc submit form
                 document.getElementById('giasp-error').textContent = 'Giá sản phẩm phải là số';
-              }
-              // Bắt lỗi nếu giá sản phẩm không phải là số hoặc không lớn hơn 0
-              if (isNaN(giasp) || giasp <= 0) {
+              }else if (isNaN(giasp) || giasp <= 0) { // Bắt lỗi nếu giá sản phẩm không phải là số hoặc không lớn hơn 0
                 e.preventDefault(); // Ngăn chặn việc submit form
                 document.getElementById('giasp-error').textContent = 'Giá sản phẩm phải là số dương';
               }
+              
 
               // Bắt lỗi nếu tệp hình không được để trống
               if (hinh.trim() === "") {

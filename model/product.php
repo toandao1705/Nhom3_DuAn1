@@ -22,20 +22,30 @@ class products
         $db->pdo_execute($select);
     }
 
-    function loadall_sanpham($kyw = "", $iddm = 0, $detete)
+    function loadall_sanpham($kyw = "", $iddm = 0, $delete, $start, $limit)
     {
         $db = new connect();
-        $select = "SELECT * FROM products WHERE 1";
+        $select = "SELECT products.*, category.name AS category_name 
+                   FROM products 
+                   JOIN category ON products.id_category = category.id
+                   WHERE 1";
+        
         if ($kyw != "") {
-            $select .= " and name like '%" . $kyw . "%'";
+            $select .= " AND products.name LIKE '%" . $kyw . "%'";
         }
+    
         if ($iddm > 0) {
-            $select .= " and id_category ='" . $iddm . "'";
+            $select .= " AND products.id_category ='" . $iddm . "'";
         }
-        $select .= " and `delete` ='" . $detete . "'";
-        $select .= " ORDER BY id DESC";
+    
+        $select .= " AND products.`delete` ='" . $delete . "'";
+        $select .= " ORDER BY products.id DESC";
+        $select .= " LIMIT $start, $limit";
+    
         return $db->pdo_query($select);
     }
+    
+    
     function loadone_sanpham($id)
     {
         $db = new connect();
@@ -63,7 +73,7 @@ class products
         $params = ['id_pro' => $id];
         return $db->pdo_query_with_params($select, $params);
     }
-    // In products class
+
     function loadall_images($id)
     {
         $db = new connect();

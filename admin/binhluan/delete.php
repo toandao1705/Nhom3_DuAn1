@@ -31,7 +31,7 @@
                                         foreach ($listbl as $binhluan) {
                                             extract($binhluan);
                                             $khoiphucbl = "index.php?act=restorebl&id=" . $id;
-                                            $xoabl = "index.php?act=delete_binhluan&id=" . $id;
+                                            $xoabl = "index.php?act=deletebl&id=" . $id;
                                             echo ' <tr>
                                                 <td><input type="checkbox"></td>
                                                 <td>' . $id . '</td>

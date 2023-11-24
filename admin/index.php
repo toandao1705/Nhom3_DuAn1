@@ -227,10 +227,28 @@ if (isset($_SESSION['admin'])) {
                     $iddm = 0;
                 }
                 $delete = 0;
+                //Đặt số lượng bản ghi trên mỗi trang
+                $limit = 5;
+
+                // Lấy số trang hiện tại từ URL
+                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                // Tính điểm bắt đầu để tìm nạp bản ghi
+                $start = ($page - 1) * $limit;
+
+                // Tìm nạp danh mục cho trang hiện tại
+                
+                $productsList = $loadedProducts->loadall_sanpham($kyw, $iddm, $delete, $start, $limit);
+
+                // Đếm tổng số bản ghi
+                $totalProducts = count($loadedProducts->loadall_sanpham("", "",$delete, 0, PHP_INT_MAX));
+
+                // Tính tổng số trang
+                $totalPages = ceil($totalProducts / $limit);
+                
                 $status = 0;
                 $categories = $category->loadall_danhmuc($status);
-                $productsList = $loadedProducts->loadall_sanpham($kyw, $iddm, $delete);
-
+                
                 include "sanpham/list.php";
                 break;
             case 'updatesp':
@@ -274,9 +292,9 @@ if (isset($_SESSION['admin'])) {
                     // ...
                     $loadedProducts->update_sanpham($id, $id_category, $tensp, $giasp, $mota, $images);
                     $thongbao = "Cập nhật thành công";
+                    header('location: index.php?act=listsp');
                 }
-                // $sql="SELECT * FROM sanpham order by id desc";
-                $productsList = $loadedProducts->loadall_sanpham("", 0, "");
+                
                 include "sanpham/list.php";
                 break;
             case 'list_delete_history':
@@ -324,7 +342,7 @@ if (isset($_SESSION['admin'])) {
                     $deleted = $category->delete_danhmuc($_GET['id']);
                     if (!$deleted) {
                         // Hiển thị một thông báo lỗi thân thiện với người dùng
-                        $error_message = "Không thể xóa danh mục vì có sản phẩm liên quan.";
+                        $_SESSION['error_message'] = "Không thể xóa danh mục vì có sản phẩm liên quan.";
                     }
                 }
                 $sql = "SELECT * FROM category ORDER BY id DESC";
@@ -332,9 +350,6 @@ if (isset($_SESSION['admin'])) {
                 $categories = $category->status_danhmuc($delete, 0, 0);
                 header('location: index.php?act=list_delete_history');
                 break;
-
-
-
             case 'delete_hidden_sanpham':
                 $products = new products();
                 if (isset($_GET['id'])) {
@@ -347,8 +362,26 @@ if (isset($_SESSION['admin'])) {
                 $loadedProducts = new products();
                 $category = new category();
                 $delete = 1;
+                //Đặt số lượng bản ghi trên mỗi trang
+                $limit = 5;
+
+                // Lấy số trang hiện tại từ URL
+                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                // Tính điểm bắt đầu để tìm nạp bản ghi
+                $start = ($page - 1) * $limit;
+
+                // Tìm nạp danh mục cho trang hiện tại
+                
+                $productsList = $loadedProducts->loadall_sanpham("", "", $delete, $start, $limit);
+
+                // Đếm tổng số bản ghi
+                $totalProducts = count($loadedProducts->loadall_sanpham("", "",$delete, 0, PHP_INT_MAX));
+
+                // Tính tổng số trang
+                $totalPages = ceil($totalProducts / $limit);
+                
                 $categories = $category->loadall_danhmuc();
-                $productsList = $loadedProducts->loadall_sanpham("", "", $delete);
                 include "sanpham/delete.php";
                 break;
             case 'restoresp':
@@ -366,7 +399,7 @@ if (isset($_SESSION['admin'])) {
                 }
                 $sql = "SELECT * FROM products order by id desc";
                 $delete = 1;
-                $productsList = $loadedProducts->loadall_sanpham("", "", $delete);
+                $productsList = $loadedProducts->loadall_sanpham("", "", $delete,  "","");
                 include "sanpham/delete.php";
                 break;
             case 'listtk':
@@ -513,12 +546,21 @@ if (isset($_SESSION['admin'])) {
     $name = $_POST['name'] ?? '';
     $pass = $_POST['pass'] ?? '';
 
-    // Mã hóa mật khẩu theo kiểu MD5
-    $hashedPassword = md5($pass);
-
-    if ($user->checkUser($name, $hashedPassword)) {
-        $result = $user->userid($name, $hashedPassword);
-        $_SESSION['admin'] = $name; // kiểm tra có người dùng hay không
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $name = $_POST['name'] ?? '';
+        $pass = $_POST['pass'] ?? '';
+        
+        // Mã hóa mật khẩu theo kiểu MD5
+        $hashedPassword = md5($pass);
+    
+        if ($user->checkUser($name, $hashedPassword)) {
+            $result = $user->userid($name, $hashedPassword);
+            $_SESSION['admin'] = $name; // kiểm tra có người dùng hay không
+            header("Location: index.php"); // Redirect to the dashboard or any other page
+            exit();
+        } else {
+            $loginError = "Tên hoặc mật khẩu không đúng. Vui lòng thử lại.";
+        }
     }
 
     include "dangnhap/login.php";
