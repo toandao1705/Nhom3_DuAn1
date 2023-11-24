@@ -513,12 +513,21 @@ if (isset($_SESSION['admin'])) {
     $name = $_POST['name'] ?? '';
     $pass = $_POST['pass'] ?? '';
 
-    // Mã hóa mật khẩu theo kiểu MD5
-    $hashedPassword = md5($pass);
-
-    if ($user->checkUser($name, $hashedPassword)) {
-        $result = $user->userid($name, $hashedPassword);
-        $_SESSION['admin'] = $name; // kiểm tra có người dùng hay không
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $name = $_POST['name'] ?? '';
+        $pass = $_POST['pass'] ?? '';
+        
+        // Mã hóa mật khẩu theo kiểu MD5
+        $hashedPassword = md5($pass);
+    
+        if ($user->checkUser($name, $hashedPassword)) {
+            $result = $user->userid($name, $hashedPassword);
+            $_SESSION['admin'] = $name; // kiểm tra có người dùng hay không
+            header("Location: index.php"); // Redirect to the dashboard or any other page
+            exit();
+        } else {
+            $loginError = "Tên hoặc mật khẩu không đúng. Vui lòng thử lại.";
+        }
     }
 
     include "dangnhap/login.php";
