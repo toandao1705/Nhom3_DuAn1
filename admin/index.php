@@ -292,9 +292,9 @@ if (isset($_SESSION['admin'])) {
                     // ...
                     $loadedProducts->update_sanpham($id, $id_category, $tensp, $giasp, $mota, $images);
                     $thongbao = "Cập nhật thành công";
+                    header('location: index.php?act=listsp');
                 }
-                // $sql="SELECT * FROM sanpham order by id desc";
-                $productsList = $loadedProducts->loadall_sanpham("", 0, "", "", "");
+                
                 include "sanpham/list.php";
                 break;
             case 'list_delete_history':

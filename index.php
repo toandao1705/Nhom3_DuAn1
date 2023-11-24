@@ -12,6 +12,7 @@ include "model/banner.php";
 include "model/global.php";
 include "model/user.php";
 include "global.php";
+
 include "./mail/index.php";
 
 $mail= new Mailer();

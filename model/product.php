@@ -73,7 +73,7 @@ class products
         $params = ['id_pro' => $id];
         return $db->pdo_query_with_params($select, $params);
     }
-    // In products class
+
     function loadall_images($id)
     {
         $db = new connect();
