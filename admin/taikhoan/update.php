@@ -28,7 +28,7 @@ if (is_array($taikhoan)) {
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Mật khẩu</label>
-                <input type="text" class="form-control" name="pass" id="pass" value="<?= $pass ?>">
+                <input type="password" class="form-control" name="pass" id="pass" value="<?= $pass ?>">
                 <span id="pass-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">

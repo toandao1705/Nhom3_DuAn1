@@ -397,9 +397,7 @@ if (isset($_SESSION['admin'])) {
                 if (isset($_GET['id']) && ($_GET['id']) > 0) {
                     $loadedProducts->delete_sanpham($_GET['id']);
                 }
-                $sql = "SELECT * FROM products order by id desc";
-                $delete = 1;
-                $productsList = $loadedProducts->loadall_sanpham("", "", $delete,  "","");
+                header('location: index.php?act=list_delete_history_sanpham');
                 include "sanpham/delete.php";
                 break;
             case 'listtk':
