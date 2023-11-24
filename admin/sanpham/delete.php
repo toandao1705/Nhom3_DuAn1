@@ -24,21 +24,22 @@
                                     </tr>
                                 </thead>
                                 <?php
-                                foreach ($productsList as $product) {
-                                    extract($product);
-                                    $suasp = "index.php?act=restoresp&id=" . $id;
-                                    $xoasp = "index.php?act=deletesp&id=" . $id;
-                                    $hinhpath = "../upload/";
-                                    // Lấy danh sách hình ảnh từ đối tượng $loadedProducts
-                                    $images = $loadedProducts->load_images($id);
+                                if (!empty($productsList)) {
+                                    foreach ($productsList as $product) {
+                                        extract($product);
+                                        $suasp = "index.php?act=restoresp&id=" . $id;
+                                        $xoasp = "index.php?act=deletesp&id=" . $id;
+                                        $hinhpath = "../upload/";
+                                        // Lấy danh sách hình ảnh từ đối tượng $loadedProducts
+                                        $images = $loadedProducts->load_images($id);
 
-                                    // Chỉ lấy ảnh đầu tiên nếu có
-                                    $imageColumn = '';
-                                    if (!empty($images)) {
-                                        $imageColumn = '<img src="' . $hinhpath . $images[0]['img'] . '" alt="Image" style="max-width: 100px;">';
-                                    }
+                                        // Chỉ lấy ảnh đầu tiên nếu có
+                                        $imageColumn = '';
+                                        if (!empty($images)) {
+                                            $imageColumn = '<img src="' . $hinhpath . $images[0]['img'] . '" alt="Image" style="max-width: 100px;">';
+                                        }
 
-                                    echo '
+                                        echo '
                                         <tr>
                                             <td><input class="checkbox" type="checkbox"></td>
                                             <td>' . $category_name . '</td>
@@ -52,12 +53,22 @@
                                             </td>
                                         </tr>
                                     ';
+                                    }
+                                } else {
+                                    echo '<tr><td colspan="4">Không có sản phẩm nào.</td></tr>';
                                 }
                                 ?>
 
 
 
                             </table>
+                            <ul class="pagination">
+                                <?php
+                                for ($i = 1; $i <= $totalPages; $i++) {
+                                    echo '<li class="page-item"><a class="page-link" href="index.php?act=list_delete_history_sanpham&page=' . $i . '">' . $i . '</a></li>';
+                                }
+                                ?>
+                            </ul>
 
                         </div>
                         <script>

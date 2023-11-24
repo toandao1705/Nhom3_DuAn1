@@ -48,21 +48,22 @@
                                     </tr>
                                 </thead>
                                 <?php
-                                foreach ($productsList as $product) {
-                                    extract($product);
-                                    $suasp = "index.php?act=updatesp&id=" . $id;
-                                    $xoasp = "index.php?act=delete_hidden_sanpham&id=" . $id;
-                                    $hinhpath = "../upload/";
-                                    // Lấy danh sách hình ảnh từ đối tượng $loadedProducts
-                                    $images = $loadedProducts->load_images($id);
-                                
-                                    // Chỉ lấy ảnh đầu tiên nếu có
-                                    $imageColumn = '';
-                                    if (!empty($images)) {
-                                        $imageColumn = '<img src="'.$hinhpath. $images[0]['img'] . '" alt="Image" style="max-width: 100px;">';
-                                    }
-                                
-                                    echo '
+                                if (!empty($productsList)) {
+                                    foreach ($productsList as $product) {
+                                        extract($product);
+                                        $suasp = "index.php?act=updatesp&id=" . $id;
+                                        $xoasp = "index.php?act=delete_hidden_sanpham&id=" . $id;
+                                        $hinhpath = "../upload/";
+                                        // Lấy danh sách hình ảnh từ đối tượng $loadedProducts
+                                        $images = $loadedProducts->load_images($id);
+
+                                        // Chỉ lấy ảnh đầu tiên nếu có
+                                        $imageColumn = '';
+                                        if (!empty($images)) {
+                                            $imageColumn = '<img src="' . $hinhpath . $images[0]['img'] . '" alt="Image" style="max-width: 100px;">';
+                                        }
+
+                                        echo '
                                         <tr>
                                             <td><input class="checkbox" type="checkbox"></td>
                                             <td>' . $category_name . '</td>
@@ -76,15 +77,22 @@
                                             </td>
                                         </tr>
                                     ';
+                                    }
+                                } else {
+                                    echo '<tr><td colspan="4">Không có sản phẩm nào.</td></tr>';
                                 }
-                                
-                                
-                                
                                 ?>
 
 
 
                             </table>
+                            <ul class="pagination">
+                                <?php
+                                for ($i = 1; $i <= $totalPages; $i++) {
+                                    echo '<li class="page-item"><a class="page-link" href="index.php?act=listsp&page=' . $i . '">' . $i . '</a></li>';
+                                }
+                                ?>
+                            </ul>
 
                         </div>
                         <div class="box mt-3">
