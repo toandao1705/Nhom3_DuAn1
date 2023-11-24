@@ -15,14 +15,26 @@ class user {
    function getUser()
    {
       $db = new connect();
-      $select = "select * from user";
+      $select = "SELECT * FROM user";
       return $db->pdo_query($select);
+   }
+
+   function getUserEmail($email)
+   {
+      $db = new connect();
+      $select = "SELECT * FROM user WHERE email ='$email'";
+      $result = $db->pdo_query($select);
+      if ($result) {
+         return $result;
+      } else {
+         echo '<h4 style="color:red;"> Email không tồn tại</h4> </br>';
+      }
    }
    
    public function checkUser($name,$pass) 
    { 
        $db = new connect();               
-       $select="select * from user where name='$name' and pass='$pass'"; 
+       $select="SELECT * FROM user where name='$name' and pass='$pass'"; 
        $result = $db->pdo_query_one($select);
        if($result!=null) 
            return true; 
@@ -40,6 +52,13 @@ class user {
        $select = "SELECT * FROM user WHERE name = '$name' AND pass = '$passwordEncryption'";
 
        return $db->pdo_query_one($select);
+   }
+
+   function forgetPass($pass,$email){
+      $db = new connect();
+      $passwordEncryption = md5($pass);
+      $sql ="UPDATE user SET pass ='$passwordEncryption' WHERE email ='$email'";
+      $result = $db->pdo_execute($sql);
    }
 
    function checkEmail($email) 
