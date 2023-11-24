@@ -324,7 +324,7 @@ if (isset($_SESSION['admin'])) {
                     $deleted = $category->delete_danhmuc($_GET['id']);
                     if (!$deleted) {
                         // Hiển thị một thông báo lỗi thân thiện với người dùng
-                        $error_message = "Không thể xóa danh mục vì có sản phẩm liên quan.";
+                        $_SESSION['error_message'] = "Không thể xóa danh mục vì có sản phẩm liên quan.";
                     }
                 }
                 $sql = "SELECT * FROM category ORDER BY id DESC";
@@ -332,9 +332,6 @@ if (isset($_SESSION['admin'])) {
                 $categories = $category->status_danhmuc($delete, 0, 0);
                 header('location: index.php?act=list_delete_history');
                 break;
-
-
-
             case 'delete_hidden_sanpham':
                 $products = new products();
                 if (isset($_GET['id'])) {

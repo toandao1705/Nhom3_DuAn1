@@ -11,9 +11,10 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <?php
-                        if (isset($error_message)) {
-                            echo '<div class="alert alert-danger" role="alert">' . $error_message . '</div>';
+                    <?php
+                        if (isset($_SESSION['error_message'])) {
+                            echo '<div class="alert alert-danger" role="alert">' . $_SESSION['error_message'] . '</div>';
+                            unset($_SESSION['error_message']); // Xóa thông báo lỗi sau khi hiển thị
                         }
                         ?>
                         <table id="example2" class="table table-bordered table-hover">
