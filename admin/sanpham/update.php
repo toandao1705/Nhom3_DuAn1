@@ -33,12 +33,12 @@ $allImages = $loadedProducts->loadall_images($id);
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Tên sản phẩm</label>
-                <input type="text" class="form-control" name="tensp" value="<?= $name ?>">
+                <input type="text" class="form-control" name="tensp" id="tensp" value="<?= $name ?>">
                 <span id="tensp-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Giá</label>
-                <input type="text" class="form-control" name="giasp" value="<?= $price ?>">
+                <input type="text" class="form-control" name="giasp" id="giasp" value="<?= $price ?>">
                 <span id="giasp-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">
@@ -55,14 +55,12 @@ $allImages = $loadedProducts->loadall_images($id);
                       $imagePath = "../upload/" . $image['img'];
                       if (is_file($imagePath)) {
                         echo '
-      <div class="col-md-2 mb-3 current-image">
-          <img src="' . $imagePath . '" class="img-thumbnail" alt="Image" style="width=200px; height:260px;">
-      </div>';
+                      <div class="col-md-2 mb-3 current-image">
+                          <img src="' . $imagePath . '" class="img-thumbnail" alt="Image" style="width=200px; height:260px;">
+                      </div>';
                       }
                     }
                   } else {
-                    // Xử lý khi $allImages không phải là mảng hoặc đối tượng
-                    echo "Không phải là mảng hoặc đối tượng!";
                   }
                   ?>
                 </div>
@@ -76,7 +74,7 @@ $allImages = $loadedProducts->loadall_images($id);
 
               <div class="form-group">
                 <label for="exampleInputPassword1">Mô tả</label>
-                <textarea name="mota" id="" cols="30" rows="10" class="form-control"><?= $describe ?></textarea>
+                <textarea name="mota" id="mota" cols="30" rows="10" class="form-control"><?= $describe ?></textarea>
                 <span id="mota-error" class="error-text text-danger"></span>
               </div>
             </div>
@@ -126,43 +124,50 @@ $allImages = $loadedProducts->loadall_images($id);
 
           <script>
             function validateForm() {
-              var tensp = document.getElementsByName("tensp")[0].value;
-              var giasp = document.getElementsByName("giasp")[0].value;
-              var hinh = document.getElementsByName("hinh")[0].value;
-              var mota = document.getElementsByName("mota")[0].value;
+              // Lấy giá trị của các trường dữ liệu
+              var tensp = document.getElementById('tensp').value;
+              var giasp = document.getElementById('giasp').value;
+              var hinh = document.getElementById('hinh').value;
+              var mota = document.getElementById('mota').value;
 
-              if (tensp.trim() === "") {
-                document.getElementById("tensp-error").textContent = "Tên sản phẩm không được để trống";
+              // Xóa thông báo lỗi cũ
+              document.getElementById('tensp-error').textContent = '';
+              document.getElementById('giasp-error').textContent = '';
+              document.getElementById('hinh-error').textContent = '';
+              document.getElementById('mota-error').textContent = '';
+
+              // Bắt lỗi nếu tên sản phẩm trống
+              if (tensp.trim() === '') {
+                document.getElementById('tensp-error').textContent = 'Tên sản phẩm không được để trống';
                 return false;
-              } else {
-                document.getElementById("tensp-error").textContent = "";
               }
 
-              // Bắt lỗi nếu giá sản phẩm không phải là số dương hoặc không được để trống
-              if (isNaN(giasp) || giasp.trim() === "" || parseFloat(giasp) <= 0) {
-                document.getElementById("giasp-error").textContent = "Giá sản phẩm phải là số dương và không được để trống";
+              // Bắt lỗi nếu giá trống hoặc không phải là số dương
+              if (giasp.trim() === '') {
+                document.getElementById('giasp-error').textContent = 'Giá sản phẩm không được để trống';
                 return false;
-              } else {
-                document.getElementById("giasp-error").textContent = "";
+              }else if (isNaN(giasp) || parseInt(giasp) <= 0) {
+                document.getElementById('giasp-error').textContent = 'Giá sản phẩm phải là số dương';
+                return false;
               }
 
-              if (hinh === "") {
-                document.getElementById("hinh-error").textContent = "Vui lòng chọn hình ảnh";
+              // Bắt lỗi nếu không có hình ảnh được chọn
+              if (hinh.trim() === '') {
+                document.getElementById('hinh-error').textContent = 'Hình ảnh không được để trống';
                 return false;
-              } else {
-                document.getElementById("hinh-error").textContent = "";
               }
 
-              if (mota.trim() === "") {
-                document.getElementById("mota-error").textContent = "Mô tả không được để trống";
+              // Bắt lỗi nếu mô tả trống
+              if (mota.trim() === '') {
+                document.getElementById('mota-error').textContent = 'Mô tả không được để trống';
                 return false;
-              } else {
-                document.getElementById("mota-error").textContent = "";
               }
 
+              // Nếu mọi thứ đều hợp lệ, cho phép submit form
               return true;
             }
           </script>
+
 
         </div>
         <!-- /.card -->

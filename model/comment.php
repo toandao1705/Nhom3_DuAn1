@@ -15,7 +15,7 @@
         //     $listbl = $db->pdo_query($select);
         //     return $listbl;
         // }
-        function loadall_binhluan($id_pro) {
+        function loadall_binhluan($id_pro, $delete) {
             $db = new connect();
             $select = "SELECT comment.*, user.name as username FROM comment
                        JOIN user ON comment.id_user = user.id";
@@ -23,7 +23,8 @@
             if ($id_pro > 0) {
                 $select .= " WHERE comment.id_pro = '" . $id_pro . "'";
             }
-            
+            $select .= " AND comment.delete=" . $delete;
+
             $select .= " ORDER BY comment.id DESC";
         
             $listbl = $db->pdo_query($select);
@@ -35,6 +36,21 @@
             $db = new connect();
             $select = "INSERT INTO comment(content, id_user, id_pro, comment_date) values( '$content', '$id_user', '$id_pro', '$comment_date')";
             return $db->pdo_execute($select);
+        }
+        function delete_hidden_binhluan($id){
+            $db = new connect();
+            $select="UPDATE comment SET `delete` ='1' WHERE id=".$id;
+            return $db->pdo_query($select);
+        }
+        function restore_binhluan($id){
+            $db = new connect();
+            $select="UPDATE comment SET `delete` ='0' WHERE id=".$id;
+            return $db->pdo_query($select);
+        }
+        function delete_binhluan($id){
+            $db = new connect();
+            $select="DELETE FROM comment where id=".$id;
+            return $db->pdo_query($select);
         }
     }
 

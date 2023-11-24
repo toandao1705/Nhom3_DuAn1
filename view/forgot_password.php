@@ -19,28 +19,37 @@
                                 <p class="mb-30">Not to worry, we got you! Let’s get you a new password. Please enter
                                     your email address or your Username.</p>
                             </div>
-                            <form method="post" onsubmit="return validateForm();">
+                            <form id="formDemo" method="post" onsubmit="return validateForm();">
+                                <?php
+                                if (isset($_POST['submit'])) {
+                                    $error = array();
+                                    $email = $_POST['email'];
+                                    $result = $user->getUserEmail($email);
+                                    echo $result;
+
+                                    if ($email == '') {
+                                        $error['email'] = 'Không được để trống';
+                                    }
+                                    if (empty($error) && !empty($result)) {
+                                        
+                                        $code = substr(rand(0,999999),0,6);
+                                        $title = "Quên mật khẩu";
+                                        $content = "Mã xác nhận của bạn là: <span style='color:green'>".$code."</span>";
+                                        $mail->sendMail($title,$content,$email);
+
+                                        $_SESSION['mail'] = $email;
+                                        $_SESSION['code'] = $code;
+                                        header('location: index.php?act=validate');
+                                    }
+                                }
+                                ?>
                                 <div class="form-group">
                                     <input type="text" required="" name="email" placeholder="Username or Email *" />
+                                    <span
+                                        style="color:red;"><?php if(isset($error['email'])) echo $error['email'] ?></span>
                                 </div>
-                                <div class="login_footer form-group">
-                                    <div class="chek-form">
-                                        <input type="text" required="" name="" placeholder="Security code *" />
-                                    </div>
-                                    <?php
-                                    $securityCode = '';
-                                    for ($i = 0; $i < 4; $i++) {
-                                        $digit = mt_rand(0, 9); // Tạo một số ngẫu nhiên từ 0 đến 9
-                                        $securityCode .= $digit;}
-                                    ?>
-                                    <span class="security-code">
-                                        <b class="text-new"><?php echo $securityCode[0]; ?></b>
-                                        <b class="text-hot"><?php echo $securityCode[1]; ?></b>
-                                        <b class="text-sale"><?php echo $securityCode[2]; ?></b>
-                                        <b class="text-best"><?php echo $securityCode[3]; ?></b>
-                                    </span>
-                                </div>
-                                <div class="login_footer form-group mb-50">
+
+                                <div class=" login_footer form-group mb-50">
                                     <div class="chek-form">
                                         <div class="custome-checkbox">
                                             <input class="form-check-input" type="checkbox" name="checkbox"
@@ -52,27 +61,11 @@
                                     <a class="text-muted" href="#">Learn more</a>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-heading btn-block hover-up"
-                                        name="forgot_password" value="Submit">Reset
-                                        password</button>
+
+                                    <input type="submit" class="btn btn-heading btn-block hover-up" name="submit">
+
                                 </div>
                             </form>
-                            <!-- Thông báo thành công -->
-                            <?php if (isset($thongbao) && ($thongbao != "")) : ?>
-                            <div id="success-alert"
-                                class="alert mt-3 <?php echo ($checkemail ? 'alert-success' : 'alert-danger'); ?>">
-                                <?php echo $thongbao; ?>
-                            </div>
-                            <?php endif; ?>
-
-                            <!-- Thông báo thất bại -->
-                            <?php if (isset($thongbaoloi) && ($thongbaoloi != "")) : ?>
-                            <div id="success-alert"
-                                class="alert mt-3 <?php echo ($checkemail ? 'alert-success' : 'alert-danger'); ?>">
-                                <?php echo $thongbaoloi; ?>
-                            </div>
-                            <?php endif; ?>
-
                         </div>
                     </div>
                 </div>

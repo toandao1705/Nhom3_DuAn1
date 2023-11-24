@@ -228,10 +228,10 @@
                                         extract($_SESSION['user']);
                                     ?>
                                         <!-- Nội dung khi có session user -->
-                                        <a href="index.php?act=login">
+                                        <a href="index.php?act=account">
                                             <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-user.svg" />
                                         </a>
-                                        <a href="index.php?act=login"><span class="lable ml-0"><?= $name ?></span></a>
+                                        <a href="index.php?act=account"><span class="lable ml-0"><?= $name ?></span></a>
                                         <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                             <ul>
                                                 <li><a href="page-account.php"><i class="fi fi-rs-user mr-10"></i>My
@@ -253,10 +253,10 @@
                                         $full_name = $login_id['full_name'];
                                     ?>
                                         <!-- Nội dung khi có session login_id -->
-                                        <a href="index.php?act=login_google">
+                                        <a href="index.php?act=account">
                                             <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-user.svg" />
                                         </a>
-                                        <a href="index.php?act=login_google"><span class="lable ml-0"><?= $full_name ?></span></a>
+                                        <a href="index.php?act=account"><span class="lable ml-0"><?= $full_name ?></span></a>
                                         <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                             <ul>
                                                 <li><a href="page-account.php"><i class="fi fi-rs-user mr-10"></i>My Account</a></li>

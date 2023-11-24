@@ -13,7 +13,10 @@ include "model/global.php";
 include "model/user.php";
 include "global.php";
 if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
+include "./mail/index.php";
 
+
+$mail= new Mailer();
 $products = new products();
 
 
@@ -139,17 +142,16 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
         case 'forgot_password':
             $forgot_password = new user();
-            if (isset($_POST['forgot_password']) && ($_POST['forgot_password'] == "Submit")) {
-                $email = $_POST['email'];
-                $checkemail = $forgot_password->checkEmail($email);
-        
-                if (is_array($checkemail)) {
-                    $thongbao = "Mật khẩu của bạn là: " . $checkemail['pass'];
-                } else {
-                    $thongbaoloi = "Email này không tồn tại. Vui lòng kiểm tra lại";
-                }
-            }
+            $user= new user();
             include "view/forgot_password.php";
+            break;
+        case 'validate':
+            include "view/validate.php";
+            break;
+        case 'reset_pass':
+            $forgot_password = new user();
+            $user= new user();
+            include "view/reset_pass.php";
             break;
         case 'page_404':
             include "view/page_404.php";

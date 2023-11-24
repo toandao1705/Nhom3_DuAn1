@@ -24,24 +24,25 @@
                                     </tr>
                                 </thead>
                                 <?php
-                                foreach ($productsList as $product) {
-                                    extract($product);
-                                    $suasp = "index.php?act=restoresp&id=" . $id;
-                                    $xoasp = "index.php?act=deletesp&id=" . $id;
-                                    $hinhpath = "../upload/";
-                                    // Lấy danh sách hình ảnh từ đối tượng $loadedProducts
-                                    $images = $loadedProducts->load_images($id);
+                                if (!empty($productsList)) {
+                                    foreach ($productsList as $product) {
+                                        extract($product);
+                                        $suasp = "index.php?act=restoresp&id=" . $id;
+                                        $xoasp = "index.php?act=deletesp&id=" . $id;
+                                        $hinhpath = "../upload/";
+                                        // Lấy danh sách hình ảnh từ đối tượng $loadedProducts
+                                        $images = $loadedProducts->load_images($id);
 
-                                    // Chỉ lấy ảnh đầu tiên nếu có
-                                    $imageColumn = '';
-                                    if (!empty($images)) {
-                                        $imageColumn = '<img src="' . $hinhpath . $images[0]['img'] . '" alt="Image" style="max-width: 100px;">';
-                                    }
+                                        // Chỉ lấy ảnh đầu tiên nếu có
+                                        $imageColumn = '';
+                                        if (!empty($images)) {
+                                            $imageColumn = '<img src="' . $hinhpath . $images[0]['img'] . '" alt="Image" style="max-width: 100px;">';
+                                        }
 
-                                    echo '
+                                        echo '
                                         <tr>
                                             <td><input class="checkbox" type="checkbox"></td>
-                                            <td>' . $id_category . '</td>
+                                            <td>' . $category_name . '</td>
                                             <td>' . $name . '</td>
                                             <td>' . $imageColumn . '</td>
                                             <td>' . $price . '</td>
@@ -52,19 +53,23 @@
                                             </td>
                                         </tr>
                                     ';
+                                    }
+                                } else {
+                                    echo '<tr><td colspan="4">Không có sản phẩm nào.</td></tr>';
                                 }
                                 ?>
 
 
 
                             </table>
+                            <ul class="pagination">
+                                <?php
+                                for ($i = 1; $i <= $totalPages; $i++) {
+                                    echo '<li class="page-item"><a class="page-link" href="index.php?act=list_delete_history_sanpham&page=' . $i . '">' . $i . '</a></li>';
+                                }
+                                ?>
+                            </ul>
 
-                        </div>
-                        <div class="box mt-3">
-                            <button class="btn btn-primary mb-3" id="select-all">Chọn tất cả</button>
-                            <button class="btn btn-warning mb-3" id="deselect-all">Bỏ chọn tất cả</button>
-                            <button class="btn btn-danger mb-3" id="delete-selected">Xóa các mục đã chọn</button>
-                            <a href="index.php?act=addsp"><button class="btn btn-success mb-3" id="add-row">Thêm</button></a>
                         </div>
                         <script>
                             function deleteProduct(productId) {

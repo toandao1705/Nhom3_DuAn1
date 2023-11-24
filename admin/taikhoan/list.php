@@ -31,6 +31,7 @@
                                     foreach ($listtk as $taikhoan) {
                                         extract($taikhoan);
                                         $xoasp = "index.php?act=delete_hidden_taikhoan&id=" . $id;
+                                        $suatk = "index.php?act=suatk&id=" . $id;
                                         echo '<tr>
                                             <td><input type="checkbox"></td>
                                             <td>'.$id.'</td>
@@ -40,7 +41,7 @@
                                             <td>'.$phone.'</td>
                                             <td>'.$role.'</td>
                                             <td>
-                                                <a href="index.php?act=updatetk"><button class="btn btn-primary">Sửa</button></a>
+                                                <a href="'.$suatk.'"><button class="btn btn-primary">Sửa</button></a>
                                                 <a href="'.$xoasp.'"><button class="btn btn-danger">Xóa</button></a>
 
                                             </td>';
