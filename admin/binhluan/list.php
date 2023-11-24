@@ -4,9 +4,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Danh sách bình luận</h3>
-                        </div>
+                    <div class="card-header d-flex justify-content-between">
+                        <h3 class="card-title">Danh sách bình luận</h3>
+                        <h3 class="card-title ml-auto"><a href="index.php?act=list_delete_history_binhluan">Lịch sử xóa bình luận</a></h3>
+                    </div>
                         <!-- /.card-header -->
                         <div class="card-body">
                             <table id="example2" class="table table-bordered table-hover">
@@ -18,35 +19,38 @@
                                         <th>Tên người dùng</th>
                                         <th>Tên sản phẩm</th>
                                         <th>Ngày bình luận</th>
-                                        <th></th>
+                                        <!-- <th></th> -->
                                     </tr>
                                 </thead>
 
                                 <tbody>
-                                <?php
-                                // Kiểm tra xem $user có dữ liệu hay không
-                                if (!empty($listbl)) {
-                                    // Hiển thị thông tin tai khoan
-                                    foreach ($listbl as $binhluan) {
-                                        extract($binhluan);
-                                        echo ' <tr>
+                                    <?php
+                                    // Kiểm tra xem $user có dữ liệu hay không
+                                    if (!empty($listbl)) {
+                                        // Hiển thị thông tin tai khoan
+                                        foreach ($listbl as $binhluan) {
+                                            extract($binhluan);
+                                            $xoabl = "index.php?act=delete_hidden_binhluan&id=" . $id;
+                                            echo ' <tr>
                                                 <td><input type="checkbox"></td>
-                                                <td>'.$id.'</td>
-                                                <td>'.$content.'</td>
-                                                <td>'.$id_user.'</td>
-                                                <td>'.$id_pro.'</td>
-                                                <td>'.$comment_date.'</td>
+                                                <td>' . $id . '</td>
+                                                <td>' . $content . '</td>
+                                                <td>' . $id_user . '</td>
+                                                <td>' . $id_pro . '</td>
+                                                <td>' . $comment_date . '</td>
                                                 <td>
 
                                                     <a href="' . $xoabl . '"><button class="btn btn-danger">Xóa</button></a>
 
                                                 </td>
+                                                
                                             </tr>';
+                                        }
+                                    } else {
+                                        echo '<tr><td colspan="4">Không có danh mục nào.</td></tr>';
                                     }
-                                } else {
-                                    echo '<tr><td colspan="4">Không có danh mục nào.</td></tr>';
-                                }
-                                ?>
+                                    ?>
+                                    
                                     <!-- <tr>
                                         <td><input type="checkbox"></td>
                                         <td>1</td>
@@ -61,7 +65,7 @@
                                         </td>
                                     </tr> -->
                                 </tbody>
-                            
+
 
                             </table>
                         </div>

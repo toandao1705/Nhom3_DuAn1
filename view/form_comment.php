@@ -4,9 +4,10 @@ ob_start();
 include '../model/comment.php';
 include '../model/pdo.php';
 $id_pro = $_REQUEST['id_pro'];
-$id_user = $_SESSION['user']['id'];
+// $id_user = $_SESSION['user']['id'];
 $comment  = new comment();
-$dsbl = $comment->loadall_binhluan($id_pro);
+$delete = 0;
+$dsbl = $comment->loadall_binhluan($id_pro, $delete);
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -119,7 +120,41 @@ $dsbl = $comment->loadall_binhluan($id_pro);
 
                         <!-- Kết thúc form nhập liệu -->
                     <?php
-                    } else {
+                    }else if (isset($_SESSION['login_id'])) {
+                        ?>
+                            <form class="form-contact comment_form" action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control w-100" name="content" id="comment" cols="30" rows="9" placeholder="Write Comment"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="form-group">
+                                        <input type="hidden" name="id_pro" value="<?= $id_pro ?>">
+                                        <input style="background-color: #3bb77e;" type="submit" class="button button-contactForm" name="submitComment" value="Submit Review">
+                                    </div>
+                                </div>
+    
+    
+                            </form>
+                            <!-- Xử lý khi submit form -->
+                            <?php
+                            if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submitComment'])) {
+                                $content = $_POST['content'];
+                                $id_pro = $_POST['id_pro'];
+                                $id_user = $_SESSION['user']['id'];
+                                $comment_date = date('h:i:sa d/m/Y');
+                                $comment->insert_binhluan($content, $id_user, $id_pro, $comment_date);
+                                // Redirect sau khi thêm bình luận
+                                header("location:" . $_SERVER['HTTP_REFERER']);
+                            }
+                            ?>
+    
+                            <!-- Kết thúc form nhập liệu -->
+                        <?php
+                        } else {
                     ?>
                         <p>Vui lòng đăng nhập</p>
 

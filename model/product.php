@@ -22,20 +22,30 @@ class products
         $db->pdo_execute($select);
     }
 
-    function loadall_sanpham($kyw = "", $iddm = 0, $detete)
+    function loadall_sanpham($kyw = "", $iddm = 0, $delete, $start, $limit)
     {
         $db = new connect();
-        $select = "SELECT * FROM products WHERE 1";
+        $select = "SELECT products.*, category.name AS category_name 
+                   FROM products 
+                   JOIN category ON products.id_category = category.id
+                   WHERE 1";
+        
         if ($kyw != "") {
-            $select .= " and name like '%" . $kyw . "%'";
+            $select .= " AND products.name LIKE '%" . $kyw . "%'";
         }
+    
         if ($iddm > 0) {
-            $select .= " and id_category ='" . $iddm . "'";
+            $select .= " AND products.id_category ='" . $iddm . "'";
         }
-        $select .= " and `delete` ='" . $detete . "'";
-        $select .= " ORDER BY id DESC";
+    
+        $select .= " AND products.`delete` ='" . $delete . "'";
+        $select .= " ORDER BY products.id DESC";
+        $select .= " LIMIT $start, $limit";
+    
         return $db->pdo_query($select);
     }
+    
+    
     function loadone_sanpham($id)
     {
         $db = new connect();
@@ -152,4 +162,61 @@ class products
         $select = "SELECT * FROM products WHERE id_category= " . $id_category . " AND id <>" . $id;
         return $db->pdo_query($select);
     }
+    function hienthi_sanpham_view()
+    {
+        $db = new connect();
+        $select = "SELECT products.*, images.img as img, category.name as category_name
+               FROM products 
+               LEFT JOIN images ON products.id = images.id_pro
+               LEFT JOIN category ON products.id_category = category.id
+               WHERE 1 
+               ORDER BY products.view DESC limit 0,8";
+
+        $result = $db->pdo_query($select);
+
+        // Loop through the result and associate images with each product
+        foreach ($result as &$product) {
+            $selectImages = "SELECT img FROM images WHERE id_pro=" . $product['id'];
+            $images = $db->pdo_query($selectImages);
+            $product['images'] = $images;
+        }
+
+        return $result;
+    }
+    
+    function loadall_tksanpham($kyw = "", $iddm = 0, $detete)
+{
+    $db = new connect();
+    $select = "SELECT products.*, images.img as img, category.name as category_name
+           FROM products 
+           LEFT JOIN images ON products.id = images.id_pro
+           LEFT JOIN category ON products.id_category = category.id
+           WHERE 1";
+
+            if ($kyw != "") {
+                $select .= " and products.name like '%" . $kyw . "%'";
+            }
+
+            if ($iddm > 0) {
+                $select .= " and products.id_category ='" . $iddm . "'";
+            }
+
+            $select .= " and products.`delete` ='" . $detete . "'";
+            $select .= " ORDER BY products.id DESC";
+
+            return $db->pdo_query($select);
 }
+    function load_ten_dm($iddm){
+        $db = new connect();
+        if($iddm>0){
+            $sql="SELECT * FROM category WHERE id=".$iddm;
+            $dm=$db->pdo_query_one($sql);
+            extract($dm);
+            return $name;
+        }else{
+            return "";
+        }
+        
+    }
+}
+

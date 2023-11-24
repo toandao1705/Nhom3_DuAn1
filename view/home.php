@@ -5,17 +5,19 @@
                 <div class="col-xl-8 col-lg-12">
                     <div class="home-slide-cover">
                         <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
+
                             <?php
                             foreach ($listbanner as $banner) {
                                 extract($banner);
                                 // $imgPath = $img_path . $img;
                                 echo '
+
                                 <div class="single-hero-slider single-animation-wrap" style="background-image: url(' . IMG_PATH_USER . $img . ')">
                                     <div class="slider-content">
                                         <h1 class="display-2 mb-40">
-                                            '.$title.'
+                                            ' . $title . '
                                         </h1>
-                                        <p class="mb-65">'.$subtitle.'</p>
+                                        <p class="mb-65">' . $subtitle . '</p>
                                         <form class="form-subcriber d-flex">
                                             <input type="email" placeholder="Your emaill address" />
                                             <button class="btn" type="submit">Subscribe</button>
@@ -23,9 +25,9 @@
                                     </div>
                                 </div>
                                 ';
-                            }
+                        }
 
-                            ?>
+                        ?>
                         </div>
                         <div class="slider-arrow hero-slider-1-arrow"></div>
                     </div>
@@ -140,6 +142,7 @@
                 <div class="product-cart-wrap mb-30">
                     <div class="product-img-action-wrap">
                         <div class="product-img product-img-zoom">';
+
                         ?>
 
                         <?php
@@ -154,6 +157,7 @@
                                         ?>
                         <?php
                                 echo '
+
                     </div>
                     <div class="product-action-1">
                         <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
@@ -194,9 +198,6 @@
                             }
                         }
                         ?>
-
-
-
                         <!--end product card-->
                         <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
                             <div class="product-cart-wrap mb-30">
@@ -3797,32 +3798,51 @@
                         </div>
                     </div>
                 </div>
+                <!-- Show sản phẩm có lượt xem cao nhất -->
                 <div class="col-lg-9 col-md-12">
                     <div class="tab-content" id="myTabContent-1">
-                        <div class="tab-pane fade show active" id="tab-one-1" role="tabpanel"
-                            aria-labelledby="tab-one-1">
+                    <div class="tab-pane fade show active" id="tab-one-1" role="tabpanel" aria-labelledby="tab-one-1">
                             <div class="carausel-4-columns-cover arrow-center position-relative">
-                                <div class="slider-arrow slider-arrow-2 carausel-4-columns-arrow"
-                                    id="carausel-4-columns-arrows"></div>
+                                <div class="slider-arrow slider-arrow-2 carausel-4-columns-arrow" id="carausel-4-columns-arrows"></div>
                                 <div class="carausel-4-columns carausel-arrow-center" id="carausel-4-columns">
+                                <?php
+                        // Mảng để lưu ID của các sản phẩm đã được hiển thị
+                        $displayedProducts = array();
+
+                        foreach ($spview as $sp) {
+                            extract($sp);
+
+                            // Kiểm tra xem sản phẩm đã được hiển thị chưa
+                            if (!in_array($id, $displayedProducts)) {
+                                $displayedProducts[] = $id; // Thêm ID vào mảng
+
+                                $linksp = "index.php?act=product_full&idsp=" . $id;
+                                echo '
                                     <div class="product-cart-wrap">
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
-                                                <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-1-1.jpg"
-                                                        alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-1-2.jpg"
-                                                        alt="" />
+                                                <a href="index.php?act=product_full">';
+
+                                                    
+                                                    ?>
+                                                    <?php
+                                                    ?>
+                                                    <?php
+                                                    // Di chuyển vòng lặp hình ảnh ra khỏi vòng lặp sản phẩm
+                                                    $imgPath = $img_path . $img;
+                                                    ?>
+                                                    <img class="default-img" src="<?= $imgPath ?>" alt="" style="width:209.4px; height:209.4px;"/>
+                                                    <img class="hover-img" src="<?= $imgPath ?>" alt="" style="width:209.4px; height:209.4px;"/>
+                                                    <?php
+                                                    ?>
+                                            <?php
+                                                    echo '
                                                 </a>
                                             </div>
                                             <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up"
-                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
-                                                        class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
-                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up"
-                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
+                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
                                                 <span class="hot">Save 15%</span>
@@ -3830,220 +3850,29 @@
                                         </div>
                                         <div class="product-content-wrap">
                                             <div class="product-category">
-                                                <a href="shop-grid-right.php">Hodo Foods</a>
+                                                <a href="shop-grid-right.php">'.$category_name.'</a>
                                             </div>
-                                            <h2><a href="index.php?act=product_full">Seeds of Change Organic Quinoa,
-                                                    Brown</a></h2>
+                                            <h2><a href="index.php?act=product_full">'.$name.'</a></h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
                                             </div>
                                             <div class="product-price mt-10">
-                                                <span>$238.85 </span>
-                                                <span class="old-price">$245.8</span>
+                                                <span>$'.$price.' </span>
+                                                <span class="old-price">$'.$price.'</span>
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
-                                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span class="font-xs text-heading"> Sold: 90/120</span>
                                             </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
-                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
                                         </div>
                                     </div>
-                                    <!--End product Wrap-->
-                                    <div class="product-cart-wrap">
-                                        <div class="product-img-action-wrap">
-                                            <div class="product-img product-img-zoom">
-                                                <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-5-1.jpg"
-                                                        alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-5-2.jpg"
-                                                        alt="" />
-                                                </a>
-                                            </div>
-                                            <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up"
-                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
-                                                        class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
-                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up"
-                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                            </div>
-                                            <div class="product-badges product-badges-position product-badges-mrg">
-                                                <span class="new">Save 35%</span>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap">
-                                            <div class="product-category">
-                                                <a href="shop-grid-right.php">Hodo Foods</a>
-                                            </div>
-                                            <h2><a href="index.php?act=product_full">All Natural Italian-Style Chicken
-                                                    Meatballs</a></h2>
-                                            <div class="product-rate d-inline-block">
-                                                <div class="product-rating" style="width: 80%"></div>
-                                            </div>
-                                            <div class="product-price mt-10">
-                                                <span>$238.85 </span>
-                                                <span class="old-price">$245.8</span>
-                                            </div>
-                                            <div class="sold mt-15 mb-15">
-                                                <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
-                                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <span class="font-xs text-heading"> Sold: 90/120</span>
-                                            </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
-                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
-                                        </div>
-                                    </div>
-                                    <!--End product Wrap-->
-                                    <div class="product-cart-wrap">
-                                        <div class="product-img-action-wrap">
-                                            <div class="product-img product-img-zoom">
-                                                <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-2-1.jpg"
-                                                        alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-2-2.jpg"
-                                                        alt="" />
-                                                </a>
-                                            </div>
-                                            <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up"
-                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
-                                                        class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
-                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up"
-                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                            </div>
-                                            <div class="product-badges product-badges-position product-badges-mrg">
-                                                <span class="sale">Sale</span>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap">
-                                            <div class="product-category">
-                                                <a href="shop-grid-right.php">Hodo Foods</a>
-                                            </div>
-                                            <h2><a href="index.php?act=product_full">Angie’s Boomchickapop Sweet and
-                                                    womnies</a></h2>
-                                            <div class="product-rate d-inline-block">
-                                                <div class="product-rating" style="width: 80%"></div>
-                                            </div>
-                                            <div class="product-price mt-10">
-                                                <span>$238.85 </span>
-                                                <span class="old-price">$245.8</span>
-                                            </div>
-                                            <div class="sold mt-15 mb-15">
-                                                <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
-                                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <span class="font-xs text-heading"> Sold: 90/120</span>
-                                            </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
-                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
-                                        </div>
-                                    </div>
-                                    <!--End product Wrap-->
-                                    <div class="product-cart-wrap">
-                                        <div class="product-img-action-wrap">
-                                            <div class="product-img product-img-zoom">
-                                                <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-3-1.jpg"
-                                                        alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-3-2.jpg"
-                                                        alt="" />
-                                                </a>
-                                            </div>
-                                            <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up"
-                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
-                                                        class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
-                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up"
-                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                            </div>
-                                            <div class="product-badges product-badges-position product-badges-mrg">
-                                                <span class="best">Best sale</span>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap">
-                                            <div class="product-category">
-                                                <a href="shop-grid-right.php">Hodo Foods</a>
-                                            </div>
-                                            <h2><a href="index.php?act=product_full">Foster Farms Takeout Crispy Classic
-                                                </a></h2>
-                                            <div class="product-rate d-inline-block">
-                                                <div class="product-rating" style="width: 80%"></div>
-                                            </div>
-                                            <div class="product-price mt-10">
-                                                <span>$238.85 </span>
-                                                <span class="old-price">$245.8</span>
-                                            </div>
-                                            <div class="sold mt-15 mb-15">
-                                                <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
-                                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <span class="font-xs text-heading"> Sold: 90/120</span>
-                                            </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
-                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
-                                        </div>
-                                    </div>
-                                    <!--End product Wrap-->
-                                    <div class="product-cart-wrap">
-                                        <div class="product-img-action-wrap">
-                                            <div class="product-img product-img-zoom">
-                                                <a href="index.php?act=product_full">
-                                                    <img class="default-img" src="view/assets/imgs/shop/product-4-1.jpg"
-                                                        alt="" />
-                                                    <img class="hover-img" src="view/assets/imgs/shop/product-4-2.jpg"
-                                                        alt="" />
-                                                </a>
-                                            </div>
-                                            <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up"
-                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i
-                                                        class="fi-rs-eye"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up"
-                                                    href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up"
-                                                    href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
-                                            </div>
-                                            <div class="product-badges product-badges-position product-badges-mrg">
-                                                <span class="hot">Save 15%</span>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap">
-                                            <div class="product-category">
-                                                <a href="shop-grid-right.php">Hodo Foods</a>
-                                            </div>
-                                            <h2><a href="index.php?act=product_full">Blue Diamond Almonds Lightly
-                                                    Salted</a></h2>
-                                            <div class="product-rate d-inline-block">
-                                                <div class="product-rating" style="width: 80%"></div>
-                                            </div>
-                                            <div class="product-price mt-10">
-                                                <span>$238.85 </span>
-                                                <span class="old-price">$245.8</span>
-                                            </div>
-                                            <div class="sold mt-15 mb-15">
-                                                <div class="progress mb-5">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
-                                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <span class="font-xs text-heading"> Sold: 90/120</span>
-                                            </div>
-                                            <a href="shop-cart.php" class="btn w-100 hover-up"><i
-                                                    class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
-                                        </div>
-                                    </div>
+                                    ';
+                            }
+                        }
+                        ?>
                                     <!--End product Wrap-->
                                 </div>
                             </div>

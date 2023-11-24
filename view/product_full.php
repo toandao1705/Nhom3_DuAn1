@@ -81,17 +81,58 @@
                                     </ul>
                                 </div>
                                 <div class="detail-extralink mb-50">
+                                    <!-- Trong phần chi tiết sản phẩm -->
                                     <div class="detail-qty border radius">
-                                        <a href="#" class="qty-down"><i class="fi-rs-angle-small-down"></i></a>
-                                        <input type="text" name="quantity" class="qty-val" value="1" min="1">
-                                        <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
+                                        <a href="#" class="qty-down" onclick="decreaseQuantity()"><i class="fi-rs-angle-small-down"></i></a>
+                                        <input type="number" name="quantity" class="qty-val" value="1" id="quantityInput" min="1">
+                                        <a href="#" class="qty-up" onclick="increaseQuantity()"><i class="fi-rs-angle-small-up"></i></a>
                                     </div>
                                     <div class="product-extra-link2">
-                                        <button type="submit" class="button button-add-to-cart"><i class="fi-rs-shopping-cart"></i>Add to cart</button>
-                                        <a aria-label="Add To Wishlist" class="action-btn hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                        <?php
+                                        echo '
+                                            <form action="index.php?act=addtocart" method="post">
+                                                <input type="hidden" name="id" value="' . $id . '">
+                                                <input type="hidden" name="name" value="' . $name . '">
+                                                <input type="hidden" name="img" value="' . $imgPath . '">
+                                                <input type="hidden" name="price" value="' . $price . '">
+                                                <input type="hidden" name="quantity" id="hiddenQuantity" value="1">
+                                                <input type="submit" class="button button-add-to-cart" name="addtocart" onclick="addToCart()" value="ADD TO CART">
+                                            </form>
+                                            ';
+                                        ?>
+                                        <!-- <button type="submit" class="button button-add-to-cart"><i class="fi-rs-shopping-cart"></i>Add to cart</button> -->
+                                        <div class="mt-5">
+                                            <a aria-label="Add To Wishlist" class="action-btn hover-up" href="shop-wishlist.php"><i class="fi-rs-heart"></i></a>
+                                            <a aria-label="Compare" class="action-btn hover-up" href="shop-compare.php"><i class="fi-rs-shuffle"></i></a>
+                                        </div>
                                     </div>
+                                    <script>
+                                        function increaseQuantity() {
+                                            var quantityInput = document.getElementById('quantityInput');
+                                            quantityInput.stepUp(1);
+                                            updateHiddenQuantity();
+                                        }
+
+                                        function decreaseQuantity() {
+                                            var quantityInput = document.getElementById('quantityInput');
+                                            quantityInput.stepDown(1);
+                                            updateHiddenQuantity();
+                                        }
+
+                                        function updateHiddenQuantity() {
+                                            var quantityInput = document.getElementById('quantityInput');
+                                            var hiddenQuantity = document.getElementById('hiddenQuantity');
+                                            hiddenQuantity.value = quantityInput.value;
+                                        }
+
+                                        function addToCart() {
+                                            updateHiddenQuantity();
+                                            document.getElementById('addToCartForm').submit();
+                                        }
+                                    </script>
+
                                 </div>
+
                                 <div class="font-xs">
                                     <ul class="mr-50 float-start">
                                         <li class="mb-5">Type: <span class="text-brand">Organic</span></li>
@@ -299,7 +340,7 @@
                                                     });
                                                 </script>
                                                 <div class="comment-list" id="binhluan">
-                                                    
+
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">

@@ -223,11 +223,11 @@
                                     </div>
                                 </div>
                                 <div class="header-action-icon-2">
-
                                     <?php
-                                    if (isset($_SESSION['user'])) {
+                                    if (isset($_SESSION['user']) && is_array($_SESSION['user'])) {
                                         extract($_SESSION['user']);
                                     ?>
+                                        <!-- Nội dung khi có session user -->
                                         <a href="index.php?act=account">
                                             <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-user.svg" />
                                         </a>
@@ -247,24 +247,49 @@
                                             </ul>
                                         </div>
                                     <?php
-                                    } else {
+                                    } else if (isset($_SESSION['login_id']) && is_array($_SESSION['login_id'])) {
+                                        // Sử dụng thông tin từ session login_id
+                                        $login_id = $_SESSION['login_id'];
+                                        $full_name = $login_id['full_name'];
                                     ?>
-                                        <a href="index.php?act=login.php">
+                                        <!-- Nội dung khi có session login_id -->
+                                        <a href="index.php?act=account">
+                                            <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-user.svg" />
+                                        </a>
+                                        <a href="index.php?act=account"><span class="lable ml-0"><?= $full_name ?></span></a>
+                                        <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
+                                            <ul>
+                                                <li><a href="page-account.php"><i class="fi fi-rs-user mr-10"></i>My Account</a></li>
+                                                <li><a href="page-account.php"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
+                                                <li><a href="page-account.php"><i class="fi fi-rs-label mr-10"></i>My
+                                                        Voucher</a></li>
+                                                <li><a href="shop-wishlist.php"><i class="fi fi-rs-heart mr-10"></i>My
+                                                        Wishlist</a></li>
+                                                <li><a href="page-account.php"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
+                                                <li><a href="index.php?act=logout"><i class="fi fi-rs-sign-out mr-10"></i>Sign
+                                                        out</a></li>
+                                            </ul>
+                                        </div>
+                                    <?php } else {
+                                    ?>
+                                        <!-- Nội dung khi không có cả session user và login_id -->
+                                        <a href="index.php?act=login_google">
                                             <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-user.svg" />
                                         </a>
                                         <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                             <ul>
-                                                <li><a href="index.php?act=register"><i class="fi fi-rs-user mr-10"></i>Register
-                                                    </a></li>
+                                                <li><a href="index.php?act=register"><i class="fi fi-rs-user mr-10"></i>Register</a></li>
                                                 <li><a href="page-account.php"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
                                                 <li><a href="page-account.php"><i class="fi fi-rs-label mr-10"></i>My
                                                         Voucher</a></li>
+                                                <li><a href="shop-wishlist.php"><i class="fi fi-rs-heart mr-10"></i>My
+                                                        Wishlist</a></li>
                                                 <li><a href="page-account.php"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
                                             </ul>
                                         </div>
-
                                     <?php } ?>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -513,9 +538,9 @@
             </div>
             <div class="mobile-header-content-area">
                 <div class="mobile-search search-style-3 mobile-header-border">
-                    <form action="#">
-                        <input type="text" placeholder="Search for items…" />
-                        <button type="submit"><i class="fi-rs-search"></i></button>
+                    <form action="index.php?act=search" method="post">
+                        <input type="text" name="kyw" placeholder="Search for items…" />
+                        <input type="submit" name="search"><i class="fi-rs-search"></i></button>
                     </form>
                 </div>
                 <div class="mobile-menu-wrap mobile-header-border">

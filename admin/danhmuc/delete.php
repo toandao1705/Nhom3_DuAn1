@@ -11,9 +11,10 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <?php
-                        if (isset($error_message)) {
-                            echo '<div class="alert alert-danger" role="alert">' . $error_message . '</div>';
+                    <?php
+                        if (isset($_SESSION['error_message'])) {
+                            echo '<div class="alert alert-danger" role="alert">' . $_SESSION['error_message'] . '</div>';
+                            unset($_SESSION['error_message']); // Xóa thông báo lỗi sau khi hiển thị
                         }
                         ?>
                         <table id="example2" class="table table-bordered table-hover">
@@ -62,12 +63,7 @@
                             }
                             ?>
                         </ul>
-                        <div class="box mt-3">
-                            <button class="btn btn-primary mb-3" id="select-all">Chọn tất cả</button>
-                            <button class="btn btn-warning mb-3" id="deselect-all">Bỏ chọn tất cả</button>
-                            <button class="btn btn-danger mb-3" id="delete-selected">Xóa các mục đã chọn</button>
-                            <a href="index.php?act=adddm"><button class="btn btn-success mb-3" id="add-row">Thêm</button></a>
-                        </div>
+                        
                     </div>
                     <!-- /.card-body -->
                 </div>
