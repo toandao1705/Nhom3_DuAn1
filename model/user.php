@@ -103,9 +103,15 @@ class user {
         $select="UPDATE user SET `delete` ='0' WHERE id=".$id;
         return $db->pdo_query($select);
     }
-   function delete_taikhoan($id){
+    function delete_comments_by_user_id($user_id) {
       $db = new connect();
-      $select="DELETE FROM user where id=".$id;
+      $select = "DELETE FROM comment WHERE id_user=" . $user_id;
+      $db->pdo_query($select);
+   }
+    function delete_taikhoan($id) {
+      $this->delete_comments_by_user_id($id); // Xóa bình luận trước
+      $db = new connect();
+      $select = "DELETE FROM user WHERE id=" . $id;
       return $db->pdo_query($select);
   }
   function loadone_taikhoan($id){
