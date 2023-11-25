@@ -270,6 +270,7 @@ if (isset($_SESSION['admin'])) {
                     $tensp = $_POST['tensp'];
                     $giasp = $_POST['giasp'];
                     $mota = $_POST['mota'];
+                    $status = $_POST['status'];
                     // ...
                     $images = $_FILES['hinh']['name'];
                     $target_dir = "../upload/";
@@ -290,7 +291,7 @@ if (isset($_SESSION['admin'])) {
 
                     }
                     // ...
-                    $loadedProducts->update_sanpham($id, $id_category, $tensp, $giasp, $mota, $images);
+                    $loadedProducts->update_sanpham($id, $id_category, $tensp, $giasp, $mota, $images, $status);
                     $thongbao = "Cập nhật thành công";
                     header('location: index.php?act=listsp');
                 }

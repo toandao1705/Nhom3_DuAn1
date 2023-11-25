@@ -94,11 +94,11 @@ class products
 
 
 
-    public function update_sanpham($id, $id_category, $tensp, $giasp, $mota, $images)
+    public function update_sanpham($id, $id_category, $tensp, $giasp, $mota, $images, $status)
     {
         $db = new connect();
         // Use backticks for reserved keyword `describe`
-        $updateProduct = "UPDATE products SET id_category='" . $id_category . "', name='" . $tensp . "', price='" . $giasp . "', `describe`='" . $mota . "' WHERE id=" . $id;
+        $updateProduct = "UPDATE products SET id_category='" . $id_category . "', name='" . $tensp . "', price='" . $giasp . "', `describe`='" . $mota . "', status='" . $status . "' WHERE id=" . $id;
 
         $db->pdo_execute($updateProduct);
 

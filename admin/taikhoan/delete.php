@@ -34,7 +34,7 @@
                                             <td>' . $email . '</td>
                                             <td>' . $address . '</td>
                                             <td>' . $phone . '</td>
-                                            <td>' . $role . '</td>
+                                            <td>'.($role == 1 ? 'Admin' : 'User').'</td>
                                             <td>
                                                 <a href="index.php?act=restoretk&id=' . $id . '"><button class="btn btn-primary">Khôi phục</button></a>
                                                 <a href="index.php?act=deletetk&id=' . $id . '"><button class="btn btn-danger">Xóa</button></a>
