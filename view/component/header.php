@@ -179,7 +179,7 @@
                                     <a href="shop-wishlist.php"><span class="lable">Wishlist</span></a>
                                 </div>
                                 <div class="header-action-icon-2">
-                                    <a class="mini-cart-icon" href="index.php?act=cart">
+                                    <a class="mini-cart-icon" href="index.php?act=addtocart">
                                         <img alt="Nest" src="view/assets/imgs/theme/icons/icon-cart.svg" />
                                         <span class="pro-count blue">2</span>
                                     </a>
