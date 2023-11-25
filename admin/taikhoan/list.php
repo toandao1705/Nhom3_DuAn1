@@ -39,7 +39,7 @@
                                             <td>'.$email.'</td>
                                             <td>'.$address.'</td>
                                             <td>'.$phone.'</td>
-                                            <td>'.$role.'</td>
+                                            <td>'.($role == 1 ? 'Admin' : 'User').'</td>
                                             <td>
                                                 <a href="'.$suatk.'"><button class="btn btn-primary">Sửa</button></a>
                                                 <a href="'.$xoasp.'"><button class="btn btn-danger">Xóa</button></a>

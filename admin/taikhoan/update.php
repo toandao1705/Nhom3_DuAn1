@@ -41,7 +41,15 @@ if (is_array($taikhoan)) {
                 <input type="text" class="form-control" name="phone" id="phone" value="<?= $phone ?>">
                 <span id="tel-error" class="error-text text-danger"></span>
               </div>
+              <div class="form-group">
+              <label for="role">Vai trò</label>
+              <select class="form-control" name="role" id="role">
+                <option value="0" <?= $role === '0' ? 'selected' : '' ?>>User</option>
+                <option value="1" <?= $role === '1' ? 'selected' : '' ?>>Admin</option>
+              </select>
             </div>
+            </div>
+            
 
 
             <div class="card-footer">

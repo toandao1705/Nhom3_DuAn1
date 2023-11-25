@@ -455,7 +455,8 @@ if (isset($_SESSION['admin'])) {
                     $pass=$_POST['pass'];
                     $address=$_POST['address'];
                     $phone=$_POST['phone'];
-                    $user->update_taikhoan($id, $email, $pass, $address, $phone);
+                    $role=$_POST['role'];
+                    $user->update_taikhoan($id, $email, $pass, $address, $phone, $role);
                     $thongbao = "Cập nhật thành công";
                 }
                 header('location: index.php?act=listtk');
