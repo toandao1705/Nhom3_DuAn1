@@ -6,9 +6,9 @@ class user {
    var $Email = null;
    var $images = null;
 
-   function loadall_taikhoan($delete){
+   function loadall_taikhoan($delete, $start, $limit){
       $db = new connect();
-      $select="SELECT * FROM user WHERE `delete`=" . $delete . " order by id desc";
+      $select = "SELECT * FROM user WHERE `delete` = '$delete' ORDER BY id DESC LIMIT $start, $limit";
       return $db->pdo_query($select);
   }
 

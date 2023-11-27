@@ -23,9 +23,9 @@
                                 </tr>
                             </thead>
                             <?php
-                            if (!empty($users)) {
+                            if (!empty($listtk)) {
                                 // Hiển thị thông tin danh mục
-                                foreach ($users as $user) {
+                                foreach ($listtk as $user) {
                                     extract($user);
                                     echo '<tr>
                                             <td><input type="checkbox"></td>
@@ -62,6 +62,13 @@
 
 
                         </table>
+                        <ul class="pagination">
+                            <?php
+                            for ($i = 1; $i <= $totalPages; $i++) {
+                                echo '<li class="page-item"><a class="page-link" href="index.php?act=list_delete_history_taikhoan&page=' . $i . '">' . $i . '</a></li>';
+                            }
+                            ?>
+                        </ul>
                     </div>
 
                     <!-- /.card-body -->

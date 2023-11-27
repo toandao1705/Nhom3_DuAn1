@@ -430,7 +430,24 @@ if (isset($_SESSION['admin'])) {
             case 'listtk':
                 $taikhoan = new user();
                 $delete=0;
-                $listtk = $taikhoan->loadall_taikhoan($delete);
+                //Đặt số lượng bản ghi trên mỗi trang
+                $limit = 5;
+
+                // Lấy số trang hiện tại từ URL
+                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                // Tính điểm bắt đầu để tìm nạp bản ghi
+                $start = ($page - 1) * $limit;
+
+                // Tìm nạp danh mục cho trang hiện tại
+                
+                $listtk = $taikhoan->loadall_taikhoan($delete, $start, $limit);
+
+                // Đếm tổng số bản ghi
+                $totalUser = count($taikhoan->loadall_taikhoan($delete, 0, PHP_INT_MAX));
+
+                // Tính tổng số trang
+                $totalPages = ceil($totalUser / $limit);
                 include "taikhoan/list.php";
                 break;
             case 'delete_hidden_taikhoan':
@@ -442,9 +459,26 @@ if (isset($_SESSION['admin'])) {
                 header('location: index.php?act=listtk');
                 break;
             case 'list_delete_history_taikhoan':
-                $user = new user();
+                $taikhoan = new user();
                 $delete = 1;
-                $users = $user->loadall_taikhoan($delete);
+                //Đặt số lượng bản ghi trên mỗi trang
+                $limit = 5;
+
+                // Lấy số trang hiện tại từ URL
+                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                // Tính điểm bắt đầu để tìm nạp bản ghi
+                $start = ($page - 1) * $limit;
+
+                // Tìm nạp danh mục cho trang hiện tại
+                
+                $listtk = $taikhoan->loadall_taikhoan($delete, $start, $limit);
+
+                // Đếm tổng số bản ghi
+                $totalUser = count($taikhoan->loadall_taikhoan($delete, 0, PHP_INT_MAX));
+
+                // Tính tổng số trang
+                $totalPages = ceil($totalUser / $limit);
                 include "taikhoan/delete.php";
                 break;
             case 'restoretk':
@@ -460,9 +494,7 @@ if (isset($_SESSION['admin'])) {
                 if (isset($_GET['id']) && ($_GET['id']) > 0) {
                     $user->delete_taikhoan($_GET['id']);
                 }
-                $sql = "SELECT * FROM user order by id desc";
-                $delete = 1;
-                $users = $user->loadall_taikhoan($delete);
+                header('location: index.php?act=list_delete_history_taikhoan');
                 include "taikhoan/delete.php";
                 break;
             case 'suatk':
@@ -470,8 +502,6 @@ if (isset($_SESSION['admin'])) {
                 if(isset($_GET['id'])&&($_GET['id'])>0){
                     $taikhoan=$user->loadone_taikhoan($_GET['id']);
                 }
-                $delete = 0;
-                $listtaikhoan=$user->loadall_taikhoan($delete);
                 include "taikhoan/update.php";
                 break;
             case 'updatetk':
