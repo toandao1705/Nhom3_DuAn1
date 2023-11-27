@@ -15,7 +15,7 @@
         //     $listbl = $db->pdo_query($select);
         //     return $listbl;
         // }
-        function loadall_binhluan($id_pro, $delete) {
+        function loadall_binhluan($id_pro, $delete, $start, $limit) {
             $db = new connect();
             $select = "SELECT comment.*, user.name as username FROM comment
                        JOIN user ON comment.id_user = user.id";
@@ -25,7 +25,7 @@
             }
             $select .= " AND comment.delete=" . $delete;
 
-            $select .= " ORDER BY comment.id DESC";
+            $select .= " ORDER BY comment.id LIMIT $start, $limit";
         
             $listbl = $db->pdo_query($select);
             return $listbl;
