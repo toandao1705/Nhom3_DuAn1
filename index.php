@@ -24,7 +24,7 @@ $spnew = $products->loadall_sanpham_home();
 $spview = $products->hienthi_sanpham_view();
 $delete = 0;
 $banner = new banner();
-$listbanner = $banner->loadall_banner($delete);
+$listbanner = $banner->loadall_banner($delete, 0, PHP_INT_MAX);
 
 
 // data dành cho trang chủ

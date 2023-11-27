@@ -521,7 +521,24 @@ if (isset($_SESSION['admin'])) {
             case 'listbl':
                 $binhluan = new comment();
                 $delete = 0;
-                $listbl = $binhluan->loadall_binhluan(0, $delete);
+                //Đặt số lượng bản ghi trên mỗi trang
+                $limit = 5;
+
+                // Lấy số trang hiện tại từ URL
+                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                // Tính điểm bắt đầu để tìm nạp bản ghi
+                $start = ($page - 1) * $limit;
+
+                // Tìm nạp danh mục cho trang hiện tại
+                
+                $listbl = $binhluan->loadall_binhluan(0, $delete, $start, $limit);
+
+                // Đếm tổng số bản ghi
+                $totalComment = count($binhluan->loadall_binhluan(0, $delete, 0, PHP_INT_MAX));
+
+                // Tính tổng số trang
+                $totalPages = ceil($totalComment / $limit);
                 include "binhluan/list.php";
                 break;
             case 'delete_hidden_binhluan':
@@ -535,7 +552,24 @@ if (isset($_SESSION['admin'])) {
             case 'list_delete_history_binhluan':
                 $comment = new comment();
                 $delete = 1;
-                $listbl = $comment->loadall_binhluan(0,$delete);
+                //Đặt số lượng bản ghi trên mỗi trang
+                $limit = 5;
+
+                // Lấy số trang hiện tại từ URL
+                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                // Tính điểm bắt đầu để tìm nạp bản ghi
+                $start = ($page - 1) * $limit;
+
+                // Tìm nạp danh mục cho trang hiện tại
+                
+                $listbl = $comment->loadall_binhluan(0, $delete, $start, $limit);
+
+                // Đếm tổng số bản ghi
+                $totalComment = count($comment->loadall_binhluan(0, $delete, 0, PHP_INT_MAX));
+
+                // Tính tổng số trang
+                $totalPages = ceil($totalComment / $limit);
                 include "binhluan/delete.php";
                 break;
             case 'restorebl':
@@ -551,9 +585,7 @@ if (isset($_SESSION['admin'])) {
                 if (isset($_GET['id']) && ($_GET['id']) > 0) {
                     $comment->delete_binhluan($_GET['id']);
                 }
-                $sql = "SELECT * FROM comment order by id desc";
-                $delete = 1;
-                $listbl = $comment->loadall_binhluan('',$delete);
+                header('location: index.php?act=list_delete_history_binhluan');
                 include "binhluan/delete.php";
                 break;
             case 'listdh':

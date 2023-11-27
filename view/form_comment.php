@@ -7,7 +7,7 @@ $id_pro = $_REQUEST['id_pro'];
 // $id_user = $_SESSION['user']['id'];
 $comment  = new comment();
 $delete = 0;
-$dsbl = $comment->loadall_binhluan($id_pro, $delete);
+$dsbl = $comment->loadall_binhluan($id_pro, $delete, 0, PHP_INT_MAX);
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">

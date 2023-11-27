@@ -6,7 +6,7 @@
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
                             <h3 class="card-title">Danh sách thống kê sản phẩm theo danh mục</h3>
-                            <h3 class="card-title ml-auto"><a href="index.php?act=listthongkebl">thống kê bình
+                            <h3 class="card-title ml-auto"><a href="index.php?act=listthongkebl">Thống kê bình
                                     luận theo sản phẩm</a></h3>
                         </div>
                         <!-- /.card-header -->
