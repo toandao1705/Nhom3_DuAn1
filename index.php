@@ -16,7 +16,7 @@ if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
 include "./mail/index.php";
 
 
-$mail= new Mailer();
+$mail = new Mailer();
 $products = new products();
 
 
@@ -142,7 +142,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
         case 'forgot_password':
             $forgot_password = new user();
-            $user= new user();
+            $user = new user();
             include "view/forgot_password.php";
             break;
         case 'validate':
@@ -150,7 +150,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
         case 'reset_pass':
             $forgot_password = new user();
-            $user= new user();
+            $user = new user();
             include "view/reset_pass.php";
             break;
         case 'page_404':
