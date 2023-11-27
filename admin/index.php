@@ -40,8 +40,6 @@ if (isset($_SESSION['admin'])) {
 
                     //trở về trang dsbn
                     $banner = new banner();
-                    $delete = 0;
-                    $listbanner = $banner->loadall_banner($delete);
                     $thongbao = "Thêm banner thành công";
                 
                 }
@@ -51,7 +49,24 @@ if (isset($_SESSION['admin'])) {
             case 'listbn':
                 $banner = new banner();
                 $delete = 0;
-                $listbanner = $banner->loadall_banner($delete);
+                //Đặt số lượng bản ghi trên mỗi trang
+                $limit = 5;
+
+                // Lấy số trang hiện tại từ URL
+                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                // Tính điểm bắt đầu để tìm nạp bản ghi
+                $start = ($page - 1) * $limit;
+
+                // Tìm nạp danh mục cho trang hiện tại
+                
+                $listbanner = $banner->loadall_banner($delete, $start, $limit);
+
+                // Đếm tổng số bản ghi
+                $totalBanner = count($banner->loadall_banner($delete, 0, PHP_INT_MAX));
+
+                // Tính tổng số trang
+                $totalPages = ceil($totalBanner / $limit);
                 include "banner/list.php";
                 break;
             case 'updatebn':
@@ -60,8 +75,6 @@ if (isset($_SESSION['admin'])) {
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                     $onebanner = $banner->loadone_banner($_GET['id']);
                 }
-                $delete = 0;
-                $listbanner = $banner->loadall_banner($delete);
                 // trở về trang danh sách banner
                 include "banner/update.php";
                 break;
@@ -77,14 +90,29 @@ if (isset($_SESSION['admin'])) {
                     move_uploaded_file($_FILES["img"]["tmp_name"], $target_file);
                     $banner->update_banner($id, $title, $subtitle, $img);
                 }
-                $delete = 0;
-                $listbanner = $banner->loadall_banner($delete);
-                include 'banner/list.php';
+                header('location: index.php?act=listbn');
                 break;
             case 'list_delete_history_banner':
                 $banner = new banner();
                 $delete = 1;
-                $listbanner = $banner->loadall_banner($delete);
+                //Đặt số lượng bản ghi trên mỗi trang
+                $limit = 5;
+
+                // Lấy số trang hiện tại từ URL
+                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                // Tính điểm bắt đầu để tìm nạp bản ghi
+                $start = ($page - 1) * $limit;
+
+                // Tìm nạp danh mục cho trang hiện tại
+                
+                $listbanner = $banner->loadall_banner($delete, $start, $limit);
+
+                // Đếm tổng số bản ghi
+                $totalBanner = count($banner->loadall_banner($delete, 0, PHP_INT_MAX));
+
+                // Tính tổng số trang
+                $totalPages = ceil($totalBanner / $limit);
                 include "banner/delete.php";
                 break;
             case 'restorebn':
@@ -108,9 +136,7 @@ if (isset($_SESSION['admin'])) {
                 if (isset($_GET['id']) && ($_GET['id']) > 0) {
                     $banner->delete_banner($_GET['id']);
                 }
-                $sql = "SELECT * FROM banner order by id desc";
-                $delete = 1;
-                $listbanner = $banner->loadall_banner($delete);
+                header('location: index.php?act=list_delete_history_banner');
                 include "banner/delete.php";
                 break;
             case 'adddm':

@@ -59,6 +59,13 @@
 
 
                         </table>
+                        <ul class="pagination">
+                            <?php
+                            for ($i = 1; $i <= $totalPages; $i++) {
+                                echo '<li class="page-item"><a class="page-link" href="index.php?act=list_delete_history_banner&page=' . $i . '">' . $i . '</a></li>';
+                            }
+                            ?>
+                        </ul>
                     </div>
 
                     <!-- /.card-body -->

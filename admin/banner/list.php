@@ -60,6 +60,14 @@
 
 
                         </table>
+                        <!-- Pagination -->
+                        <ul class="pagination">
+                            <?php
+                            for ($i = 1; $i <= $totalPages; $i++) {
+                                echo '<li class="page-item"><a class="page-link" href="index.php?act=listbn&page=' . $i . '">' . $i . '</a></li>';
+                            }
+                            ?>
+                        </ul>
                         <div class="box mt-3">
                             <button class="btn btn-primary mb-3" id="select-all">Chọn tất cả</button>
                             <button class="btn btn-warning mb-3" id="deselect-all">Bỏ chọn tất cả</button>
