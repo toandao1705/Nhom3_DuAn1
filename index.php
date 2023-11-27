@@ -11,6 +11,7 @@ include "model/product.php";
 include "model/banner.php";
 include "model/global.php";
 include "model/user.php";
+include "model/cart.php";
 include "global.php";
 if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
 include "./mail/index.php";
@@ -113,6 +114,45 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/checkout.php";
             break;
         case 'invoice':
+            $connect = new connect();
+            $carts = new cart();
+            if(isset($_POST['order']) && ($_POST['order'])){
+                if(isset($_SESSION['user'])) $iduser=$_SESSION['user']['id'];
+                else $id=0;
+                $name=$_POST['name'];
+                $email=$_POST['email'];
+                $address=$_POST['address'];
+                $payment_methods=$_POST['payment_methods'];
+                $phone=$_POST['phone'];
+                $order_date=date('h:i:sa d/m/Y');
+                $total = $carts->tongdonhang();
+                //tạo bill
+                $order_date=date('h:i:sa d/m/Y');
+                $order_date=date('h:i:sa d/m/Y');
+                $idbill = $carts->insert_bill($iduser, $name, $email, $address, $phone, $payment_methods,$order_date, $total);
+
+                //insert into cart : $session['mycart'] & idbill
+
+                foreach ($_SESSION['mycart'] as $product) {
+                    // Thêm sản phẩm vào chi tiết hóa đơn (bill_detail)
+                    $carts->insert_cart($iduser, $product[0], $product[2], $product[1], $product[3], $product[4], $product[5]);
+                    
+                    // // Lấy id sản phẩm vừa thêm vào chi tiết hóa đơn
+                    // $idpro = $carts->getLastInsertedProductId();
+                    
+                    // // Insert vào bảng bill_detail
+                    // $carts->insert_bill_detail($idbill, $idpro, $product[3], $product[4]);
+                }
+                
+                
+                
+                // Sau khi thêm vào chi tiết hóa đơn, bạn có thể xóa session cart
+                $_SESSION['mycart'] = [];
+                
+                
+            }
+                // $bill=$cart->loadone_bill($idbill);
+                // $billct=$cart->loadall_cart($idbill);
             include "view/invoice.php";
             break;
         case 'contact':
