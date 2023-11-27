@@ -32,9 +32,9 @@
                                         <td>'.$madm.'</td>
                                         <td>'.$tendm.'</td>
                                         <td>'.$countsp.'</td>
-                                        <td>'.$maxprice.' VND</td>
-                                        <td>'.$minprice.' VNĐ</td>
-                                        <td>'.$avgprice.' VND</td>
+                                        <td>$'.number_format("$maxprice",2).'</td>
+                                        <td>$'.number_format("$minprice",2).'</td>
+                                        <td>$'.number_format("$avgprice",2).'</td>
                                         </tr>';
                                     }
                                     ?>
