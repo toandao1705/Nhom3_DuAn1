@@ -34,7 +34,7 @@ class user {
    public function checkUser($name,$pass) 
    { 
        $db = new connect();               
-       $select="SELECT * FROM user where name='$name' and pass='$pass'"; 
+       $select="SELECT * FROM user where name='$name' and pass='$pass' and role = '1'"; 
        $result = $db->pdo_query_one($select);
        if($result!=null) 
            return true; 
@@ -49,7 +49,7 @@ class user {
        // Mã hóa mật khẩu trước khi so sánh với cơ sở dữ liệu
        $passwordEncryption = md5($pass);
    
-       $select = "SELECT * FROM user WHERE name = '$name' AND pass = '$passwordEncryption'";
+       $select = "SELECT * FROM user WHERE name = '$name' AND pass = '$passwordEncryption' AND role = 1";
 
        return $db->pdo_query_one($select);
    }
@@ -78,7 +78,7 @@ class user {
    public function userid($name,$pass) 
     { 
         $db = new connect();               
-        $select="select id from user where name='$name' and pass='$pass'"; 
+        $select="select id from user where name='$name' and pass='$pass' and role = '1'"; 
         $result = $db->pdo_query_one($select);
         return $result;
     }
