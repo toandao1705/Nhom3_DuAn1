@@ -12,6 +12,14 @@ include '../model/cart.php';
 include '../model/statistical.php';
 
 $act = 'home';
+$donhang = new cart();
+$sldh = $donhang->count_donhang();
+$binhluan = new comment();
+$slbl = $binhluan->count_binhluan();
+$taikhoan = new user();
+$sltk = $taikhoan->count_taikhoan();
+$sanpham = new products();
+$slsp = $sanpham->count_sanpham();
 if (isset($_SESSION['admin'])) {
     // Nếu đã đăng nhập, bao gồm header, footer và sidebar
     include "component/header.php";
@@ -644,7 +652,7 @@ if (isset($_SESSION['admin'])) {
         if ($user->checkUser($name, $hashedPassword)) {
             $result = $user->userid($name, $hashedPassword);
             $_SESSION['admin'] = $name; // kiểm tra có người dùng hay không
-            header("Location: index.php"); // Redirect to the dashboard or any other page
+            header("Location: index.php");
             exit();
         } else {
             $loginError = "Tên hoặc mật khẩu không đúng. Vui lòng thử lại.";

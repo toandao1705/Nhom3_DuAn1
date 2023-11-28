@@ -73,4 +73,16 @@ class cart
             return 0; // Hoặc giá trị mặc định khác tùy thuộc vào logic của bạn
         }
     }
+    function count_donhang() {
+        $db = new connect();
+        $select = "SELECT COUNT(*) as total FROM bill_detail";
+        $result = $db->pdo_query_one($select);
+    
+        if ($result && isset($result['total'])) {
+            return $result['total'];
+        }
+    
+        return 0; // Trả về 0 nếu có lỗi hoặc không có bản ghi
+    }
+    
 }

@@ -145,5 +145,16 @@ function update_taikhoan($id, $email, $pass, $address, $phone, $role){
    $select = "UPDATE user SET pass='".$passwordEncryption."', email='".$email."', address='".$address."', phone='".$phone."', role=".$role." WHERE id=".$id;
    $db->pdo_execute($select);
 }
+function count_taikhoan() {
+   $db = new connect();
+   $select = "SELECT COUNT(*) as total_user FROM user";
+   $result = $db->pdo_query_one($select);
+
+   if ($result && isset($result['total_user'])) {
+       return $result['total_user'];
+   }
+
+   return 0; // Trả về 0 nếu có lỗi hoặc không có bản ghi
+}
 }
 ?>

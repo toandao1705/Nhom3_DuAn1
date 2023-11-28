@@ -218,5 +218,16 @@ class products
         }
         
     }
+    function count_sanpham() {
+        $db = new connect();
+        $select = "SELECT COUNT(*) as total_products FROM products";
+        $result = $db->pdo_query_one($select);
+     
+        if ($result && isset($result['total_products'])) {
+            return $result['total_products'];
+        }
+     
+        return 0; // Trả về 0 nếu có lỗi hoặc không có bản ghi
+     }
 }
 

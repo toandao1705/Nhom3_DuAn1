@@ -52,6 +52,17 @@
             $select="DELETE FROM comment where id=".$id;
             return $db->pdo_query($select);
         }
+        function count_binhluan() {
+            $db = new connect();
+            $select = "SELECT COUNT(*) as total_comment FROM comment";
+            $result = $db->pdo_query_one($select);
+        
+            if ($result && isset($result['total_comment'])) {
+                return $result['total_comment'];
+            }
+        
+            return 0; // Trả về 0 nếu có lỗi hoặc không có bản ghi
+        }
     }
 
     
