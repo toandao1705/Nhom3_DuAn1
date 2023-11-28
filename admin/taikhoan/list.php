@@ -69,7 +69,7 @@
 
 
                             </table>
-                            <ul class="pagination">
+                        <ul class="pagination">
                             <?php
                             for ($i = 1; $i <= $totalPages; $i++) {
                                 echo '<li class="page-item"><a class="page-link" href="index.php?act=listtk&page=' . $i . '">' . $i . '</a></li>';

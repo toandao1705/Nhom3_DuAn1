@@ -53,7 +53,7 @@
                                                 <td>' . $username . '</td>
                                                 <td>' . $proname . '</td>
                                                 <td>' . $qty . '</td>
-                                                <td>' . $price . '</td>
+                                                <td>$' . number_format("$price",2) . '</td>
                                                 <td>' . $ngaydathang . '</td>
                                                 <td>' . $status_text . '</td>
                                             </tr>';

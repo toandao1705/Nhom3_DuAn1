@@ -28,12 +28,12 @@
                 <span id="exampleInputFile-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">
-                <label for="exampleInputEmail1">Title</label>
+                <label for="exampleInputEmail1">Tiêu đề</label>
                 <input type="text" class="form-control" name="title" id="title">
                 <span id="title-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">
-                <label for="exampleInputEmail1">Subtitle</label>
+                <label for="exampleInputEmail1">Tiêu đề phụ</label>
                 <input type="text" class="form-control" name="subtitle" id="subtitle">
                 <span id="subtitle-error" class="error-text text-danger"></span>
               </div>
