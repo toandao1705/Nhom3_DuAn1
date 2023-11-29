@@ -13,11 +13,12 @@ include "model/global.php";
 include "model/user.php";
 include "model/cart.php";
 include "global.php";
-if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
+
 include "./mail/index.php";
 
+$mail= new Mailer();
+if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
 
-$mail = new Mailer();
 $products = new products();
 
 
