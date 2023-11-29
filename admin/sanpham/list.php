@@ -44,6 +44,7 @@
                                         <th>Hình ảnh</th>
                                         <th>Giá</th>
                                         <th>Lượt xem</th>
+                                        <th>Trạng thái</th>
                                         <th></th>
                                     </tr>
                                 </thead>
@@ -71,6 +72,8 @@
                                             <td>' . $imageColumn . '</td>
                                             <td>' . $price . '</td>
                                             <td>' . $view . '</td>
+                                            <td>
+                                            <div class="' . ($status == 0 ? 'border bg-success text-white rounded-pill d-inline-block' : 'border bg-secondary text-white rounded-pill d-inline-block') . '">' . ($status == 0 ? '<div class = "mx-3">Còn hàng</div>' : '<div class = "mx-3">Đã hết hàng</div>') . '</div>
                                             <td>
                                                 <a href="' . $suasp . '"><button class="btn btn-primary">Sửa</button></a>
                                                 <a href="' . $xoasp . '"><button class="btn btn-danger">Xóa</button></a>

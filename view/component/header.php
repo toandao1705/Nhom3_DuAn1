@@ -187,12 +187,20 @@
                                     </a>
                                     <a href="shop-wishlist.php"><span class="lable">Wishlist</span></a>
                                 </div>
+                                <?php
+                                        $cart = isset($_SESSION['mycart']) ? $_SESSION['mycart'] : [];
+                                        // Đếm số lượng sản phẩm trong giỏ hàng
+                                        $cartCount = count($cart);
+                                        // Hiển thị số lượng giỏ hàng trên header
+                                        // echo $cartCount;
+                                    ?> 
                                 <div class="header-action-icon-2">
-                                    <a class="mini-cart-icon" href="index.php?act=cart">
+                                    <a class="mini-cart-icon" href="index.php?act=addtocart">
                                         <img alt="Nest" src="view/assets/imgs/theme/icons/icon-cart.svg" />
-                                        <span class="pro-count blue">2</span>
+                                        <span class="pro-count blue"><?= $cartCount?></span>
                                     </a>
                                     <a href="index.php?act=cart"><span class="lable">Cart</span></a>
+                                    
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2">
                                         <ul>
                                             <li>

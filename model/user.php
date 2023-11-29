@@ -5,9 +5,9 @@ class user {
    var $Email = null;
    var $images = null;
 
-   function loadall_taikhoan($delete){
+   function loadall_taikhoan($delete, $start, $limit){
       $db = new connect();
-      $select="SELECT * FROM user WHERE `delete`=" . $delete . " order by id desc";
+      $select = "SELECT * FROM user WHERE `delete` = '$delete' ORDER BY id DESC LIMIT $start, $limit";
       return $db->pdo_query($select);
   }
 
@@ -33,7 +33,7 @@ class user {
    public function checkUser($name,$pass) 
    { 
        $db = new connect();               
-       $select="SELECT * FROM user where name='$name' and pass='$pass'"; 
+       $select="SELECT * FROM user where name='$name' and pass='$pass' and role = '1'"; 
        $result = $db->pdo_query_one($select);
        if($result!=null) 
            return true; 
@@ -48,7 +48,7 @@ class user {
        // Mã hóa mật khẩu trước khi so sánh với cơ sở dữ liệu
        $passwordEncryption = md5($pass);
    
-       $select = "SELECT * FROM user WHERE name = '$name' AND pass = '$passwordEncryption'";
+       $select = "SELECT * FROM user WHERE name = '$name' AND pass = '$passwordEncryption' AND role = 1";
 
        return $db->pdo_query_one($select);
    }
@@ -77,7 +77,7 @@ class user {
    public function userid($name,$pass) 
     { 
         $db = new connect();               
-        $select="select id from user where name='$name' and pass='$pass'"; 
+        $select="select id from user where name='$name' and pass='$pass' and role = '1'"; 
         $result = $db->pdo_query_one($select);
         return $result;
     }
@@ -138,11 +138,22 @@ class user {
    $sp=$db->pdo_query_one($select);
    return $sp;
 }
-function update_taikhoan($id, $email, $pass, $address, $phone){
+function update_taikhoan($id, $email, $pass, $address, $phone, $role){
    $db = new connect();
    $passwordEncryption = md5($pass);
-   $select = "UPDATE user set pass='".$passwordEncryption."', email='".$email."', address='".$address."', phone='".$phone."' WHERE id=".$id;
+   $select = "UPDATE user SET pass='".$passwordEncryption."', email='".$email."', address='".$address."', phone='".$phone."', role=".$role." WHERE id=".$id;
    $db->pdo_execute($select);
+}
+function count_taikhoan() {
+   $db = new connect();
+   $select = "SELECT COUNT(*) as total_user FROM user";
+   $result = $db->pdo_query_one($select);
+
+   if ($result && isset($result['total_user'])) {
+       return $result['total_user'];
+   }
+
+   return 0; // Trả về 0 nếu có lỗi hoặc không có bản ghi
 }
 }
 ?>

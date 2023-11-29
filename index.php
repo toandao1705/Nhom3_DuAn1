@@ -11,6 +11,7 @@ include "model/product.php";
 include "model/banner.php";
 include "model/global.php";
 include "model/user.php";
+include "model/cart.php";
 include "global.php";
 
 include "./mail/index.php";
@@ -20,11 +21,13 @@ if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
 
 $products = new products();
 
+
 $spnew = $products->loadall_sanpham_home();
 $spview = $products->hienthi_sanpham_view();
+
 $delete = 0;
 $banner = new banner();
-$listbanner = $banner->loadall_banner($delete);
+$listbanner = $banner->loadall_banner($delete, 0, PHP_INT_MAX);
 
 
 // data dành cho trang chủ
@@ -68,10 +71,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/terms.php";
             break;
         case 'addtocart':
-            // Thêm thông tin sản phẩm từ biểu mẫu thêm vào giỏ hàng vào session
             if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
-                // var_dump($_POST);
-                // exit;
                 $id = $_POST['id'];
                 $name = $_POST['name'];
                 $img = $_POST['img'];
@@ -87,6 +87,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                         $productExists = true;
                         // Nếu sản phẩm đã tồn tại trong giỏ hàng, cập nhật số lượng mới
                         $_SESSION['mycart'][$index][4] += $quantity;
+                        $_SESSION['mycart'][$index][5] = $_SESSION['mycart'][$index][4] * $price; // Cập nhật thành tiền mới
                         break;
                     }
                 }
@@ -102,6 +103,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
 
 
 
+
         case 'delcart':
             if (isset($_GET['idcart'])) {
                 array_splice($_SESSION['mycart'], $_GET['idcart'], 1);
@@ -114,6 +116,35 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/checkout.php";
             break;
         case 'invoice':
+            $connect = new connect();
+            $carts = new cart();
+            if (isset($_POST['order']) && ($_POST['order'])) {
+                if (isset($_SESSION['user'])) $iduser = $_SESSION['user']['id'];
+                else $id = 0;
+                $name = $_POST['name'];
+                $email = $_POST['email'];
+                $address = $_POST['address'];
+                $payment_methods = $_POST['payment_methods'];
+                $phone = $_POST['phone'];
+                $order_date = date('h:i:sa d/m/Y');
+                $total = $carts->tongdonhang();
+                $idbill = $carts->insert_bill($iduser, $name, $email, $address, $phone, $payment_methods, $order_date, $total);
+
+                //insert into cart : $session['mycart'] & idbill
+
+                foreach ($_SESSION['mycart'] as $product) {
+                    // Thêm sản phẩm vào chi tiết hóa đơn (bill_detail)
+                    $carts->insert_cart($iduser, $product[0], $product[2], $product[1], $product[3], $product[4], $product[5]);
+                    $carts->insert_bill_detail($idbill, $product[0], $product[3], $product[4]);
+                }
+
+
+
+                // Sau khi thêm vào chi tiết hóa đơn, bạn có thể xóa session cart
+                $_SESSION['mycart'] = [];
+            }
+            // $bill=$cart->loadone_bill($idbill);
+            // $billct=$cart->loadall_cart($idbill);
             include "view/invoice.php";
             break;
         case 'contact':
@@ -141,7 +172,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
         case 'forgot_password':
             $forgot_password = new user();
-            $user= new user();
+            $user = new user();
             include "view/forgot_password.php";
             break;
         case 'validate':
@@ -149,7 +180,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
         case 'reset_pass':
             $forgot_password = new user();
-            $user= new user();
+            $user = new user();
             include "view/reset_pass.php";
             break;
         case 'page_404':

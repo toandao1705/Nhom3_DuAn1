@@ -14,6 +14,7 @@
                                     <tr>
                                         <th>Mã đơn hàng</th>
                                         <th>Khách hàng</th>
+                                        <th>Sản phẩm</th>
                                         <th>Số lượng hàng</th>
                                         <th>Giá trị đơn hàng</th>
                                         <th>Ngày đặt hàng</th>
@@ -27,19 +28,37 @@
                                     // Hiển thị thông tin tai khoan
                                     foreach ($listdh as $donhang) {
                                         extract($donhang);
+                                    
+                                        // Chuyển đổi giá trị status thành trạng thái tương ứng
+                                        switch ($status) {
+                                            case 0:
+                                                $status_text = 'Đơn hàng mới';
+                                                break;
+                                            case 1:
+                                                $status_text = 'Đang xử lý';
+                                                break;
+                                            case 2:
+                                                $status_text = 'Đang giao hàng';
+                                                break;
+                                            case 3:
+                                                $status_text = 'Giao hàng thành công';
+                                                break;
+                                            default:
+                                                $status_text = 'Trạng thái không xác định';
+                                                break;
+                                        }
+                                    
                                         echo ' <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>'.$id.'</td>
-                                                <td>'.$id_user .'</td>
-                                                <td>'.$quantity.'</td>
-                                                <td>'.$status.'</td>
-                                                <td>
-
-                                                    <a href="' . $xoabl . '"><button class="btn btn-danger">Xóa</button></a>
-
-                                                </td>
+                                                <td>' . $bill_id . '</td>
+                                                <td>' . $username . '</td>
+                                                <td>' . $proname . '</td>
+                                                <td>' . $qty . '</td>
+                                                <td>$' . number_format("$price",2) . '</td>
+                                                <td>' . $ngaydathang . '</td>
+                                                <td>' . $status_text . '</td>
                                             </tr>';
                                     }
+                                    
                                 } else {
                                     echo '<tr><td colspan="4">Không có danh mục nào.</td></tr>';
                                 }

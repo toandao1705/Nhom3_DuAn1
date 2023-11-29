@@ -118,13 +118,17 @@ function fbLogout() {
                                         <div id="userData" style="display: none;"></div>
 
                                     </div>
-                                    <form action="index.php?act=login_google" method="post">
+                                    <form action="index.php?act=login_google" method="post"
+                                        enctype="multipart/form-data" id="validateF">
                                         <div class="form-group">
-                                            <input type="text" required="" name="name" placeholder="Username*" />
+                                            <label for="exampleInputEmail1"></label>
+                                            <input type="text" name="name" id="username" placeholder="Username*" />
+                                            <span id="username-error" class="error-text text-danger"></span>
                                         </div>
-                                        <div class="form-group">
-                                            <input required="" type="password" name="pass"
+                                        <div class="form-group"> <label for="exampleInputEmail1"></label>
+                                            <input type="password" name="pass" id="pass"
                                                 placeholder="Your password *" />
+                                            <span id="pass-error" class="error-text text-danger"></span>
                                         </div>
                                         <div class="login_footer form-group mb-50">
                                             <div class="chek-form">
@@ -143,6 +147,33 @@ function fbLogout() {
                                                 class="font-weight-bold text-light" style="background-color: #3bb77e;">
                                         </div>
                                     </form>
+                                    <script>
+                                    document.getElementById('validateF').addEventListener('submit', function(e) {
+                                        // Lấy giá trị của các trường dữ liệu
+                                        var username = document.getElementById('username').value;
+                                        var pass = document.getElementById('pass').value;
+                                        // Xóa thông báo lỗi cũ
+                                        document.getElementById('username-error').textContent = '';
+                                        document.getElementById('pass-error').textContent = '';
+                                        // Bắt lỗi nếu địa chỉ trống
+                                        if (username.trim() === '') {
+                                            e.preventDefault(); // Ngăn chặn việc submit form
+                                            document.getElementById('username-error').textContent =
+                                                'Username cannot be empty';
+                                        }
+
+                                        // Bắt lỗi nếu mật khẩu trống hoặc không đúng định dạng
+                                        if (pass.trim() === '') {
+                                            e.preventDefault(); // Ngăn chặn việc submit form
+                                            document.getElementById('pass-error').textContent =
+                                                'Password cannot be empty';
+                                        } else if (pass.length < 6) {
+                                            e.preventDefault(); // Ngăn chặn việc submit form
+                                            document.getElementById('pass-error').textContent =
+                                                'Passwords must be at least 6 characters';
+                                        }
+                                    });
+                                    </script>
                                     <div class="col-lg-12 d-none d-lg-block">
                                         <div class="card-login">
                                             <a href="javascript:void(0);" onclick="fbLogin();" id="fbLink"

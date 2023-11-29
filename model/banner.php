@@ -3,10 +3,10 @@ require_once 'pdo.php';
 class banner
 {
     // load danh sách banner lên
-    function loadall_banner($delete)
+    function loadall_banner($delete, $start, $limit)
     {
         $db = new connect();
-        $select = "SELECT * FROM banner WHERE `delete`=" . $delete;
+        $select = "SELECT * FROM banner WHERE `delete`=" . $delete . " LIMIT $start, $limit";
         return $db->pdo_query($select);
     }
     // thêm banner

@@ -7,9 +7,9 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>150</h3>
+                <h3><?= $sldh ?></h3>
 
-                <p>đơn hàng</p>
+                <p>Đơn hàng</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
@@ -22,7 +22,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
+                <h3><?= $slbl ?><sup style="font-size: 20px"></sup></h3>
 
                 <p>Bình luận</p>
               </div>
@@ -37,7 +37,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>44</h3>
+                <h3><?= $sltk ?></h3>
 
                 <p>Tài khoản</p>
               </div>
@@ -52,7 +52,7 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>65</h3>
+                <h3><?= $slsp ?></h3>
 
                 <p>Sản phẩm</p>
               </div>
