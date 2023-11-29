@@ -1,50 +1,51 @@
-<?php 
-
+<?php
+session_start();
 include '../model/pdo.php';
- 
+
 if (!empty($_POST['userData'])) {
     // Giải mã dữ liệu người dùng từ JSON thành mảng
     $userData = json_decode($_POST['userData'], true);
 
-    
     // Kiểm tra xem dữ liệu người dùng đã tồn tại trong cơ sở dữ liệu chưa
-    $prevQuery = "SELECT id FROM user WHERE facebook_id = '".$userData['id']."'";
-    $prevResult = $db_connection->query($prevQuery);
-    
-    
-    if ($prevResult->num_rows > 0) {
-        // Nếu dữ liệu người dùng đã tồn tại, lưu thông tin vào session và chuyển hướng đến trang home.php
-        $query = "UPDATE user SET name = CONCAT('".$userData['first_name']."', ' ', '".$userData['last_name']."'), email = '".$userData['email']."' WHERE facebook_id = '".$userData['id']."'";
-$update = $db_connection->query($query);
-        
-        $_SESSION['facebook'] = [
-            'id' => $userData['id'],
-            'name' => $userData['first_name'] . ' ' . $userData['last_name'],
-            'email' => $userData['email']
-        ];
-        $_SESSION['facebook'] = array(
-            'id' => mysqli_insert_id($db_connection),
-            'id' => $userData['id'],
-            'name' => $userData['first_name'] . ' ' . $userData['last_name'],
-            'email' => $userData['email']
-        ); // Lưu thông tin user vào session
-        
-        // header('Location: ../index.php');
-        exit;
-    } else {
-        // Nếu dữ liệu người dùng chưa tồn tại, thêm dữ liệu vào cơ sở dữ liệu và lưu thông tin vào session, sau đó chuyển hướng đến trang home.php
-        $query = "INSERT INTO user SET facebook_id = '".$userData['id']."', name = CONCAT('".$userData['first_name']."', ' ', '".$userData['last_name']."'), email = '".$userData['email']."'";
-        $insert = $db_connection->query($query);
-        
-        $_SESSION['facebook'] = [
-            'id' => $userData['id'],
-            'name' => $userData['first_name'] . ' ' . $userData['last_name'],
-            'email' => $userData['email']
-        ];
-        header('Location: ../index.php');
-        exit;
-    }
-    
+    $prevQuery = "SELECT id FROM user WHERE facebook_id = ?";
+    $stmt = $db_connection->prepare($prevQuery);
+    $stmt->bind_param('s', $userData['id']);
+    $stmt->execute();
+    $stmt->store_result();
 
+    if ($stmt->num_rows > 0) {
+        // Nếu dữ liệu người dùng đã tồn tại, cập nhật thông tin
+        $query = "UPDATE user SET name = CONCAT(?, ' ', ?), email = ? WHERE facebook_id = ?";
+        $stmt = $db_connection->prepare($query);
+        $stmt->bind_param('ssss', $userData['first_name'], $userData['last_name'], $userData['email'], $userData['id']);
+        $stmt->execute();
+
+        // Đặt lại session user với thông tin cập nhật
+        $_SESSION['user'] = array(
+            'id' => $_SESSION['user']['id'],
+            'facebook_id' => $userData['id'],
+            'name' => $userData['first_name'] . ' ' . $userData['last_name'],
+            'email' => $userData['email']
+        );
+        header('Location: ../index.php');
+    } else {
+        // Nếu dữ liệu người dùng chưa tồn tại, thêm mới
+        $query = "INSERT INTO user (facebook_id, name, email) VALUES (?, CONCAT(?, ' ', ?), ?)";
+        $stmt = $db_connection->prepare($query);
+        $stmt->bind_param('ssss', $userData['id'], $userData['first_name'], $userData['last_name'], $userData['email']);
+        $stmt->execute();
+
+        // Đặt lại session user với thông tin mới
+        $_SESSION['user'] = array(
+            'id' => $db_connection->insert_id,
+            'facebook_id' => $userData['id'],
+            'name' => $userData['first_name'] . ' ' . $userData['last_name'],
+            'email' => $userData['email']
+        );
+        header('Location: ../index.php');
+    }
+
+    header('Location: ../index.php');
+    exit;
 }
 ?>

@@ -58,10 +58,6 @@ function getFbUserData() {
             document.getElementById('fbLink').innerHTML = 'Logout from Facebook';
             document.getElementById('status').innerHTML = '<p>Thanks for logging in, ' + response.first_name +
                 '!</p>';
-
-            // if (response.first_name) {
-            //     window.location.href = "./index.php?act=home";
-            // }
             // Save user data
             saveUserData(response);
         });
@@ -74,7 +70,7 @@ function saveUserData(userData) {
         oauth_provider: 'facebook',
         userData: JSON.stringify(userData)
     }, function() {
-        return true;
+        window.location.href = 'index.php';
     });
 }
 
@@ -97,9 +93,7 @@ function fbLogout() {
             </div>
         </div>
     </div>
-    <?php
-    var_dump($_SESSION['facebook']);
-    ?> <div class="page-content pt-150 pb-150">
+    <div class="page-content pt-150 pb-150">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 col-lg-10 col-md-12 m-auto">
@@ -118,7 +112,8 @@ function fbLogout() {
                                         <div id="userData" style="display: none;"></div>
 
                                     </div>
-                                    <form action="index.php?act=login_google" method="post" enctype="multipart/form-data" id="validateF">
+                                    <form action="index.php?act=login_google" method="post"
+                                        enctype="multipart/form-data" id="validateF">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1"></label>
                                             <input type="text" name="name" id="username" placeholder="Username*" />
@@ -147,28 +142,31 @@ function fbLogout() {
                                         </div>
                                     </form>
                                     <script>
-                                        document.getElementById('validateF').addEventListener('submit', function(e) {
-                                            // Lấy giá trị của các trường dữ liệu
-                                            var username = document.getElementById('username').value;
-                                            var pass = document.getElementById('pass').value;
-                                            // Xóa thông báo lỗi cũ
-                                            document.getElementById('username-error').textContent = '';
-                                            document.getElementById('pass-error').textContent = '';
-                                            // Bắt lỗi nếu địa chỉ trống
-                                            if (username.trim() === '') {
-                                                e.preventDefault(); // Ngăn chặn việc submit form
-                                                document.getElementById('username-error').textContent = 'Username cannot be empty';
-                                            }
+                                    document.getElementById('validateF').addEventListener('submit', function(e) {
+                                        // Lấy giá trị của các trường dữ liệu
+                                        var username = document.getElementById('username').value;
+                                        var pass = document.getElementById('pass').value;
+                                        // Xóa thông báo lỗi cũ
+                                        document.getElementById('username-error').textContent = '';
+                                        document.getElementById('pass-error').textContent = '';
+                                        // Bắt lỗi nếu địa chỉ trống
+                                        if (username.trim() === '') {
+                                            e.preventDefault(); // Ngăn chặn việc submit form
+                                            document.getElementById('username-error').textContent =
+                                                'Username cannot be empty';
+                                        }
 
-                                            // Bắt lỗi nếu mật khẩu trống hoặc không đúng định dạng
-                                            if (pass.trim() === '') {
-                                                e.preventDefault(); // Ngăn chặn việc submit form
-                                                document.getElementById('pass-error').textContent = 'Password cannot be empty';
-                                            } else if (pass.length < 6) {
-                                                e.preventDefault(); // Ngăn chặn việc submit form
-                                                document.getElementById('pass-error').textContent = 'Passwords must be at least 6 characters';
-                                            }
-                                        });
+                                        // Bắt lỗi nếu mật khẩu trống hoặc không đúng định dạng
+                                        if (pass.trim() === '') {
+                                            e.preventDefault(); // Ngăn chặn việc submit form
+                                            document.getElementById('pass-error').textContent =
+                                                'Password cannot be empty';
+                                        } else if (pass.length < 6) {
+                                            e.preventDefault(); // Ngăn chặn việc submit form
+                                            document.getElementById('pass-error').textContent =
+                                                'Passwords must be at least 6 characters';
+                                        }
+                                    });
                                     </script>
                                     <div class="col-lg-12 d-none d-lg-block">
                                         <div class="card-login">
