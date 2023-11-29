@@ -25,21 +25,33 @@
                                     $error = array();
                                     $email = $_POST['email'];
                                     $result = $user->getUserEmail($email);
-                                    echo $result;
 
                                     if ($email == '') {
                                         $error['email'] = 'Không được để trống';
                                     }
+                                    
                                     if (empty($error) && !empty($result)) {
-                                        
-                                        $code = substr(rand(0,999999),0,6);
+                                        $code = str_pad(rand(0, 999999), 6, '0', STR_PAD_LEFT); // Tạo mã xác nhận ngẫu nhiên có 6 chữ số
+
+                                        // Gửi email chứa mã code
                                         $title = "Quên mật khẩu";
                                         $content = "Mã xác nhận của bạn là: <span style='color:green'>".$code."</span>";
-                                        $mail->sendMail($title,$content,$email);
+                                        $mail->sendMail($title, $content, $email);
 
+                                        // Lưu thông tin vào session để sử dụng trong trang validate.php
                                         $_SESSION['mail'] = $email;
                                         $_SESSION['code'] = $code;
-                                        header('location: index.php?act=validate');
+
+                                        // Lấy thời gian hiện tại
+                                        $currentTime = time();
+                                        // Lấy thời gian hết hạn sau 60 giây
+                                        $expirationTime = $currentTime + 30;
+
+                                        // Lưu thời gian hết hạn vào session
+                                        $_SESSION['expirationTime'] = $expirationTime;
+
+                                        header('Location: index.php?act=validate');
+                                        exit();
                                     }
                                 }
                                 ?>

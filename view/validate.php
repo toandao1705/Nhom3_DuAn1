@@ -21,14 +21,20 @@
                             </div>
                             <form action="" class="form" method="post">
                                 <?php
-                                if(isset($_POST['submit'])){
-                                    $error = array();
-                                    if($_POST['text'] != $_SESSION['code']){
-                                        $error['fail'] = 'Mã xác nhân không hợp lệ !';
-                                    }else{
-                                        header('location: index.php?act=reset_pass');
+                                    if(isset($_POST['submit'])){
+                                        $error = array();
+                                        $currentTime = time();
+                                        if ($currentTime < $_SESSION['expirationTime']) {
+                                            
+                                            if($_POST['text'] != $_SESSION['code']){
+                                                $error['fail'] = 'Mã xác nhân không hợp lệ !';
+                                            }else{
+                                                header('location: index.php?act=reset_pass');
+                                            }
+                                        }else {
+                                            $errorTime = 'Thời gian mã code hết hạn';
+                                        }
                                     }
-                                }
                                 ?>
                                 <div class="form-group">
                                     <?php if(isset($error['fail'])) : ?>
@@ -37,7 +43,13 @@
                                     </div>
                                     <?php else : ?>
                                     <div class="alert alert-primary" role="alert">
-                                        Hãy nhập mã xác nhận mà chúng tôi đã gửi cho bạn về email
+                                        <?php
+                                        if (isset($errorTime)) {
+                                            echo $errorTime;
+                                        }else{
+                                            echo 'Hãy nhập mã xác nhận mà chúng tôi đã gửi cho bạn về email';
+                                        }
+                                        ?>
                                     </div>
                                     <?php endif ?>
 
