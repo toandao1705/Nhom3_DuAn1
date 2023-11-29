@@ -2,7 +2,6 @@
 class user {
    var $name = null;
    var $Pass = null;
-//    var $Name = null;
    var $Email = null;
    var $images = null;
 
