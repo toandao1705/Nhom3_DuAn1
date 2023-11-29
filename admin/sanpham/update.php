@@ -70,6 +70,13 @@ $allImages = $loadedProducts->loadall_images($id);
                 <div class="row mt-3" id="preview-container"></div>
                 <span id="hinh-error" class="error-text text-danger"></span>
               </div>
+              <div class="form-group">
+              <label for="role">Vai trò</label>
+              <select class="form-control" name="status" id="status">
+                <option value="0" <?= $status === '0' ? 'selected' : '' ?>>Còn hàng</option>
+                <option value="1" <?= $status === '1' ? 'selected' : '' ?>>Đã hết hàng</option>
+              </select>
+              </div>
 
 
               <div class="form-group">

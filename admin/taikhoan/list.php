@@ -39,7 +39,7 @@
                                             <td>'.$email.'</td>
                                             <td>'.$address.'</td>
                                             <td>'.$phone.'</td>
-                                            <td>'.$role.'</td>
+                                            <td>'.($role == 1 ? 'Admin' : 'User').'</td>
                                             <td>
                                                 <a href="'.$suatk.'"><button class="btn btn-primary">Sửa</button></a>
                                                 <a href="'.$xoasp.'"><button class="btn btn-danger">Xóa</button></a>
@@ -69,6 +69,13 @@
 
 
                             </table>
+                        <ul class="pagination">
+                            <?php
+                            for ($i = 1; $i <= $totalPages; $i++) {
+                                echo '<li class="page-item"><a class="page-link" href="index.php?act=listtk&page=' . $i . '">' . $i . '</a></li>';
+                            }
+                            ?>
+                        </ul>
 
                         </div>
 
