@@ -22,6 +22,7 @@ class cart
     {
         $db = new connect();
         $select = "INSERT INTO bill(id_user, name, email, address, phone, payment_methods, order_date, total) values('$iduser', '$name', '$email', '$address', '$phone', '$payment_methods', '$order_date','$total')";
+        echo $select;
         return $db->pdo_execute_return_lastInsertId($select);
         echo $select;
     }
@@ -52,8 +53,8 @@ class cart
     public function insert_bill_detail($idbill, $idpro, $price, $quantity)
     {
         $db = new connect();
-        $sql = "INSERT INTO bill_detail (id_bill, id_pro, price, quantity) VALUES (?, ?, ?, ?)";
-        $db->pdo_execute_return_lastInsertId($sql, $idbill, $idpro, $price, $quantity);
+        $select = "INSERT INTO bill_detail (id_bill, id_pro, price, quantity) VALUES (?, ?, ?, ?)";
+        $db->pdo_execute($select, $idbill, $idpro, $price, $quantity);
     }
     // Trong phương thức getLastInsertedProductId của class cart
     public function getLastInsertedProductId()
