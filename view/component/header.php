@@ -193,14 +193,14 @@
                                         $cartCount = count($cart);
                                         // Hiển thị số lượng giỏ hàng trên header
                                         // echo $cartCount;
-                                    ?> 
+                                    ?>
                                 <div class="header-action-icon-2">
                                     <a class="mini-cart-icon" href="index.php?act=addtocart">
                                         <img alt="Nest" src="view/assets/imgs/theme/icons/icon-cart.svg" />
                                         <span class="pro-count blue"><?= $cartCount?></span>
                                     </a>
                                     <a href="index.php?act=cart"><span class="lable">Cart</span></a>
-                                    
+
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2">
                                         <ul>
                                             <li>
@@ -282,6 +282,35 @@
                                     </a>
                                     <a href="index.php?act=account"><span
                                             class="lable ml-0"><?= $full_name ?></span></a>
+                                    <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
+                                        <ul>
+                                            <li><a href="index.php?act=account"><i class="fi fi-rs-user mr-10"></i>My
+                                                    Account</a></li>
+                                            <li><a href="page-account.php"><i
+                                                        class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
+                                            <li><a href="page-account.php"><i class="fi fi-rs-label mr-10"></i>My
+                                                    Voucher</a></li>
+                                            <li><a href="shop-wishlist.php"><i class="fi fi-rs-heart mr-10"></i>My
+                                                    Wishlist</a></li>
+                                            <li><a href="page-account.php"><i
+                                                        class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
+                                            <li><a href="index.php?act=logout"><i
+                                                        class="fi fi-rs-sign-out mr-10"></i>Sign
+                                                    out</a></li>
+                                        </ul>
+                                    </div>
+                                    <?php
+                                    } else if (isset($_SESSION['facebook']) && is_array($_SESSION['facebook'])) {
+                                        // Sử dụng thông tin từ session facbook
+                                        $facebook = $_SESSION['facebook'];
+                                        $name = $facebook['name'];
+                                    ?>
+                                    <!-- Nội dung khi có session facebook -->
+                                    <a href="index.php?act=account">
+                                        <img class="svgInject" alt="Nest"
+                                            src="view/assets/imgs/theme/icons/icon-user.svg" />
+                                    </a>
+                                    <a href="index.php?act=account"><span class="lable ml-0"><?= $name ?></span></a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                         <ul>
                                             <li><a href="index.php?act=account"><i class="fi fi-rs-user mr-10"></i>My

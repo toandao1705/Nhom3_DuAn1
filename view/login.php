@@ -58,10 +58,6 @@ function getFbUserData() {
             document.getElementById('fbLink').innerHTML = 'Logout from Facebook';
             document.getElementById('status').innerHTML = '<p>Thanks for logging in, ' + response.first_name +
                 '!</p>';
-
-            // if (response.first_name) {
-            //     window.location.href = "./index.php?act=home";
-            // }
             // Save user data
             saveUserData(response);
         });
@@ -74,7 +70,7 @@ function saveUserData(userData) {
         oauth_provider: 'facebook',
         userData: JSON.stringify(userData)
     }, function() {
-        return true;
+        window.location.href = 'index.php';
     });
 }
 
@@ -97,9 +93,7 @@ function fbLogout() {
             </div>
         </div>
     </div>
-    <?php
-    var_dump($_SESSION['facebook']);
-    ?> <div class="page-content pt-150 pb-150">
+    <div class="page-content pt-150 pb-150">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 col-lg-10 col-md-12 m-auto">
