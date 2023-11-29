@@ -207,8 +207,11 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             header("Location: index.php");
             exit;
             break;
+        case 'login':
+            include "view/login.php";
+            break;
         case 'login_google':
-            $login = new user();
+            $login = new user();                
             if (isset($_POST['login']) && ($_POST['login'])) {
                 $name = $_POST['name'];
                 $pass = $_POST['pass'];
@@ -301,10 +304,6 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     exit;
                 }
             }
-
-            // ...
-
-
             include "view/login.php";
             break;
 
