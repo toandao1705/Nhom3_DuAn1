@@ -232,7 +232,7 @@ class products
      function deals_sanpham()
      {
          $db = new connect();
-         // lay sp ko bi trung lap
+         // lay sp ko bij trung lap
          $select = "SELECT DISTINCT p.*, i.img as img, c.name as category_name
          FROM (
              SELECT *
