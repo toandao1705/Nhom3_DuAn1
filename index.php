@@ -24,7 +24,7 @@ $products = new products();
 
 $spnew = $products->loadall_sanpham_home();
 $spview = $products->hienthi_sanpham_view();
-
+$sp_deals=$products->deals_sanpham();
 $delete = 0;
 $banner = new banner();
 $listbanner = $banner->loadall_banner($delete, 0, PHP_INT_MAX);
