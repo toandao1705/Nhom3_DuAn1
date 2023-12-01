@@ -649,7 +649,7 @@ if (isset($_SESSION['admin'])) {
         // Mã hóa mật khẩu theo kiểu MD5
         $hashedPassword = md5($pass);
     
-        if ($user->checkUser($name, $hashedPassword)) {
+        if ($user->checkUsers($name, $hashedPassword)) {
             $result = $user->userid($name, $hashedPassword);
             $_SESSION['admin'] = $name; // kiểm tra có người dùng hay không
             header("Location: index.php");

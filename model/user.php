@@ -48,7 +48,7 @@ class user {
        // Mã hóa mật khẩu trước khi so sánh với cơ sở dữ liệu
        $passwordEncryption = md5($pass);
    
-       $select = "SELECT * FROM user WHERE name = '$name' AND pass = '$passwordEncryption' AND role = 1";
+       $select = "SELECT * FROM user WHERE name = '$name' AND pass = '$passwordEncryption' AND role = '1'";
 
        return $db->pdo_query_one($select);
    }
