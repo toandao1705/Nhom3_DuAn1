@@ -145,6 +145,14 @@ function update_taikhoan($id, $email, $pass, $address, $phone, $role){
    $select = "UPDATE user SET pass='".$passwordEncryption."', email='".$email."', address='".$address."', phone='".$phone."', role=".$role." WHERE id=".$id;
    $db->pdo_execute($select);
 }
+function checkUserOne($name, $pass){
+   $db = new connect();
+   $passwordEncryption = md5($pass);
+   $select = "SELECT * FROM user WHERE name='" . $name . "' AND pass='" . $passwordEncryption . "'";
+   $userData = $db->pdo_query_one($select);
+   return $userData;
+    
+}
 function count_taikhoan() {
    $db = new connect();
    $select = "SELECT COUNT(*) as total_user FROM user";
