@@ -163,41 +163,46 @@
                                             </div>
                                             <div class="card-body">
                                                 <p>Already have an account? <a href="index.php?act=login">Log in instead!</a></p>
-                                                <form method="post" name="enq">
-                                                    <div class="row">
-                                                        <div class="form-group col-md-6">
-                                                            <label>First Name <span class="required">*</span></label>
-                                                            <input required="" class="form-control" name="name" type="text" />
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label>Last Name <span class="required">*</span></label>
-                                                            <input required="" class="form-control" name="phone" />
-                                                        </div>
-                                                        <div class="form-group col-md-12">
-                                                            <label>Display Name <span class="required">*</span></label>
-                                                            <input required="" class="form-control" name="dname" type="text" />
-                                                        </div>
-                                                        <div class="form-group col-md-12">
-                                                            <label>Email Address <span class="required">*</span></label>
-                                                            <input required="" class="form-control" name="email" type="email" />
-                                                        </div>
-                                                        <div class="form-group col-md-12">
-                                                            <label>Current Password <span class="required">*</span></label>
-                                                            <input required="" class="form-control" name="password" type="password" />
-                                                        </div>
-                                                        <div class="form-group col-md-12">
-                                                            <label>New Password <span class="required">*</span></label>
-                                                            <input required="" class="form-control" name="npassword" type="password" />
-                                                        </div>
-                                                        <div class="form-group col-md-12">
-                                                            <label>Confirm Password <span class="required">*</span></label>
-                                                            <input required="" class="form-control" name="cpassword" type="password" />
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <button type="submit" class="btn btn-fill-out submit font-weight-bold" name="submit" value="Submit">Save Change</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                <?php
+                                            if (isset($_SESSION['user']) && (is_array($_SESSION['user']))) {
+                                                extract($_SESSION['user']);
+                                            }
+                                            ?>
+                                            <form action="index.php?act=updateAccountUser" method="post" enctype="multipart/form-data" id="validateF">
+                                                <div class="form-group col-md-12">
+                                                    <label>Username <span class="required">*</span></label>
+                                                    <input type="text" name="name" id="name" value="<?php echo $name ?>" placeholder="Username" disabled />
+                                                    <input type="hidden" name="name" value="<?php echo $name ?>" />
+
+                                                    <span id="username-error" class="error-text text-danger"></span>
+                                                </div>
+                                                <div class="form-group col-md-12">
+                                                    <label>Email<span class="required">*</span></label>
+
+                                                    <input type="text" name="email" id="email" value="<?= $email ?>" placeholder="Email" />
+                                                    <span id="email-error" class="error-text text-danger"></span>
+                                                </div>
+                                                <div class="form-group col-md-12">
+                                                    <label>Password<span class="required">*</span></label>
+                                                    <input type="password" name="pass" id="pass" value="<?= $pass ?>" placeholder="Password" />
+                                                    <span id="pass-error" class="error-text text-danger"></span>
+                                                </div>
+                                                <div class="form-group col-md-12">
+                                                    <label>Phone<span class="required">*</span></label>
+                                                    <input type="phone" name="phone" id="phone" value="<?= $phone ?>" placeholder="Phone" />
+                                                    <span id="phone-error" class="error-text text-danger"></span>
+                                                </div>
+                                                <div class="form-group col-md-12">
+                                                    <label>Address<span class="required">*</span></label>
+                                                    <input type="address" name="address" id="address" value="<?= $address ?>" placeholder="Address" />
+                                                    <span id="address-error" class="error-text text-danger"></span>
+                                                </div>
+                                                <div class="form-group mb-30">
+                                                    <input type="hidden" name="id" value="<?= $id ?>">
+                                                    <input type="submit" value="Save Change" name="updateAccountUser" class="btn btn-fill-out btn-block hover-up font-weight-bold custom-btn" style="background-color: #3bb77e;">
+                                                    <!-- <button class="btn btn-fill-out btn-block hover-up font-weight-bold" name="register">Register</button> -->
+                                                </div>
+                                            </form>
                                             </div>
                                         </div>
                                     </div>
