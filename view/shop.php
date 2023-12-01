@@ -26,30 +26,6 @@
                                     }
                                 }}
                             ?>
-                            .........
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         </ul>
                     </div>
                 </div>
@@ -104,13 +80,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
                 <div class="row product-grid">
                     <?php
                         // Mảng để lưu ID của các sản phẩm đã được hiển thị
@@ -1326,7 +1295,7 @@
                                     alt="" />'.$category['name'].'</a><span class="count">30</span>
                                 </li>';
                                 $count++;
-                                if ($count >= 8) {
+                                if ($count >= 5) {
                                     break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
                                 }
                             }}
