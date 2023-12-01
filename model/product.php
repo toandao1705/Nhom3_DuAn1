@@ -142,7 +142,7 @@ class products
                LEFT JOIN images ON products.id = images.id_pro
                LEFT JOIN category ON products.id_category = category.id
                WHERE 1 
-               ORDER BY products.id DESC limit 0,10";
+               ORDER BY products.id DESC ";
 
         $result = $db->pdo_query($select);
 
