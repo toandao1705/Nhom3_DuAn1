@@ -41,7 +41,7 @@
                                                 <td>' . $comment_date . '</td>
                                                 <td>
                                                 <a href="' . $khoiphucbl . '"><button class="btn btn-primary">Khôi phục</button></a>
-                                                <a href="' . $xoabl . '"><button class="btn btn-danger">Xóa</button></a>
+                                                <a href="'.$xoabl.'"><button onclick="confirmDelete(' . $id . ')" class="btn btn-danger">Xóa</button></a>
                                             </td>
                                             </tr>';
                                         }
@@ -49,24 +49,6 @@
                                         echo '<tr><td colspan="4">Không có danh mục nào.</td></tr>';
                                     }
                                     ?>
-                                    <!-- <td>
-
-                                        <a href="' . $xoabl . '"><button class="btn btn-danger">Xóa</button></a>
-
-                                    </td> -->
-                                    <!-- <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>1</td>
-                                        <td>rau củ khá tươi</td>
-                                        <td>toan</td>
-                                        <td>Cà chua</td>
-                                        <td>03/11/2023</td>
-                                        <td>
-
-                                            <a href="' . $xoabl . '"><button class="btn btn-danger">Xóa</button></a>
-
-                                        </td>
-                                    </tr> -->
                                 </tbody>
 
 
@@ -91,5 +73,18 @@
             <!-- /.row -->
         </div>
         <!-- /.container-fluid -->
+        <script>
+    // Hàm để hiển thị hộp thoại xác nhận xóa
+    function confirmDelete(id) {
+        var confirmed = confirm("Bạn có chắc chắn muốn xóa không?");
+        if (confirmed) {
+            // Nếu người dùng chọn Yes, chuyển hướng đến trang xóa với tham số id
+            window.location.href = "index.php?act=deletebl&id=" + id;
+        } else {
+            event.preventDefault();
+            // Nếu người dùng chọn No, không thực hiện hành động gì
+        }
+    }
+</script>
     </section>
     <!-- /.content -->

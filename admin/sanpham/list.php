@@ -28,10 +28,6 @@
                                 </div>
                             </form>
                         </div>
-
-
-
-
                         <!-- /.card-header -->
                         <div class="card-body">
 
@@ -76,7 +72,7 @@
                                             <div class="' . ($status == 0 ? 'border bg-success text-white rounded-pill d-inline-block' : 'border bg-secondary text-white rounded-pill d-inline-block') . '">' . ($status == 0 ? '<div class = "mx-3">Còn hàng</div>' : '<div class = "mx-3">Đã hết hàng</div>') . '</div>
                                             <td>
                                                 <a href="' . $suasp . '"><button class="btn btn-primary">Sửa</button></a>
-                                                <a href="' . $xoasp . '"><button class="btn btn-danger">Xóa</button></a>
+                                                <a href="' . $xoasp . '"><button class="btn btn-danger" onclick="deleteProduct(' . $id . ')">Xóa</button></a>
                                             </td>
                                         </tr>
                                     ';
@@ -85,9 +81,6 @@
                                     echo '<tr><td colspan="4">Không có sản phẩm nào.</td></tr>';
                                 }
                                 ?>
-
-
-
                             </table>
                             <ul class="pagination">
                                 <?php
@@ -130,14 +123,6 @@
                                 });
                             });
                         </script>
-
-
-
-
-
-
-
-
                         <!-- /.card-body -->
                     </div>
                     <!-- /.card -->
@@ -149,5 +134,18 @@
             <!-- /.row -->
         </div>
         <!-- /.container-fluid -->
+        <script>
+    // Hàm để hiển thị hộp thoại xác nhận xóa
+    function deleteProduct(id) {
+        var confirmed = confirm("Bạn có chắc chắn muốn xóa không?");
+        if (confirmed) {
+            // Nếu người dùng chọn Yes, chuyển hướng đến trang xóa với tham số id
+            window.location.href = "index.php?act=delete_hidden_sanpham&id=" + id;
+        } else {
+            event.preventDefault();
+            // Nếu người dùng chọn No, không thực hiện hành động gì
+        }
+    }
+</script>
     </section>
     <!-- /.content -->

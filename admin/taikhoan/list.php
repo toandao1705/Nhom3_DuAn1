@@ -22,7 +22,6 @@
                                         <th>Vai trò</th>
                                     </tr>
                                 </thead>
-
                                 <tbody>
                                 <?php
                                 // Kiểm tra xem $user có dữ liệu hay không
@@ -42,32 +41,14 @@
                                             <td>'.($role == 1 ? 'Admin' : 'User').'</td>
                                             <td>
                                                 <a href="'.$suatk.'"><button class="btn btn-primary">Sửa</button></a>
-                                                <a href="'.$xoasp.'"><button class="btn btn-danger">Xóa</button></a>
-
+                                                <a href="'.$xoasp.'"><button onclick="confirmDelete(' . $id . ')" class="btn btn-danger">Xóa</button></a>
                                             </td>';
                                     }
                                 } else {
                                     echo '<tr><td colspan="4">Không có danh mục nào.</td></tr>';
                                 }
                                 ?>
-                                    <!-- <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>1</td>
-                                        <td>toan</td>
-                                        <td>toan12@gmail.com</td>
-                                        <td>**********</td>
-                                        <td>Cần Thơ</td>
-                                        <td>0123456789</td>
-                                        <td>Quản trị</td>
-                                        <td>
-                                            <a href="index.php?act=updatetk"><button class="btn btn-primary">Sửa</button></a>
-                                            <a href="#"><button class="btn btn-danger">Xóa</button></a>
-
-                                        </td>
-                                    </tr> -->
                                 </tbody>
-
-
                             </table>
                         <ul class="pagination">
                             <?php
@@ -76,7 +57,6 @@
                             }
                             ?>
                         </ul>
-
                         </div>
 
                         <!-- /.card-body -->
@@ -90,5 +70,18 @@
             <!-- /.row -->
         </div>
         <!-- /.container-fluid -->
+        <script>
+    // Hàm để hiển thị hộp thoại xác nhận xóa
+    function confirmDelete(id) {
+        var confirmed = confirm("Bạn có chắc chắn muốn xóa không?");
+        if (confirmed) {
+            // Nếu người dùng chọn Yes, chuyển hướng đến trang xóa với tham số id
+            window.location.href = "index.php?act=delete_hidden_taikhoan&id=" + id;
+        } else {
+            event.preventDefault();
+            // Nếu người dùng chọn No, không thực hiện hành động gì
+        }
+    }
+</script>
     </section>
     <!-- /.content -->

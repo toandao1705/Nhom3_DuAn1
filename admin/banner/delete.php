@@ -21,6 +21,7 @@
                                     <th>Thao tác</th>
                                 </tr>
                             </thead>
+                            <tbody>
                             <?php
                             if (!empty($listbanner)) {
                                 // Hiển thị thông tin danh mục
@@ -34,7 +35,7 @@
                                             <td><img src="' . IMG_PATH_ADMIN . $img . '" width="80px"  /></td>
                                             <td>
                                                 <a href="index.php?act=restorebn&id=' . $id . '"><button class="btn btn-primary">Khôi phục</button></a>
-                                                <a href="index.php?act=deletebn&id=' . $id . '"><button class="btn btn-danger">Xóa</button></a>
+                                                <a href="index.php?act=deletebn&id=' . $id . '"><button onclick="confirmDelete(' . $id . ')" class="btn btn-danger">Xóa</button></a>
                                             </td>
                                         </tr>';
                                 }
@@ -42,19 +43,6 @@
                                 echo '<tr><td colspan="4">Không có banner nào.</td></tr>';
                             }
                             ?>
-                            <tbody>
-                                <!-- <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>1</td>
-                                        <td>text</td>
-                                        <td>text</td>
-                                        <td>no photo</td>
-                                        <td>
-                                            <a href="index.php?act=updatebn"><button class="btn btn-primary">Sửa</button></a>
-                                            <a href="#"><button class="btn btn-danger">Xóa</button></a>
-
-                                        </td>
-                                    </tr> -->
                             </tbody>
 
 
@@ -79,5 +67,18 @@
         <!-- /.row -->
     </div>
     <!-- /.container-fluid -->
+    <script>
+    // Hàm để hiển thị hộp thoại xác nhận xóa
+    function confirmDelete(id) {
+        var confirmed = confirm("Bạn có chắc chắn muốn xóa không?");
+        if (confirmed) {
+            // Nếu người dùng chọn Yes, chuyển hướng đến trang xóa với tham số id
+            window.location.href = "index.php?act=deletebn&id=" + id;
+        } else {
+            event.preventDefault();
+            // Nếu người dùng chọn No, không thực hiện hành động gì
+        }
+    }
+</script>
 </section>
 <!-- /.content -->

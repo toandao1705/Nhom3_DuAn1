@@ -62,9 +62,6 @@
                                     echo '<tr><td colspan="4">Không có sản phẩm nào.</td></tr>';
                                 }
                                 ?>
-
-
-
                             </table>
                             <ul class="pagination">
                                 <?php
@@ -80,6 +77,9 @@
                                 var confirmation = confirm("Bạn có chắc chắn muốn xóa sản phẩm này?");
                                 if (confirmation) {
                                     window.location.href = 'index.php?act=deletesp&id=' + productId;
+                                } else {
+                                    event.preventDefault();
+                                    // Nếu người dùng chọn No, không thực hiện hành động gì
                                 }
                             }
                         </script>

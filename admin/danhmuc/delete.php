@@ -42,7 +42,7 @@
                                             <td>' . $category['name'] . '</td>
                                             <td>
                                                 <a href="index.php?act=restoredm&id=' . $category['id'] . '"><button class="btn btn-primary" value="">Khôi phục</button></a>
-                                                <a href="index.php?act=deletedm&id=' . $category['id'] . '"><button class="btn btn-danger" value="">Xóa</button></a>
+                                                <a href="index.php?act=restoredm&id=' . $category['id'] . '"><button onclick="confirmDelete(' . $category['id'] . ')" class="btn btn-danger">Xóa</button></a>
                                             </td>
                                         </tr>';
                                     }
@@ -74,5 +74,18 @@
         <!-- /.row -->
     </div>
     <!-- /.container-fluid -->
+    <script>
+    // Hàm để hiển thị hộp thoại xác nhận xóa
+    function confirmDelete(id) {
+        var confirmed = confirm("Bạn có chắc chắn muốn xóa không?");
+        if (confirmed) {
+            // Nếu người dùng chọn Yes, chuyển hướng đến trang xóa với tham số id
+            window.location.href = "index.php?act=restoredm&id=" + id;
+        } else {
+            event.preventDefault();
+            // Nếu người dùng chọn No, không thực hiện hành động gì
+        }
+    }
+</script>
 </section>
 <!-- /.content -->
