@@ -24,7 +24,7 @@ $products = new products();
 
 $spnew = $products->loadall_sanpham_home();
 $spview = $products->hienthi_sanpham_view();
-
+$sp_deals=$products->deals_sanpham();
 $delete = 0;
 $banner = new banner();
 $listbanner = $banner->loadall_banner($delete, 0, PHP_INT_MAX);
@@ -153,6 +153,30 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case 'account':
             include "view/account.php";
             break;
+        case 'updateAccount':
+            $user = new user();
+            if (isset($_GET['id']) && ($_GET['id']) > 0) {
+                $taikhoan = $user->loadone_taikhoan($_GET['id']);
+            }
+            include "view/account.php";
+            break;
+            case 'updateAccountUser':
+                $user = new user();
+                if (isset($_POST['updateAccountUser']) && ($_POST['updateAccountUser'])) {
+                    $id = $_POST['id'];
+                    $name = $_POST['name'];
+                    $email = $_POST['email'];
+                    $pass = $_POST['pass'];
+                    $address = $_POST['address'];
+                    $phone = $_POST['phone'];
+                    $role = 0;
+                    
+                        $user->update_taikhoan($id, $email, $pass, $address, $phone, $role);
+                        $_SESSION['user'] =  $user->checkUserOne($name, $pass);
+                        $thongbao = "Cập nhật thành công";
+                        header('location: index.php?act=account');
+                }
+                break;
         case 'blog_category':
             include "view/blog_category.php";
             break;

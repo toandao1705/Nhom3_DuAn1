@@ -142,7 +142,7 @@ class products
                LEFT JOIN images ON products.id = images.id_pro
                LEFT JOIN category ON products.id_category = category.id
                WHERE 1 
-               ORDER BY products.id DESC limit 0,10";
+               ORDER BY products.id DESC ";
 
         $result = $db->pdo_query($select);
 
@@ -229,5 +229,30 @@ class products
      
         return 0; // Trả về 0 nếu có lỗi hoặc không có bản ghi
      }
+     function deals_sanpham()
+     {
+         $db = new connect();
+         // lay sp ko bij trung lap
+         $select = "SELECT DISTINCT p.*, i.img as img, c.name as category_name
+         FROM (
+             SELECT *
+             FROM products
+             ORDER BY price ASC
+             LIMIT 4
+         ) p
+         LEFT JOIN images i ON p.id = i.id_pro
+         LEFT JOIN category c ON p.id_category = c.id";
+ 
+         $result = $db->pdo_query($select);
+ 
+         // Loop through the result and associate images with each product
+         foreach ($result as &$product) {
+             $selectImages = "SELECT img FROM images WHERE id_pro=" . $product['id'];
+             $images = $db->pdo_query($selectImages);
+             $product['images'] = $images;
+         }
+ 
+         return $result;
+     } 
 }
 

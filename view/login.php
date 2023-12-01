@@ -119,10 +119,10 @@ function fbLogout() {
                                             <input type="text" name="name" id="username" placeholder="Username*" />
                                             <span id="username-error" class="error-text text-danger"></span>
                                         </div>
-                                        <div class="form-group"> <label for="exampleInputEmail1"></label>
-                                            <input type="password" name="pass" id="pass"
+                                        <div class="form-group">
+                                            <input required="" type="password" name="pass"
                                                 placeholder="Your password *" />
-                                            <span id="pass-error" class="error-text text-danger"></span>
+                                                <span id="pass-error" class="error-text text-danger"></span>
                                         </div>
                                         <div class="login_footer form-group mb-50">
                                             <div class="chek-form">
