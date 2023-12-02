@@ -11,7 +11,7 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                    <?php
+                        <?php
                         if (isset($_SESSION['error_message'])) {
                             echo '<div class="alert alert-danger" role="alert">' . $_SESSION['error_message'] . '</div>';
                             unset($_SESSION['error_message']); // Xóa thông báo lỗi sau khi hiển thị
@@ -31,24 +31,24 @@
                                 // Kiểm tra xem $categories có dữ liệu hay không
                                 if (!empty($categories)) {
                                     // Hiển thị thông tin danh mục
-                                // Kiểm tra xem $categories có phải là mảng không
-                                if (is_array($categories)) {
-                                    // Hiển thị thông tin danh mục
-                                    foreach ($categories as $category) {
-                                        extract($category);
-                                        echo '<tr>
+                                    // Kiểm tra xem $categories có phải là mảng không
+                                    if (is_array($categories)) {
+                                        // Hiển thị thông tin danh mục
+                                        foreach ($categories as $category) {
+                                            extract($category);
+                                            echo '<tr>
                                             <td><input type="checkbox"></td>
                                             <td>' . $category['id'] . '</td>
                                             <td>' . $category['name'] . '</td>
                                             <td>
                                                 <a href="index.php?act=restoredm&id=' . $category['id'] . '"><button class="btn btn-primary" value="">Khôi phục</button></a>
-                                                <a href="index.php?act=restoredm&id=' . $category['id'] . '"><button onclick="confirmDelete(' . $category['id'] . ')" class="btn btn-danger">Xóa</button></a>
+                                                <button class="btn btn-danger" onclick="confirmDelete(' . $category['id'] . ')">Xóa</button>
                                             </td>
                                         </tr>';
+                                        }
+                                    } else {
+                                        echo '<tr><td colspan="4">Không có danh mục nào.</td></tr>';
                                     }
-                                } else {
-                                    echo '<tr><td colspan="4">Không có danh mục nào.</td></tr>';
-                                }
                                 } else {
                                     echo '<tr><td colspan="4">Không có danh mục nào.</td></tr>';
                                 }
@@ -63,8 +63,30 @@
                             }
                             ?>
                         </ul>
-                        
+
                     </div>
+                    <script>
+                        function confirmDelete(id) {
+                            // Kiểm tra xem danh mục có thông báo lỗi từ PHP hay không
+                            var error_message = "<?php echo isset($_SESSION['error_message']) ? $_SESSION['error_message'] : '' ?>";
+
+                            // Nếu có thông báo lỗi, hiển thị nó và thoát khỏi hàm
+                            if (error_message !== "") {
+                                alert(error_message);
+                                return;
+                            }
+
+                            // Nếu không có lỗi, tiếp tục với hộp thoại xác nhận xóa
+                            var confirmed = confirm("Bạn có chắc chắn muốn xóa không?");
+                            if (confirmed) {
+                                // Nếu người dùng chọn Yes, chuyển hướng đến trang xóa với tham số id
+                                window.location.href = "index.php?act=deletedm&id=" + id;
+                            } else {
+                                // Nếu người dùng chọn No, không thực hiện hành động gì
+                            }
+                        }
+                    </script>
+
                     <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
