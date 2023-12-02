@@ -25,7 +25,7 @@
                             <?php
                             if (isset($_SESSION['user'])) {
                                 $name = $_SESSION['user']['name'];
-                                $email = $_SESSION['user']['email'];                        
+                                $email = $_SESSION['user']['email'];
                                 $address = isset($_POST['address']) ? $_POST['address'] : '';
                                 $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
                             } else {
@@ -45,28 +45,26 @@
                     </div>
                     <div class="row">
                         <h4 class="mb-30">Billing Details</h4>
-                        <form method="post">
-                            <div class="row">
-                                <div class="form-group col-lg-12">
-                                    <input type="text" name="name" value="<?= $name ?>" placeholder="Name *">
-                                </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <input type="text" name="name" value="<?= $name ?>" placeholder="Name *">
                             </div>
-                            <div class="row">
-                                <div class="form-group col-lg-12">
-                                    <input type="email" name="email" value="<?= $email ?>" placeholder="Email *">
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <input type="email" name="email" value="<?= $email ?>" placeholder="Email *">
                             </div>
-                            <div class="row">
-                                <div class="form-group col-lg-12">
-                                    <input type="text" name="phone" value="<?= $phone ?>" placeholder="Phone *">
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <input type="text" name="phone" value="<?= $phone ?>" placeholder="Phone *">
                             </div>
-                            <div class="row">
-                                <div class="form-group col-lg-12">
-                                    <input type="text" name="address" value="<?= $address ?>" placeholder="Address *">
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <input type="text" name="address" value="<?= $address ?>" placeholder="Address *">
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -120,44 +118,42 @@
                             <h4 class="ms-auto">$<?= $tong ?></h4>
                         </div>
                     </div>
-                    <script>
-                    function updatePaymentMethod(method) {
-                        var onlinePaymentRadio = document.getElementById("exampleRadios4");
-                        var cashOnDeliveryRadio = document.getElementById("exampleRadios5");
-                        var paymentMethodInput = document.getElementById("payment_method");
-
-                        if (method === "online" && !onlinePaymentRadio.checked) {
-                            // Nếu chọn thanh toán online và chưa được chọn, chọn nó
-                            onlinePaymentRadio.checked = true;
-                            cashOnDeliveryRadio.checked = false;
-                            paymentMethodInput.value = 1;
-                        } else if (method === "cash" && !cashOnDeliveryRadio.checked) {
-                            // Nếu chọn thanh toán khi nhận hàng và chưa được chọn, chọn nó
-                            cashOnDeliveryRadio.checked = true;
-                            onlinePaymentRadio.checked = false;
-                            paymentMethodInput.value = 0;
-                        }
-                    }
-                    </script>
                     <div class="payment ml-30">
                         <h4 class="mb-30">Payment</h4>
                         <div class="payment_option">
                             <div class="custome-radio">
                                 <input class="form-check-input" type="radio" name="online_payment" id="exampleRadios4">
-                                <label class="form-check-label" for="exampleRadios4" data-bs-toggle="collapse"
-                                    data-target="#checkPayment" aria-controls="checkPayment"
-                                    onclick="updatePaymentMethod('online')">Online Getway</label>
+                                <label class="form-check-label" for="exampleRadios4" data-bs-toggle="collapse" data-target="#checkPayment" aria-controls="checkPayment" onclick="updatePaymentMethod('online')">Online Getway</label>
                             </div>
                             <div class="custome-radio">
                                 <input class="form-check-input" type="radio" name="direct_payment" id="exampleRadios5">
-                                <label class="form-check-label" for="exampleRadios5" data-bs-toggle="collapse"
-                                    data-target="#paypal" aria-controls="paypal"
-                                    onclick="updatePaymentMethod('cash')">Cash on delivery</label>
+                                <label class="form-check-label" for="exampleRadios5" data-bs-toggle="collapse" data-target="#paypal" aria-controls="paypal" onclick="updatePaymentMethod('cash')">Cash on delivery</label>
                             </div>
                         </div>
+                        <script>
+                            function updatePaymentMethod(method) {
+                                var onlinePaymentRadio = document.getElementById("exampleRadios4");
+                                var cashOnDeliveryRadio = document.getElementById("exampleRadios5");
+                                var paymentMethodInput = document.getElementById("payment_methods"); // Sửa ID thành "payment_methods"
+
+                                if (method === "online" && !onlinePaymentRadio.checked) {
+                                    // Nếu chọn thanh toán online và chưa được chọn, chọn nó
+                                    onlinePaymentRadio.checked = true;
+                                    cashOnDeliveryRadio.checked = false;
+                                    paymentMethodInput.value = 1;
+                                } else if (method === "cash" && !cashOnDeliveryRadio.checked) {
+                                    // Nếu chọn thanh toán khi nhận hàng và chưa được chọn, chọn nó
+                                    cashOnDeliveryRadio.checked = true;
+                                    onlinePaymentRadio.checked = false;
+                                    paymentMethodInput.value = 0;
+                                }
+                            }
+                        </script>
 
                         <!-- Input ẩn để chứa giá trị thanh toán -->
                         <input type="hidden" name="payment_methods" id="payment_methods" value="1">
+                        <input type="hidden" name="payUrl" id="payUrl" value="">
+
 
                         <div class="payment-logo d-flex">
                             <img class="mr-15" src="view/assets/imgs/theme/icons/payment-paypal.svg" alt="">
@@ -166,8 +162,7 @@
                             <img src="view/assets/imgs/theme/icons/payment-zapper.svg" alt="">
                         </div>
                         <div class="col-4">
-                            <input type="submit" class="btn btn-fill-out btn-block mt-30" name="order"
-                                value="Place an Order">
+                            <input type="submit" class="btn btn-fill-out btn-block mt-30" name="order" value="Place an Order">
                             <!-- <i class="fi-rs-sign-out ml-15"></i> -->
                         </div>
                     </div>
@@ -176,3 +171,20 @@
         </form>
     </div>
 </main>
+
+<!-- <script>
+var payUrlInput = document.getElementById("payUrl");
+
+if (method === "online") {
+    onlinePaymentRadio.checked = true;
+    cashOnDeliveryRadio.checked = false;
+    paymentMethodInput.value = 1;
+    payUrlInput.value = "index.php?act=onlineCheckOut"; // Thay thế bằng logic của bạn
+} else if (method === "cash") {
+    cashOnDeliveryRadio.checked = true;
+    onlinePaymentRadio.checked = false;
+    paymentMethodInput.value = 0;
+    payUrlInput.value = ""; // Thay thế bằng logic của bạn
+}
+
+</script> -->

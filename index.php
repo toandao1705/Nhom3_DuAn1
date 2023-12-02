@@ -16,7 +16,7 @@ include "global.php";
 
 include "./mail/index.php";
 
-$mail= new Mailer();
+$mail = new Mailer();
 if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
 
 $products = new products();
@@ -24,7 +24,7 @@ $products = new products();
 
 $spnew = $products->loadall_sanpham_home();
 $spview = $products->hienthi_sanpham_view();
-$sp_deals=$products->deals_sanpham();
+$sp_deals = $products->deals_sanpham();
 $delete = 0;
 $banner = new banner();
 $listbanner = $banner->loadall_banner($delete, 0, PHP_INT_MAX);
@@ -144,13 +144,99 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $_SESSION['mycart'] = [];
                 // Kiểm tra xem $idbill có tồn tại không trước khi sử dụng
                 if ($idbill) {
-                    $bill = $carts->loadone_billDetail($idbill);
-                    include "view/invoice.php";
+                    if ($payment_methods == 1) {
+
+                        function execPostRequest($url, $data)
+                        {
+                            $ch = curl_init($url);
+                            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+                            curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+                            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                            curl_setopt(
+                                $ch,
+                                CURLOPT_HTTPHEADER,
+                                array(
+                                    'Content-Type: application/json',
+                                    'Content-Length: ' . strlen($data)
+                                )
+                            );
+                            curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+                            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+                            //execute post
+                            $result = curl_exec($ch);
+                            //close connection
+                            curl_close($ch);
+                            return $result;
+                        }
+                        $endpoint = "https://test-payment.momo.vn/v2/gateway/api/create";
+
+
+                        $partnerCode = 'MOMOBKUN20180529';
+                        $accessKey = 'klm05TvNBzhg7h7j';
+                        $secretKey = 'at67qH6mk8w5Y1nAyMoYKMWACiEi2bsa';
+                        $orderInfo = "Thanh toán qua MoMo";
+                        $amount = "10000";
+                        $orderId = rand(00,9999);
+                        $redirectUrl = "http://localhost/nhom3_duan1/index.php?act=addtocart";
+                        $ipnUrl = "http://localhost/nhom3_duan1/index.php?act=addtocart";
+                        $extraData = "";
+
+
+                        if (!empty($_POST)) {
+                            $partnerCode = $partnerCode;
+                            $accessKey = $accessKey;
+                            $serectkey = $secretKey;
+                            $orderId = $orderId; // Mã đơn hàng
+                            $orderInfo = $orderInfo;
+                            $amount = $amount;
+                            $ipnUrl = $ipnUrl;
+                            $redirectUrl = $redirectUrl;
+                            $extraData = $extraData;
+
+                            $requestId = time() . "";
+                            $requestType = "payWithATM";
+                            // $extraData = ($_POST["extraData"] ? $_POST["extraData"] : "");
+                            //before sign HMAC SHA256 signature
+                            $rawHash = "accessKey=" . $accessKey . "&amount=" . $amount . "&extraData=" . $extraData . "&ipnUrl=" . $ipnUrl . "&orderId=" . $orderId . "&orderInfo=" . $orderInfo . "&partnerCode=" . $partnerCode . "&redirectUrl=" . $redirectUrl . "&requestId=" . $requestId . "&requestType=" . $requestType;
+                            $signature = hash_hmac("sha256", $rawHash, $serectkey);
+                            $data = array(
+                                'partnerCode' => $partnerCode,
+                                'partnerName' => "Test",
+                                "storeId" => "MomoTestStore",
+                                'requestId' => $requestId,
+                                'amount' => $amount,
+                                'orderId' => $orderId,
+                                'orderInfo' => $orderInfo,
+                                'redirectUrl' => $redirectUrl,
+                                'ipnUrl' => $ipnUrl,
+                                'lang' => 'vi',
+                                'extraData' => $extraData,
+                                'requestType' => $requestType,
+                                'signature' => $signature
+                            );
+                            $result = execPostRequest($endpoint, json_encode($data));
+                            $jsonResult = json_decode($result, true);  // decode json
+                            var_dump($jsonResult);
+
+                            if (isset($jsonResult['payUrl']) && !empty($jsonResult['payUrl'])) {
+                                // `payUrl` tồn tại và không trống
+                                header('Location: ' . $jsonResult['payUrl']);
+                                exit; // Đảm bảo kết thúc script sau khi chuyển hướng
+                            } else {
+                                // `payUrl` không tồn tại hoặc trống
+                                echo "Lỗi: Không tìm thấy payUrl.";
+                            }
+                            
+                        }
+                    } else {
+                        // Chuyển hướng đến trang invoice.php
+                        $bill = $carts->loadone_billDetail($idbill);
+                        include "view/invoice.php";
+                    }
                 } else {
                     echo "Yêu cầu không hợp lệ";
                 }
             }
-            include "view/invoice.php";
             break;
         case 'contact':
             include "view/contact.php";
@@ -167,23 +253,23 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             }
             include "view/account.php";
             break;
-            case 'updateAccountUser':
-                $user = new user();
-                if (isset($_POST['updateAccountUser']) && ($_POST['updateAccountUser'])) {
-                    $id = $_POST['id'];
-                    $name = $_POST['name'];
-                    $email = $_POST['email'];
-                    $pass = $_POST['pass'];
-                    $address = $_POST['address'];
-                    $phone = $_POST['phone'];
-                    $role = 0;
-                    
-                        $user->update_taikhoan($id, $email, $pass, $address, $phone, $role);
-                        $_SESSION['user'] =  $user->checkUserOne($name, $pass);
-                        $thongbao = "Cập nhật thành công";
-                        header('location: index.php?act=account');
-                }
-                break;
+        case 'updateAccountUser':
+            $user = new user();
+            if (isset($_POST['updateAccountUser']) && ($_POST['updateAccountUser'])) {
+                $id = $_POST['id'];
+                $name = $_POST['name'];
+                $email = $_POST['email'];
+                $pass = $_POST['pass'];
+                $address = $_POST['address'];
+                $phone = $_POST['phone'];
+                $role = 0;
+
+                $user->update_taikhoan($id, $email, $pass, $address, $phone, $role);
+                $_SESSION['user'] =  $user->checkUserOne($name, $pass);
+                $thongbao = "Cập nhật thành công";
+                header('location: index.php?act=account');
+            }
+            break;
         case 'blog_category':
             include "view/blog_category.php";
             break;
@@ -273,7 +359,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/login.php";
             break;
         case 'login_google':
-            $login = new user();                
+            $login = new user();
             if (isset($_POST['login']) && ($_POST['login'])) {
                 $name = $_POST['name'];
                 $pass = $_POST['pass'];
