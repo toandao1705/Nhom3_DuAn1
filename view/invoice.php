@@ -3,6 +3,9 @@
             <a class="hover-up" href="index.php"><i class="fi-rs-home mr-5"></i> Homepage</a>
         </div>
         <div class="container">
+        <?php
+            if(isset($bill)&&(is_array($bill))){
+            ?>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="invoice-inner">
@@ -18,8 +21,8 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="invoice-numb">
-                                            <h6 class="text-end mb-10 mt-20">Date: 30 Nov 2022</h6>
-                                            <h6 class="text-end invoice-header-1">Invoice No: #IVSF1970191</h6>
+                                            <h6 class="text-end mb-10 mt-20">Date: <?=$order_date ?></h6>
+                                            <h6 class="text-end invoice-header-1">Invoice No: #DH<?= $id ?></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -27,22 +30,22 @@
                             <div class="invoice-top">
                                 <div class="row">
                                     <div class="col-lg-9 col-md-6">
-                                        <div class="invoice-number">
+                                    <div class="invoice-number">
                                             <h4 class="invoice-title-1 mb-10">Invoice To</h4>
                                             <p class="invoice-addr-1">
-                                                <strong>AliThemes Pty Ltd</strong> <br />
-                                                contactalithemes.com <br />
-                                                PO Box 16122, Collins Street West, <br />Australia
+                                                <strong><?= $name?></strong> <br />
+                                                <?= $email?><br />
+                                                <?= $phone?>, <?= $address?>, <br />VietNam
                                             </p>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
-                                        <div class="invoice-number">
+                                    <div class="invoice-number">
                                             <h4 class="invoice-title-1 mb-10">Bill To</h4>
                                             <p class="invoice-addr-1">
                                                 <strong>NestMart Inc</strong> <br />
                                                 billing@NestMart.com <br />
-                                                205 North Michigan Avenue, <br />Suite 810 Chicago, 60601, USA
+                                                123 Hoang Quoc Viet<br />Ninh Kieu, Can Tho, VietNam
                                             </p>
                                         </div>
                                     </div>
@@ -50,14 +53,25 @@
                                 <div class="row mt-2">
                                     <div class="col-lg-9 col-md-6">
                                         <h4 class="invoice-title-1 mb-10">Due Date:</h4>
-                                        <p class="invoice-from-1">30 November 2022</p>
+                                        <p class="invoice-from-1"><?=$order_date ?></p>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
                                         <h4 class="invoice-title-1 mb-10">Payment Method</h4>
-                                        <p class="invoice-from-1">Via Paypal</p>
+                                        <p class="invoice-from-1">
+                                        <?php
+                                            if ($payment_methods == 0) {
+                                                echo 'Cash on Delivery';
+                                            } elseif ($payment_methods == 1) {
+                                                echo 'Online Payment';
+                                            } else {
+                                                echo 'Unknown Payment Method';
+                                            }
+                                            ?>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+                            <?php } ?>
                             <div class="invoice-center">
                                 <div class="table-responsive">
                                     <table class="table table-striped invoice-table">
@@ -70,61 +84,37 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="item-desc-1">
-                                                        <span>Field Roast Chao Cheese Creamy Original</span>
-                                                        <small>SKU: FWM15VKT</small>
-                                                    </div>
-                                                </td>
-                                                <td class="text-center">$10.99</td>
-                                                <td class="text-center">1</td>
-                                                <td class="text-right">$10.99</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="item-desc-1">
-                                                        <span>Blue Diamond Almonds Lightly Salted</span>
-                                                        <small>SKU: FWM15VKT</small>
-                                                    </div>
-                                                </td>
-                                                <td class="text-center">$20.00</td>
-                                                <td class="text-center">3</td>
-                                                <td class="text-right">$60.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="item-desc-1">
-                                                        <span>Fresh Organic Mustard Leaves Bell Pepper</span>
-                                                        <small>SKU: KVM15VK</small>
-                                                    </div>
-                                                </td>
-                                                <td class="text-center">$640.00</td>
-                                                <td class="text-center">1</td>
-                                                <td class="text-right">$640.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="item-desc-1">
-                                                        <span>All Natural Italian-Style Chicken Meatballs</span>
-                                                        <small>SKU: 98HFG</small>
-                                                    </div>
-                                                </td>
-                                                <td class="text-center">$240.00</td>
-                                                <td class="text-center">1</td>
-                                                <td class="text-right">$240.00</td>
-                                            </tr>
-                                            <tr>
+                                        <?php
+                                            if (isset($bill) && is_array($bill) && !empty($bill)) {
+                                                foreach ($bill as $billDetail) {
+                                                    $tongsp = $billDetail['qty'] * $billDetail['price'];
+                                                    echo '
+                                                    <tr>
+                                                        <td>
+                                                            <div class="item-desc-1">
+                                                                <span>' . $billDetail['proname'] . '</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">$' . number_format($billDetail['price'], 2) . '</td>
+                                                        <td class="text-center">' . $billDetail['qty'] . '</td>
+                                                        <td class="text-right">$' . number_format($tongsp, 2) . '</td>
+                                                    </tr>
+                                                    ';
+                                                    
+                                                }
+                                            }
+                                            ?>
+                                           <tr>
                                                 <td colspan="3" class="text-end f-w-600">SubTotal</td>
-                                                <td class="text-right">$1710.99</td>
+                                                <td class="text-right">$<?= $total ?></td>
                                             </tr>
                                             <tr>
                                                 <td colspan="3" class="text-end f-w-600">Tax</td>
-                                                <td class="text-right">$85.99</td>
+                                                <td class="text-right">$0</td>
                                             </tr>
                                             <tr>
                                                 <td colspan="3" class="text-end f-w-600">Grand Total</td>
-                                                <td class="text-right f-w-600">$1795.99</td>
+                                                <td class="text-right f-w-600">$<?= $total ?></td>
                                             </tr>
                                         </tbody>
                                     </table>

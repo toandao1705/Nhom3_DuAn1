@@ -142,9 +142,14 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
 
                 // Sau khi thêm vào chi tiết hóa đơn, bạn có thể xóa session cart
                 $_SESSION['mycart'] = [];
+                // Kiểm tra xem $idbill có tồn tại không trước khi sử dụng
+                if ($idbill) {
+                    $bill = $carts->loadone_billDetail($idbill);
+                    include "view/invoice.php";
+                } else {
+                    echo "Yêu cầu không hợp lệ";
+                }
             }
-            // $bill=$cart->loadone_bill($idbill);
-            // $billct=$cart->loadall_cart($idbill);
             include "view/invoice.php";
             break;
         case 'contact':
