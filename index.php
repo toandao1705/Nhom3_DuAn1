@@ -156,6 +156,8 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/contact.php";
             break;
         case 'account':
+            $donhang = new cart();
+            $listdh = $donhang->loadall_donhang($_SESSION['user']['id']);
             include "view/account.php";
             break;
         case 'updateAccount':
