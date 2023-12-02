@@ -69,27 +69,47 @@
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr>
-                                                                <td>#1357</td>
-                                                                <td>March 45, 2020</td>
-                                                                <td>Processing</td>
-                                                                <td>$125.00 for 2 item</td>
-                                                                <td><a href="#" class="btn-small d-block">View</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>#2468</td>
-                                                                <td>June 29, 2020</td>
-                                                                <td>Completed</td>
-                                                                <td>$364.00 for 5 item</td>
-                                                                <td><a href="#" class="btn-small d-block">View</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>#2366</td>
-                                                                <td>August 02, 2020</td>
-                                                                <td>Completed</td>
-                                                                <td>$280.00 for 3 item</td>
-                                                                <td><a href="#" class="btn-small d-block">View</a></td>
-                                                            </tr>
+                                                        <?php 
+                                                            // Kiểm tra xem $user có dữ liệu hay không
+                                                            if (!empty($listdh)) {
+                                                                // Hiển thị thông tin tai khoan
+                                                                foreach ($listdh as $donhang) {
+                                                                    extract($donhang);
+                                                                
+                                                                    // Chuyển đổi giá trị status thành trạng thái tương ứng
+                                                                    switch ($status) {
+                                                                        case 0:
+                                                                            $status_text = 'Đơn hàng mới';
+                                                                            break;
+                                                                        case 1:
+                                                                            $status_text = 'Đang xử lý';
+                                                                            break;
+                                                                        case 2:
+                                                                            $status_text = 'Đang giao hàng';
+                                                                            break;
+                                                                        case 3:
+                                                                            $status_text = 'Giao hàng thành công';
+                                                                            break;
+                                                                        default:
+                                                                            $status_text = 'Trạng thái không xác định';
+                                                                            break;
+                                                                    }
+                                                                    echo '
+                                                                    <tr>
+                                                                        <td>#' . $bill_id . '</td>
+                                                                        <td>' . $ngaydathang . '</td>
+                                                                        <td>' . $status_text . '</td>
+                                                                        <td>$' . number_format($price, 2) . ' for ' . $qty . '</td>
+                                                                        <td><a href="#" class="btn-small d-block">View</a></td>
+                                                                        </tr>';
+                                                                
+                                                        }
+                                                        
+                                                    } else {
+                                                        echo '<tr><td colspan="4">There are no orders.</td></tr>';
+                                                    }
+                                                    ?>
+                                                            
                                                         </tbody>
                                                     </table>
                                                 </div>
