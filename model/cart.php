@@ -31,7 +31,6 @@ class cart
         $db = new connect();
         $select = "INSERT INTO cart(id_user, id_pro, img, name, price, quantity, total) values('$iduser', '$idpro', '$img', '$name', '$price', '$quantity', '$total')";
         return $db->pdo_execute($select);
-        echo $select;
     }
 
     function tongdonhang()
@@ -84,6 +83,35 @@ class cart
         }
     
         return 0; // Trả về 0 nếu có lỗi hoặc không có bản ghi
+    }
+    function loadone_billDetail($idbill)
+    {
+        $db = new connect();
+    
+        $select = "
+            SELECT 
+                bill_detail.id AS bill_id, 
+                bill.id_user, 
+                bill.status AS status, 
+                products.name AS proname, 
+                user.name AS username, 
+                bill_detail.price AS price, 
+                bill_detail.quantity AS qty, 
+                bill.total AS total
+            FROM 
+                bill_detail
+            LEFT JOIN 
+                bill ON bill.id = bill_detail.id_bill
+            LEFT JOIN 
+                user ON bill.id_user = user.id
+            LEFT JOIN 
+                products ON products.id = bill_detail.id_pro
+            WHERE 
+                bill_detail.id_bill = $idbill
+            ORDER BY 
+                bill_detail.id DESC;
+        ";
+        return $bill = $db->pdo_query($select);
     }
     
 }
