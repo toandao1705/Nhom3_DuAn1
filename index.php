@@ -71,6 +71,22 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/terms.php";
             break;
         case 'addtocart':
+            if(isset($_GET['partnerCode'])) {
+                $data_momo = [
+                    'partnerCode' => $_GET['partnerCode'], 
+                    'orderId' => $_GET['orderId'], 
+                    'requestId' => $_GET['requestId'], 
+                    'amount' => $_GET['amount'], 
+                    'orderInfo' => $_GET['orderInfo'], 
+                    'orderType' => $_GET['orderType'], 
+                    'transId' => $_GET['transId'], 
+                    'payType' => $_GET['payType'], 
+                    'signature' => $_GET['signature'], 
+                ];
+                $data = new cart();
+                $data -> insert_momo($data_momo);
+
+            }
             if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
                 $id = $_POST['id'];
                 $name = $_POST['name'];
@@ -134,18 +150,19 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
 
                 foreach ($_SESSION['mycart'] as $product) {
                     // Thêm sản phẩm vào chi tiết hóa đơn (bill_detail)
-                    $carts->insert_cart($iduser, $product[0], $product[2], $product[1], $product[3], $product[4], $product[5]);
+                    $carts->insert_cart($_SESSION['user']['id'], $product[0], $product[2], $product[1], $product[3], $product[4], $product[5]);
                     $carts->insert_bill_detail($idbill, $product[0], $product[3], $product[4]);
                 }
 
-
-
-                // Sau khi thêm vào chi tiết hóa đơn, bạn có thể xóa session cart
-                $_SESSION['mycart'] = [];
                 // Kiểm tra xem $idbill có tồn tại không trước khi sử dụng
                 if ($idbill) {
                     if ($payment_methods == 1) {
-
+                        $totall = 0;
+                        $subtotal = 0;
+                        foreach ($_SESSION['mycart'] as $item) {
+                            $subtotal = $item[3] * $item[4] * 24000;
+                            $totall += $subtotal;
+                        }
                         function execPostRequest($url, $data)
                         {
                             $ch = curl_init($url);
@@ -175,8 +192,8 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                         $accessKey = 'klm05TvNBzhg7h7j';
                         $secretKey = 'at67qH6mk8w5Y1nAyMoYKMWACiEi2bsa';
                         $orderInfo = "Thanh toán qua MoMo";
-                        $amount = "10000";
-                        $orderId = rand(00,9999);
+                        $amount = $totall;
+                        $orderId = rand(00, 9999);
                         $redirectUrl = "http://localhost/nhom3_duan1/index.php?act=addtocart";
                         $ipnUrl = "http://localhost/nhom3_duan1/index.php?act=addtocart";
                         $extraData = "";
@@ -220,13 +237,14 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
 
                             if (isset($jsonResult['payUrl']) && !empty($jsonResult['payUrl'])) {
                                 // `payUrl` tồn tại và không trống
+                                // Sau khi thêm vào chi tiết hóa đơn, bạn có thể xóa session cart
+                                $_SESSION['mycart'] = [];
                                 header('Location: ' . $jsonResult['payUrl']);
                                 exit; // Đảm bảo kết thúc script sau khi chuyển hướng
                             } else {
                                 // `payUrl` không tồn tại hoặc trống
                                 echo "Lỗi: Không tìm thấy payUrl.";
                             }
-                            
                         }
                     } else {
                         // Chuyển hướng đến trang invoice.php
