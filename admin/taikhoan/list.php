@@ -13,7 +13,7 @@
                             <table id="example2" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Tích</th>
+                                        <th>Stt</th>
                                         <th>Mã tài khoản</th>
                                         <th>Tên tài khoản</th>
                                         <th>Email</th>
@@ -24,6 +24,7 @@
                                 </thead>
                                 <tbody>
                                 <?php
+                                $i =1;
                                 // Kiểm tra xem $user có dữ liệu hay không
                                 if (!empty($listtk)) {
                                     // Hiển thị thông tin tai khoan
@@ -32,7 +33,7 @@
                                         $xoasp = "index.php?act=delete_hidden_taikhoan&id=" . $id;
                                         $suatk = "index.php?act=suatk&id=" . $id;
                                         echo '<tr>
-                                            <td><input type="checkbox"></td>
+                                            <td>'.$i++.'</td>
                                             <td>'.$id.'</td>
                                             <td>'.$name.'</td>
                                             <td>'.$email.'</td>

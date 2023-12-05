@@ -14,7 +14,7 @@
                             <table id="example2" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        <th></th>
+                                        <th>Stt</th>
                                         <th>Mã loại</th>
                                         <th>Tên sản phẩm</th>
                                         <th>Hình ảnh</th>
@@ -25,6 +25,7 @@
                                     </tr>
                                 </thead>
                                 <?php
+                                $i =1;
                                 if (!empty($productsList)) {
                                     foreach ($productsList as $product) {
                                         extract($product);
@@ -42,7 +43,7 @@
 
                                         echo '
                                         <tr>
-                                            <td><input class="checkbox" type="checkbox"></td>
+                                            <td>'.$i++.'</td>
                                             <td>' . $category_name . '</td>
                                             <td>' . $name . '</td>
                                             <td>' . $imageColumn . '</td>
