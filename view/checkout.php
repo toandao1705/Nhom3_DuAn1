@@ -171,20 +171,3 @@
         </form>
     </div>
 </main>
-
-<!-- <script>
-var payUrlInput = document.getElementById("payUrl");
-
-if (method === "online") {
-    onlinePaymentRadio.checked = true;
-    cashOnDeliveryRadio.checked = false;
-    paymentMethodInput.value = 1;
-    payUrlInput.value = "index.php?act=onlineCheckOut"; // Thay thế bằng logic của bạn
-} else if (method === "cash") {
-    cashOnDeliveryRadio.checked = true;
-    onlinePaymentRadio.checked = false;
-    paymentMethodInput.value = 0;
-    payUrlInput.value = ""; // Thay thế bằng logic của bạn
-}
-
-</script> -->
