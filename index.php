@@ -370,7 +370,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     header("Location: index.php?act=shop");
                     exit;
                 } else {
-                    $thongbao = "Tài khoản không tồn tại. Vui lòng kiểm tra lại";
+                    $thongbao = "Account does not exist. Please check again";
                 }
             }
 
