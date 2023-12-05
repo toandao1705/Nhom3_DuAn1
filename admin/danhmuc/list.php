@@ -14,7 +14,7 @@
                         <table id="example2" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
-                                    <th>Tích</th>
+                                    <th>Stt</th>
                                     <th>Mã loại</th>
                                     <th>Tên loại</th>
                                     <th>Thao tác</th>
@@ -22,12 +22,13 @@
                             </thead>
                             <tbody>
                                 <?php
+                                $i=1;
                                 // Kiểm tra xem $categories có dữ liệu hay không
                                 if (!empty($categories)) {
                                     // Hiển thị thông tin danh mục
                                     foreach ($categories as $category) {
                                         echo '<tr>
-                                            <td><input type="checkbox"></td>
+                                            <td>'.$i++.'</td>
                                             <td>' . $category['id'] . '</td>
                                             <td>' . $category['name'] . '</td>
                                             <td>
@@ -51,10 +52,7 @@
                             ?>
                         </ul>
                         <div class="box mt-3">
-                            <button class="btn btn-primary mb-3" id="select-all">Chọn tất cả</button>
-                            <button class="btn btn-warning mb-3" id="deselect-all">Bỏ chọn tất cả</button>
-                            <button class="btn btn-danger mb-3" id="delete-selected">Xóa các mục đã chọn</button>
-                            <a href="index.php?act=adddm"><button class="btn btn-success mb-3" id="add-row">Thêm</button></a>
+                            <a href="index.php?act=adddm"><button class="btn btn-primary mb-3" id="add-row">Thêm Danh Mục</button></a>
                         </div>
                     </div>
                     <!-- /.card-body -->

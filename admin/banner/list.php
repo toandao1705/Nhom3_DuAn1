@@ -14,7 +14,7 @@
                         <table id="example2" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
-                                    <th>Tích</th>
+                                    <th>Stt</th>
                                     <th>Mã</th>
                                     <th>Title</th>
                                     <th>Subtitle</th>
@@ -24,12 +24,13 @@
                             </thead>
                             <tbody>
                             <?php
+                            $i =1;
                             if (!empty($listbanner)) {
                                 // Hiển thị thông tin danh mục
                                 foreach ($listbanner as $banner) {
                                     extract($banner);
                                     echo '<tr>
-                                            <td><input type="checkbox"></td>
+                                            <td>'.$i++.'</td>
                                             <td>' . $id . '</td>
                                             <td>' . $title . '</td>
                                             <td>' . $subtitle . '</td>
@@ -57,11 +58,8 @@
                             ?>
                         </ul>
                         <div class="box mt-3">
-                            <button class="btn btn-primary mb-3" id="select-all">Chọn tất cả</button>
-                            <button class="btn btn-warning mb-3" id="deselect-all">Bỏ chọn tất cả</button>
-                            <button class="btn btn-danger mb-3" id="delete-selected">Xóa các mục đã chọn</button>
                             <a href="index.php?act=addbn"><button class="btn btn-success mb-3"
-                                    id="add-row">Thêm</button></a>
+                                    id="add-row">Thêm Banner</button></a>
                         </div>
                     </div>
 

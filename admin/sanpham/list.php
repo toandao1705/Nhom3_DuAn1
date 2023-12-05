@@ -34,7 +34,7 @@
                             <table id="example2" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        <th></th>
+                                        <th>Stt</th>
                                         <th>Mã loại</th>
                                         <th>Tên sản phẩm</th>
                                         <th>Hình ảnh</th>
@@ -45,6 +45,7 @@
                                     </tr>
                                 </thead>
                                 <?php
+                                $i =1;
                                 if (!empty($productsList)) {
                                     foreach ($productsList as $product) {
                                         extract($product);
@@ -62,7 +63,7 @@
 
                                         echo '
                                         <tr>
-                                            <td><input class="checkbox" type="checkbox"></td>
+                                            <td>'.$i++.'</td>
                                             <td>' . $category_name . '</td>
                                             <td>' . $name . '</td>
                                             <td>' . $imageColumn . '</td>
@@ -92,10 +93,7 @@
 
                         </div>
                         <div class="box mt-3">
-                            <button class="btn btn-primary mb-3" id="select-all">Chọn tất cả</button>
-                            <button class="btn btn-warning mb-3" id="deselect-all">Bỏ chọn tất cả</button>
-                            <button class="btn btn-danger mb-3" id="delete-selected">Xóa các mục đã chọn</button>
-                            <a href="index.php?act=addsp"><button class="btn btn-success mb-3" id="add-row">Thêm</button></a>
+                            <a href="index.php?act=addsp"><button class="btn btn-success mb-3" id="add-row">Thêm Sản Phẩm</button></a>
                         </div>
                         <script>
                             document.addEventListener("DOMContentLoaded", function() {

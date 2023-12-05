@@ -20,7 +20,7 @@
                         <table id="example2" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
-                                    <th>Tích</th>
+                                    <th>Stt</th>
                                     <th>Mã loại</th>
                                     <th>Tên loại</th>
                                     <th>Thao tác</th>
@@ -28,6 +28,7 @@
                             </thead>
                             <tbody>
                                 <?php
+                                $i =1;
                                 // Kiểm tra xem $categories có dữ liệu hay không
                                 if (!empty($categories)) {
                                     // Hiển thị thông tin danh mục
@@ -37,7 +38,7 @@
                                         foreach ($categories as $category) {
                                             extract($category);
                                             echo '<tr>
-                                            <td><input type="checkbox"></td>
+                                            <td>'.$i++.'</td>
                                             <td>' . $category['id'] . '</td>
                                             <td>' . $category['name'] . '</td>
                                             <td>

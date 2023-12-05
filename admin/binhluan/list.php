@@ -13,7 +13,7 @@
                             <table id="example2" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Tích</th>
+                                        <th>Stt</th>
                                         <th>ID</th>
                                         <th>Nội dung</th>
                                         <th>Tên người dùng</th>
@@ -25,6 +25,7 @@
 
                                 <tbody>
                                     <?php
+                                    $i =1;
                                     // Kiểm tra xem $user có dữ liệu hay không
                                     if (!empty($listbl)) {
                                         // Hiển thị thông tin tai khoan
@@ -32,7 +33,7 @@
                                             extract($binhluan);
                                             $xoabl = "index.php?act=delete_hidden_binhluan&id=" . $id;
                                             echo ' <tr>
-                                                <td><input type="checkbox"></td>
+                                                <td>'.$i++.'</td>
                                                 <td>' . $id . '</td>
                                                 <td>' . $content . '</td>
                                                 <td>' . $id_user . '</td>
