@@ -1,3 +1,9 @@
+<style>
+    .error-message {
+        color: red;
+        margin-top: 5px;
+    }
+</style>
 <main class="main">
     <div class="page-header breadcrumb-wrap">
         <div class="container">
@@ -17,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <form action="index.php?act=invoice" method="post">
+        <form action="index.php?act=invoice" id="orderForm" method="post" onsubmit="return validateForm()">
             <div class="row">
                 <div class="col-lg-7">
                     <div class="row mb-50">
@@ -47,25 +53,29 @@
                         <h4 class="mb-30">Billing Details</h4>
                         <div class="row">
                             <div class="form-group col-lg-12">
-                                <input type="text" name="name" value="<?= $name ?>" placeholder="Name *">
+                                <input type="text" name="name" id="name" value="<?= $name ?>" placeholder="Name *">
+                                <span id="nameError" class="error"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="form-group col-lg-12">
+                            <input type="email" name="email" id="email" value="<?= $email ?>" placeholder="Email *">
+                            <span id="emailError" class="error"></span>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <input type="text" name="phone" id="phone" value="<?= $phone ?>" placeholder="Phone *">
+                                <span id="phoneError" class="error"></span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-lg-12">
-                                <input type="email" name="email" value="<?= $email ?>" placeholder="Email *">
+                                <input type="text" name="address" id="address" value="<?= $address ?>" placeholder="Address *">
+                                <span id="addressError" class="error"></span>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="form-group col-lg-12">
-                                <input type="text" name="phone" value="<?= $phone ?>" placeholder="Phone *">
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="form-group col-lg-12">
-                                <input type="text" name="address" value="<?= $address ?>" placeholder="Address *">
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="border p-40 cart-totals ml-30 mb-50">
@@ -170,21 +180,58 @@
             </div>
         </form>
     </div>
+
+<script>
+    function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var address = document.getElementById("address").value;
+        
+        // Đặt lại các thông báo lỗi trước đó
+        document.getElementById("nameError").innerHTML = "";
+        document.getElementById("emailError").innerHTML = "";
+        document.getElementById("phoneError").innerHTML = "";
+        document.getElementById("addressError").innerHTML = "";
+        
+        // Bắt lỗi cho trường name
+        if (name.trim() === '') {
+            document.getElementById("nameError").innerHTML = "<span class='error-message'>Please enter your name.</span>";
+            event.preventDefault();
+        }
+        
+        // Bắt lỗi cho trường email
+        if (email.trim() === "") {
+            document.getElementById("emailError").innerHTML = "<span class='error-message'>Please enter your email.</span>";
+            event.preventDefault();
+        } else if (!/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(email)) {
+            document.getElementById("emailError").innerHTML = "<span class='error-message'>Please enter a valid email.</span>";
+            event.preventDefault(); 
+        } else {
+            document.getElementById("emailError").innerHTML = "";
+        }
+        
+        // Bắt lỗi cho trường phone
+        if (phone.trim() === "") {
+            document.getElementById("phoneError").innerHTML = "<span class='error-message'>Please enter your phone number.</span>";
+            event.preventDefault();
+        } else if (phone.length < 10 !! phone.length > 15) {
+            document.getElementById("phoneError").innerHTML = "<span class='error-message'>Please enter the correct phone number.</span>";
+            event.preventDefault(); 
+        } else if (!/^\d+$/.test(phone)) {
+            document.getElementById("phoneError").innerHTML = "<span class='error-message'>Please enter a valid phone number.</span>";
+            event.preventDefault();
+        } else {
+            document.getElementById("phoneError").innerHTML = "";
+        }
+        
+        // Bắt lỗi cho trường address
+        if (address.trim() === "") {
+            document.getElementById("addressError").innerHTML = "<span class='error-message'>Please enter your address.</span>";
+            event.preventDefault();   
+        } else {
+            document.getElementById("addressError").innerHTML = "";
+        }
+    }
+</script>
 </main>
-
-<!-- <script>
-var payUrlInput = document.getElementById("payUrl");
-
-if (method === "online") {
-    onlinePaymentRadio.checked = true;
-    cashOnDeliveryRadio.checked = false;
-    paymentMethodInput.value = 1;
-    payUrlInput.value = "index.php?act=onlineCheckOut"; // Thay thế bằng logic của bạn
-} else if (method === "cash") {
-    cashOnDeliveryRadio.checked = true;
-    onlinePaymentRadio.checked = false;
-    paymentMethodInput.value = 0;
-    payUrlInput.value = ""; // Thay thế bằng logic của bạn
-}
-
-</script> -->
