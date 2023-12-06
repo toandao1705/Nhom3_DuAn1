@@ -176,7 +176,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                         $secretKey = 'at67qH6mk8w5Y1nAyMoYKMWACiEi2bsa';
                         $orderInfo = "Thanh toán qua MoMo";
                         $amount = "10000";
-                        $orderId = rand(00,9999);
+                        $orderId = rand(00, 9999);
                         $redirectUrl = "http://localhost/nhom3_duan1/index.php?act=addtocart";
                         $ipnUrl = "http://localhost/nhom3_duan1/index.php?act=addtocart";
                         $extraData = "";
@@ -226,7 +226,6 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                                 // `payUrl` không tồn tại hoặc trống
                                 echo "Lỗi: Không tìm thấy payUrl.";
                             }
-                            
                         }
                     } else {
                         // Chuyển hướng đến trang invoice.php
@@ -313,20 +312,15 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             } else {
                 $kyw = "";
             }
-            if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
-                $iddm = $_GET['iddm'];
+            if (isset($_POST['iddm']) && ($_POST['iddm'] > 0)) {
+                $iddm = $_POST['iddm'];
             } else {
                 $iddm = 0;
             }
             $delete = 0;
             $dssp = $search->loadall_tksanpham($kyw, $iddm, $delete);
-            $tendm = $search->load_ten_dm($iddm);
             include "view/search.php";
             break;
-            // case 'logout':
-            //     session_unset();
-            //     header("Location: index.php");
-            //     break;
         case 'logout':
             // Initialize the session.
             // If you are using session_name("something"), don't forget it now!

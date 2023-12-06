@@ -38,7 +38,10 @@
             <div class="col-lg-4-5">
                 <div class="shop-product-fillter">
                     <div class="totall-product">
-                        <p>We found <strong class="text-brand">29</strong> items for you!</p>
+                    <?php
+                    $searchproducts =1;
+                    ?>
+                        <p>We found <strong class="text-brand"><?=$searchproducts?></strong> items for you!</p>
                     </div>
                     <div class="sort-by-product-area">
                         <div class="sort-by-cover mr-10">
@@ -88,7 +91,7 @@
 
                     foreach ($dssp as $sptk) {
                         extract($sptk);
-
+                        $searchproducts ++;
                         // Kiểm tra xem sản phẩm đã được hiển thị chưa
                         if (!in_array($id, $displayedProducts)) {
                             $displayedProducts[] = $id; // Thêm ID vào mảng
