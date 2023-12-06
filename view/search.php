@@ -4,29 +4,29 @@
             <div class="archive-header">
                 <div class="row align-items-center">
                     <div class="col-xl-3">
-                        <h1 class="mb-15">Snack</h1>
+                        <h1 class="mb-15"><?= $kyw ?></h1>
                         <div class="breadcrumb">
                             <a href="index.php" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
-                            <span></span> Shop <span></span> Snack
+                            <span></span> Shop <span></span>
                         </div>
                     </div>
                     <div class="col-xl-9 text-end d-none d-xl-block">
-                        <ul class="tags-list">
-                            <li class="hover-up">
-                                <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Cabbage</a>
-                            </li>
-                            <li class="hover-up active">
-                                <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Broccoli</a>
-                            </li>
-                            <li class="hover-up">
-                                <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Artichoke</a>
-                            </li>
-                            <li class="hover-up">
-                                <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Celery</a>
-                            </li>
-                            <li class="hover-up mr-0">
-                                <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>Spinach</a>
-                            </li>
+                    <ul class="tags-list">
+                            <?php
+                            if (!empty($categories)) {
+                                $count = 0; // Đếm số lượng danh mục đã hiển thị
+                                foreach ($categories as $category) {
+                                    extract($category);
+                                    echo '<li class="hover-up">
+                                    <a href="index.php?act=search&iddm='.$category['id']. '"><i class="fi-rs-cross mr-10"></i>' . $category['name'] . '</a>
+                                    </li>';
+                                    $count++;
+                                    if ($count >= 5) {
+                                        break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
+                                    }
+                                }
+                            }
+                            ?>
                         </ul>
                     </div>
                 </div>

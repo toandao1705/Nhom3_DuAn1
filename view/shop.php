@@ -18,7 +18,7 @@
                                 foreach ($categories as $category) {
                                     extract($category);
                                     echo '<li class="hover-up">
-                                    <a href="blog-category-grid.php"><i class="fi-rs-cross mr-10"></i>' . $category['name'] . '</a>
+                                    <a href="index.php?act=search&iddm='.$category['id']. '"><i class="fi-rs-cross mr-10"></i>' . $category['name'] . '</a>
                                     </li>';
                                     $count++;
                                     if ($count >= 5) {
@@ -37,9 +37,6 @@
         <div class="row">
             <div class="col-lg-4-5">
                 <div class="shop-product-fillter">
-                    <div class="totall-product">
-                        <p>We found <strong class="text-brand">29</strong> items for you!</p>
-                    </div>
                 </div>
                 <div class="row product-grid">
                 <style>
@@ -231,7 +228,7 @@
                                 $imgdm++;
                                 echo '
                                 <li>
-                                    <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-' . $imgdm . '.svg"
+                                    <a href="index.php?act=search&iddm='.$category['id']. '"> <img src="view/assets/imgs/theme/icons/category-' . $imgdm . '.svg"
                                     alt="" />' . $category['name'] . '</a><span class="count">30</span>
                                 </li>';
                                 $count++;

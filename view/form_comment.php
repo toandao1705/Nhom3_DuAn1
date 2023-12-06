@@ -46,13 +46,13 @@ $dsbl = $comment->loadall_binhluan($id_pro, $delete, 0, PHP_INT_MAX);
 
 <body>
 
-<div class="comment-list">
-    <div class="single-comment ">
-        <?php
-        $commentCount = 0;
-        foreach ($dsbl as $bl) {
-            extract($bl);
-            echo '
+    <div class="comment-list">
+        <div class="single-comment ">
+            <?php
+            $commentCount = 0;
+            foreach ($dsbl as $bl) {
+                extract($bl);
+                echo '
             <div class="single-comment justify-content-between d-flex mb-30">
                 <div class="user justify-content-between d-flex">
                     <div class="thumb text-center">
@@ -71,122 +71,127 @@ $dsbl = $comment->loadall_binhluan($id_pro, $delete, 0, PHP_INT_MAX);
                     </div>
                 </div>
             </div>';
-            $commentCount++;
-            if ($commentCount >= 3) {
-                break;
+                $commentCount++;
+                if ($commentCount >= 3) {
+                    break;
+                }
             }
-        }
-        ?>
+            // Kiểm tra xem có bình luận hay không
+            if ($commentCount === 0) {
+                // Không có bình luận, hiển thị thông báo
+                echo '<div class="no-comment">This product has no comments yet.</div>';
+            }
+            ?>
+        </div>
     </div>
-</div>
-        <div class="comment-form">
-            <h4 class="mb-15">Add a review</h4>
-            <div class="product-rate d-inline-block mb-30"></div>
-            <div class="row">
+    <div class="comment-form">
+        <h4 class="mb-15">Add a review</h4>
+        <div class="product-rate d-inline-block mb-30"></div>
+        <div class="row">
 
-                <div class="col-lg-12 col-md-12">
-                    <?php
-                    if (isset($_SESSION['user'])) {
-                    ?>
-                        <form class="form-contact comment_form" action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control w-100" name="content" id="comment" cols="30" rows="9" placeholder="Write Comment"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-12 col-md-12">
+                <?php
+                if (isset($_SESSION['user'])) {
+                ?>
+                    <form class="form-contact comment_form" action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
+                        <div class="row">
+                            <div class="col-12">
                                 <div class="form-group">
-                                    <input type="hidden" name="id_pro" value="<?= $id_pro ?>">
-                                    <input style="background-color: #3bb77e;" type="submit" class="button button-contactForm" name="submitComment" value="Submit Review">
+                                    <textarea class="form-control w-100" name="content" id="comment" cols="30" rows="9" placeholder="Write Comment"></textarea>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="form-group">
+                                <input type="hidden" name="id_pro" value="<?= $id_pro ?>">
+                                <input style="background-color: #3bb77e;" type="submit" class="button button-contactForm" name="submitComment" value="Submit Review">
+                            </div>
+                        </div>
 
 
-                        </form>
-                        <!-- Xử lý khi submit form -->
-                        <?php
-                        if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submitComment'])) {
-                            $content = $_POST['content'];
-                            $id_pro = $_POST['id_pro'];
-                            $id_user = $_SESSION['user']['id'];
-                            $comment_date = date('h:i:sa d/m/Y');
-                            $comment->insert_binhluan($content, $id_user, $id_pro, $comment_date);
-                            // Redirect sau khi thêm bình luận
-                            header("location:" . $_SERVER['HTTP_REFERER']);
-                        }
-                        ?>
-
-                        <!-- Kết thúc form nhập liệu -->
+                    </form>
+                    <!-- Xử lý khi submit form -->
                     <?php
-                    }else if (isset($_SESSION['login_id'])) {
-                        ?>
-                            <form class="form-contact comment_form" action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea class="form-control w-100" name="content" id="comment" cols="30" rows="9" placeholder="Write Comment"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-12">
-                                    <div class="form-group">
-                                        <input type="hidden" name="id_pro" value="<?= $id_pro ?>">
-                                        <input style="background-color: #3bb77e;" type="submit" class="button button-contactForm" name="submitComment" value="Submit Review">
-                                    </div>
-                                </div>
-    
-    
-                            </form>
-                            <!-- Xử lý khi submit form -->
-                            <?php
-                            if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submitComment'])) {
-                                $content = $_POST['content'];
-                                $id_pro = $_POST['id_pro'];
-                                $id_user = $_SESSION['user']['id'];
-                                $comment_date = date('h:i:sa d/m/Y');
-                                $comment->insert_binhluan($content, $id_user, $id_pro, $comment_date);
-                                // Redirect sau khi thêm bình luận
-                                header("location:" . $_SERVER['HTTP_REFERER']);
-                            }
-                            ?>
-    
-                            <!-- Kết thúc form nhập liệu -->
-                        <?php
-                        } else {
+                    if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submitComment'])) {
+                        $content = $_POST['content'];
+                        $id_pro = $_POST['id_pro'];
+                        $id_user = $_SESSION['user']['id'];
+                        $comment_date = date('h:i:sa d/m/Y');
+                        $comment->insert_binhluan($content, $id_user, $id_pro, $comment_date);
+                        // Redirect sau khi thêm bình luận
+                        header("location:" . $_SERVER['HTTP_REFERER']);
+                    }
                     ?>
-                        <p>Vui lòng đăng nhập</p>
 
-                    <?php } ?>
-                </div>
+                    <!-- Kết thúc form nhập liệu -->
+                <?php
+                } else if (isset($_SESSION['login_id'])) {
+                ?>
+                    <form class="form-contact comment_form" action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control w-100" name="content" id="comment" cols="30" rows="9" placeholder="Write Comment"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="form-group">
+                                <input type="hidden" name="id_pro" value="<?= $id_pro ?>">
+                                <input style="background-color: #3bb77e;" type="submit" class="button button-contactForm" name="submitComment" value="Submit Review">
+                            </div>
+                        </div>
+
+
+                    </form>
+                    <!-- Xử lý khi submit form -->
+                    <?php
+                    if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submitComment'])) {
+                        $content = $_POST['content'];
+                        $id_pro = $_POST['id_pro'];
+                        $id_user = $_SESSION['user']['id'];
+                        $comment_date = date('h:i:sa d/m/Y');
+                        $comment->insert_binhluan($content, $id_user, $id_pro, $comment_date);
+                        // Redirect sau khi thêm bình luận
+                        header("location:" . $_SERVER['HTTP_REFERER']);
+                    }
+                    ?>
+
+                    <!-- Kết thúc form nhập liệu -->
+                <?php
+                } else {
+                ?>
+                    <p>Vui lòng đăng nhập</p>
+
+                <?php } ?>
             </div>
         </div>
+    </div>
 
-        <!-- Vendor JS-->
-        <script src="view/assets/js/vendor/modernizr-3.6.0.min.js"></script>
-        <script src="view/assets/js/vendor/jquery-3.6.0.min.js"></script>
-        <script src="view/assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
-        <script src="view/assets/js/vendor/bootstrap.bundle.min.js"></script>
-        <script src="view/assets/js/plugins/slick.js"></script>
-        <script src="view/assets/js/plugins/jquery.syotimer.min.js"></script>
-        <script src="view/assets/js/plugins/wow.js"></script>
-        <script src="view/assets/js/plugins/perfect-scrollbar.js"></script>
-        <script src="view/assets/js/plugins/magnific-popup.js"></script>
-        <script src="view/assets/js/plugins/select2.min.js"></script>
-        <script src="view/assets/js/plugins/waypoints.js"></script>
-        <script src="view/assets/js/plugins/counterup.js"></script>
-        <script src="view/assets/js/plugins/jquery.countdown.min.js"></script>
-        <script src="view/assets/js/plugins/images-loaded.js"></script>
-        <script src="view/assets/js/plugins/isotope.js"></script>
-        <script src="view/assets/js/plugins/scrollup.js"></script>
-        <script src="view/assets/js/plugins/jquery.vticker-min.js"></script>
-        <script src="view/assets/js/plugins/jquery.theia.sticky.js"></script>
-        <script src="view/assets/js/plugins/jquery.elevatezoom.js"></script>
-        <script src="view/assets/js/plugins/leaflet.js"></script>
-        <!-- Template  JS -->
-        <script src="./view/assets/js/main.js?v=5.6"></script>
-        <script src="./view/assets/js/shop.js?v=5.6"></script>
+    <!-- Vendor JS-->
+    <script src="view/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="view/assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="view/assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="view/assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="view/assets/js/plugins/slick.js"></script>
+    <script src="view/assets/js/plugins/jquery.syotimer.min.js"></script>
+    <script src="view/assets/js/plugins/wow.js"></script>
+    <script src="view/assets/js/plugins/perfect-scrollbar.js"></script>
+    <script src="view/assets/js/plugins/magnific-popup.js"></script>
+    <script src="view/assets/js/plugins/select2.min.js"></script>
+    <script src="view/assets/js/plugins/waypoints.js"></script>
+    <script src="view/assets/js/plugins/counterup.js"></script>
+    <script src="view/assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="view/assets/js/plugins/images-loaded.js"></script>
+    <script src="view/assets/js/plugins/isotope.js"></script>
+    <script src="view/assets/js/plugins/scrollup.js"></script>
+    <script src="view/assets/js/plugins/jquery.vticker-min.js"></script>
+    <script src="view/assets/js/plugins/jquery.theia.sticky.js"></script>
+    <script src="view/assets/js/plugins/jquery.elevatezoom.js"></script>
+    <script src="view/assets/js/plugins/leaflet.js"></script>
+    <!-- Template  JS -->
+    <script src="./view/assets/js/main.js?v=5.6"></script>
+    <script src="./view/assets/js/shop.js?v=5.6"></script>
 </body>
 
 </html>

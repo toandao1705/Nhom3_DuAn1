@@ -384,45 +384,81 @@
                             <h2 class="section-title style-1 mb-30">Related products</h2>
                         </div>
                         <div class="col-12">
+                            <style>
+                                input.add {
+                                    width: 85px;
+                                    height: 36px;
+                                    color: #3BB77E;
+                                }
+                            </style>
                             <div class="row related-products">
                                 <?php
+                                // Mảng để lưu ID của các sản phẩm đã được hiển thị
+                                $displayedProducts = array();
+
                                 foreach ($sp_cung_loai as $sp_cung_loai) {
                                     extract($sp_cung_loai);
-                                    $linksp = "index.php?act=product_full&idsp=" . $id;
-                                    $hinh = $img_path . $img;
-                                    echo '
-                                <div class="col-lg-3 col-md-4 col-12 col-sm-6">
-                                    <div class="product-cart-wrap hover-up">
-                                        <div class="product-img-action-wrap">
-                                            <div class="product-img product-img-zoom">
-                                                <a href="index.php?act=product_full" tabindex="0">
-                                                    <img class="default-img" src="' . $hinh . '" alt="" />
-                                                </a>
-                                            </div>
-                                            <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-search"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.php" tabindex="0"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.php" tabindex="0"><i class="fi-rs-shuffle"></i></a>
-                                            </div>
-                                            <div class="product-badges product-badges-position product-badges-mrg">
-                                                <span class="hot">Hot</span>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap">
-                                            <h2><a href="index.php?act=product_full" tabindex="0">' . $name . '</a></h2>
-                                            <div class="rating-result" title="90%">
-                                                <span> </span>
-                                            </div>
-                                            <div class="product-price">
-                                                <span>$' . $price . ' </span>
-                                                <span class="old-price">$245.8</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                    ';
-                                }
 
+                                    // Kiểm tra xem sản phẩm đã được hiển thị chưa
+                                    if (!in_array($id, $displayedProducts)) {
+                                        $displayedProducts[] = $id; // Thêm ID vào mảng
+
+                                        $linksp = "index.php?act=product_full&idsp=" . $id;
+                                        echo '
+                                <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                                    <div class="product-cart-wrap mb-30">
+                                        <div class="product-img-action-wrap">
+                                            <div class="product-img product-img-zoom">';
+                                ?>
+                                        <?php
+                                        // Di chuyển vòng lặp hình ảnh ra khỏi vòng lặp sản phẩm
+                                        $imgPath = $img_path . $img;
+                                        ?>
+                                        <a href="<?= $linksp ?>">
+                                            <img class="default-img" src="<?php echo $imgPath; ?>" style="width:246.21px; height:246.21px;" />
+                                        </a>
+                                <?php
+                                        echo '
+                        </div>
+                        <div class="product-badges product-badges-position product-badges-mrg">
+                            <span class="hot">Hot</span>
+                        </div>
+                        </div>
+                        <div class="product-content-wrap">
+                        <div class="product-category">
+                            <a href="shop-grid-right.php">' . $category_name . '</a>
+                        </div>
+                        <h2><a href="' . $linksp . '">' . $name . '</a></h2>
+                        <div class="product-rate-cover">
+                            <div class="product-rate d-inline-block">
+                                <div class="product-rating" style="width: 80%"></div>
+                            </div>
+                            <span class="font-small ml-5 text-muted">3.5</span>
+                        </div>
+                        <div>
+                            <span class="font-small text-muted">By <a  href="vendor-details-1.php"> ' . $category_name . ' </a></span>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-price">
+                                <span>$' . $price . '</span>
+                            </div>
+                            <div class="add-cart">
+                            <form action="index.php?act=addtocart" method="post">
+                            <input type="hidden" name="id" value="' . $id . '">
+                            <input type="hidden" name="name" value="' . $name . '">
+                            <input type="hidden" name="img" value="' . $imgPath . '">
+                            <input type="hidden" name="price" value="' . $price . '">
+                            <input type="hidden" name="quantity" id="hiddenQuantity" value="1">
+                            <input type="submit" class="add" name="addtocart" onclick="addToCart()" value="Add">
+                        </form>
+                            </div>
+                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        ';
+                                    }
+                                }
                                 ?>
                             </div>
                         </div>
