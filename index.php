@@ -278,40 +278,53 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             }
             include "view/account.php";
             break;
-        case 'updateAccountUser':
-            $user = new user();
-            if (isset($_POST['updateAccountUser']) && ($_POST['updateAccountUser'])) {
-                $id = $_POST['id'];
-                $name = $_POST['name'];
-                $email = $_POST['email'];
-                $pass = $_POST['pass'];
-                $address = $_POST['address'];
-                $phone = $_POST['phone'];
-                $role = 0;
-
-                $user->update_taikhoan($id, $email, $pass, $address, $phone, $role);
-                $_SESSION['user'] =  $user->checkUserOne($name, $pass);
-                $thongbao = "Cập nhật thành công";
-                header('location: index.php?act=account');
-            }
-            break;
+            case 'updateAccountUser':
+                $user = new user();
+                if (isset($_POST['updateAccountUser']) && ($_POST['updateAccountUser'])) {
+                    $id = $_POST['id'];
+                    // $name = $_POST['name'];
+                    $newEmail = $_POST['email']; 
+                    if ($user->checkUserUpdate($newEmail, $name)) {
+                        $thongbao = "Email already exists, please select another email";
+                        include 'view/account.php';
+                    } else {
+                        $pass = $_POST['pass'];
+                        $address = $_POST['address'];
+                        $phone = $_POST['phone'];
+                        $role = 0;
+                        $user->update_taikhoan($id, $newEmail, $pass, $address, $phone, $role);
+                        $_SESSION['user'] =  $user->checkUserOne($name, $pass);
+                        $thongbao = "Cập nhật thành công";
+                        header('location: index.php?act=account');
+                    }
+                }
+                break;
+            
         case 'blog_category':
             include "view/blog_category.php";
             break;
-        case 'register':
-            $register = new user();
-            if (isset($_POST['register']) && ($_POST['register'])) {
-                $email = $_POST['email'];
-                $name = $_POST['name'];
-                $pass = $_POST['pass'];
-                $address = $_POST['address'];
-                $phone = $_POST['phone'];
-                $registers = $register->insert_taikhoan($name, $email, $pass, $address, $phone);
-                $thongbao = "Đã đăng ký thành công vui lòng đăng nhập";
-                header("Location: index.php?act=login");
-            }
-            include "view/register.php";
-            break;
+            case 'register':
+                $register = new user();
+                if (isset($_POST['register']) && ($_POST['register'])) {
+                    $email = $_POST['email'];
+                    $name = $_POST['name'];
+                    $pass = $_POST['pass'];
+                    $address = $_POST['address'];
+                    $phone = $_POST['phone'];
+            
+                    // Kiểm tra username và email đã tồn tại hay không
+                    if ($register->checkUserUpdate($email, $name)) {
+                        $thongbao = "Username or email already exists. Please select other information..";
+                    } else {
+                        // Nếu không trùng lặp, thêm tài khoản mới
+                        $registers = $register->insert_taikhoan($name, $email, $pass, $address, $phone);
+                        $thongbao = "Đã đăng ký thành công. Vui lòng đăng nhập.";
+                        header("Location: index.php?act=login");
+                    }
+                }
+                include "view/register.php";
+                break;
+            
         case 'forgot_password':
             $forgot_password = new user();
             $user = new user();
@@ -389,11 +402,11 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             if (isset($_POST['login']) && ($_POST['login'])) {
                 $name = $_POST['name'];
                 $pass = $_POST['pass'];
-                $checkuser = $login->checkUsers($name, $pass);
+                $checkuser = $login->checkUsersClient($name, $pass);
 
                 if (is_array($checkuser)) {
                     $_SESSION['user'] = $checkuser;
-                    header("Location: index.php?act=shop");
+                    header("Location: index.php");
                     exit;
                 } else {
                     $thongbao = "Tài khoản không tồn tại. Vui lòng kiểm tra lại";
