@@ -52,6 +52,17 @@ class user {
 
        return $db->pdo_query_one($select);
    }
+   function checkUsersClient($name, $pass) 
+   { 
+       $db = new connect();
+   
+       // Mã hóa mật khẩu trước khi so sánh với cơ sở dữ liệu
+       $passwordEncryption = md5($pass);
+   
+       $select = "SELECT * FROM user WHERE name = '$name' AND pass = '$passwordEncryption'";
+
+       return $db->pdo_query_one($select);
+   }
 
    function forgetPass($pass,$email){
       $db = new connect();
@@ -163,5 +174,19 @@ function count_taikhoan() {
 
    return 0; // Trả về 0 nếu có lỗi hoặc không có bản ghi
 }
+public function checkUserUpdate($email, $name) 
+{ 
+    $db = new connect();               
+    $select = "SELECT * FROM user WHERE email = '$email' OR name = '$name'";
+    $result = $db->pdo_query_one($select);
+
+    // Kiểm tra xem có dữ liệu trả về hay không
+    if($result != null) {
+        return true; // Email đã tồn tại
+    } else {
+        return false; // Email không tồn tại
+    }
+}
+
 }
 ?>

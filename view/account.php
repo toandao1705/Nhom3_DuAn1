@@ -189,6 +189,13 @@
                                             }
                                             ?>
                                             <form action="index.php?act=updateAccountUser" method="post" enctype="multipart/form-data" id="validateF">
+                                            <div class="form-group">
+                                                <?php if(isset($thongbao) && ($thongbao != "")){ ?>
+                                                <div class="alert alert-danger" role="alert">
+                                                    <?= $thongbao ?>
+                                                </div>
+                                                <?php } ?>
+                                            </div>
                                                 <div class="form-group col-md-12">
                                                     <label>Username <span class="required">*</span></label>
                                                     <input type="text" name="name" id="name" value="<?php echo $name ?>" placeholder="Username" disabled />

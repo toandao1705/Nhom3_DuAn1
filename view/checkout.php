@@ -44,6 +44,9 @@
                                 <span><i class="fi-rs-user mr-10"></i><span class="text-muted font-lg">Already have an account?</span> <a href="index.php?act=login_google" class="collapsed font-lg" aria-expanded="false">Click here to login</a></span>
                             </div>
                         ';
+                        echo '<script>alert("Bạn vui lòng đăng nhập trước khi thanh toán.");</script>';
+                        echo '<script>window.location.href = "index.php?act=login_google";</script>';
+                        exit; 
                             }
 
                             ?>
@@ -179,6 +182,21 @@
                 </div>
             </div>
         </form>
+        <script>
+    function validateForm() {
+        // Kiểm tra sự tồn tại của $_SESSION['user'] bằng JavaScript
+        var userExists = <?php echo isset($_SESSION['user']) ? 'true' : 'false'; ?>;
+
+        // Nếu $_SESSION['user'] không tồn tại, hiển thị thông báo và ngăn chặn việc submit form
+        if (!userExists) {
+            alert('Bạn vui lòng đăng nhập trước khi thanh toán.');
+            return false; // Ngăn chặn submit form
+        }
+
+        // Nếu $_SESSION['user'] tồn tại, form được submit bình thường
+        return true;
+    }
+</script>
     </div>
 
 <script>

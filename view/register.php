@@ -20,6 +20,13 @@
                                         <p class="mb-30">Already have an account? <a href="index.php?act=login">Login</a></p>
                                     </div>
                                     <form action="index.php?act=register" method="post" enctype="multipart/form-data" id="validateF">
+                                    <div class="form-group">
+                                                <?php if(isset($thongbao) && ($thongbao != "")){ ?>
+                                                <div class="alert alert-danger" role="alert">
+                                                    <?= $thongbao ?>
+                                                </div>
+                                                <?php } ?>
+                                            </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1"></label>
                                             <input type="text" name="name" id="username" placeholder="Username" />
