@@ -352,7 +352,6 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             $dssp = $search->loadall_tksanpham($kyw, $iddm, $delete);
             include "view/search.php";
             break;
-
         case 'logout':
             // Initialize the session.
             // If you are using session_name("something"), don't forget it now!
