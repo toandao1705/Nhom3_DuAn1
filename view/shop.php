@@ -118,24 +118,27 @@
                     }
                     ?>
                 </div>
-                <!--product grid-->
-                <div class="pagination-area mt-20 mb-20">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-start">
-                            <li class="page-item">
-                                <a class="page-link" href="#"><i class="fi-rs-arrow-small-left"></i></a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link dot" href="#">...</a></li>
-                            <li class="page-item"><a class="page-link" href="#">6</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#"><i class="fi-rs-arrow-small-right"></i></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                <?php
+                    echo '<div class="pagination-area mt-20 mb-20">';
+                    echo '<nav aria-label="Page navigation example">';
+                    echo '<ul class="pagination justify-content-start">';
+
+                    if ($page > 1) {
+                        echo '<li class="page-item"><a class="page-link" href="index.php?act=shop&page=' . ($page - 1) . '"><i class="fi-rs-arrow-small-left"></i></a></li>';
+                    }
+
+                    for ($i = 1; $i <= $totalPages; $i++) {
+                        echo '<li class="page-item' . ($page == $i ? ' active' : '') . '"><a class="page-link" href="index.php?act=shop&page=' . $i . '">' . $i . '</a></li>';
+                    }
+
+                    if ($page < $totalPages) {
+                        echo '<li class="page-item"><a class="page-link" href="index.php?act=shop&page=' . ($page + 1) . '"><i class="fi-rs-arrow-small-right"></i></a></li>';
+                    }
+
+                    echo '</ul>';
+                    echo '</nav>';
+                    echo '</div>';
+                    ?>
                 <section class="section-padding pb-5">
                     <div class="section-title">
                         <h3 class="">Deals Of The Day</h3>

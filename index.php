@@ -21,8 +21,16 @@ if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
 
 $products = new products();
 
+$page = isset($_GET['page']) ? $_GET['page'] : 1;
+$limit = 20;
+$start = ($page - 1) * $limit;
+$spnew = $products->loadall_sanpham_home($start, $limit);
+$totalProducts = count($products->loadall_sanpham_home(0, PHP_INT_MAX));
+$totalPages = ceil($totalProducts / $limit);
+//không vượt quá số trang tổng cộng
+$page = max(min($page, $totalPages), 1);
 
-$spnew = $products->loadall_sanpham_home();
+
 $spview = $products->hienthi_sanpham_view();
 $sp_deals = $products->deals_sanpham();
 $delete = 0;

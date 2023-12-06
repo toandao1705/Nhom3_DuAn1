@@ -5,10 +5,10 @@ class products
     {
         $db = new connect();
         $select = "INSERT INTO products(name, price, `describe`, id_category) VALUES ('$tensp', '$giasp', '$mota', '$iddm')";
-    
+
         // Get the ID of the inserted product
         $productID = $db->pdo_execute_return_lastInsertId($select);
-    
+
         // Insert images
         foreach ($targetFiles as $image) {
             $this->insert_image($productID, $image);
@@ -29,23 +29,23 @@ class products
                    FROM products 
                    JOIN category ON products.id_category = category.id
                    WHERE 1";
-        
+
         if ($kyw != "") {
             $select .= " AND products.name LIKE '%" . $kyw . "%'";
         }
-    
+
         if ($iddm > 0) {
             $select .= " AND products.id_category ='" . $iddm . "'";
         }
-    
+
         $select .= " AND products.`delete` ='" . $delete . "'";
         $select .= " ORDER BY products.id DESC";
         $select .= " LIMIT $start, $limit";
-    
+
         return $db->pdo_query($select);
     }
-    
-    
+
+
     function loadone_sanpham($id)
     {
         $db = new connect();
@@ -134,15 +134,18 @@ class products
         return $db->pdo_query($select);
     }
 
-    function loadall_sanpham_home()
+    function loadall_sanpham_home($start, $limit)
     {
         $db = new connect();
-        $select = "SELECT products.*, images.img as img, category.name as category_name
-               FROM products 
-               LEFT JOIN images ON products.id = images.id_pro
-               LEFT JOIN category ON products.id_category = category.id
-               WHERE 1 
-               ORDER BY products.id DESC ";
+        $select = "SELECT products.id, MAX(products.name) as name, MAX(products.price) as price, MAX(images.img) as img, MAX(category.name) as category_name
+        FROM products
+        LEFT JOIN images ON products.id = images.id_pro
+        LEFT JOIN category ON products.id_category = category.id
+        GROUP BY products.id
+        ORDER BY products.id ASC
+        LIMIT $start, $limit;
+        ";
+
 
         $result = $db->pdo_query($select);
 
@@ -155,6 +158,14 @@ class products
 
         return $result;
     }
+    function countAllProducts()
+    {
+        $db = new connect();
+        $select = "SELECT COUNT(*) as total FROM products";
+        $result = $db->pdo_query($select);
+        return $result[0]['total'];
+    }
+
 
     function load_sanpham_cungloai($id, $id_category)
     {
@@ -183,57 +194,58 @@ class products
 
         return $result;
     }
-    
+
     function loadall_tksanpham($kyw = "", $iddm = 0, $detete)
-{
-    $db = new connect();
-    $select = "SELECT products.*, images.img as img, category.name as category_name
+    {
+        $db = new connect();
+        $select = "SELECT products.*, images.img as img, category.name as category_name
            FROM products 
            LEFT JOIN images ON products.id = images.id_pro
            LEFT JOIN category ON products.id_category = category.id
            WHERE 1";
 
-            if ($kyw != "") {
-                $select .= " and products.name like '%" . $kyw . "%'";
-            }
+        if ($kyw != "") {
+            $select .= " and products.name like '%" . $kyw . "%'";
+        }
 
-            if ($iddm > 0) {
-                $select .= " and products.id_category ='" . $iddm . "'";
-            }
+        if ($iddm > 0) {
+            $select .= " and products.id_category ='" . $iddm . "'";
+        }
 
-            $select .= " and products.`delete` ='" . $detete . "'";
-            $select .= " ORDER BY products.id DESC";
+        $select .= " and products.`delete` ='" . $detete . "'";
+        $select .= " ORDER BY products.id DESC";
 
-            return $db->pdo_query($select);
-}
-    function load_ten_dm($iddm){
+        return $db->pdo_query($select);
+    }
+    function load_ten_dm($iddm)
+    {
         $db = new connect();
-        if($iddm>0){
-            $sql="SELECT * FROM category WHERE id=".$iddm;
-            $dm=$db->pdo_query_one($sql);
+        if ($iddm > 0) {
+            $sql = "SELECT * FROM category WHERE id=" . $iddm;
+            $dm = $db->pdo_query_one($sql);
             extract($dm);
             return $name;
-        }else{
+        } else {
             return "";
         }
-        
     }
-    function count_sanpham() {
+    function count_sanpham()
+    {
         $db = new connect();
         $select = "SELECT COUNT(*) as total_products FROM products";
         $result = $db->pdo_query_one($select);
-     
+
         if ($result && isset($result['total_products'])) {
             return $result['total_products'];
         }
-     
+
         return 0; // Trả về 0 nếu có lỗi hoặc không có bản ghi
-     }
-     function deals_sanpham()
-     {
-         $db = new connect();
-         // lay sp ko bij trung lap
-         $select = "SELECT DISTINCT p.*, i.img as img, c.name as category_name
+    }
+    function deals_sanpham()
+    {
+        $db = new connect();
+        // lay sp ko bij trung lap
+        $select = "SELECT DISTINCT p.*, i.img as img, c.name as category_name
          FROM (
              SELECT *
              FROM products
@@ -242,17 +254,16 @@ class products
          ) p
          LEFT JOIN images i ON p.id = i.id_pro
          LEFT JOIN category c ON p.id_category = c.id";
- 
-         $result = $db->pdo_query($select);
- 
-         // Loop through the result and associate images with each product
-         foreach ($result as &$product) {
-             $selectImages = "SELECT img FROM images WHERE id_pro=" . $product['id'];
-             $images = $db->pdo_query($selectImages);
-             $product['images'] = $images;
-         }
- 
-         return $result;
-     } 
-}
 
+        $result = $db->pdo_query($select);
+
+        // Loop through the result and associate images with each product
+        foreach ($result as &$product) {
+            $selectImages = "SELECT img FROM images WHERE id_pro=" . $product['id'];
+            $images = $db->pdo_query($selectImages);
+            $product['images'] = $images;
+        }
+
+        return $result;
+    }
+}
