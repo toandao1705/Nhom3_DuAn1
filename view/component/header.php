@@ -384,7 +384,7 @@
                                                 extract($category);
                                                 echo '
                                                 <li>
-                                                    <a href="shop-grid-right.php">    
+                                                    <a href="index.php?act=search&iddm='.$category['id']. '">    
                                                          <img src="view/assets/imgs/theme/icons/category-' . $imgdm . '.svg" alt=""/> ' . $category['name'] . '
                                                     </a>
                                                 </li>

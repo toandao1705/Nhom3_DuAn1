@@ -71,21 +71,20 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include "view/terms.php";
             break;
         case 'addtocart':
-            if(isset($_GET['partnerCode'])) {
+            if (isset($_GET['partnerCode'])) {
                 $data_momo = [
-                    'partnerCode' => $_GET['partnerCode'], 
-                    'orderId' => $_GET['orderId'], 
-                    'requestId' => $_GET['requestId'], 
-                    'amount' => $_GET['amount'], 
-                    'orderInfo' => $_GET['orderInfo'], 
-                    'orderType' => $_GET['orderType'], 
-                    'transId' => $_GET['transId'], 
-                    'payType' => $_GET['payType'], 
-                    'signature' => $_GET['signature'], 
+                    'partnerCode' => $_GET['partnerCode'],
+                    'orderId' => $_GET['orderId'],
+                    'requestId' => $_GET['requestId'],
+                    'amount' => $_GET['amount'],
+                    'orderInfo' => $_GET['orderInfo'],
+                    'orderType' => $_GET['orderType'],
+                    'transId' => $_GET['transId'],
+                    'payType' => $_GET['payType'],
+                    'signature' => $_GET['signature'],
                 ];
                 $data = new cart();
-                $data -> insert_momo($data_momo);
-
+                $data->insert_momo($data_momo);
             }
             if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
                 $id = $_POST['id'];
@@ -331,6 +330,11 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             } else {
                 $kyw = "";
             }
+            if (isset($_POST['iddm']) && ($_POST['iddm'] > 0)) {
+                $iddm = $_POST['iddm'];
+            } else {
+                $iddm = 0;
+            }
             if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
                 $iddm = $_GET['iddm'];
             } else {
@@ -338,13 +342,9 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             }
             $delete = 0;
             $dssp = $search->loadall_tksanpham($kyw, $iddm, $delete);
-            $tendm = $search->load_ten_dm($iddm);
             include "view/search.php";
             break;
-            // case 'logout':
-            //     session_unset();
-            //     header("Location: index.php");
-            //     break;
+
         case 'logout':
             // Initialize the session.
             // If you are using session_name("something"), don't forget it now!

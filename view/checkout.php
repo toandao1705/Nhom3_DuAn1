@@ -215,7 +215,7 @@
         if (phone.trim() === "") {
             document.getElementById("phoneError").innerHTML = "<span class='error-message'>Please enter your phone number.</span>";
             event.preventDefault();
-        } else if (phone.length < 10 !! phone.length > 15) {
+        } else if (phone.length < 10 || phone.length > 15) {
             document.getElementById("phoneError").innerHTML = "<span class='error-message'>Please enter the correct phone number.</span>";
             event.preventDefault(); 
         } else if (!/^\d+$/.test(phone)) {
