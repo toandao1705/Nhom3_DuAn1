@@ -97,30 +97,6 @@
         <div class="container">
             <div class="section-title style-2">
                 <h3>Popular Products</h3>
-                <ul class="nav nav-tabs links" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="nav-tab-one" data-bs-toggle="tab" data-bs-target="#tab-one" type="button" role="tab" aria-controls="tab-one" aria-selected="true">All</button>
-                    </li>
-                    <?php
-                    $imgdm = 0;
-                    if (!empty($categories)) {
-                        $count = 0; // Đếm số lượng danh mục đã hiển thị
-                        foreach ($categories as $category) {
-                            extract($category);
-                            $imgdm++;
-                            echo '  
-                                <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="nav-tab-two" data-bs-toggle="tab" data-bs-target="#tab-two"
-                                    type="button" role="tab" aria-controls="tab-two" aria-selected="false">' . $category['name'] . '</button>
-                                </li>';
-                            $count++;
-                            if ($count >= 7) {
-                                break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
-                            }
-                        }
-                    }
-                    ?>
-                </ul>
             </div>
             <style>
                 input.add {
@@ -2975,12 +2951,16 @@
                                     <?php
                                     // Mảng để lưu ID của các sản phẩm đã được hiển thị
                                     $displayedProducts = array();
+                                    $displayedCount = 0;
                                     foreach ($spview as $sp) {
                                         extract($sp);
-
+                                        if ($displayedCount >= 8) {
+                                            break;
+                                        }
                                         // Kiểm tra xem sản phẩm đã được hiển thị chưa
                                         if (!in_array($id, $displayedProducts)) {
                                             $displayedProducts[] = $id; // Thêm ID vào mảng
+                                            $displayedCount++;
 
                                             $linksp = "index.php?act=product_full&idsp=" . $id;
                                             echo '
@@ -3017,7 +2997,6 @@
                                             </div>
                                             <div class="product-price mt-10">
                                                 <span>$' . $price . ' </span>
-                                                <span class="old-price">$' . $price . '</span>
                                             </div>
                                             <div class="sold mt-15 mb-15">
                                                 <div class="progress mb-5">
@@ -3136,7 +3115,7 @@
             <div class="section-title">
                 <div class="title">
                     <h3>Shop by Categories</h3>
-                    <a class="show-all" href="shop-grid-right.php">
+                    <a class="show-all" href="index.php?act=search">
                         All Categories
                         <i class="fi-rs-angle-right"></i>
                     </a>
@@ -3153,11 +3132,11 @@
                         echo '
                         <div class="card-1">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.php"><img src="view/assets/imgs/theme/icons/category-' . $imgdm . '.svg"
+                            <a href="index.php?act=search&iddm='.$category['id']. '"><img src="view/assets/imgs/theme/icons/category-' . $imgdm . '.svg"
                                     alt="" /></a>
                         </figure>
                         <h6>
-                            <a href="shop-grid-right.php">' . $category['name'] . '</a>
+                            <a href="index.php?act=search&iddm='.$category['id']. '">' . $category['name'] . '</a>
                         </h6>
                     </div>';
                     }

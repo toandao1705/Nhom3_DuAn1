@@ -135,7 +135,7 @@
                         <a href="index.php"><img src="view/assets/imgs/theme/logo.svg" alt="logo" /></a>
                     </div>
                     <div class="header-right">
-                        <div class="search-style-2">
+                        <div class="search-style-2 d-flex justify-content-center">
                             <form action="index.php?act=search" method="post">
                                 <select class="select-active">
                                     <?php
@@ -170,22 +170,6 @@
                                             <option>New York</option>
                                         </select>
                                     </form>
-                                </div>
-                                <div class="header-action-icon-2">
-                                    <a href="shop-compare.php">
-                                        <img class="svgInject" alt="Nest"
-                                            src="view/assets/imgs/theme/icons/icon-compare.svg" />
-                                        <span class="pro-count blue">3</span>
-                                    </a>
-                                    <a href="shop-compare.php"><span class="lable ml-0">Compare</span></a>
-                                </div>
-                                <div class="header-action-icon-2">
-                                    <a href="shop-wishlist.php">
-                                        <img class="svgInject" alt="Nest"
-                                            src="view/assets/imgs/theme/icons/icon-heart.svg" />
-                                        <span class="pro-count blue">6</span>
-                                    </a>
-                                    <a href="shop-wishlist.php"><span class="lable">Wishlist</span></a>
                                 </div>
                                 <?php
                                         $cart = isset($_SESSION['mycart']) ? $_SESSION['mycart'] : [];
@@ -429,93 +413,22 @@
 
                             </div>
                         </div>
-                        <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
+                        <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading ml-95">
                             <nav>
-                                <ul>
-                                    <li class="hot-deals"><img src="view/assets/imgs/theme/icons/icon-hot.svg"
-                                            alt="hot deals" /><a href="index.php?act=deals">Deals</a></li>
-                                    <li>
+                                <ul><li class="me-xl-5">
                                         <a class="active" href="index.php">Home</a>
                                     </li>
 
-                                    <li>
-                                        <a href="index.php?act=shop">Shop <i class="fi-rs-angle-down"></i></a>
+                                    <li class="me-xl-5">
+                                        <a href="index.php?act=shop">Shop</a>
                                     </li>
-                                    <li class="position-static">
-                                        <a href="#">Mega menu <i class="fi-rs-angle-down"></i></a>
-                                        <ul class="mega-menu">
-                                            <li class="sub-mega-menu sub-mega-menu-width-22">
-                                                <a class="menu-title" href="#">Fruit & Vegetables</a>
-                                                <ul>
-                                                    <li><a href="index.php?act=product_full">Meat & Poultry</a></li>
-                                                    <li><a href="index.php?act=product_full">Fresh Vegetables</a></li>
-                                                    <li><a href="index.php?act=product_full">Herbs & Seasonings</a></li>
-                                                    <li><a href="index.php?act=product_full">Cuts & Sprouts</a></li>
-                                                    <li><a href="index.php?act=product_full">Exotic Fruits & Veggies</a>
-                                                    </li>
-                                                    <li><a href="index.php?act=product_full">Packaged Produce</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="sub-mega-menu sub-mega-menu-width-22">
-                                                <a class="menu-title" href="#">Breakfast & Dairy</a>
-                                                <ul>
-                                                    <li><a href="index.php?act=product_full">Milk & Flavoured Milk</a>
-                                                    </li>
-                                                    <li><a href="index.php?act=product_full">Butter and Margarine</a>
-                                                    </li>
-                                                    <li><a href="index.php?act=product_full">Eggs Substitutes</a></li>
-                                                    <li><a href="index.php?act=product_full">Marmalades</a></li>
-                                                    <li><a href="index.php?act=product_full">Sour Cream</a></li>
-                                                    <li><a href="index.php?act=product_full">Cheese</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="sub-mega-menu sub-mega-menu-width-22">
-                                                <a class="menu-title" href="#">Meat & Seafood</a>
-                                                <ul>
-                                                    <li><a href="index.php?act=product_full">Breakfast Sausage</a></li>
-                                                    <li><a href="index.php?act=product_full">Dinner Sausage</a></li>
-                                                    <li><a href="index.php?act=product_full">Chicken</a></li>
-                                                    <li><a href="index.php?act=product_full">Sliced Deli Meat</a></li>
-                                                    <li><a href="index.php?act=product_full">Wild Caught Fillets</a>
-                                                    </li>
-                                                    <li><a href="index.php?act=product_full">Crab and Shellfish</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="sub-mega-menu sub-mega-menu-width-34">
-                                                <div class="menu-banner-wrap">
-                                                    <a href="index.php?act=product_full"><img
-                                                            src="view/assets/imgs/banner/banner-menu.png"
-                                                            alt="Nest" /></a>
-                                                    <div class="menu-banner-content">
-                                                        <h4>Hot deals</h4>
-                                                        <h3>
-                                                            Don't miss<br />
-                                                            Trending
-                                                        </h3>
-                                                        <div class="menu-banner-price">
-                                                            <span class="new-price text-success">Save to 50%</span>
-                                                        </div>
-                                                        <div class="menu-banner-btn">
-                                                            <a href="index.php?act=product_full">Shop now</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-banner-discount">
-                                                        <h3>
-                                                            <span>25%</span>
-                                                            off
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
+                                    <li class="me-xl-5">
                                         <a href="index.php?act=about">About</a>
                                     </li>
-                                    <li>
-                                        <a href="index.php?act=blog_category">Blog <i class="fi-rs-angle-down"></i></a>
+                                    <li class="me-xl-5">
+                                        <a href="index.php?act=blog_category">Blog</a>
                                     </li>
-                                    <li>
+                                    <li class="me-xl-5">
                                         <a href="index.php?act=contact">Contact</a>
                                     </li>
                                 </ul>
