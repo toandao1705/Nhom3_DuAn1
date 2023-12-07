@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="form-group">
 
-                                    <input type="submit" class="btn btn-heading btn-block hover-up" name="submit">
+                                    <input type="submit" class="btn btn-heading btn-block hover-up" name="submit" value="Submit">
 
                                 </div>
                             </form>
