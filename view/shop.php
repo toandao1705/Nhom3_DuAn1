@@ -7,7 +7,7 @@
                         <h1 class="mb-15">Shop</h1>
                         <div class="breadcrumb">
                             <a href="index.php" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
-                            <span></span> Shop
+                            <span>&emsp;Shop</span> 
                         </div>
                     </div>
                     <div class="col-xl-9 text-end d-none d-xl-block">
@@ -18,7 +18,7 @@
                                 foreach ($categories as $category) {
                                     extract($category);
                                     echo '<li class="hover-up">
-                                    <a href="index.php?act=search&iddm='.$category['id']. '"><i class="fi-rs-cross mr-10"></i>' . $category['name'] . '</a>
+                                    <a href="index.php?act=search&iddm='.$category['id']. '">' . $category['name'] . '</a>
                                     </li>';
                                     $count++;
                                     if ($count >= 5) {
@@ -37,6 +37,19 @@
         <div class="row">
             <div class="col-lg-4-5">
                 <div class="shop-product-fillter">
+                    <?php
+                    $countsp = 0;
+                    $displayedProducts = array();
+                    foreach ($spnew as $sp) {
+                        extract($sp);
+                        if (!in_array($id, $displayedProducts)) {
+                            $displayedProducts[] = $id; // Thêm ID vào mảng
+                        $countsp++;}
+                    }
+                    ?>
+                    <div class="totall-product">
+                        <p>We found <strong class="text-brand"><?= $countsp ?></strong> items for you!</p>
+                    </div>
                 </div>
                 <div class="row product-grid">
                 <style>
@@ -45,7 +58,7 @@
                     height: 36px;
                     color: #3BB77E;
                 }
-            </style>
+                </style>
                     <?php
                     // Mảng để lưu ID của các sản phẩm đã được hiển thị
                     $displayedProducts = array();
@@ -225,11 +238,13 @@
                             $count = 0; // Đếm số lượng danh mục đã hiển thị
                             foreach ($categories as $category) {
                                 extract($category);
+                                $countsp = countsp();
                                 $imgdm++;
                                 echo '
                                 <li>
                                     <a href="index.php?act=search&iddm='.$category['id']. '"> <img src="view/assets/imgs/theme/icons/category-' . $imgdm . '.svg"
-                                    alt="" />' . $category['name'] . '</a><span class="count">30</span>
+                                    alt="" />' . $category['name'] . '</a>
+                                    <span class="count">'.$countsp['product_count'].'</span>
                                 </li>';
                                 $count++;
                                 if ($count >= 5) {

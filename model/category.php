@@ -1,8 +1,19 @@
 <?php
 class category {
-    function loadall_danhmuc(){
+    public static function countsp() {
         $db = new connect();
-        $select="SELECT * FROM category order by id desc";
+        $select = "SELECT category.*, COUNT(products.id_category) AS product_count
+                   FROM category 
+                   JOIN products ON category.id = products.id_category
+                   WHERE 1
+                   GROUP BY category.id";
+        return $db->pdo_query($select);
+    }
+
+    function loadall_danhmuc() {
+        $db = new connect();
+        $countsp = $this->countsp();
+        $select = "SELECT * FROM category ORDER BY id DESC";
         return $db->pdo_query($select);
     }
 
