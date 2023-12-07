@@ -18,7 +18,7 @@
                                 foreach ($categories as $category) {
                                     extract($category);
                                     echo '<li class="hover-up">
-                                    <a href="index.php?act=search&iddm='.$category['id']. '"><i class="fi-rs-cross mr-10"></i>' . $category['name'] . '</a>
+                                    <a href="index.php?act=search&iddm='.$category['id']. '">' . $category['name'] . '</a>
                                     </li>';
                                     $count++;
                                     if ($count >= 5) {
@@ -37,47 +37,30 @@
         <div class="row">
             <div class="col-lg-4-5">
                 <div class="shop-product-fillter">
+                <?php
+                    $countsp = 0;
+                    $displayedProducts = array();
+                    foreach ($dssp as $sptk) {
+                        extract($sptk);
+                        if (!in_array($id, $displayedProducts)) {
+                            $displayedProducts[] = $id; // Thêm ID vào mảng
+                        $countsp++;}
+                    }
+                    ?>
                     <div class="totall-product">
-                        <p>We found <strong class="text-brand">29</strong> items for you!</p>
+                        <p>We found <strong class="text-brand"><?= $countsp ?></strong> items for you!</p>
                     </div>
                     <div class="sort-by-product-area">
-                        <div class="sort-by-cover mr-10">
-                            <div class="sort-by-product-wrap">
-                                <div class="sort-by">
-                                    <span><i class="fi-rs-apps"></i>Show:</span>
-                                </div>
-                                <div class="sort-by-dropdown-wrap">
-                                    <span> 50 <i class="fi-rs-angle-small-down"></i></span>
-                                </div>
-                            </div>
-                            <div class="sort-by-dropdown">
-                                <ul>
-                                    <li><a class="active" href="#">50</a></li>
-                                    <li><a href="#">100</a></li>
-                                    <li><a href="#">150</a></li>
-                                    <li><a href="#">200</a></li>
-                                    <li><a href="#">All</a></li>
-                                </ul>
-                            </div>
-                        </div>
                         <div class="sort-by-cover">
-                            <div class="sort-by-product-wrap">
-                                <div class="sort-by">
-                                    <span><i class="fi-rs-apps-sort"></i>Sort by:</span>
-                                </div>
-                                <div class="sort-by-dropdown-wrap">
-                                    <span> Featured <i class="fi-rs-angle-small-down"></i></span>
-                                </div>
-                            </div>
-                            <div class="sort-by-dropdown">
-                                <ul>
-                                    <li><a class="active" href="#">Featured</a></li>
-                                    <li><a href="#">Price: Low to High</a></li>
-                                    <li><a href="#">Price: High to Low</a></li>
-                                    <li><a href="#">Release Date</a></li>
-                                    <li><a href="#">Avg. Rating</a></li>
-                                </ul>
-                            </div>
+                        <form action="index.php?act=search" method="get" >
+                        <select class="form-control select-filter" name="kytu" id="select-filter">
+                            <option value="0">---Lọc theo---</option>
+                            <option value="index.php?act=search&kytu=kasc">Characters: A to Z</option>
+                            <option value="index.php?act=search&kytu=kdesc">Characters: Z to A</option>
+                            <option value="index.php?act=search&kytu=pasc">Price: Low to High</option>
+                            <option value="index.php?act=search&kytu=pdesc">Price: High to Low</option>
+                        </select>
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -85,10 +68,8 @@
                     <?php
                     // Mảng để lưu ID của các sản phẩm đã được hiển thị
                     $displayedProducts = array();
-
                     foreach ($dssp as $sptk) {
                         extract($sptk);
-
                         // Kiểm tra xem sản phẩm đã được hiển thị chưa
                         if (!in_array($id, $displayedProducts)) {
                             $displayedProducts[] = $id; // Thêm ID vào mảng
@@ -135,7 +116,7 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">NestFood</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.php">'.$category_name.'</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -159,21 +140,26 @@
                 <div class="sidebar-widget widget-category-2 mb-30">
                     <h5 class="section-title style-1 mb-30">Category</h5>
                     <ul>
-                        <li>
-                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-1.svg" alt="" />Milks & Dairies</a><span class="count">30</span>
-                        </li>
-                        <li>
-                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-2.svg" alt="" />Clothing</a><span class="count">35</span>
-                        </li>
-                        <li>
-                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods </a><span class="count">42</span>
-                        </li>
-                        <li>
-                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-4.svg" alt="" />Baking material</a><span class="count">68</span>
-                        </li>
-                        <li>
-                            <a href="shop-grid-right.php"> <img src="view/assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a><span class="count">87</span>
-                        </li>
+                        <?php
+                        $imgdm = 0;
+                        if (!empty($categories)) {
+                            $count = 0; // Đếm số lượng danh mục đã hiển thị
+                            foreach ($categories as $category) {
+                                extract($category);
+                                $imgdm++;
+                                echo '
+                                <li>
+                                    <a href="index.php?act=search&iddm='.$category['id']. '"> <img src="view/assets/imgs/theme/icons/category-' . $imgdm . '.svg"
+                                    alt="" />' . $category['name'] . '</a>
+                                    <span class="count">30</span>
+                                </li>';
+                                $count++;
+                                if ($count >= 5) {
+                                    break; // Thoát khỏi vòng lặp sau khi hiển thị 5 danh mục
+                                }
+                            }
+                        }
+                        ?>
                     </ul>
                 </div>
                 <!-- Product sidebar Widget -->
@@ -230,4 +216,25 @@
             </div>
         </div>
     </div>
+    <script>
+		$(document).ready(function(){
+			var active = location.search; //?kytu=asc
+			$('#select-filter option[value="'+active+'"]').attr('selected','selected');
+		})
+		
+		$('.select-filter').change(function(){
+			
+			var value = $(this).find(':selected').val();
+			
+			 //alert(value);
+			if(value!=0){
+				var url = value;
+				// alert(url);
+				window.location.replace(url); 
+			}else{
+				alert('Hãy lọc sản phẩm');
+			}
+			
+		})
+	</script>
 </main>

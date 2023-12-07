@@ -45,7 +45,6 @@ class products
         return $db->pdo_query($select);
     }
 
-
     function loadone_sanpham($id)
     {
         $db = new connect();
@@ -158,6 +157,7 @@ class products
 
         return $result;
     }
+    
     function countAllProducts()
     {
         $db = new connect();
@@ -195,28 +195,39 @@ class products
         return $result;
     }
 
-    function loadall_tksanpham($kyw = "", $iddm = 0, $detete)
+    function loadall_tksanpham($kyw = "", $kytu ="", $iddm = 0, $detete)
     {
-        $db = new connect();
-        $select = "SELECT products.*, images.img as img, category.name as category_name
-           FROM products 
-           LEFT JOIN images ON products.id = images.id_pro
-           LEFT JOIN category ON products.id_category = category.id
-           WHERE 1";
+    $db = new connect();
+    $select = "SELECT products.*, images.img as img, category.name as category_name
+               FROM products 
+               LEFT JOIN images ON products.id = images.id_pro
+               LEFT JOIN category ON products.id_category = category.id
+               WHERE products.`delete` ='" . $detete . "'";
 
-        if ($kyw != "") {
-            $select .= " and products.name like '%" . $kyw . "%'";
-        }
-
-        if ($iddm > 0) {
-            $select .= " and products.id_category ='" . $iddm . "'";
-        }
-
-        $select .= " and products.`delete` ='" . $detete . "'";
-        $select .= " ORDER BY products.id DESC";
-
-        return $db->pdo_query($select);
+    if ($kyw != "") {
+        $select .= " AND products.name LIKE '%" . $kyw . "%'";
     }
+
+    if ($iddm > 0) {
+        $select .= " AND products.id_category ='" . $iddm . "'";
+    }
+
+    if ($kytu === 'kasc') {
+        $select .= ' ORDER BY products.name ASC';
+    } elseif ($kytu === 'kdesc') {
+        $select .= ' ORDER BY products.name DESC';
+    } elseif ($kytu === 'pasc') {
+        
+        $select .= ' ORDER BY products.price ASC';
+    } elseif ($kytu === 'pdesc') {
+        $select .= ' ORDER BY products.price DESC';
+    }else {
+        $select .= " ORDER BY products.id DESC";
+    }
+
+    return $db->pdo_query($select);
+}
+
     function load_ten_dm($iddm)
     {
         $db = new connect();

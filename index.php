@@ -348,8 +348,11 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             } else {
                 $iddm = 0;
             }
+            $kytu = isset($_GET['kytu']) ? $_GET['kytu'] : "";
             $delete = 0;
-            $dssp = $search->loadall_tksanpham($kyw, $iddm, $delete);
+
+            $dssp = $search->loadall_tksanpham($kyw, $kytu, $iddm, $delete);
+
             include "view/search.php";
             break;
 
