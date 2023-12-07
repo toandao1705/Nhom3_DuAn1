@@ -149,10 +149,10 @@ class user {
    $sp=$db->pdo_query_one($select);
    return $sp;
 }
-function update_taikhoan($id, $email, $pass, $address, $phone, $role){
+function update_taikhoan($id, $email, $address, $phone, $role){
    $db = new connect();
-   $passwordEncryption = md5($pass);
-   $select = "UPDATE user SET pass='".$passwordEncryption."', email='".$email."', address='".$address."', phone='".$phone."', role=".$role." WHERE id=".$id;
+   // $passwordEncryption = md5($pass);
+   $select = "UPDATE user SET email='".$email."', address='".$address."', phone='".$phone."', role=".$role." WHERE id=".$id;
    $db->pdo_execute($select);
 }
 function checkUserOne($name, $pass){

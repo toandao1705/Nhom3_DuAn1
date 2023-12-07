@@ -211,7 +211,7 @@
                                                 </div>
                                                 <!-- <div class="form-group col-md-12">
                                                     <label>Password<span class="required">*</span></label>
-                                                    <input type="password" name="pass" id="pass" value="<?= $pass ?>" placeholder="Password" />
+                                                    <input type="password" name="pass" id="pass" value="" placeholder="Password" />
                                                     <span id="pass-error" class="error-text text-danger"></span>
                                                 </div> -->
                                                 <div class="form-group col-md-12">
