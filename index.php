@@ -120,6 +120,20 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     array_push($_SESSION['mycart'], $spadd);
                 }
             }
+            if(isset($_POST['updateCart']) && ($_POST['updateCart'])){
+                $quantities = $_POST['quantity'];
+            
+                foreach ($quantities as $key => $quantity) {
+                    // Validate and sanitize the quantity input
+                    $quantity = filter_var($quantity, FILTER_VALIDATE_INT, array('options' => array('min_range' => 1)));
+                    
+                    if ($quantity !== false) {
+                        // Update the quantity in the cart
+                        $_SESSION['mycart'][$key][4] = $quantity;
+                    }
+                }
+            }
+            
 
             include "view/cart/cart.php";
             break;

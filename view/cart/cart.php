@@ -20,6 +20,7 @@
          </div>
          <div class="row">
              <div class="col-lg-8">
+                <form action="index.php?act=addtocart" method="post">
                  <div class="table-responsive shopping-summery">
                      <table class="table table-wishlist">
                          <thead>
@@ -70,7 +71,7 @@
                                                 <div class="detail-extralink mr-15">
                                                     <div class="detail-qty border radius">
                                                         <a href="#" class="qty-down"><i class="fi-rs-angle-small-down"></i></a>
-                                                        <input type="text" name="quantity" class="qty-val" value="' . $cart[4] . '" min="1">
+                                                        <input type="text" name="quantity[]" class="qty-val" value="' . $cart[4] . '" min="1">
                                                         <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
                                                     </div>
                                                 </div>
@@ -91,9 +92,11 @@
                  </div>
                  <div class="divider-2 mb-30"></div>
                  <div class="cart-action d-flex justify-content-between">
-                     <a class="btn "><i class="fi-rs-arrow-left mr-10"></i>Continue Shopping</a>
-                     <a class="btn  mr-10 mb-sm-15"><i class="fi-rs-refresh mr-10"></i>Update Cart</a>
+                     <a href="index.php?act=shop" class="btn col-2"><i class="fi-rs-arrow-left mr-10"></i>Continue Shopping</a>
+                     <input type="submit" class="btn  mr-10 mb-sm-15 col-2" name="updateCart" value="Update Cart">
+                     <!-- <a class="btn  mr-10 mb-sm-15"><i class="fi-rs-refresh mr-10"></i>Update Cart</a> -->
                  </div>
+                 </form>
              </div>
              <div class="col-lg-4">
                  <div class="border p-md-4 cart-totals ml-30">
