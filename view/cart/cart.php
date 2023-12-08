@@ -20,38 +20,50 @@
          </div>
          <div class="row">
              <div class="col-lg-8">
-                <form action="index.php?act=addtocart" method="post">
-                 <div class="table-responsive shopping-summery">
-                     <table class="table table-wishlist">
-                         <thead>
-                             <tr class="main-heading">
-                                 <!-- <th class="custome-checkbox start pl-30">
+                 <form action="index.php?act=addtocart" method="post">
+                     <div class="table-responsive shopping-summery">
+                         <table class="table table-wishlist">
+                             <div class="form-group">
+                                 <?php
+                                    if (isset($_SESSION['quantityAnnouncement']) && ($_SESSION['quantityAnnouncement'] != "")) {
+                                        echo ' <div class="alert alert-danger" role="alert">' . $_SESSION['quantityAnnouncement'] . '
+                                    </div>';
+                                    }
+                                    ?>
+                                 <?php
+                                    // Unset session sau khi đã sử dụng nó
+                                    unset($_SESSION['quantityAnnouncement']);
+                                    ?>
+                             </div>
+                             <thead>
+                                 <tr class="main-heading">
+                                     <!-- <th class="custome-checkbox start pl-30">
                                      <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox11" value="">
                                      <label class="form-check-label" for="exampleCheckbox11"></label>
                                  </th> -->
-                                 <th scope="col" colspan="2">Product</th>
-                                 <th scope="col">Unit Price</th>
-                                 <th scope="col">Quantity</th>
-                                 <th scope="col">Subtotal</th>
-                                 <th scope="col" class="end">Remove</th>
-                             </tr>
-                         </thead>
-                         
-                         <tbody>
-                             <?php
-                            //  var_dump($_SESSION['mycart']);
-                            //  exit;
-                                // $soluong_sanpham = 0;
+                                     <th scope="col" colspan="2">Product</th>
+                                     <th scope="col">Unit Price</th>
+                                     <th scope="col">Quantity</th>
+                                     <th scope="col">Subtotal</th>
+                                     <th scope="col" class="end">Remove</th>
+                                 </tr>
+                             </thead>
 
-                                $tong = 0;
-                                $i = 0;
-                                foreach ($_SESSION['mycart'] as $cart) {
-                                    $hinh = $cart[2];
-                                    $ttien = $cart[3] * $cart[4];
-                                    $tong += $ttien;
+                             <tbody>
+                                 <?php
+                                    //  var_dump($_SESSION['mycart']);
+                                    //  exit;
+                                    // $soluong_sanpham = 0;
 
-                                    $xoasp = 'index.php?act=delcart&idcart=' . $i . '';
-                                    echo '
+                                    $tong = 0;
+                                    $i = 0;
+                                    foreach ($_SESSION['mycart'] as $cart) {
+                                        $hinh = $cart[2];
+                                        $ttien = $cart[3] * $cart[4];
+                                        $tong += $ttien;
+
+                                        $xoasp = 'index.php?act=delcart&idcart=' . $i . '';
+                                        echo '
                                         <tr class="pt-30">
                                             <td class="image product-thumbnail pt-40"><img src="' . $hinh . '" alt="#"></td>
                                             <td class="product-des product-name">
@@ -82,20 +94,20 @@
                                             <td class="action text-center" data-title="Remove"><a href="' . $xoasp . '" class="text-body"><i class="fi-rs-trash"></i></a></td>
                                         </tr>
                                                             ';
-                                            // $soluong_sanpham++;
-                                            $i += 1;
-                                        };
-                                        // $_SESSION['soluong_sanpham'] = $soluong_sanpham;
-                                        ?>
-                         </tbody>
-                     </table>
-                 </div>
-                 <div class="divider-2 mb-30"></div>
-                 <div class="cart-action d-flex justify-content-between">
-                     <a href="index.php?act=shop" class="btn col-2"><i class="fi-rs-arrow-left mr-10"></i>Continue Shopping</a>
-                     <input type="submit" class="btn  mr-10 mb-sm-15 col-2" name="updateCart" value="Update Cart">
-                     <!-- <a class="btn  mr-10 mb-sm-15"><i class="fi-rs-refresh mr-10"></i>Update Cart</a> -->
-                 </div>
+                                        // $soluong_sanpham++;
+                                        $i += 1;
+                                    };
+                                    // $_SESSION['soluong_sanpham'] = $soluong_sanpham;
+                                    ?>
+                             </tbody>
+                         </table>
+                     </div>
+                     <div class="divider-2 mb-30"></div>
+                     <div class="cart-action d-flex justify-content-between">
+                         <a href="index.php?act=shop" class="btn col-2"><i class="fi-rs-arrow-left mr-10"></i>Continue Shopping</a>
+                         <input type="submit" class="btn  mr-10 mb-sm-15 col-2" name="updateCart" value="Update Cart">
+                         <!-- <a class="btn  mr-10 mb-sm-15"><i class="fi-rs-refresh mr-10"></i>Update Cart</a> -->
+                     </div>
                  </form>
              </div>
              <div class="col-lg-4">

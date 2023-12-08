@@ -157,4 +157,23 @@ class cart
 
         return $db->pdo_execute($select);
     }
+    public function updateProductQuantity($productId, $newQuantity)
+    {
+        $db = new connect();
+        $select = "UPDATE products SET quantity = '" . $newQuantity . "' WHERE id = '" . $productId . "'";
+        $db->pdo_execute($select);
+    }
+    public function getProductQuantity($productId) {
+        $db = new connect();
+        $select = "SELECT quantity FROM products WHERE id =".$productId;
+        $result = $db->pdo_query_one($select);
+    
+        // Kiểm tra xem có dữ liệu trả về hay không
+        if ($result != null) {
+            return $result['quantity'];
+        } else {
+            return null; // Hoặc giá trị mặc định khác tùy thuộc vào logic của bạn
+        }
+    }
+    
 }

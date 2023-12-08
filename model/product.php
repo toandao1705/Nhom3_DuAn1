@@ -277,4 +277,10 @@ class products
 
         return $result;
     }
+    public function updateProductQuantity($productId, $newQuantity) {
+            $db = new connect();
+            $select = "UPDATE products SET quantity = '" . $newQuantity . "' WHERE id = '" . $productId . "'";
+            $db->pdo_execute($select);
+
+    }
 }
