@@ -232,19 +232,18 @@
                 <div class="sidebar-widget widget-category-2 mb-30">
                     <h5 class="section-title style-1 mb-30">Category</h5>
                     <ul>
-                        <?php
+                    <?php
                         $imgdm = 0;
                         if (!empty($categories)) {
                             $count = 0; // Đếm số lượng danh mục đã hiển thị
                             foreach ($categories as $category) {
-                                extract($category);
-                                $countsp = countsp();
                                 $imgdm++;
                                 echo '
                                 <li>
-                                    <a href="index.php?act=search&iddm='.$category['id']. '"> <img src="view/assets/imgs/theme/icons/category-' . $imgdm . '.svg"
-                                    alt="" />' . $category['name'] . '</a>
-                                    <span class="count">'.$countsp['product_count'].'</span>
+                                    <a href="index.php?act=search&iddm='.$category['id']. '">
+                                        <img src="view/assets/imgs/theme/icons/category-' . $imgdm . '.svg" alt="" />' . $category['name'] . '
+                                    </a>
+                                    <span class="count">'.$category['product_count'].'</span>
                                 </li>';
                                 $count++;
                                 if ($count >= 5) {

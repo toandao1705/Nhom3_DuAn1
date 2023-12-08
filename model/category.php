@@ -1,19 +1,12 @@
 <?php
 class category {
-    public static function countsp() {
-        $db = new connect();
-        $select = "SELECT category.*, COUNT(products.id_category) AS product_count
-                   FROM category 
-                   JOIN products ON category.id = products.id_category
-                   WHERE 1
-                   GROUP BY category.id";
-        return $db->pdo_query($select);
-    }
-
     function loadall_danhmuc() {
         $db = new connect();
-        $countsp = $this->countsp();
-        $select = "SELECT * FROM category ORDER BY id DESC";
+        $select = "SELECT category.*, COUNT(products.id) AS product_count
+                   FROM category 
+                   LEFT JOIN products ON category.id = products.id_category
+                   GROUP BY category.id
+                   ORDER BY category.id DESC";
         return $db->pdo_query($select);
     }
 
