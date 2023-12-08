@@ -28,7 +28,7 @@ try {
     $mail->Password   = 'gdtcyagdkuiajzpa';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
+    $mail->SMTPDebug  = 0;  // Tắt ghi log chi tiết
     //Recipients
     $mail->setFrom('cuongnhnpc02907@fpt.edu.vn', 'Cmall102');
     $mail->addAddress($adddressMail);     //Add a recipient
@@ -48,7 +48,7 @@ try {
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo 'Message has been sent';
+    // echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }}}

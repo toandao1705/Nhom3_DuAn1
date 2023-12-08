@@ -161,6 +161,8 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     $carts->insert_bill_detail($idbill, $product[0], $product[3], $product[4]);
                 }
 
+
+
                 // Kiểm tra xem $idbill có tồn tại không trước khi sử dụng
                 if ($idbill) {
                     if ($payment_methods == 1) {
@@ -256,9 +258,20 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     } else {
                         $bill = $carts->loadone_billDetail($idbill);
                         // Chuyển hướng đến trang invoice.php
+                        $_SESSION['mycart'] = [];
 
                         include "view/invoice.php";
                     }
+                    $title = "Đặt hàng Nest Mart & Gorcery";
+                    $content = "
+                    <div>
+                    <p>Cảm ơn quý khách đã đặt hàng với mã đơn hàng là: DH " . $idbill . "</p>
+                    <p></p>
+                    </div>";
+                    $adddressMail = $_SESSION['user']['email'];
+                    $mail->sendMail($title, $content, $adddressMail);
+                    // Bắt và loại bỏ đầu ra
+                    // ob_get_clean();
                 } else {
                     echo "Yêu cầu không hợp lệ";
                 }
