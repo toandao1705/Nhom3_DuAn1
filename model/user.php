@@ -155,6 +155,19 @@ function update_taikhoan($id, $email, $address, $phone, $role){
    $select = "UPDATE user SET email='".$email."', address='".$address."', phone='".$phone."', role=".$role." WHERE id=".$id;
    $db->pdo_execute($select);
 }
+function update_taikhoanUser($id, $address, $phone, $role) {
+   $db = new connect();
+   $select = "UPDATE user SET address='".$address."', phone='".$phone."', role=".$role." WHERE id=".$id;
+   var_dump($select); // In câu lệnh SQL để kiểm tra xem có vấn đề gì không
+   $db->pdo_execute($select);
+}
+public function getUserInfoById($id) {
+   $db = new connect();
+   $select = "SELECT * FROM user WHERE id = $id";
+   return $db->pdo_query_one($select);
+}
+
+
 function checkUserOne($name, $pass){
    $db = new connect();
    $passwordEncryption = md5($pass);

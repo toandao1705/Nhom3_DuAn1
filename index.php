@@ -120,20 +120,20 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     array_push($_SESSION['mycart'], $spadd);
                 }
             }
-            if(isset($_POST['updateCart']) && ($_POST['updateCart'])){
+            if (isset($_POST['updateCart']) && ($_POST['updateCart'])) {
                 $quantities = $_POST['quantity'];
-            
+
                 foreach ($quantities as $key => $quantity) {
                     // Validate and sanitize the quantity input
                     $quantity = filter_var($quantity, FILTER_VALIDATE_INT, array('options' => array('min_range' => 1)));
-                    
+
                     if ($quantity !== false) {
                         // Update the quantity in the cart
                         $_SESSION['mycart'][$key][4] = $quantity;
                     }
                 }
             }
-            
+
 
             include "view/cart/cart.php";
             break;
@@ -308,25 +308,22 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
         case 'updateAccountUser':
             $user = new user();
-            if (isset($_POST['updateAccountUser']) && ($_POST['updateAccountUser'])) {
+            if (isset($_POST['updateAccount']) && ($_POST['updateAccount'])) {
                 $id = $_POST['id'];
-                // $name = $_POST['name'];
-                $newEmail = $_POST['email'];
-                if ($user->checkUserUpdate($newEmail, $name)) {
-                    $thongbao = "Email already exists, please select another email";
-                    include 'view/account.php';
-                } else {
-                    // $pass = $_POST['pass'];
-                    $address = $_POST['address'];
-                    $phone = $_POST['phone'];
-                    $role = 0;
-                    $user->update_taikhoan($id, $newEmail, $address, $phone, $role);
-                    $_SESSION['user'] =  $user->checkUserOne($name, $pass);
-                    $thongbao = "Cập nhật thành công";
-                    header('location: index.php?act=account');
-                }
+                $address = $_POST['address'];
+                $phone = $_POST['phone'];
+                $role = 0;
+                // Lấy thông tin người dùng hiện tại
+
+                $user->update_taikhoanUser($id, $address, $phone, $role);
+                $updatedUser = $user->getUserInfoById($id);
+                        // Cập nhật session với thông tin mới
+        $_SESSION['user'] = $updatedUser;
+                $thongbao = "Cập nhật thành công";
+                header('location: index.php?act=account');
             }
             break;
+
         case 'blog_category':
             include "view/blog_category.php";
             break;

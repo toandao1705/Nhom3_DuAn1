@@ -198,15 +198,14 @@
                                             </div>
                                                 <div class="form-group col-md-12">
                                                     <label>Username <span class="required">*</span></label>
-                                                    <input type="text" name="name" id="name" value="<?php echo $name ?>" placeholder="Username" disabled />
-                                                    <input type="hidden" name="name" value="<?php echo $name ?>" />
+                                                    <input type="text" id="name" value="<?php echo $name ?>" placeholder="Username" disabled />
 
                                                     <span id="username-error" class="error-text text-danger"></span>
                                                 </div>
                                                 <div class="form-group col-md-12">
                                                     <label>Email<span class="required">*</span></label>
 
-                                                    <input type="text" name="email" id="email" value="<?= $email ?>" placeholder="Email" />
+                                                    <input type="text" id="email" value="<?= $email ?>" placeholder="Email" disabled/>
                                                     <span id="email-error" class="error-text text-danger"></span>
                                                 </div>
                                                 <!-- <div class="form-group col-md-12">
@@ -226,7 +225,7 @@
                                                 </div>
                                                 <div class="form-group mb-30">
                                                     <input type="hidden" name="id" value="<?= $id ?>">
-                                                    <input type="submit" value="Save Change" name="updateAccountUser" class="btn btn-fill-out btn-block hover-up font-weight-bold custom-btn" style="background-color: #3bb77e;">
+                                                    <input type="submit" value="Save Change" name="updateAccount" class="btn btn-fill-out btn-block hover-up font-weight-bold custom-btn" style="background-color: #3bb77e;">
                                                     <!-- <button class="btn btn-fill-out btn-block hover-up font-weight-bold" name="register">Register</button> -->
                                                 </div>
                                             </form>
