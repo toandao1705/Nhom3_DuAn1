@@ -27,9 +27,9 @@ if (isset($_SESSION['admin'])) {
     if (isset($_GET['act'])) {
         $act = $_GET['act'];
         switch ($act) {
-            // case 'addbn':
-            //     include "banner/add.php";
-            //     break;
+                // case 'addbn':
+                //     include "banner/add.php";
+                //     break;
             case 'addbn':
                 if (isset($_POST['addbn'])) {
                     // lấy dữ liệu về 
@@ -49,10 +49,9 @@ if (isset($_SESSION['admin'])) {
                     //trở về trang dsbn
                     $banner = new banner();
                     $thongbao = "Thêm banner thành công";
-                
                 }
                 include "banner/add.php";
-                
+
                 break;
             case 'listbn':
                 $banner = new banner();
@@ -67,7 +66,7 @@ if (isset($_SESSION['admin'])) {
                 $start = ($page - 1) * $limit;
 
                 // Tìm nạp danh mục cho trang hiện tại
-                
+
                 $listbanner = $banner->loadall_banner($delete, $start, $limit);
 
                 // Đếm tổng số bản ghi
@@ -113,7 +112,7 @@ if (isset($_SESSION['admin'])) {
                 $start = ($page - 1) * $limit;
 
                 // Tìm nạp danh mục cho trang hiện tại
-                
+
                 $listbanner = $banner->loadall_banner($delete, $start, $limit);
 
                 // Đếm tổng số bản ghi
@@ -150,7 +149,7 @@ if (isset($_SESSION['admin'])) {
             case 'adddm':
                 $category = new category();
                 $thongbao = "";
-            
+
                 if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
                     $tenloai = $_POST['tenloai'];
                     try {
@@ -166,7 +165,7 @@ if (isset($_SESSION['admin'])) {
                         }
                     }
                 }
-            
+
                 include "danhmuc/add.php";
                 break;
             case 'listdm':
@@ -183,7 +182,7 @@ if (isset($_SESSION['admin'])) {
                 $start = ($page - 1) * $limit;
 
                 // Tìm nạp danh mục cho trang hiện tại
-                
+
                 $categories = $category->status_danhmuc($delete, $start, $limit);
 
                 // Đếm tổng số bản ghi
@@ -271,18 +270,18 @@ if (isset($_SESSION['admin'])) {
                 $start = ($page - 1) * $limit;
 
                 // Tìm nạp danh mục cho trang hiện tại
-                
+
                 $productsList = $loadedProducts->loadall_sanpham($kyw, $iddm, $delete, $start, $limit);
 
                 // Đếm tổng số bản ghi
-                $totalProducts = count($loadedProducts->loadall_sanpham("", "",$delete, 0, PHP_INT_MAX));
+                $totalProducts = count($loadedProducts->loadall_sanpham("", "", $delete, 0, PHP_INT_MAX));
 
                 // Tính tổng số trang
                 $totalPages = ceil($totalProducts / $limit);
-                
+
                 $status = 0;
                 $categories = $category->loadall_danhmuc($status);
-                
+
                 include "sanpham/list.php";
                 break;
             case 'updatesp':
@@ -291,7 +290,7 @@ if (isset($_SESSION['admin'])) {
                 if (isset($_GET['id']) && ($_GET['id']) > 0) {
                     $product = $loadedProducts->loadone_sanpham($_GET['id']);
                 }
-                $status=0;
+                $status = 0;
                 $categories = $category->loadall_danhmuc($status);
                 include "sanpham/update.php";
                 break;
@@ -329,7 +328,7 @@ if (isset($_SESSION['admin'])) {
                     $thongbao = "Cập nhật thành công";
                     header('location: index.php?act=listsp');
                 }
-                
+
                 include "sanpham/list.php";
                 break;
             case 'list_delete_history':
@@ -407,15 +406,15 @@ if (isset($_SESSION['admin'])) {
                 $start = ($page - 1) * $limit;
 
                 // Tìm nạp danh mục cho trang hiện tại
-                
+
                 $productsList = $loadedProducts->loadall_sanpham("", "", $delete, $start, $limit);
 
                 // Đếm tổng số bản ghi
-                $totalProducts = count($loadedProducts->loadall_sanpham("", "",$delete, 0, PHP_INT_MAX));
+                $totalProducts = count($loadedProducts->loadall_sanpham("", "", $delete, 0, PHP_INT_MAX));
 
                 // Tính tổng số trang
                 $totalPages = ceil($totalProducts / $limit);
-                
+
                 $categories = $category->loadall_danhmuc();
                 include "sanpham/delete.php";
                 break;
@@ -437,7 +436,7 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'listtk':
                 $taikhoan = new user();
-                $delete=0;
+                $delete = 0;
                 //Đặt số lượng bản ghi trên mỗi trang
                 $limit = 5;
 
@@ -448,7 +447,7 @@ if (isset($_SESSION['admin'])) {
                 $start = ($page - 1) * $limit;
 
                 // Tìm nạp danh mục cho trang hiện tại
-                
+
                 $listtk = $taikhoan->loadall_taikhoan($delete, $start, $limit);
 
                 // Đếm tổng số bản ghi
@@ -479,7 +478,7 @@ if (isset($_SESSION['admin'])) {
                 $start = ($page - 1) * $limit;
 
                 // Tìm nạp danh mục cho trang hiện tại
-                
+
                 $listtk = $taikhoan->loadall_taikhoan($delete, $start, $limit);
 
                 // Đếm tổng số bản ghi
@@ -507,25 +506,32 @@ if (isset($_SESSION['admin'])) {
                 break;
             case 'suatk':
                 $user = new user();
-                if(isset($_GET['id'])&&($_GET['id'])>0){
-                    $taikhoan=$user->loadone_taikhoan($_GET['id']);
+                if (isset($_GET['id']) && ($_GET['id']) > 0) {
+                    $taikhoan = $user->loadone_taikhoan($_GET['id']);
                 }
                 include "taikhoan/update.php";
                 break;
             case 'updatetk':
                 $user = new user();
-                if(isset($_POST['capnhat'])&&($_POST['capnhat'])){
-                    $id=$_POST['id'];
-                    $email=$_POST['email'];
-                    $pass=$_POST['pass'];
-                    $address=$_POST['address'];
-                    $phone=$_POST['phone'];
-                    $role=$_POST['role'];
-                    $user->update_taikhoan($id, $email, $pass, $address, $phone, $role);
-                    $thongbao = "Cập nhật thành công";
+                if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
+                    $id = $_POST['id'];
+                    $email = $_POST['email'];
+                    // Kiểm tra xem email mới có trùng với người dùng khác không
+                    if ($user->checkUserUpdateOne($email, $id)) {
+                        $_SESSION['thongbao'] = "Email already exists, please select another email";
+                        header('location: index.php?act=suatk&id=' . $id);
+                        exit();
+                    } else {
+                        $address = $_POST['address'];
+                        $phone = $_POST['phone'];
+                        $role = $_POST['role'];
+                        $user->update_taikhoan($id, $email, $address, $phone, $role);
+                        $thongbao = "Cập nhật thành công";
+                        header('location: index.php?act=listtk');
+                    }
                 }
-                header('location: index.php?act=listtk');
                 break;
+
             case 'listbl':
                 $binhluan = new comment();
                 $delete = 0;
@@ -539,7 +545,7 @@ if (isset($_SESSION['admin'])) {
                 $start = ($page - 1) * $limit;
 
                 // Tìm nạp danh mục cho trang hiện tại
-                
+
                 $listbl = $binhluan->loadall_binhluan(0, $delete, $start, $limit);
 
                 // Đếm tổng số bản ghi
@@ -570,7 +576,7 @@ if (isset($_SESSION['admin'])) {
                 $start = ($page - 1) * $limit;
 
                 // Tìm nạp danh mục cho trang hiện tại
-                
+
                 $listbl = $comment->loadall_binhluan(0, $delete, $start, $limit);
 
                 // Đếm tổng số bản ghi
@@ -645,10 +651,10 @@ if (isset($_SESSION['admin'])) {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $name = $_POST['name'] ?? '';
         $pass = $_POST['pass'] ?? '';
-        
+
         // Mã hóa mật khẩu theo kiểu MD5
         $hashedPassword = md5($pass);
-    
+
         if ($user->checkUser($name, $hashedPassword)) {
             $result = $user->userid($name, $hashedPassword);
             $_SESSION['admin'] = $name; // kiểm tra có người dùng hay không

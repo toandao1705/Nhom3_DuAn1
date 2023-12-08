@@ -205,7 +205,7 @@
                                                 <div class="form-group col-md-12">
                                                     <label>Email<span class="required">*</span></label>
 
-                                                    <input type="text" id="email" value="<?= $email ?>" placeholder="Email" disabled/>
+                                                    <input type="text" name="email" id="email" value="<?= $email ?>" placeholder="Email"/>
                                                     <span id="email-error" class="error-text text-danger"></span>
                                                 </div>
                                                 <!-- <div class="form-group col-md-12">

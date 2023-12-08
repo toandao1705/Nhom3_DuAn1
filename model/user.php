@@ -155,9 +155,9 @@ function update_taikhoan($id, $email, $address, $phone, $role){
    $select = "UPDATE user SET email='".$email."', address='".$address."', phone='".$phone."', role=".$role." WHERE id=".$id;
    $db->pdo_execute($select);
 }
-function update_taikhoanUser($id, $address, $phone, $role) {
+function update_taikhoanUser($id, $email, $address, $phone, $role) {
    $db = new connect();
-   $select = "UPDATE user SET address='".$address."', phone='".$phone."', role=".$role." WHERE id=".$id;
+   $select = "UPDATE user SET email='".$email."', address='".$address."', phone='".$phone."', role=".$role." WHERE id=".$id;
    var_dump($select); // In câu lệnh SQL để kiểm tra xem có vấn đề gì không
    $db->pdo_execute($select);
 }
@@ -166,6 +166,20 @@ public function getUserInfoById($id) {
    $select = "SELECT * FROM user WHERE id = $id";
    return $db->pdo_query_one($select);
 }
+public function checkUserUpdateOne($email, $id) 
+{ 
+    $db = new connect();               
+    $select = "SELECT * FROM user WHERE email = '$email' AND id != $id";
+    $result = $db->pdo_query_one($select);
+
+    // Kiểm tra xem có dữ liệu trả về hay không
+    if($result != null) {
+        return true; // Email đã tồn tại cho một người dùng khác
+    } else {
+        return false; // Email không tồn tại hoặc chỉ tồn tại cho chính người dùng này
+    }
+}
+
 
 
 function checkUserOne($name, $pass){

@@ -26,11 +26,11 @@ if (is_array($taikhoan)) {
                 <input type="text" class="form-control" name="email" id="email" value="<?= $email ?>">
                 <span id="email-error" class="error-text text-danger"></span>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label for="exampleInputPassword1">Mật khẩu</label>
-                <input type="password" class="form-control" name="pass" id="pass" value="<?= $pass ?>">
+                <input type="password" class="form-control" name="pass" id="pass" value="">
                 <span id="pass-error" class="error-text text-danger"></span>
-              </div>
+              </div> -->
               <div class="form-group">
                 <label for="exampleInputPassword1">Địa chỉ</label>
                 <input type="text" class="form-control" name="address" id="address" value="<?= $address ?>">
@@ -42,21 +42,32 @@ if (is_array($taikhoan)) {
                 <span id="tel-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">
-              <label for="role">Vai trò</label>
-              <select class="form-control" name="role" id="role">
-                <option value="0" <?= $role === '0' ? 'selected' : '' ?>>User</option>
-                <option value="1" <?= $role === '1' ? 'selected' : '' ?>>Admin</option>
-              </select>
+                <label for="role">Vai trò</label>
+                <select class="form-control" name="role" id="role">
+                  <option value="0" <?= $role === '0' ? 'selected' : '' ?>>User</option>
+                  <option value="1" <?= $role === '1' ? 'selected' : '' ?>>Admin</option>
+                </select>
+              </div>
             </div>
-            </div>
-            
+
 
 
             <div class="card-footer">
               <input type="hidden" name="id" value="<?= $id ?>">
-              <input type="submit" name="capnhat" value="CẬP NHẬT">
-              <input type="reset" value="NHẬP LẠi">
-              <a href="index.php?act=listtk"><input type="button" value="DANH SÁCH"></a>
+              <input type="submit" class="btn btn-secondary" name="capnhat" value="CẬP NHẬT">
+              <input type="reset" class="btn btn-info" value="NHẬP LẠi">
+              <a href="index.php?act=listtk"><input class="btn btn-info" type="button" value="DANH SÁCH"></a>
+            </div>
+            <div class="form-group">
+              <?php if (isset($_SESSION['thongbao']) && ($_SESSION['thongbao'] != "")) { ?>
+                <div class="alert alert-danger" role="alert">
+                  <?= $_SESSION['thongbao'] ?>
+                </div>
+              <?php } ?>
+              <?php
+              // Unset session sau khi đã sử dụng nó
+              unset($_SESSION['thongbao']);
+              ?>
             </div>
           </form>
           <script>

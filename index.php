@@ -306,23 +306,29 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             }
             include "view/account.php";
             break;
-        case 'updateAccountUser':
-            $user = new user();
-            if (isset($_POST['updateAccount']) && ($_POST['updateAccount'])) {
-                $id = $_POST['id'];
-                $address = $_POST['address'];
-                $phone = $_POST['phone'];
-                $role = 0;
-                // Lấy thông tin người dùng hiện tại
-
-                $user->update_taikhoanUser($id, $address, $phone, $role);
-                $updatedUser = $user->getUserInfoById($id);
+            case 'updateAccountUser':
+                $user = new user();
+                if (isset($_POST['updateAccount']) && ($_POST['updateAccount'])) {
+                    $id = $_POST['id'];
+                    $newEmail = $_POST['email'];
+                    if ($user->checkUserUpdateOne($newEmail, $id)) {
+                        $thongbao = "Email already exists, please select another email";
+                        include 'view/account.php';
+                    } else {
+                        $address = $_POST['address'];
+                        $phone = $_POST['phone'];
+                        $role = 0;
+                        $user->update_taikhoanUser($id, $newEmail, $address, $phone, $role);
+                        $updatedUser = $user->getUserInfoById($id);
                         // Cập nhật session với thông tin mới
-        $_SESSION['user'] = $updatedUser;
-                $thongbao = "Cập nhật thành công";
-                header('location: index.php?act=account');
-            }
-            break;
+                        $_SESSION['user'] = $updatedUser;
+            
+                        $thongbao = "Cập nhật thành công";
+                        header('location: index.php?act=account');
+                    }
+                }
+                break;
+            
 
         case 'blog_category':
             include "view/blog_category.php";
