@@ -133,7 +133,11 @@
                         <div class="payment_option">
                             <div class="custome-radio">
                                 <input class="form-check-input" type="radio" name="online_payment" id="exampleRadios4">
-                                <label class="form-check-label" for="exampleRadios4" data-bs-toggle="collapse" data-target="#checkPayment" aria-controls="checkPayment" onclick="updatePaymentMethod('online')">Online Getway</label>
+                                <label class="form-check-label" for="exampleRadios4" data-bs-toggle="collapse" data-target="#checkPayment" aria-controls="checkPayment" onclick="updatePaymentMethod('online')">Pay with momo</label>
+                            </div>
+                            <div class="custome-radio">
+                                <input class="form-check-input" type="radio" name="redirect" id="exampleRadios6">
+                                <label class="form-check-label" for="exampleRadios6" data-bs-toggle="collapse" data-target="#checkPayment" aria-controls="checkPayment" onclick="updatePaymentMethod('vnpay')">Pay with vnpay</label>
                             </div>
                             <div class="custome-radio">
                                 <input class="form-check-input" type="radio" name="direct_payment" id="exampleRadios5">
@@ -143,19 +147,28 @@
                         <script>
                             function updatePaymentMethod(method) {
                                 var onlinePaymentRadio = document.getElementById("exampleRadios4");
+                                var onlinePaymentvnpay = document.getElementById("exampleRadios6");
                                 var cashOnDeliveryRadio = document.getElementById("exampleRadios5");
                                 var paymentMethodInput = document.getElementById("payment_methods"); // Sửa ID thành "payment_methods"
 
                                 if (method === "online" && !onlinePaymentRadio.checked) {
                                     // Nếu chọn thanh toán online và chưa được chọn, chọn nó
                                     onlinePaymentRadio.checked = true;
+                                    onlinePaymentvnpay.checked = false;
                                     cashOnDeliveryRadio.checked = false;
                                     paymentMethodInput.value = 1;
                                 } else if (method === "cash" && !cashOnDeliveryRadio.checked) {
                                     // Nếu chọn thanh toán khi nhận hàng và chưa được chọn, chọn nó
-                                    cashOnDeliveryRadio.checked = true;
                                     onlinePaymentRadio.checked = false;
+                                    onlinePaymentvnpay.checked = false;
+                                    cashOnDeliveryRadio.checked = true;
                                     paymentMethodInput.value = 0;
+                                } else if (method === "vnpay" && !onlinePaymentvnpay.checked) {
+                                    // Nếu chọn thanh toán khi nhận hàng và chưa được chọn, chọn nó
+                                    cashOnDeliveryRadio.checked = false;
+                                    onlinePaymentvnpay.checked = true;
+                                    onlinePaymentRadio.checked = false;
+                                    paymentMethodInput.value = 2;
                                 }
                             }
                         </script>
