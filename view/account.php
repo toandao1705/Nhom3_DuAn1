@@ -31,7 +31,7 @@
                                             <a class="nav-link" id="account-detail-tab" data-bs-toggle="tab" href="#account-detail" role="tab" aria-controls="account-detail" aria-selected="true"><i class="fi-rs-user mr-10"></i>Account details</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.php?act=login"><i class="fi-rs-sign-out mr-10"></i>Logout</a>
+                                            <a class="nav-link" href="index.php?act=logout"><i class="fi-rs-sign-out mr-10"></i>Logout</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -148,15 +148,7 @@
                                                     <div class="card-header">
                                                         <h3 class="mb-0">Billing Address</h3>
                                                     </div>
-                                                    <div class="card-body">
-                                                        <address>
-                                                            3522 Interstate<br />
-                                                            75 Business Spur,<br />
-                                                            Sault Ste. <br />Marie, MI 49783
-                                                        </address>
-                                                        <p>New York</p>
-                                                        <a href="#" class="btn-small">Edit</a>
-                                                    </div>
+                                                    <!-- điền vào chỗ trống :)) -->
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
@@ -182,7 +174,7 @@
                                                 <h5>Account Details</h5>
                                             </div>
                                             <div class="card-body">
-                                                <p>Already have an account? <a href="index.php?act=login">Log in instead!</a></p>
+                                                <p>Already have an account? <a href="index.php?act=login_google">Log in instead!</a></p>
                                                 <?php
                                             if (isset($_SESSION['user']) && (is_array($_SESSION['user']))) {
                                                 extract($_SESSION['user']);

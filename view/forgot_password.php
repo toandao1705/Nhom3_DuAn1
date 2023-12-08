@@ -27,15 +27,15 @@
                                     $result = $user->getUserEmail($email);
 
                                     if ($email == '') {
-                                        $error['email'] = 'Không được để trống';
+                                        $error['email'] = 'Cannot be left blank';
                                     }
                                     
                                     if (empty($error) && !empty($result)) {
                                         $code = str_pad(rand(0, 999999), 6, '0', STR_PAD_LEFT); // Tạo mã xác nhận ngẫu nhiên có 6 chữ số
 
                                         // Gửi email chứa mã code
-                                        $title = "Quên mật khẩu";
-                                        $content = "Mã xác nhận của bạn là: <span style='color:green'>".$code."</span>";
+                                        $title = "Forgot password";
+                                        $content = "Your confirmation code is: <span style='color:green'>".$code."</span>";
                                         $mail->sendMail($title, $content, $email);
 
                                         // Lưu thông tin vào session để sử dụng trong trang validate.php
@@ -70,7 +70,7 @@
                                                     terms & Policy.</span></label>
                                         </div>
                                     </div>
-                                    <a class="text-muted" href="#">Learn more</a>
+                                    <a class="text-muted" href="index.php">Learn more</a>
                                 </div>
                                 <div class="form-group">
 
@@ -88,7 +88,7 @@
     function validateForm() {
         var checkbox = document.getElementById("exampleCheckbox1");
         if (!checkbox.checked) {
-            alert("Bạn phải đồng ý với các điều khoản và chính sách.");
+            alert("You must agree to the terms and policies.");
             return false;
         }
     }

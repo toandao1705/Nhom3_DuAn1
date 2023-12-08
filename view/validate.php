@@ -27,12 +27,12 @@
                                         if ($currentTime < $_SESSION['expirationTime']) {
                                             
                                             if($_POST['text'] != $_SESSION['code']){
-                                                $error['fail'] = 'Mã xác nhân không hợp lệ !';
+                                                $error['fail'] = 'Verification code is invalid !';
                                             }else{
                                                 header('location: index.php?act=reset_pass');
                                             }
                                         }else {
-                                            $errorTime = 'Thời gian mã code hết hạn';
+                                            $errorTime = 'Code expiration time';
                                         }
                                     }
                                 ?>
@@ -47,17 +47,17 @@
                                         if (isset($errorTime)) {
                                             echo $errorTime;
                                         }else{
-                                            echo 'Hãy nhập mã xác nhận mà chúng tôi đã gửi cho bạn về email';
+                                            echo 'Please enter the confirmation code we sent you to your email';
                                         }
                                         ?>
                                     </div>
                                     <?php endif ?>
 
                                 </div>
-                                <input type="text" class="control-login" name="text" placeholder="Nhập mã xác nhận">
-                                <div class=" form-group">
+                                <input type="text" class="control-login" name="text" placeholder="Enter the confirmation code">
+                                <div class=" form-group mt-3" >
                                     <button type="submit" class="btn btn-heading btn-block hover-up" name="submit">
-                                        Gửi</button>
+                                        Submit</button>
                                 </div>
                             </form>
                         </div>

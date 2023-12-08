@@ -152,7 +152,7 @@
                 <section class="section-padding pb-5">
                     <div class="section-title">
                         <h3 class="">Deals Of The Day</h3>
-                        <a class="show-all" href="shop-grid-right.php">
+                        <a class="show-all" href="index.php?act=search">
                             All Deals
                             <i class="fi-rs-angle-right"></i>
                         </a>
@@ -203,8 +203,7 @@
                                 </div>
                                 <div class="product-card-bottom">
                                     <div class="product-price">
-                                        <span>' . $price . '</span>
-                                        <span class="old-price">' . $price . '</span>
+                                        <span>$' . $price . '</span>
                                     </div>
                                     <div class="add-cart">
                                     <form action="index.php?act=addtocart" method="post">
