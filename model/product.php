@@ -1,10 +1,10 @@
 <?php
 class products
 {
-    function insert_sanpham($tensp, $giasp, $mota, $iddm, $targetFiles)
+    function insert_sanpham($tensp, $soluong, $giasp, $mota, $iddm, $targetFiles)
     {
         $db = new connect();
-        $select = "INSERT INTO products(name, price, `describe`, id_category) VALUES ('$tensp', '$giasp', '$mota', '$iddm')";
+        $select = "INSERT INTO products(name, quantity, price, `describe`, id_category) VALUES ('$tensp','$soluong', '$giasp', '$mota', '$iddm')";
 
         // Get the ID of the inserted product
         $productID = $db->pdo_execute_return_lastInsertId($select);
@@ -93,11 +93,11 @@ class products
 
 
 
-    public function update_sanpham($id, $id_category, $tensp, $giasp, $mota, $images, $status)
+    public function update_sanpham($id, $id_category, $tensp, $soluong, $giasp, $mota, $images, $status)
     {
         $db = new connect();
         // Use backticks for reserved keyword `describe`
-        $updateProduct = "UPDATE products SET id_category='" . $id_category . "', name='" . $tensp . "', price='" . $giasp . "', `describe`='" . $mota . "', status='" . $status . "' WHERE id=" . $id;
+        $updateProduct = "UPDATE products SET id_category='" . $id_category . "', name='" . $tensp . "', quantity='" . $soluong . "', price='" . $giasp . "', `describe`='" . $mota . "', status='" . $status . "' WHERE id=" . $id;
 
         $db->pdo_execute($updateProduct);
 

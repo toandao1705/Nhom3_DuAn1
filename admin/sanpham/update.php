@@ -42,6 +42,11 @@ $allImages = $loadedProducts->loadall_images($id);
                 <span id="giasp-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">
+                <label for="exampleInputPassword1">Số lượng</label>
+                <input type="text" class="form-control" name="soluong" id="soluongsp" value="<?= $quantity ?>">
+                <span id="soluongsp-error" class="error-text text-danger"></span>
+              </div>
+              <div class="form-group">
                 <label for="hinh">Hình ảnh</label>
                 <div class="input-group mb-3">
                   <label class="custom-file-label" for="hinh">Chọn tệp</label>

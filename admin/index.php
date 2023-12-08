@@ -218,6 +218,7 @@ if (isset($_SESSION['admin'])) {
                 if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
                     $iddm = $_POST['iddm'];
                     $tensp = $_POST['tensp'];
+                    $soluong = $_POST['soluong'];
                     $giasp = $_POST['giasp'];
                     $mota = $_POST['mota'];
 
@@ -239,7 +240,7 @@ if (isset($_SESSION['admin'])) {
                         }
 
                         // Chèn sản phẩm chỉ khi có hình ảnh
-                        $products->insert_sanpham($tensp, $giasp, $mota, $iddm, $targetFiles);
+                        $products->insert_sanpham($tensp, $soluong, $giasp, $mota, $iddm, $targetFiles);
                         $thongbao = "Thêm thành công";
                     } else {
                         $thongbao = "Thêm không thành công vì không có hình ảnh";
@@ -302,6 +303,7 @@ if (isset($_SESSION['admin'])) {
                     $id_category = $_POST['iddm'];
                     $tensp = $_POST['tensp'];
                     $giasp = $_POST['giasp'];
+                    $soluong = $_POST['soluong'];
                     $mota = $_POST['mota'];
                     $status = $_POST['status'];
                     // ...
@@ -324,7 +326,7 @@ if (isset($_SESSION['admin'])) {
 
                     }
                     // ...
-                    $loadedProducts->update_sanpham($id, $id_category, $tensp, $giasp, $mota, $images, $status);
+                    $loadedProducts->update_sanpham($id, $id_category, $tensp, $soluong, $giasp, $mota, $images, $status);
                     $thongbao = "Cập nhật thành công";
                     header('location: index.php?act=listsp');
                 }

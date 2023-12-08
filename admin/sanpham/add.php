@@ -47,6 +47,11 @@
                 <span id="giasp-error" class="error-text text-danger"></span>
               </div>
               <div class="form-group">
+                <label for="exampleInputPassword1">Số lượng</label>
+                <input type="text" class="form-control" name="soluong" id="soluong">
+                <span id="soluongsp-error" class="error-text text-danger"></span>
+              </div>
+              <div class="form-group">
                 <label for="hinh">Hình ảnh</label>
                 <div class="input-group">
                   <div class="custom-file">
@@ -112,12 +117,15 @@
               var giasp = document.getElementById('giasp').value;
               var hinh = document.getElementById('hinh').value;
               var mota = document.getElementById('mota').value;
+              var soluong = document.getElementById('soluong').value;
 
               // Xóa thông báo lỗi cũ
               document.getElementById('tensp-error').textContent = "";
               document.getElementById('giasp-error').textContent = "";
               document.getElementById('hinh-error').textContent = "";
               document.getElementById('mota-error').textContent = "";
+              document.getElementById('soluongsp-error').textContent = "";
+
 
               // Bắt lỗi nếu tên sản phẩm trống
               if (tensp.trim() === "") {
@@ -133,6 +141,12 @@
               }else if (isNaN(giasp) || giasp <= 0) { // Bắt lỗi nếu giá sản phẩm không phải là số hoặc không lớn hơn 0
                 e.preventDefault(); // Ngăn chặn việc submit form
                 document.getElementById('giasp-error').textContent = 'Giá sản phẩm phải là số dương';
+              }
+
+              // Bắt lỗi nếu tệp hình không được để trống
+              if (hinh.trim() === "") {
+                e.preventDefault(); // Ngăn chặn việc submit form
+                document.getElementById('soluongsp-error').textContent = 'Số lượng không được để trống';
               }
               
 
