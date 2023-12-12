@@ -3110,7 +3110,7 @@
             <div class="section-title">
                 <div class="title">
                     <h3>Shop by Categories</h3>
-                    <a class="show-all" href="index.php?act=search">
+                    <a class="show-all" href="index.php?act=shop">
                         All Categories
                         <i class="fi-rs-angle-right"></i>
                     </a>

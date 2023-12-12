@@ -186,8 +186,8 @@
                                                 extract($_SESSION['user']);
                                                 $name = $_SESSION['user']['name'];
                                                 $email = $_SESSION['user']['email'];
-                                                $address = isset($_POST['address']) ? $_POST['address'] : '';
-                                                $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+                                                $address = isset($_SESSION['user']['address']) ? $_SESSION['user']['address'] : '';
+                                                $phone = isset($_SESSION['user']['phone']) ? $_SESSION['user']['phone'] : '';
                                             }
                                             ?>
                                             <form action="index.php?act=updateAccountUser" method="post" enctype="multipart/form-data" id="validateF" onsubmit="return validateForm();">

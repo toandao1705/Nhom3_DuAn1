@@ -24,9 +24,9 @@
                                 if(isset($_POST['submit'])){
                                     $error = array();
                                     if($_POST['repass'] != $_POST['newpass']){
-                                        $error['fail'] = 'Nhập lại mật khẩu không khớp !';
+                                        $error['fail'] = 'Re-enter the password does not match !';
                                     }else{
-                                        $error['success'] = 'Đổi mật khẩu thành công ! Chuyển hướng sau 3s.';
+                                        $error['success'] = 'Password changed successfully! Change direction after 3 seconds.';
                                         $user->forgetPass($_POST['newpass'],$_SESSION['mail']);
                                         header('refresh:3;index.php?act=login');
                                     }
@@ -42,23 +42,23 @@
                                 </div>
                                 <?php else : ?>
                                 <div class="alert alert-primary" role="alert">
-                                    Đổi mật khẩu mới tại đây
+                                Change new password here
                                 </div>
                                 <?php endif; ?>
 
                                 <div class="form-group">
                                     <input type="text" name="newpass" class="contro-login"
                                         value="<?php if(isset($_POST['newpass'])) echo $_POST['newpass'] ?>"
-                                        placeholder="Nhập mật khẩu mới">
+                                        placeholder="Enter your new password">
                                     <br>
-                                    <input type="text" name="repass" class="contro-login"
+                                    <input type="text" name="repass" class="contro-login mt-3"
                                         value="<?php if(isset($_POST['repass'])) echo $_POST['repass'] ?>"
-                                        placeholder="Xác nhận mật khẩu">
+                                        placeholder="Confirm password">
                                 </div>
 
                                 <div class=" form-group">
                                     <button type="submit" class="btn btn-heading btn-block hover-up" name="submit">
-                                        Gửi</button>
+                                        Submit</button>
                                 </div>
                             </form>
                         </div>
