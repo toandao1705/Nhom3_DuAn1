@@ -43,7 +43,7 @@
                                             <td>' . $category['name'] . '</td>
                                             <td>
                                                 <a href="index.php?act=restoredm&id=' . $category['id'] . '"><button class="btn btn-primary" value="">Khôi phục</button></a>
-                                                <button class="btn btn-danger" onclick="confirmDelete(' . $category['id'] . ')">Xóa</button>
+                                                <a href="index.php?act=deletedm&id=' . $category['id'] . '"><button class="btn btn-danger">Xóa</button></a>
                                             </td>
                                         </tr>';
                                         }

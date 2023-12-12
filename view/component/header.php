@@ -198,7 +198,7 @@
                                                         </div>
                                                         <div class="shopping-cart-title">
                                                             <h4><a href="index.php?act=product_full">' . $cart[1] . '</a></h4>
-                                                            <h4><span>' . $cart[4] . '× </span>$' . $cart[3] . '</h4>
+                                                            <h4><span>x' . $cart[4] . ' </span>$' . $cart[3] . '</h4>
                                                         </div>
                                                         <div class="shopping-cart-delete">
                                                             <a href="' . $xoasp . '"><i class="fi-rs-cross-small"></i></a>
@@ -235,12 +235,8 @@
                                             <ul>
                                                 <li><a href="index.php?act=account"><i class="fi fi-rs-user mr-10"></i>My
                                                         Account</a></li>
-                                                <li><a href="page-account.php"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
-                                                <li><a href="page-account.php"><i class="fi fi-rs-label mr-10"></i>My
-                                                        Voucher</a></li>
-                                                <li><a href="shop-wishlist.php"><i class="fi fi-rs-heart mr-10"></i>My
-                                                        Wishlist</a></li>
-                                                <li><a href="page-account.php"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
+                                                <li><a href="index.php?act=account"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
+                                                <li><a href="index.php?act=account"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
                                                 <li><a href="index.php?act=logout"><i class="fi fi-rs-sign-out mr-10"></i>Sign
                                                         out</a></li>
                                             </ul>
@@ -260,37 +256,8 @@
                                             <ul>
                                                 <li><a href="index.php?act=account"><i class="fi fi-rs-user mr-10"></i>My
                                                         Account</a></li>
-                                                <li><a href="page-account.php"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
-                                                <li><a href="page-account.php"><i class="fi fi-rs-label mr-10"></i>My
-                                                        Voucher</a></li>
-                                                <li><a href="shop-wishlist.php"><i class="fi fi-rs-heart mr-10"></i>My
-                                                        Wishlist</a></li>
-                                                <li><a href="page-account.php"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
-                                                <li><a href="index.php?act=logout"><i class="fi fi-rs-sign-out mr-10"></i>Sign
-                                                        out</a></li>
-                                            </ul>
-                                        </div>
-                                    <?php
-                                    } else if (isset($_SESSION['facebook']) && is_array($_SESSION['facebook'])) {
-                                        // Sử dụng thông tin từ session facbook
-                                        $facebook = $_SESSION['facebook'];
-                                        $name = $facebook['name'];
-                                    ?>
-                                        <!-- Nội dung khi có session facebook -->
-                                        <a href="index.php?act=account">
-                                            <img class="svgInject" alt="Nest" src="view/assets/imgs/theme/icons/icon-user.svg" />
-                                        </a>
-                                        <a href="index.php?act=account"><span class="lable ml-0"><?= $name ?></span></a>
-                                        <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
-                                            <ul>
-                                                <li><a href="index.php?act=account"><i class="fi fi-rs-user mr-10"></i>My
-                                                        Account</a></li>
-                                                <li><a href="page-account.php"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
-                                                <li><a href="page-account.php"><i class="fi fi-rs-label mr-10"></i>My
-                                                        Voucher</a></li>
-                                                <li><a href="shop-wishlist.php"><i class="fi fi-rs-heart mr-10"></i>My
-                                                        Wishlist</a></li>
-                                                <li><a href="page-account.php"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
+                                                <li><a href="index.php?act=account"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
+                                                <li><a href="index.php?act=account"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
                                                 <li><a href="index.php?act=logout"><i class="fi fi-rs-sign-out mr-10"></i>Sign
                                                         out</a></li>
                                             </ul>
@@ -304,12 +271,8 @@
                                         <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                             <ul>
                                                 <li><a href="index.php?act=register"><i class="fi fi-rs-user mr-10"></i>Register</a></li>
-                                                <li><a href="page-account.php"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
-                                                <li><a href="page-account.php"><i class="fi fi-rs-label mr-10"></i>My
-                                                        Voucher</a></li>
-                                                <li><a href="shop-wishlist.php"><i class="fi fi-rs-heart mr-10"></i>My
-                                                        Wishlist</a></li>
-                                                <li><a href="page-account.php"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
+                                                <li><a href="index.php?act=account"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a></li>
+                                                <li><a href="index.php?act=account"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a></li>
                                             </ul>
                                         </div>
                                     <?php } ?>

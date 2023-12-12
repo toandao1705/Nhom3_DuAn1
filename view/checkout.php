@@ -32,8 +32,8 @@
                             if (isset($_SESSION['user'])) {
                                 $name = $_SESSION['user']['name'];
                                 $email = $_SESSION['user']['email'];
-                                $address = isset($_POST['address']) ? $_POST['address'] : '';
-                                $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+                                $address = isset($_SESSION['user']['address']) ? $_SESSION['user']['address'] : '';
+                                $phone = isset($_SESSION['user']['phone']) ? $_SESSION['user']['phone'] : '';
                             } else {
                                 $name = "";
                                 $address = "";
@@ -177,7 +177,7 @@
                         </script>
 
                         <!-- Input ẩn để chứa giá trị thanh toán -->
-                        <input type="hidden" name="payment_methods" id="payment_methods" value="1">
+                        <!-- <input type="hidden" name="payment_methods" id="payment_methods" value="1"> -->
                         <input type="hidden" name="payUrl" id="payUrl" value="">
 
 

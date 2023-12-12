@@ -153,7 +153,7 @@
                 </div>
                 <div class="product-content-wrap">
                     <div class="product-category">
-                        <a href="shop-grid-right.php">' . $category_name . '</a>
+                        <a href="' . $linksp . '">' . $category_name . '</a>
                     </div>
                     <h2><a href="' . $linksp . '">' . $name . '</a></h2>
                     <div class="product-rate-cover">
@@ -2967,7 +2967,7 @@
                                     <div class="product-cart-wrap">
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
-                                                <a href="index.php?act=product_full">';
+                                                <a href="' . $linksp . '">';
                                     ?>
                                             <?php
                                             ?>
@@ -2989,7 +2989,7 @@
                                         </div>
                                         <div class="product-content-wrap">
                                             <div class="product-category">
-                                                <a href="shop-grid-right.php">' . $category_name . '</a>
+                                                <a href="' . $linksp . '">' . $category_name . '</a>
                                             </div>
                                             <h2><a href="index.php?act=product_full">' . $name . '</a></h2>
                                             <div class="product-rate d-inline-block">
@@ -3034,10 +3034,6 @@
         <div class="container">
             <div class="section-title">
                 <h3 class="">Deals Of The Day</h3>
-                <a class="show-all" href="shop-grid-right.php">
-                    All Deals
-                    <i class="fi-rs-angle-right"></i>
-                </a>
             </div>
             <div class="row">
                 <?php
@@ -3085,8 +3081,7 @@
                                 </div>
                                 <div class="product-card-bottom">
                                     <div class="product-price">
-                                        <span>' . $price . '</span>
-                                        <span class="old-price">' . $price . '</span>
+                                        <span>$' . $price . '</span>
                                     </div>
                                     <div class="add-cart">
                                     <form action="index.php?act=addtocart" method="post">

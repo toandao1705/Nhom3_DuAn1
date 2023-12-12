@@ -203,8 +203,7 @@
                                 </div>
                                 <div class="product-card-bottom">
                                     <div class="product-price">
-                                        <span>' . $price . '</span>
-                                        <span class="old-price">' . $price . '</span>
+                                        <span>$' . $price . '</span>
                                     </div>
                                     <div class="add-cart">
                                     <form action="index.php?act=addtocart" method="post">

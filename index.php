@@ -118,6 +118,8 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 // Nếu sản phẩm chưa có trong giỏ hàng, thêm vào
                 if (!$productExists) {
                     array_push($_SESSION['mycart'], $spadd);
+                    header('Location: ' . $_SERVER['HTTP_REFERER']);
+                    exit;
                 }
             }
             if (isset($_POST['updateCart']) && ($_POST['updateCart'])) {
@@ -133,21 +135,15 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     }
                 }
             }
-
-
             include "view/cart/cart.php";
             break;
-
-
-
-
         case 'delcart':
             if (isset($_GET['idcart'])) {
                 array_splice($_SESSION['mycart'], $_GET['idcart'], 1);
             } else {
                 $_SESSION['mycart'] = [];
             }
-            header('Location: index.php?act=addtocart');
+            header('Location: ' . $_SERVER['HTTP_REFERER']);
             break;
         case 'checkout':
             include "view/checkout.php";
@@ -190,7 +186,49 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                         header('location: index.php?act=addtocart');
                     }
                 }
+
+                $title = "Đặt hàng Nest Mart & Gorcery";
+                $content = "
+                    <div>
+                        <table border='1'>
+                            <thead>
+                                <tr>
+                                    <th>Sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Tổng sản phẩm</th>
+                                </tr>
+                            </thead>
+                            <tbody>";
                 
+                $totalOrderAmount = 0; // Initialize total order amount
+                
+                foreach ($_SESSION['mycart'] as $product) {
+                    $subtotal = $product[3] * $product[4];
+                    $totalOrderAmount += $subtotal;
+                
+                    $content .= "
+                        <tr>
+                            <td>" . $product[1] . "</td>
+                            <td>" . $product[3] . "</td>
+                            <td>" . $product[4] . "</td>
+                            <td>" . $subtotal . "</td>
+                        </tr>";
+                }
+                
+                $content .= "
+                            <tr>
+                                <td colspan='3' align='right'><strong>Tổng cộng</strong></td>
+                                <td>" . $totalOrderAmount . "</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>";
+                
+                $addressMail = $_SESSION['user']['email'];
+                
+                // Assuming $mail is an instance of your mail class
+                $mail->sendMail($title, $content, $addressMail);
 
 
 
@@ -293,14 +331,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
 
                         include "view/invoice.php";
                     }
-                    $title = "Đặt hàng Nest Mart & Gorcery";
-                    $content = "
-                    <div>
-                    <p>Cảm ơn quý khách đã đặt hàng với mã đơn hàng là: DH " . $idbill . "</p>
-                    <p></p>
-                    </div>";
-                    $adddressMail = $_SESSION['user']['email'];
-                    $mail->sendMail($title, $content, $adddressMail);
+                    
                     // Bắt và loại bỏ đầu ra
                     // ob_get_clean();
                 } else {

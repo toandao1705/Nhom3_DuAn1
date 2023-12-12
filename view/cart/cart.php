@@ -13,7 +13,11 @@
              <div class="col-lg-8 mb-40">
                  <h1 class="heading-2 mb-10">Your Cart</h1>
                  <div class="d-flex justify-content-between">
-                     <h6 class="text-body">There are <span class="text-brand">3</span> products in your cart</h6>
+                     <?php
+                        $cart = isset($_SESSION['mycart']) ? $_SESSION['mycart'] : [];
+                        $cartCount = count($cart);
+                        ?>
+                     <h6 class="text-body">There are <span class="text-brand"><?= $cartCount ?></span> products in your cart</h6>
                      <h6 class="text-body"><a href="#" class="text-muted"><i class="fi-rs-trash mr-5"></i>Clear Cart</a></h6>
                  </div>
              </div>
@@ -51,19 +55,16 @@
 
                              <tbody>
                                  <?php
-                                    //  var_dump($_SESSION['mycart']);
-                                    //  exit;
-                                    // $soluong_sanpham = 0;
+                                    if (isset($_SESSION['mycart']) && count($_SESSION['mycart']) > 0) {
+                                        $tong = 0;
+                                        $i = 0;
+                                        foreach ($_SESSION['mycart'] as $cart) {
+                                            $hinh = $cart[2];
+                                            $ttien = $cart[3] * $cart[4];
+                                            $tong += $ttien;
 
-                                    $tong = 0;
-                                    $i = 0;
-                                    foreach ($_SESSION['mycart'] as $cart) {
-                                        $hinh = $cart[2];
-                                        $ttien = $cart[3] * $cart[4];
-                                        $tong += $ttien;
-
-                                        $xoasp = 'index.php?act=delcart&idcart=' . $i . '';
-                                        echo '
+                                            $xoasp = 'index.php?act=delcart&idcart=' . $i . '';
+                                            echo '
                                         <tr class="pt-30">
                                             <td class="image product-thumbnail pt-40"><img src="' . $hinh . '" alt="#"></td>
                                             <td class="product-des product-name">
@@ -94,10 +95,13 @@
                                             <td class="action text-center" data-title="Remove"><a href="' . $xoasp . '" class="text-body"><i class="fi-rs-trash"></i></a></td>
                                         </tr>
                                                             ';
-                                        // $soluong_sanpham++;
-                                        $i += 1;
-                                    };
-                                    // $_SESSION['soluong_sanpham'] = $soluong_sanpham;
+                                            // $soluong_sanpham++;
+                                            $i += 1;
+                                        }
+                                    } else {
+                                        // Giỏ hàng không có sản phẩm
+                                        echo '<tr><td colspan="6" class="text-center">Your shopping cart is empty.</td></tr>';
+                                    }
                                     ?>
                              </tbody>
                          </table>
