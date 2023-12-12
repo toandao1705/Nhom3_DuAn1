@@ -177,7 +177,7 @@
                         </script>
 
                         <!-- Input ẩn để chứa giá trị thanh toán -->
-                        <!-- <input type="hidden" name="payment_methods" id="payment_methods" value="1"> -->
+                        <input type="hidden" name="payment_methods" id="payment_methods" value="1">
                         <input type="hidden" name="payUrl" id="payUrl" value="">
 
 
