@@ -206,11 +206,24 @@ if (isset($_SESSION['admin'])) {
                 if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
                     $tenloai = $_POST['tenloai'];
                     $id = $_POST['id'];
-                    $category->update_danhmuc($id, $tenloai);
+                   
+                    try {
+                        $category->update_danhmuc($id, $tenloai);
+                        
+                        header('location: index.php?act=listdm');
+                    } catch (Exception $e) {
+                        $errorCode = $e->getCode();
+                        if ($errorCode == 23000) {
+                            $_SESSION['thongbao'] = "Danh mục đã tồn tại";
+                            header('Location: ' . $_SERVER['HTTP_REFERER']);
+                        } else {
+                            $thongbaoloi = $e->getMessage();
+                        }
+                    }
                 }
                 $sql = "SELECT * FROM category ORDER BY id DESC";
                 $delete = 0;
-                header('location: index.php?act=listdm');
+                include "danhmuc/update.php";
                 break;
             case 'addsp':
                 $products = new products();
@@ -520,7 +533,7 @@ if (isset($_SESSION['admin'])) {
                     $email = $_POST['email'];
                     // Kiểm tra xem email mới có trùng với người dùng khác không
                     if ($user->checkUserUpdateOne($email, $id)) {
-                        $_SESSION['thongbao'] = "Email already exists, please select another email";
+                        $_SESSION['thongbao'] = "Email đã tồn tại";
                         header('location: index.php?act=suatk&id=' . $id);
                         exit();
                     } else {

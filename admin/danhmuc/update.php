@@ -1,6 +1,6 @@
 <?php
 if (is_array($categories)) {
-    extract($categories);
+  extract($categories);
 }
 
 ?>
@@ -24,20 +24,27 @@ if (is_array($categories)) {
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Tên Loại</label>
-                <input type="text" class="form-control" name="tenloai" id="tenloai" value="<?php if(isset($name)&&($name!="")) echo $name;?>">
+                <input type="text" class="form-control" name="tenloai" id="tenloai" value="<?php if (isset($name) && ($name != "")) echo $name; ?>">
                 <span id="tenloai-error" class="error-text text-danger"></span>
               </div>
               <!-- /.card-body -->
 
               <div class="card-footer">
                 <div class="btn-group" role="group" aria-label="Actions">
-                  <input type="hidden" name="id" value="<?php if(isset($id)&&($id>0)) echo $id;?>">
+                  <input type="hidden" name="id" value="<?php if (isset($id) && ($id > 0)) echo $id; ?>">
                   <input type="submit" class="btn btn-primary" name="capnhat" value="CẬP NHẬT">
                   <input type="reset" class="btn btn-secondary" value="NHẬP LẠi">
                   <a href="index.php?act=listdm"><input class="btn btn-info" type="button" value="DANH SÁCH"></a>
                 </div>
               </div>
+              <div class="form-group">
+              <?php if (isset($_SESSION['thongbao']) && ($_SESSION['thongbao'] != "")) { ?>
+                <div class="alert alert-danger" role="alert">
+                  <?= $_SESSION['thongbao'] ?>
+                </div>
+              <?php } ?>
           </form>
+
           <script>
             function validateForm() {
               var tenloai = document.getElementById("tenloai").value;
