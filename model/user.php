@@ -26,7 +26,7 @@ class user {
       if ($result) {
          return $result;
       } else {
-         echo '<h4 style="color:red;"> Email không tồn tại</h4> </br>';
+         echo '<h4 style="color:red;"> Email does not exist</h4> </br>';
       }
    }
    
@@ -158,7 +158,7 @@ function update_taikhoan($id, $email, $address, $phone, $role){
 function update_taikhoanUser($id, $email, $address, $phone, $role) {
    $db = new connect();
    $select = "UPDATE user SET email='".$email."', address='".$address."', phone='".$phone."', role=".$role." WHERE id=".$id;
-   var_dump($select); // In câu lệnh SQL để kiểm tra xem có vấn đề gì không
+   var_dump($select);
    $db->pdo_execute($select);
 }
 public function getUserInfoById($id) {
@@ -206,12 +206,10 @@ public function checkUserUpdate($email, $name)
     $db = new connect();               
     $select = "SELECT * FROM user WHERE email = '$email' OR name = '$name'";
     $result = $db->pdo_query_one($select);
-
-    // Kiểm tra xem có dữ liệu trả về hay không
     if($result != null) {
-        return true; // Email đã tồn tại
+        return true;
     } else {
-        return false; // Email không tồn tại
+        return false;
     }
 }
 
