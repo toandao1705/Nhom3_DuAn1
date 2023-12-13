@@ -86,13 +86,11 @@ if (is_array($taikhoan)) {
             document.getElementById('validateF').addEventListener('submit', function(e) {
               // Lấy giá trị của các trường dữ liệu
               var email = document.getElementById('email').value;
-              var pass = document.getElementById('pass').value;
               var address = document.getElementById('address').value;
               var phone = document.getElementById('phone').value;
 
               // Xóa thông báo lỗi cũ
               document.getElementById('email-error').textContent = '';
-              document.getElementById('pass-error').textContent = '';
               document.getElementById('address-error').textContent = '';
               document.getElementById('tel-error').textContent = '';
 
@@ -103,15 +101,6 @@ if (is_array($taikhoan)) {
               } else if (!isValidEmail(email)) {
                 e.preventDefault(); // Ngăn chặn việc submit form
                 document.getElementById('email-error').textContent = 'Email không đúng định dạng';
-              }
-
-              // Bắt lỗi nếu mật khẩu trống hoặc không đúng định dạng
-              if (pass.trim() === '') {
-                e.preventDefault(); // Ngăn chặn việc submit form
-                document.getElementById('pass-error').textContent = 'Mật khẩu không được để trống';
-              } else if (pass.length < 6) {
-                e.preventDefault(); // Ngăn chặn việc submit form
-                document.getElementById('pass-error').textContent = 'Mật khẩu phải có ít nhất 6 ký tự';
               }
 
               // Bắt lỗi nếu địa chỉ trống

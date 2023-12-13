@@ -182,10 +182,10 @@
 
 
                         <div class="payment-logo d-flex">
-                            <img class="mr-15" src="view/assets/imgs/theme/icons/payment-paypal.svg" alt="">
-                            <img class="mr-15" src="view/assets/imgs/theme/icons/payment-visa.svg" alt="">
-                            <img class="mr-15" src="view/assets/imgs/theme/icons/payment-master.svg" alt="">
-                            <img src="view/assets/imgs/theme/icons/payment-zapper.svg" alt="">
+                            <img class="mr-15" src="view/assets/imgs/theme/momo.png" alt="" style="width: 50px; height: 50px;">
+                            <img class="mr-15" src="view/assets/imgs/theme/vnpay.png" alt="" style="width: 130px; height: 50px;">
+                            <!-- <img class="mr-15" src="view/assets/imgs/theme/icons/payment-master.svg" alt="">
+                            <img src="view/assets/imgs/theme/icons/payment-zapper.svg" alt=""> -->
                         </div>
                         <div class="col-4">
                             <input type="submit" class="btn btn-fill-out btn-block mt-30" name="order" value="Place an Order">

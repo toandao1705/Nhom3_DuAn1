@@ -52,10 +52,10 @@
                                             <button class="btn bg-gradient-primary w-100 my-4 mb-2 btn-primary">Đăng nhập</button>
                                         </div>
 
-                                        <a class="small text-muted" href="#!">Quên mật khẩu?</a>
+                                        <!-- <a class="small text-muted" href="#!">Quên mật khẩu?</a>
                                         <p class="mb-5 pb-lg-2" style="color: #393f81;">Bạn không có tài khoản? <a href="#!" style="color: #393f81;">Đăng ký tại đây</a></p>
                                         <a href="#!" class="small text-muted">Điều khoản sử dụng.</a>
-                                        <a href="#!" class="small text-muted">Chính sách bảo mật</a>
+                                        <a href="#!" class="small text-muted">Chính sách bảo mật</a> -->
                                     </form>
 
                                     <script>
