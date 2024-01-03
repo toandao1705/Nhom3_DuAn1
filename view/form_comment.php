@@ -3,6 +3,10 @@ session_start();
 ob_start();
 include '../model/comment.php';
 include '../model/pdo.php';
+include "../model/user.php";
+$user = new user();
+$delete = 0;
+$user = $user->loadall_taikhoan($delete, 0, 0);
 $id_pro = $_REQUEST['id_pro'];
 // $id_user = $_SESSION['user']['id'];
 $comment  = new comment();
@@ -32,6 +36,7 @@ $dsbl = $comment->loadall_binhluan($id_pro, $delete, 0, PHP_INT_MAX);
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
 
 </head>
 <style>
@@ -42,40 +47,103 @@ $dsbl = $comment->loadall_binhluan($id_pro, $delete, 0, PHP_INT_MAX);
         -webkit-line-clamp: 3;
         /* Số dòng bạn muốn hiển thị */
     }
+
+    .btn-light {
+    background-color: white;
+    color: black;
+    }
+
+    .btn-light:hover,
+    .btn-light:focus {
+        background-color: white;
+        color: black;
+        box-shadow: none;
+    }
+
+    .dropdown-menu {
+    margin-top: -70px;
+    margin-left: -50px;
+    }
+
+    .dropdown-item {
+        margin: 0;
+        padding: 5px 10px;
+    }
 </style>
 
 <body>
-
     <div class="comment-list">
         <div class="single-comment ">
             <?php
+
+            if (isset($_SESSION['user'])) {
             $commentCount = 0;
-            foreach ($dsbl as $bl) {
-                extract($bl);
-                echo '
-            <div class="single-comment justify-content-between d-flex mb-30">
-                <div class="user justify-content-between d-flex">
-                    <div class="thumb text-center">
-                        <img src="view/assets/imgs/blog/author-2.png" alt="" />
-                        <a href="#" class="font-heading text-brand">' . $username . '</a>
-                    </div>
-                    <div class="desc" style="width: 100%;">
-                        <div class="d-flex justify-content-between mb-10">
-                            <div class="d-flex align-items-center">
-                                <span class="font-xs text-muted">' . $comment_date . '</span>
+                foreach ($dsbl as $bl) {
+                    extract($bl);
+                    $suabl = "index.php?act=product_full&idsp='.$id_pro.'&id=" . $id;
+                    $xoabl = "index.php?act=product_full&idsp='.$id_pro.'&id=" . $id;
+                    $reportbl = "index.php?act=product_full&idsp='.$id_pro.'&id=" . $id;
+                    echo '
+                <div class="single-comment justify-content-between d-flex mb-30">
+                    <div class="user justify-content-between d-flex">
+                        <div class="thumb text-center">
+                            <img src="view/assets/imgs/blog/author-2.png" alt="" />
+                            <a href="#" class="font-heading text-brand">' . $username . '</a>
+                        </div>
+                        <div class="desc" style="width: 100%;">
+                            <div class="d-flex justify-content-between mb-10">
+                                <div class="d-flex align-items-center">
+                                    <span class="font-xs text-muted">' . $comment_date . '</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="mb-10 clamp-text">' . wordwrap($content, 105, "<br>", true) . '</p>
                             </div>
                         </div>
-                        <div>
-                            <p class="mb-10 clamp-text">' . wordwrap($content, 105, "<br>", true) . '</p>
+                    </div>
+                    <div class="user justify-content-between d-flex">
+                        <div class="dropdown">
+                        <button class="btn btn-light border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href=""'.$suabl.'"">Chỉnh sửa</a>
+                        <a class="dropdown-item" href="'.$xoabl.'">Xóa</a>
+                        <a class="dropdown-item" href=""'.$reportbl.'"">Báo cáo</a>
                         </div>
                     </div>
-                </div>
-            </div>';
-                $commentCount++;
-                if ($commentCount >= 3) {
-                    break;
+                    </div>
+                    </div>
+                </div>';
+                    $commentCount++;
+                    if ($commentCount >= 3) {
+                        break;
+                    }
                 }
-            }
+            } else {
+                $commentCount = 0;
+                foreach ($dsbl as $bl) {
+                extract($bl);
+                echo '
+                <div class="single-comment justify-content-between d-flex mb-30">
+                    <div class="user justify-content-between d-flex">
+                        <div class="thumb text-center">
+                            <img src="view/assets/imgs/blog/author-2.png" alt="" />
+                            <a href="#" class="font-heading text-brand">' . $username . '</a>
+                        </div>
+                        <div class="desc" style="width: 100%;">
+                            <div class="d-flex justify-content-between mb-10">
+                                <div class="d-flex align-items-center">
+                                    <span class="font-xs text-muted">' . $comment_date . '</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="mb-10 clamp-text">' . wordwrap($content, 105, "<br>", true) . '</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>';
+            }}
             // Kiểm tra xem có bình luận hay không
             if ($commentCount === 0) {
                 // Không có bình luận, hiển thị thông báo
@@ -161,7 +229,7 @@ $dsbl = $comment->loadall_binhluan($id_pro, $delete, 0, PHP_INT_MAX);
                 <?php
                 } else {
                 ?>
-                    <p>Vui lòng đăng nhập</p>
+                    <p>please log in</p>
 
                 <?php } ?>
             </div>
@@ -192,6 +260,14 @@ $dsbl = $comment->loadall_binhluan($id_pro, $delete, 0, PHP_INT_MAX);
     <!-- Template  JS -->
     <script src="./view/assets/js/main.js?v=5.6"></script>
     <script src="./view/assets/js/shop.js?v=5.6"></script>
+    <script>
+        var dropdownButton = document.getElementById('dropdownMenuButton');
+        var dropdownMenu = document.querySelector('.dropdown-menu');
+
+        dropdownButton.addEventListener('click', function() {
+            dropdownMenu.classList.toggle('show');
+        });
+        </script>
 </body>
 
 </html>

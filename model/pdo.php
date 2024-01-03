@@ -5,10 +5,10 @@ class connect
     {
         $servername = "localhost";
         $username = "root";
-        $password = "";
+        $password = "mysql";
 
         try {
-            $conn = new PDO("mysql:host=$servername;dbname=duan1", $username, $password);
+            $conn = new PDO("mysql:host=$servername;dbname=nhom3duan1", $username, $password);
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             // echo "Kết nối thành công!";
@@ -111,7 +111,7 @@ class connect
     
 }
 // change the information according to your database
-$db_connection = mysqli_connect("localhost","root","","duan1");
+$db_connection = mysqli_connect("localhost","root","mysql","nhom3duan1");
 // CHECK DATABASE CONNECTION
 if(mysqli_connect_errno()){
     echo "Connection Failed".mysqli_connect_error();

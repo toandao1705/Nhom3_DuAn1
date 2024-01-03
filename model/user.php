@@ -26,7 +26,7 @@ class user {
       if ($result) {
          return $result;
       } else {
-         echo '<h4 style="color:red;"> Email không tồn tại</h4> </br>';
+         echo '<h4 style="color:red;"> Email does not exist</h4> </br>';
       }
    }
    
